@@ -1,0 +1,700 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+    {%- render 'section-variables', section: section -%}
+  }
+  @media(max-width: 768px) {
+      #shopify-section-{{ section.id }} {
+        --section-padding-top: calc({{ section.settings.padding_top_mobile | append: 'px' }} / 0.75);
+        --section-padding-bottom: calc({{ section.settings.padding_bottom_mobile | append: 'px' }} / 0.75);
+      }
+  }
+  #shopify-section-{{ section.id }} .yg-brand {
+    box-sizing: border-box;
+    width: 100%;
+    /* padding: 96px 0; */
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-one {
+    display: flex;
+    overflow: visible;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-one .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-one .swiper-wrapper .swiper-slide {
+    font-size: 32px;
+    font-weight: 700;
+    height: 100%;
+    opacity: .3;
+    color: #000000;
+  }
+
+
+  #shopify-section-{{ section.id }} .yg-swiper-one .swiper-wrapper .swiper-slide-active{
+    opacity: 1; /* 50% 透明度 */
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-one .swiper-wrapper .swiper-slide .item-header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 250px; */
+
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-one .swiper-wrapper .swiper-slide .top-img {
+    width: 30px;
+    height: 23px;
+    margin-right: auto;
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-one .swiper-wrapper .swiper-slide .bottom-img{
+    width: 30px;
+    height: 23px;
+    margin-left: auto;
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-one .swiper-wrapper .swiper-slide .item-content{
+    line-height: 140%;
+    letter-spacing: -.32px;
+    margin: 12px 0;
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-one .swiper-wrapper .swiper-slide .signature{
+    font-size: 20px;
+    font-weight: 700;
+    /* line-height: 28px; */
+    /* height: 28px; */
+    margin-top: 18px;
+  }
+
+  #shopify-section-{{ section.id }} .swiper-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 66.7px;
+    margin-top: 48px;
+  }
+
+  #shopify-section-{{ section.id }} .button:after,
+  #shopify-section-{{ section.id }} .button:after{
+    border-width: 1px;
+  }
+  #shopify-section-{{ section.id }} .swiper-button-prev .button,
+  #shopify-section-{{ section.id }} .swiper-button-next .button{
+    width: 52px;
+    height: 52px;
+    padding: 16px;
+  }
+
+  #shopify-section-{{ section.id }} .swiper-bottom .swiper-button-prev,
+  #shopify-section-{{ section.id }} .swiper-bottom .swiper-button-next{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #FFFFFF; */
+    position: relative;
+    display: block;
+    top: 0;
+    width:unset;
+    height: unset;
+    margin-top: 0;
+    left:unset;
+    right: unset;
+  }
+
+  #shopify-section-{{ section.id }} .swiper-button-next svg,
+  #shopify-section-{{ section.id }} .swiper-button-prev svg{
+    width: var(--sp-5d5);
+    height: var(--sp-5d5);
+  }
+
+  #shopify-section-{{ section.id }} .swiper-bottom .yg-swiper-two {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    width: 87%;
+    height: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-two .swiper-wrapper {
+    height: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-two .swiper-wrapper .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    opacity: 1;
+    border-radius: 12px;
+    background: #FFFFFF;
+  }
+
+  #shopify-section-{{ section.id }} .yg-swiper-two .swiper-wrapper .swiper-slide-active{
+    border: 2px solid #000;
+  }
+
+  #shopify-section-{{ section.id }} .swiper-bottom .yg-swiper-two .image {
+      width: 152px;
+  }
+
+
+
+  @media screen and (max-width: 767px) {
+    #shopify-section-{{ section.id }} .yg-swiper-one .swiper-wrapper .swiper-slide {
+      font-size: 22px;
+    }
+
+    #shopify-section-{{ section.id }} .yg-brand {
+      width: 100%;
+    }
+    #shopify-section-{{ section.id }} .swiper-bottom .yg-swiper-two .image {
+      width: 100px;
+    }
+    #shopify-section-{{ section.id }} .swiper-bottom .yg-swiper-two {
+      width: 65%;
+    }
+
+  }
+</style>
+
+{%- capture section_heading -%}
+  {%- render 'section-heading', section: section -%}
+{%- endcapture -%}
+
+<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
+  <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
+    <div class="collage on-scroll{% if section_heading == blank %} without-heading{% endif %} items-center">
+      {{- section_heading -}}
+      <yg-brand-swiper>
+        <div class="yg-brand">
+          <div class="swiper yg-swiper-one">
+            <div class="swiper-wrapper">
+              {% for block in section.blocks %}
+                <div class="swiper-slide ">
+                  <div class="item-header">
+                    <div class="top-img">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24" fill="none">
+                        <path d="M26.6876 0.638184C27.1895 0.638184 27.5031 0.803468 27.6286 1.13404C27.7541 1.46461 27.8168 1.76975 27.8168 2.04946C27.7917 2.38003 27.6788 2.68517 27.478 2.96488C27.3024 3.2446 27.0765 3.49888 26.8005 3.72774C26.5245 3.95659 26.2359 4.18545 25.9348 4.4143C25.6587 4.61773 25.4078 4.82116 25.1819 5.02459C24.8306 5.38058 24.4668 5.77472 24.0903 6.20701C23.7139 6.63929 23.3752 7.097 23.074 7.58014C22.7729 8.06328 22.522 8.55913 22.3212 9.0677C22.1205 9.57627 22.0201 10.0848 22.0201 10.5934C22.0201 10.7968 22.0452 11.013 22.0954 11.2418C22.1706 11.4707 22.4216 11.5851 22.8482 11.5851C23.6512 11.5851 24.4668 11.7123 25.2949 11.9665C26.1481 12.2208 26.926 12.6023 27.6286 13.1108C28.3312 13.6194 28.8959 14.2551 29.3225 15.018C29.7742 15.7554 30 16.6199 30 17.6117C30 18.5779 29.8494 19.4425 29.5483 20.2053C29.2472 20.9428 28.8206 21.5658 28.2685 22.0743C27.7164 22.5829 27.064 22.977 26.3112 23.2568C25.5834 23.511 24.7679 23.6382 23.8645 23.6382C22.3087 23.6382 21.0414 23.3458 20.0627 22.7609C19.1092 22.1506 18.3689 21.4259 17.8419 20.5868C17.3149 19.7222 16.9636 18.8322 16.788 17.9168C16.6123 16.9759 16.5245 16.1622 16.5245 15.4757C16.5245 14.1025 16.7252 12.7548 17.1267 11.4325C17.5533 10.1103 18.1179 8.86428 18.8206 7.69457C19.5232 6.52486 20.3262 5.45687 21.2296 4.49059C22.133 3.49888 23.0615 2.63431 24.0151 1.89689C24.3915 1.61718 24.8181 1.33746 25.2949 1.05775C25.7967 0.77804 26.261 0.638184 26.6876 0.638184ZM10.1631 0.638184C10.665 0.638184 10.9787 0.803468 11.1041 1.13404C11.2296 1.46461 11.2923 1.76975 11.2923 2.04946C11.2673 2.38003 11.1543 2.68517 10.9536 2.96488C10.7779 3.2446 10.5521 3.49888 10.276 3.72774C10 3.95659 9.71142 4.18545 9.41029 4.4143C9.13425 4.61773 8.88331 4.82116 8.65747 5.02459C8.30615 5.38058 7.94228 5.77472 7.56587 6.20701C7.18946 6.63929 6.85069 7.097 6.54956 7.58014C6.24843 8.06328 5.99749 8.55913 5.79674 9.0677C5.59598 9.57627 5.49561 10.0848 5.49561 10.5934C5.49561 10.7968 5.5207 11.013 5.57089 11.2418C5.64617 11.4707 5.89711 11.5851 6.32371 11.5851C7.12673 11.5851 7.94228 11.7123 8.77039 11.9665C9.62359 12.2208 10.4015 12.6023 11.1041 13.1108C11.8068 13.6194 12.3714 14.2551 12.798 15.018C13.2497 15.7554 13.4755 16.6199 13.4755 17.6117C13.4755 18.5779 13.325 19.4425 13.0238 20.2053C12.7227 20.9428 12.2961 21.5658 11.744 22.0743C11.192 22.5829 10.5395 22.977 9.7867 23.2568C9.05897 23.511 8.24341 23.6382 7.34003 23.6382C5.78419 23.6382 4.51694 23.3458 3.53827 22.7609C2.58469 22.1506 1.84442 21.4259 1.31744 20.5868C0.790464 19.7222 0.439147 18.8322 0.263488 17.9168C0.0878294 16.9759 0 16.1622 0 15.4757C0 14.1025 0.200753 12.7548 0.602259 11.4325C1.02886 10.1103 1.59348 8.86428 2.29611 7.69457C2.99875 6.52486 3.80176 5.45687 4.70514 4.49059C5.60853 3.49888 6.53701 2.63431 7.49059 1.89689C7.867 1.61718 8.2936 1.33746 8.77039 1.05775C9.27227 0.77804 9.73651 0.638184 10.1631 0.638184Z" fill="#FF9900"/>
+                      </svg>
+                    </div>
+                    {% if block.settings.content != blank %}
+                      <div class="item-content">
+                        {{ block.settings.content }}
+                      </div>
+                    {% endif %}
+
+                    <div class="bottom-img">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 30 24" fill="none">
+                        <path d="M19.8241 23.6382C19.3216 23.6382 19.0075 23.4729 18.8819 23.1423C18.7563 22.8118 18.6935 22.5066 18.6935 22.2269C18.7186 21.8963 18.8191 21.5912 18.995 21.3115C19.196 21.0318 19.4347 20.7775 19.7111 20.5486C19.9874 20.3198 20.2638 20.1036 20.5402 19.9002C20.8417 19.6714 21.1055 19.4552 21.3317 19.2518C21.6834 18.8958 22.0477 18.5016 22.4246 18.0694C22.8015 17.6371 23.1407 17.1794 23.4422 16.6962C23.7437 16.2131 23.995 15.7172 24.196 15.2087C24.397 14.7001 24.4975 14.1915 24.4975 13.683C24.4975 13.4795 24.4598 13.2634 24.3844 13.0345C24.3342 12.8057 24.0955 12.6913 23.6683 12.6913C22.8643 12.6913 22.0352 12.5641 21.1809 12.3098C20.3518 12.0555 19.5854 11.6741 18.8819 11.1655C18.1784 10.657 17.6005 10.034 17.1482 9.29656C16.7211 8.53371 16.5075 7.65643 16.5075 6.66472C16.5075 5.69844 16.6583 4.84659 16.9598 4.10916C17.2613 3.34631 17.6884 2.7106 18.2412 2.20203C18.794 1.69346 19.4347 1.31204 20.1633 1.05775C20.9171 0.77804 21.7462 0.638184 22.6508 0.638184C24.2085 0.638184 25.4648 0.943325 26.4196 1.55361C27.3995 2.13846 28.1533 2.86317 28.6809 3.72774C29.2085 4.56687 29.5603 5.45687 29.7362 6.39772C29.9121 7.31314 30 8.11414 30 8.8007C30 10.1738 29.7864 11.5215 29.3593 12.8438C28.9322 14.1661 28.3668 15.4121 27.6633 16.5818C26.9849 17.7515 26.1935 18.8322 25.2889 19.8239C24.3844 20.8156 23.4548 21.6675 22.5 22.3795C22.1231 22.6592 21.6834 22.9389 21.1809 23.2186C20.7035 23.4983 20.2513 23.6382 19.8241 23.6382ZM3.31658 23.6382C2.81407 23.6382 2.5 23.4729 2.37437 23.1423C2.24874 22.8118 2.18593 22.5066 2.18593 22.2269C2.21106 21.8963 2.31156 21.5912 2.48744 21.3115C2.68844 21.0318 2.92714 20.7775 3.20352 20.5486C3.4799 20.3198 3.75628 20.1036 4.03266 19.9002C4.33417 19.6714 4.59799 19.4552 4.82412 19.2518C5.17588 18.8958 5.5402 18.5016 5.91709 18.0694C6.29397 17.6371 6.63317 17.1794 6.93467 16.6962C7.23618 16.2131 7.48744 15.7172 7.68844 15.2087C7.88945 14.7001 7.98995 14.1915 7.98995 13.683C7.98995 13.4795 7.95226 13.2634 7.87688 13.0345C7.82663 12.8057 7.58794 12.6913 7.1608 12.6913C6.35678 12.6913 5.52764 12.5641 4.67337 12.3098C3.84422 12.0555 3.07789 11.6741 2.37437 11.1655C1.67085 10.657 1.09296 10.034 0.640704 9.29656C0.213568 8.53371 0 7.65643 0 6.66472C0 5.69844 0.150754 4.84659 0.452261 4.10916C0.753769 3.34631 1.1809 2.7106 1.73367 2.20203C2.28643 1.69346 2.92714 1.31204 3.65578 1.05775C4.40955 0.77804 5.23869 0.638184 6.14322 0.638184C7.701 0.638184 8.95729 0.943325 9.91206 1.55361C10.892 2.13846 11.6457 2.86317 12.1734 3.72774C12.701 4.56687 13.0528 5.45687 13.2286 6.39772C13.4045 7.31314 13.4925 8.11414 13.4925 8.8007C13.4925 10.1738 13.2789 11.5215 12.8518 12.8438C12.4246 14.1661 11.8593 15.4121 11.1558 16.5818C10.4774 17.7515 9.68593 18.8322 8.78141 19.8239C7.87688 20.8156 6.94724 21.6675 5.99246 22.3795C5.61558 22.6592 5.17588 22.9389 4.67337 23.2186C4.19598 23.4983 3.74372 23.6382 3.31658 23.6382Z" fill="#FF9900"/>
+                      </svg>
+                    </div>
+                  </div>
+                  {% if block.settings.name != blank %}
+                    <div class="signature">{{ block.settings.name }}</div>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <!-- 如果需要导航按钮 -->
+          <div class="swiper-bottom">
+            <div class="swiper-button-prev">
+              <button class="button button--secondary" type="button" is="previous-button">
+                <span class="btn-fill" data-fill></span>
+                <span class="btn-text">
+                  {%- render 'icon', icon: 'chevron-left', class: 'transform' -%}
+                </span>
+              </button>
+            </div>
+            <div class="swiper-image yg-swiper-two">
+              <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                  {% assign img = block.settings.image %}
+                  <div class="swiper-slide">
+                    {%- if img != blank -%}
+                      {{-
+                        img
+                        | image_url: width: img.width
+                        | image_tag: preload: 'lazy', class: 'image', alt: img.alt
+                      -}}
+                    {%- endif -%}
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="swiper-button-next">
+              <button class="button button--secondary" type="button" is="next-button">
+                <span class="btn-fill" data-fill></span>
+                <span class="btn-text">
+                  {%- render 'icon', icon: 'chevron-right', class: 'transform' -%}
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </yg-brand-swiper>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    class YGBrand extends HTMLElement {
+      constructor() {
+        super();
+        this.init();
+      }
+      init() {
+        this.swiperStyle();
+      }
+      swiperStyle() {
+        let swiper1 = new Swiper('.yg-swiper-one', {
+          direction: 'horizontal',
+          allowTouchMove: true, // 确保允许触摸拖动
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true, // 循环模式选项
+          loopedSlides: {{ section.blocks.size }}, // 关键配置
+          loopAdditionalSlides: 2,
+          breakpoints: {
+            1240: {
+              slidesPerView: 1.6,
+              spaceBetween: 90,
+            },
+          },
+        });
+
+        let swiper2 = new Swiper('.yg-swiper-two', {
+          direction: 'horizontal',
+          slidesPerView: 1.4,
+          // slidesPerView: 1.4,
+          spaceBetween: 21,
+          centeredSlides: true,
+          initialSlide: Math.floor({{ section.blocks.size }} / 2), // 初始显示中间slide
+          loopedSlides: {{ section.blocks.size }}, // 关键配置
+          loop: true,
+          controller: {
+            control: swiper1, //控制yg-swiper-one
+          },
+          // 如果需要前进后退按钮
+          navigation: {
+            nextEl: this.querySelector('.swiper-button-next'),
+            prevEl: this.querySelector('.swiper-button-prev'),
+          },
+          on:{
+            click: function(swiper, event){
+              if (swiper.clickedIndex !== undefined) {
+                let Difference = swiper.clickedIndex - swiper.activeIndex;
+                if (Difference > 0) {
+                  if (Difference != 1) {
+                    swiper.slideTo(swiper.clickedIndex - 1, 0, true)
+                  }
+                  swiper.slideNext();
+                  return;
+                }
+
+                if (Difference < 0) {
+                  if (Difference != -1) {
+                    swiper.slideTo(swiper.clickedIndex + 1, 0, true)
+                  }
+                  swiper.slidePrev();
+                  return;
+                }
+              }
+            },
+          },
+          breakpoints: {
+            1240: {
+              slidesPerView: 5.6,
+              spaceBetween: 21,
+            },
+          },
+        });
+        swiper1.controller.control = swiper2; //yg-swiper-one控制yg-swiper-two，需要在yg-swiper-two初始化后
+        swiper2.controller.control = swiper1; //yg-swiper-two控制yg-swiper-one，需要在yg-swiper-one初始化后
+
+      }
+    }
+
+    if (!window.customElements.get('yg-brand-swiper')) {
+      window.customElements.define('yg-brand-swiper', YGBrand);
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "YG Brand",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__heading.content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "Multimedia collage"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "title-sm",
+          "label": "t:sections.global.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "title-md",
+          "label": "t:sections.global.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "title-lg tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__3.label"
+        },
+        {
+          "value": "title-xl tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__4.label"
+        }
+      ],
+      "default": "title-md",
+      "label": "t:sections.global.settings.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.global.settings.heading_alignment.label",
+      "options": [
+        {
+          "value": "text-left md:items-end md:flex-row",
+          "label": "t:sections.global.settings.heading_alignment.options__1.label"
+        },
+        {
+          "value": "text-center md:items-center",
+          "label": "t:sections.global.settings.heading_alignment.options__2.label"
+        },
+        {
+          "value": "text-right md:items-end md:flex-row-reverse",
+          "label": "t:sections.global.settings.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "text-left md:items-end md:flex-row"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.global.settings.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.global.settings.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.global.settings.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.global.settings.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.global.settings.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.global.settings.heading_tag.options__6.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.global.settings.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.global.settings.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.global.settings.heading_tag.options__9.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.global.settings.heading_tag.label",
+      "info": "t:sections.global.settings.heading_tag.info"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.global.settings.subheading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.global.settings.description.label",
+      "default": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.global.settings.button_label.label",
+      "info": "t:sections.global.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "button_icon",
+      "label": "t:sections.global.settings.button_icon.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__highlight.content",
+      "info": "t:sections.global.settings.header__highlight.info"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_text",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.global.settings.highlighted_text.options__1.label"
+        },
+        {
+          "value": "text",
+          "label": "t:sections.global.settings.highlighted_text.options__2.label"
+        },
+        {
+          "value": "full_text",
+          "label": "t:sections.global.settings.highlighted_text.options__3.label"
+        },
+        {
+          "value": "half_text",
+          "label": "t:sections.global.settings.highlighted_text.options__4.label"
+        },
+        {
+          "value": "underline",
+          "label": "t:sections.global.settings.highlighted_text.options__5.label"
+        },
+        {
+          "value": "stencil",
+          "label": "t:sections.global.settings.highlighted_text.options__6.label"
+        },
+        {
+          "value": "scribble",
+          "label": "t:sections.global.settings.highlighted_text.options__7.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.global.settings.highlighted_text.label"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_scribble",
+      "options": [
+        {
+          "value": "circle",
+          "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
+        },
+        {
+          "value": "basic-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
+        },
+        {
+          "value": "sketch-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
+        },
+        {
+          "value": "squiggle-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
+        },
+        {
+          "value": "squiggle-underline-2",
+          "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
+        }
+      ],
+      "default": "circle",
+      "label": "t:sections.global.settings.highlighted_scribble.label",
+      "info": "t:sections.global.settings.highlighted_scribble.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__colors.content",
+      "info": "t:sections.global.settings.header__colors.info"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.global.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.global.settings.color_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "t:sections.global.settings.gradient_background.label"
+    },
+    {
+      "type": "color",
+      "id": "color_highlight",
+      "label": "t:sections.global.settings.color_highlight.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_highlight",
+      "label": "t:sections.global.settings.gradient_highlight.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_text",
+      "label": "t:sections.global.settings.color_button_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_background",
+      "label": "t:sections.global.settings.color_button_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "color_button_gradient",
+      "label": "t:sections.global.settings.color_button_gradient.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__section.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_top.label",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_bottom.label",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding mobile",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding mobile",
+      "default": 48
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.global.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.global.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "t:sections.global.settings.rounded.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "YG Brand"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.overlay"]
+  }
+}
+{% endschema %}

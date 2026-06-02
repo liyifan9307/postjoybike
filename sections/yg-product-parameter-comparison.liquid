@@ -1,0 +1,871 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    {%- render 'section-variables', section: section -%}
+  }
+  #section-shopify-{{ section.id}} .yg-parameter-comparison .yg-parameter .yg-parameter-header,
+  #section-shopify-{{ section.id}} .yg-parameter-comparison .yg-parameter .yg-parameter-info {
+    display: grid;
+    grid-template-columns: repeat({{section.blocks.size}}, 1fr);
+
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-comparison .yg-parameter .yg-parameter-info:nth-child(odd) {
+    background-color: #f5f5f5;
+  }
+
+  .yg-parameter-comparison .yg-parameter .yg-parameter-info:nth-child(even) {
+    background-color: #fff;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-comparison .yg-parameter .yg-parameter-header .yg-parameter-values {
+    padding-bottom: 12px;
+  }
+
+  #section-shopify-{{ section.id}}.yg-parameter-comparison .yg-parameter .yg-parameter-info:last-child {
+    border: none;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-titile .yg-table-title {
+    padding: 24px 12px 24px 24px;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-value.yg-product-parameter {
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 12px 0;
+    gap: 4px;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-value.yg-product-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    gap: 12px;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-comparison {
+    overflow: hidden;
+    border-radius: var(--yg-border-radius);
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-value.yg-product-image .yg-image {
+    display: flex;
+    overflow: hidden;
+    flex: 2;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  #section-shopify-{{ section.id}} .yg-box-title {
+    font-weight: 600;
+    line-height: 120%;
+    text-align: var(--yg-title-layout);
+    color: var(--yg-title-color);
+  }
+
+  #section-shopify-{{ section.id}} .yg-parametercomparison {
+    display: block;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-info.collapsed:nth-child(n+6) {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-out, opacity .5s ease-out;
+    opacity: 0;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-info {
+    max-height: 1000px;
+    transition: max-height .5s ease-in, opacity .5s ease-in;
+    opacity: 1;
+  }
+
+  #section-shopify-{{ section.id}} .toggle-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-value.yg-product-image .yg-link,
+  #section-shopify-{{ section.id}} .toggle-btn {
+    font-weight: 700;
+    color: {{ section.settings.color_button_text }};
+    max-width: fit-content;
+  }
+
+  #section-shopify-{{ section.id}} .toggle-btn svg {
+    transition: transform .3s ease-out;
+    transform: rotate(180deg);
+  }
+
+  #section-shopify-{{ section.id}} .toggle-btn.collapsed svg {
+    transform: rotate(0deg);
+  }
+
+  #section-shopify-{{ section.id}} .toggle-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-comparison .yg-parameter .yg-parameter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #section-shopify-{{ section.id}} #yg-button-logo {
+    width: var(--yg-button-width);
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-values {
+    font-weight: 400;
+  }
+
+  /* #section-shopify-{{ section.id}} .yg-no-text {
+    text-align: center;
+  } */
+
+  #section-shopify-{{ section.id}} .yg-table-title {
+    font-weight: 600;
+  }
+
+  #section-shopify-{{ section.id}} .yg-parameter-comparison {
+    font-size: 14px;
+    margin-top: 32px;
+    padding: 32px;
+    border-radius: 24px;
+    background: #fff;
+  }
+
+  @media screen and (max-width:767px) {
+    #section-shopify-{{ section.id}} .yg-parameter-value.yg-product-parameter {
+      justify-content: end;
+    }
+
+    #section-shopify-{{ section.id}} .yg-parameter-titile {
+      display: none;
+    }
+
+    #section-shopify-{{ section.id}} .yg-parameter-comparison .yg-parameter .yg-parameter-header,
+    #section-shopify-{{ section.id}} .yg-parameter-comparison .yg-parameter .yg-parameter-info {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    #section-shopify-{{ section.id}} .yg-parameter-comparison {
+      padding: 16px;
+      border-radius: 24px;
+      background: #fff;
+    }
+
+    #section-shopify-{{ section.id}} .button .btn-text {
+      color: #fff;
+    }
+
+    #section-shopify-{{ section.id}} .yg-para-btn {
+      display: grid;
+      --buttons-radius: 8px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    #section-shopify-{{ section.id}} .yg-drawer {
+      position: absolute;
+      top: 110%;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      border: 1px solid #e6e5e5;
+      border-radius: 8px;
+    }
+
+    #section-shopify-{{ section.id}} .yg-drawer.active {
+      display: flex;
+    }
+
+    #section-shopify-{{ section.id}} .yg-drawer span {
+      font-weight: 700;
+      padding: 10px 16px;
+      cursor: pointer;
+      background-color: #fff;
+    }
+
+    #section-shopify-{{ section.id}} .yg-drawer span.active {
+      background: #f5f5f5;
+    }
+
+    #section-shopify-{{ section.id}} .yg-change-box {
+      position: relative;
+    }
+
+    #section-shopify-{{ section.id}} .yg-change-box a {
+      width: 100%;
+      height: 100%;
+    }
+
+    #section-shopify-{{ section.id}} .yg-para-btn .button--secondary {
+      background: #f90;
+      --color-button-border: #f90;
+      opacity: 1;
+      padding: 14px 8px;
+    }
+
+    #section-shopify-{{ section.id}} .yg-para-btn .yg-change-box .button--secondary {
+      background: #fff;
+      --color-button-border: 0 0 0;
+    }
+
+    #section-shopify-{{ section.id}} .yg-para-btn .yg-change-box .btn-text {
+      color: #000;
+    }
+
+    /* #section-shopify-{{ section.id}} .yg-para-btn .yg-change-box:hover .btn-text,
+    #section-shopify-{{ section.id}} .button .btn-text {
+      color: #fff;
+    } */
+  }
+
+  @media screen and (max-width:1200px) {
+    #section-shopify-{{ section.id}} .yg-parameter {
+      overflow-x: auto;
+      width: 100%;
+    }
+
+    #section-shopify-{{ section.id}} .yg-parameter-titile .yg-table-title,
+    #section-shopify-{{ section.id}} .yg-parameter-title,
+    #section-shopify-{{ section.id}} .yg-parameter-value.yg-product-parameter {
+      overflow: hidden;
+      flex: 1;
+      padding: 14px 15px;
+    }
+
+    #section-shopify-{{ section.id}} .yg-parameter-comparison .yg-parameter .yg-parameter-header .yg-parameter-values {
+      padding: 8px 10px;
+    }
+
+    #section-shopify-{{ section.id}} .yg-parameter-button .yg-parameter-titile {
+      overflow: hidden;
+      flex: 1;
+      padding: 14px 15px;
+    }
+  }
+
+    @media screen and (pointer: fine) {
+      .js [data-button-hover=standard] #shopify-section-{{ section.id }} .button--secondary:hover:not([disabled],.self-button){
+          color: rgb(var(--color-button-text));
+      }
+  }
+</style>
+{%- capture section_heading -%}
+  {%- render 'section-heading', section: section -%}
+{%- endcapture -%}
+<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
+  <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %}{% if section_heading == blank %} page-width--narrow{% endif %} relative">
+    <div class="collage on-scroll{% if section_heading == blank %} without-heading{% endif %} grid items-center">
+      {{- section_heading -}}
+    </div>
+    <yg-parametercomparison class="yg-parametercomparison ">
+      <div id="section-shopify-{{ section.id }}">
+        <div
+          class="
+            yg-box-title {{section.settings.stat_size}} {{section.settings.title_bottom_padding}}
+            {{section.settings.title_top_padding}}
+          "
+          style="
+            --yg-title-color:{{section.settings.yg_title_color }};
+            --yg-title-layout:{{section.settings.yg_title_layout }};
+          "
+        >
+          {{ section.settings.yg_box_title }}
+        </div>
+        <div class="yg-parameter-comparison" style="--yg-border-radius:{{section.settings.yg_border_radius}}px;">
+          <div class="hide-pc yg-para-btn">
+            <a
+              class="button--secondary button whitespace-nowrap yg-color"
+              type="button"
+              disabled="disabled"
+            >
+              <span class="btn-fill" data-fill></span>
+              <span class="btn-text"> Main comparison </span>
+            </a>
+            <div class="yg-change-box">
+              <a class=" button button--secondary icon-with-text">
+                <span class="btn-text">
+                  Choose Ebike
+                  {%- render 'icon', icon: 'chevron-down', size: 'xs' -%}
+                </span>
+              </a>
+              <div class="yg-drawer hide-pc">
+                {%- for block in section.blocks -%}
+                  {%- if block.type == 'product_parameter' and forloop.index != 2 -%}
+                    <span
+                      class="yg-change {% if forloop.index == 3 %} active {% endif %} "
+                      data-index="{{ forloop.index0 }}"
+                    >
+                      {{- block.settings.product.title | default: block.settings.product_title -}}
+                    </span>
+                  {%- endif -%}
+                {%- endfor -%}
+              </div>
+            </div>
+          </div>
+          {%- assign headings_block = section.blocks | where: 'type', 'parameter_title' | first -%}
+          {%- assign values_blocks = section.blocks | where: 'type', 'product_parameter' -%}
+          <div class="yg-parameter">
+            <div class="yg-parameter-header">
+              <div class="yg-parameter-titile">
+                <div class="yg-table-title h1">
+                  <p>{{ headings_block.setting.header_title }}</p>
+                </div>
+              </div>
+              {% for value_block in values_blocks %}
+                {% render 'yg-image-title', values_blocks: value_block %}
+              {% endfor %}
+            </div>
+            {%- liquid
+              assign all_list = headings_block.settings.header_title
+              assign li_size = all_list | split: '</li>'
+              assign size = li_size.size
+            -%}
+            {%- for li in li_size -%}
+              {% assign new_li = li | strip_html %}
+              {% if new_li != blank %}
+                <div class="yg-parameter-info collapsed">
+                  {%- assign index = forloop.index0 -%}
+                  {% if new_li != blank %}
+                    <div class="yg-parameter-titile">
+                      <div class="yg-table-title ">{{ new_li }}</div>
+                    </div>
+                    {% for parameter in values_blocks %}
+                      {%- assign parameter_list = parameter.settings.header_title_value -%}
+                      {% assign parameter_li = parameter_list | split: '</li>' %}
+                      <div class="yg-parameter-values">
+                        {%- assign huanhang = parameter_li[index] | split: ',' -%}
+                        {% if huanhang != blank %}
+                          <div class="yg-parameter-value yg-product-parameter ">
+                            {%- if forloop.index == 1 -%}
+                              <div class="yg-table-title  hide-pc">{{ new_li }}</div>
+                            {%- endif -%}
+                            {%- for listi in huanhang -%}
+                              <span>{{ listi | strip_html }}</span>
+                            {%- endfor -%}
+                          </div>
+                        {% else %}
+                          <div class="yg-parameter-value yg-product-parameter yg-no-text ">-</div>
+                        {% endif %}
+                      </div>
+                    {% endfor %}
+                  {% endif %}
+                </div>
+              {% endif %}
+            {%- endfor -%}
+            {%- if size > 4 -%}
+              <div class="yg-parameter-button">
+                <div class="toggle-btn collapsed">
+                  Collapse
+                  {%- render 'icon', icon: 'chevron-down', size: 'xs' -%}
+                </div>
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </yg-parametercomparison>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    class ParameterComparison extends HTMLElement {
+      constructor() {
+        super();
+        this.index = 1;
+        this.handleResize = this.checkWidth.bind(this);
+        this.isDesktop = null;
+      }
+      connectedCallback() {
+        this.fold();
+        const $values = this.querySelectorAll('.yg-parameter-info');
+        const $header = this.querySelectorAll('.yg-parameter-header');
+        const $drawer = this.querySelector('.yg-change-box .yg-drawer');
+        const $drawerbox = this.querySelector('.yg-change-box');
+        const currentIsDesktop = window.innerWidth < 768;
+        $drawerbox.addEventListener('click', function () {
+          if ($drawer.classList.contains('active')) {
+            $drawer.classList.remove('active');
+          } else {
+            $drawer.classList.add('active');
+          }
+        });
+        if (currentIsDesktop) {
+          this.enable();
+        }
+        window.addEventListener('resize', this.handleResize);
+      }
+      fold() {
+        const $para = this.querySelectorAll('.yg-parameter-info');
+        const $toggleButton = this.querySelector('.yg-parameter-button .toggle-btn');
+
+        $toggleButton.addEventListener('click', () => {
+          $para.forEach((el) => {
+            const parameterValues = this.querySelectorAll('.yg-parameter-value');
+            if (el.classList.contains('collapsed')) {
+              el.classList.remove('collapsed');
+            } else {
+              el.classList.add('collapsed');
+            }
+          });
+          if ($toggleButton.classList.contains('collapsed')) {
+            $toggleButton.classList.remove('collapsed');
+          } else {
+            $toggleButton.classList.add('collapsed');
+          }
+        });
+      }
+      checkWidth() {
+        const $values = this.querySelectorAll('.yg-parameter-info');
+        const $header = this.querySelectorAll('.yg-parameter-header');
+
+        const currentIsDesktop = window.innerWidth < 768;
+        if (this.isDesktop === currentIsDesktop) return;
+        this.isDesktop = currentIsDesktop;
+        if (currentIsDesktop) {
+          this.enable();
+        } else {
+          this.showAll($values);
+          this.showAll($header);
+        }
+      }
+      showAll(array) {
+        array.forEach((value) => {
+          value.querySelectorAll('.yg-parameter-values').forEach((el, i) => {
+            el.style.display = 'block';
+          });
+        });
+      }
+      enable() {
+        const currentIsDesktop = window.innerWidth < 768;
+        const $values = this.querySelectorAll('.yg-parameter-info');
+        const $header = this.querySelectorAll('.yg-parameter-header');
+        const $drawers = this.querySelectorAll('.yg-drawer .yg-change');
+        const $drawer = this.querySelector('.yg-change-box .yg-drawer');
+        const $drawerbox = this.querySelector('.yg-change-box');
+        const $this = this;
+
+        this.showValue($values, this.index);
+        this.showValue($header, this.index);
+        $drawers.forEach((el) => {
+          el.addEventListener('click', function (event) {
+            $this.index = Number(el.dataset.index) - 1;
+            $drawers.forEach((item) => {
+              item.classList.remove('active');
+            });
+            el.classList.add('active');
+            $this.showValue($header, $this.index);
+            $this.showValue($values, $this.index);
+          });
+        });
+      }
+      showValue(array, index) {
+        array.forEach((value) => {
+          value.querySelectorAll('.yg-parameter-values').forEach((el, i) => {
+            if (i != 0) {
+              el.style.display = 'none';
+            }
+          });
+        });
+
+        array.forEach((value) => {
+          value.querySelectorAll('.yg-parameter-values').forEach((el, i) => {
+            if (index == i) {
+              el.style.display = 'block';
+            }
+          });
+        });
+      }
+    }
+    if (!window.customElements.get('yg-parametercomparison')) {
+      window.customElements.define('yg-parametercomparison', ParameterComparison);
+    }
+  });
+</script>
+{% schema %}
+{
+  "name": "YG Parameter Comparison",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__heading.content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "Multimedia collage"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "title-sm",
+          "label": "t:sections.global.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "title-md",
+          "label": "t:sections.global.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "title-lg tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__3.label"
+        },
+        {
+          "value": "title-xl tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__4.label"
+        }
+      ],
+      "default": "title-md",
+      "label": "t:sections.global.settings.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.global.settings.heading_alignment.label",
+      "options": [
+        {
+          "value": "text-left md:items-end md:flex-row",
+          "label": "t:sections.global.settings.heading_alignment.options__1.label"
+        },
+        {
+          "value": "text-center md:items-center",
+          "label": "t:sections.global.settings.heading_alignment.options__2.label"
+        },
+        {
+          "value": "text-right md:items-end md:flex-row-reverse",
+          "label": "t:sections.global.settings.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "text-left md:items-end md:flex-row"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.global.settings.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.global.settings.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.global.settings.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.global.settings.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.global.settings.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.global.settings.heading_tag.options__6.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.global.settings.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.global.settings.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.global.settings.heading_tag.options__9.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.global.settings.heading_tag.label",
+      "info": "t:sections.global.settings.heading_tag.info"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.global.settings.subheading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.global.settings.description.label",
+      "default": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.global.settings.button_label.label",
+      "info": "t:sections.global.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "button_icon",
+      "label": "t:sections.global.settings.button_icon.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__highlight.content",
+      "info": "t:sections.global.settings.header__highlight.info"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_text",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.global.settings.highlighted_text.options__1.label"
+        },
+        {
+          "value": "text",
+          "label": "t:sections.global.settings.highlighted_text.options__2.label"
+        },
+        {
+          "value": "full_text",
+          "label": "t:sections.global.settings.highlighted_text.options__3.label"
+        },
+        {
+          "value": "half_text",
+          "label": "t:sections.global.settings.highlighted_text.options__4.label"
+        },
+        {
+          "value": "underline",
+          "label": "t:sections.global.settings.highlighted_text.options__5.label"
+        },
+        {
+          "value": "stencil",
+          "label": "t:sections.global.settings.highlighted_text.options__6.label"
+        },
+        {
+          "value": "scribble",
+          "label": "t:sections.global.settings.highlighted_text.options__7.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.global.settings.highlighted_text.label"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_scribble",
+      "options": [
+        {
+          "value": "circle",
+          "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
+        },
+        {
+          "value": "basic-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
+        },
+        {
+          "value": "sketch-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
+        },
+        {
+          "value": "squiggle-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
+        },
+        {
+          "value": "squiggle-underline-2",
+          "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
+        }
+      ],
+      "default": "circle",
+      "label": "t:sections.global.settings.highlighted_scribble.label",
+      "info": "t:sections.global.settings.highlighted_scribble.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__colors.content",
+      "info": "t:sections.global.settings.header__colors.info"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.global.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.global.settings.color_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "t:sections.global.settings.gradient_background.label"
+    },
+    {
+      "type": "color",
+      "id": "color_highlight",
+      "label": "t:sections.global.settings.color_highlight.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_highlight",
+      "label": "t:sections.global.settings.gradient_highlight.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_text",
+      "label": "t:sections.global.settings.color_button_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_background",
+      "label": "t:sections.global.settings.color_button_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "color_button_gradient",
+      "label": "t:sections.global.settings.color_button_gradient.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__section.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_top.label",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_bottom.label",
+      "default": 72
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.global.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.global.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "t:sections.global.settings.rounded.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "parameter_title",
+      "name": "parameter title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Parameter Title"
+        },
+        {
+          "type": "richtext",
+          "id": "header_title",
+          "label": "Heading"
+        }
+      ]
+    },
+    {
+      "type": "product_parameter",
+      "name": "product parameter",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "header",
+          "content": "Select product or image"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_img",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "product_title",
+          "label": "Product title"
+        },
+        {
+          "type": "url",
+          "id": "prouduct_url",
+          "label": "Product link"
+        },
+        {
+          "type": "text",
+          "id": "button_title",
+          "label": "Button title",
+          "default": "Shop Now"
+        },
+        {
+          "type": "header",
+          "content": "Product parameter Title"
+        },
+        {
+          "type": "richtext",
+          "id": "header_title_value",
+          "label": "Value"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "YG Parameter Comparison"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.overlay"]
+  }
+}
+{% endschema %}

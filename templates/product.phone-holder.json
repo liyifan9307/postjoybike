@@ -1,0 +1,401 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb_fNxmEp": {
+          "type": "breadcrumb",
+          "settings": {
+            "show_collections_link": true,
+            "enable_product_top": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "show_price": false,
+            "show_rating": false
+          }
+        },
+        "price_Hxp9Jt": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false,
+            "show_rating": true,
+            "show_payment_terms": false,
+            "color_save": "#dc181c"
+          }
+        },
+        "yg_countdown_4cTMTX": {
+          "type": "yg_countdown",
+          "settings": {
+            "countdown": "{{ product.metafields.custom.product_countdown.value }}",
+            "label": "Classic $300 off Ends In:",
+            "code": "",
+            "button_label": "Button label",
+            "color_text": "#ffffff",
+            "color_background": "#fff1f2",
+            "gradient_background": "linear-gradient(90deg, rgba(219, 188, 34, 1), rgba(221, 39, 57, 1) 100%)"
+          }
+        },
+        "yg_icon_list_HW6B9x": {
+          "type": "yg_icon_list",
+          "settings": {
+            "icon_list": "custom.product_info",
+            "variant_name": "Size",
+            "color_heading": "#000000",
+            "color_text": "#807e7b",
+            "color_background": "#ffffff",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "yg_bundle_c8tLrK": {
+          "type": "yg_bundle",
+          "disabled": true,
+          "settings": {
+            "show_block": true,
+            "title_1": "",
+            "product_list_1": [],
+            "enable_required_1": true,
+            "title_2": "Optional Accessories:",
+            "product_list_2": [],
+            "enable_required_2": false,
+            "enable_promotion": "2",
+            "promotion_text": "Add & Save %",
+            "limit_number": 3,
+            "more_button_text": "Expand",
+            "more_less_text": "Expanded",
+            "title_color": "#808080",
+            "bg_color": "#ffffff"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false,
+            "color_background": "#ff9900"
+          }
+        },
+        "sticky_buy_button_fytrjk": {
+          "type": "sticky_buy_button",
+          "settings": {}
+        },
+        "yg_terms_aWWei3": {
+          "type": "yg_terms",
+          "disabled": true,
+          "settings": {
+            "content": "100% Protection Against Shipping Mishaps",
+            "link": ""
+          }
+        },
+        "yg_payment_4f4krK": {
+          "type": "yg_payment",
+          "settings": {
+            "title1": "Pay with Ease:",
+            "icons": "paypal,maestro,shopify_pay,google_pay,apple_pay,discover,klarna",
+            "title2": "Trusted Delivery:",
+            "icon1": "shopify://shop_images/20260415153628_6_2.png",
+            "icon2": "shopify://shop_images/20260415153628_4_2.png",
+            "icon3": "shopify://shop_images/20260415153628_5_2.png"
+          }
+        },
+        "collapsible_tab_qDE9RU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "style": "with-border",
+            "icon": "truck",
+            "heading": "Fast & Free Shipping",
+            "content": "<p>Shipped from the US warehouse, estimated delivery within 3-8 days<br/></p>",
+            "page": "",
+            "liquid": "",
+            "opened": false
+          }
+        },
+        "collapsible_tab_z7V9bm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "style": "with-border",
+            "icon": "shield",
+            "heading": "Warranty",
+            "content": "<p>All Postjoy ebikes are covered under our manufacturer's 1-year all-inclusive warranty for the original owner against all manufacturing defects (All free Accessories are not covered by warranty service).<br/><br/></p>",
+            "page": "",
+            "liquid": "",
+            "opened": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": ""
+          }
+        },
+        "yg_service_RHGR6c": {
+          "type": "yg_service",
+          "settings": {
+            "icon1": "shopify://shop_images/Warranty_e6ed3c86-a251-4229-a6ef-48d61c01bacd.png",
+            "title1": "1-Year Warranty",
+            "icon2": "shopify://shop_images/free.png",
+            "title2": "Free Shipping",
+            "icon3": "shopify://shop_images/return_fbb2e6d1-79ed-41b2-a039-eb00ff9c2c73.png",
+            "title3": "14-Days Return",
+            "title4": "",
+            "title5": "",
+            "title6": ""
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_fNxmEp",
+        "title",
+        "price_Hxp9Jt",
+        "yg_countdown_4cTMTX",
+        "yg_icon_list_HW6B9x",
+        "variant_picker",
+        "inventory",
+        "yg_bundle_c8tLrK",
+        "buy_buttons",
+        "sticky_buy_button_fytrjk",
+        "yg_terms_aWWei3",
+        "yg_payment_4f4krK",
+        "collapsible_tab_qDE9RU",
+        "collapsible_tab_z7V9bm",
+        "description",
+        "share",
+        "yg_service_RHGR6c"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_style2": true,
+        "media_size": 60,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "below",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "color_text": "",
+        "color_background": "",
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "rocket",
+            "heading": "Shipping Information",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#b45309",
+            "color_background": "#fffbeb",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "settings": {
+            "icon": "headphone",
+            "heading": "Customer Support",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#0369a1",
+            "color_background": "#f0f9ff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-3": {
+          "type": "content",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "FAQ’s",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#be123c",
+            "color_background": "#fff1f2",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#4d7c0f",
+            "color_background": "#f7fee7",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content-1",
+        "content-2",
+        "content-3",
+        "content-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Need help?",
+        "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You may also like",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "custom_liquid_JaLkd8": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "liquid": "<style>\n  .pj-wrap *{box-sizing:border-box;margin:0;padding:0}\n  .pj-wrap{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Inter,Roboto,sans-serif;color:#0F172A;line-height:1.6;max-width:1200px;margin:0 auto}\n  .pj-hero{background:linear-gradient(135deg,#0F172A 0%,#1E293B 100%);color:#fff;padding:60px 30px;text-align:center;border-radius:12px;margin-bottom:40px;position:relative;overflow:hidden}\n  .pj-hero::before{content:\"\";position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,#FF6B35 0%,transparent 70%);opacity:.3}\n  .pj-badge{display:inline-block;background:#FF6B35;color:#fff !important;padding:6px 16px;border-radius:20px;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:20px;position:relative;z-index:1}\n  .pj-hero h1{font-size:42px;font-weight:800;margin-bottom:16px;position:relative;z-index:1;letter-spacing:-.5px;color:#FFD60A !important;text-shadow:0 2px 8px rgba(0,0,0,.35)}\n  .pj-hero p{font-size:18px;color:#F1F5F9 !important;opacity:.95;max-width:720px;margin:0 auto;position:relative;z-index:1}\n  .pj-section{padding:50px 30px;border-bottom:1px solid #E2E8F0}\n  .pj-section h2{font-size:32px;font-weight:800;margin-bottom:24px;color:#0F172A !important;letter-spacing:-.5px}\n  .pj-section h2 span{color:#FF6B35 !important}\n  .pj-section p{font-size:16px;color:#475569;margin-bottom:16px}\n  .pj-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:30px}\n  .pj-feature{background:#F8FAFC;padding:28px 22px;border-radius:12px;border-left:4px solid #FF6B35;transition:transform .2s}\n  .pj-feature:hover{transform:translateY(-4px)}\n  .pj-feature .pj-icon{width:48px;height:48px;background:#FF6B35;color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;margin-bottom:14px}\n  .pj-feature h3{font-size:17px;font-weight:700;margin-bottom:8px;color:#0F172A}\n  .pj-feature p{font-size:14px;color:#64748B;margin:0}\n  .pj-highlight-box{background:linear-gradient(135deg,#FFF7ED 0%,#FED7AA 100%);padding:36px;border-radius:12px;margin-top:24px;border:1px solid #FFB800}\n  .pj-highlight-box h2{margin-bottom:14px}\n  .pj-highlight-list{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:20px}\n  .pj-highlight-list li{padding-left:30px;position:relative;font-size:15px;color:#0F172A;font-weight:500;padding-top:4px;padding-bottom:4px}\n  .pj-highlight-list li::before{content:\"✓\";position:absolute;left:0;top:2px;width:22px;height:22px;background:#FF6B35;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800}\n  .pj-spec-table{width:100%;border-collapse:collapse;margin-top:20px;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(15,23,42,.08)}\n  .pj-spec-table th,.pj-spec-table td{padding:16px 20px;text-align:left;border-bottom:1px solid #E2E8F0;font-size:15px}\n  .pj-spec-table th{background:#0F172A;color:#fff !important;font-weight:700;width:40%}\n  .pj-spec-table tr:last-child td{border-bottom:none}\n  .pj-spec-table tr:nth-child(even) td{background:#F8FAFC}\n  .pj-faq-item{background:#F8FAFC;border-radius:10px;padding:22px 26px;margin-bottom:14px;border-left:4px solid #0F172A;transition:border-color .2s}\n  .pj-faq-item:hover{border-left-color:#FF6B35}\n  .pj-faq-item h3{font-size:17px;font-weight:700;margin-bottom:10px;color:#0F172A;display:flex;align-items:flex-start;gap:10px}\n  .pj-faq-item h3::before{content:\"Q\";background:#FF6B35;color:#fff;width:26px;height:26px;border-radius:6px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}\n  .pj-faq-item p{font-size:15px;color:#475569;margin:0;padding-left:36px}\n  .pj-cta{background:#0F172A;color:#fff;text-align:center;padding:50px 30px;border-radius:12px;margin-top:40px}\n  .pj-cta h2{color:#FFD60A !important;margin-bottom:14px;text-shadow:0 2px 8px rgba(0,0,0,.35)}\n  .pj-cta p{color:#CBD5E1 !important;font-size:17px;margin-bottom:0}\n  @media(max-width:640px){.pj-hero h1{font-size:30px}.pj-hero p{font-size:15px}.pj-section{padding:36px 20px}.pj-section h2{font-size:24px}.pj-spec-table th,.pj-spec-table td{padding:12px 14px;font-size:14px}}\n</style>\n\n<div class=\"pj-wrap\">\n\n  <div class=\"pj-hero\">\n    <span class=\"pj-badge\">Ebike Accessories</span>\n    <h1>PostJoy Electric Bike Phone Holder</h1>\n    <p>Keep your phone secure and easy to view while riding. The practical bike phone stand built for navigation, fitness tracking, and daily commuting.</p>\n  </div>\n\n  <div class=\"pj-section\">\n    <h2>Navigate with <span>Confidence</span></h2>\n    <p>Make navigation easier with the PostJoy Electric Bike Phone Holder. Designed for eBike riders, cyclists, and commuters, this phone holder keeps your smartphone within view so you can check directions, ride data, or calls more conveniently while stopped or riding responsibly.</p>\n    <p>Its practical design makes it a useful accessory for daily commuting, city riding, and weekend adventures. Install it on your handlebar and enjoy a more organized cockpit setup.</p>\n  </div>\n\n  <div class=\"pj-section\">\n    <h2>Key <span>Features</span></h2>\n    <div class=\"pj-features\">\n      <div class=\"pj-feature\"><div class=\"pj-icon\">📱</div><h3>Easy Phone Viewing</h3><p>Holds your phone for clear visibility while riding.</p></div>\n      <div class=\"pj-feature\"><div class=\"pj-icon\">🗺️</div><h3>Perfect for GPS</h3><p>Great for navigation apps and ride tracking.</p></div>\n      <div class=\"pj-feature\"><div class=\"pj-icon\">🚴</div><h3>Commute-Friendly</h3><p>Useful for commuting, city rides, and outdoor cycling.</p></div>\n      <div class=\"pj-feature\"><div class=\"pj-icon\">⚙️</div><h3>Organized Cockpit</h3><p>Keeps your handlebar setup clean and tidy.</p></div>\n      <div class=\"pj-feature\"><div class=\"pj-icon\">🔧</div><h3>Wide Compatibility</h3><p>Practical accessory for electric bikes and bicycles.</p></div>\n    </div>\n  </div>\n\n  <div class=\"pj-section\">\n    <div class=\"pj-highlight-box\">\n      <h2>Why You'll <span>Love It</span></h2>\n      <p>The PostJoy Electric Bike Phone Holder makes every ride more convenient by keeping your phone accessible and visible. It's especially useful for riders who rely on map navigation or cycling apps.</p>\n      <ul class=\"pj-highlight-list\">\n        <li>Ideal for GPS navigation</li>\n        <li>Convenient phone viewing angle</li>\n        <li>Suitable for most eBikes and bicycles</li>\n        <li>Practical handlebar accessory</li>\n        <li>Great for daily riders and commuters</li>\n      </ul>\n    </div>\n  </div>\n\n  <div class=\"pj-section\">\n    <h2>Product <span>Specifications</span></h2>\n    <table class=\"pj-spec-table\">\n      <tr><th>Product Name</th><td>PostJoy Electric Bike Phone Holder</td></tr>\n      <tr><th>Category</th><td>Ebike Accessories</td></tr>\n      <tr><th>Color</th><td>Black</td></tr>\n      <tr><th>Compatibility</th><td>Most eBikes and bicycles</td></tr>\n      <tr><th>Use Case</th><td>Navigation, commuting, ride tracking</td></tr>\n    </table>\n  </div>\n\n  <div class=\"pj-section\">\n    <h2>Frequently Asked <span>Questions</span></h2>\n    <div class=\"pj-faq-item\"><h3>Can I use this phone holder for navigation?</h3><p>Yes. It is ideal for keeping your phone visible while using maps or cycling apps.</p></div>\n    <div class=\"pj-faq-item\"><h3>Is it compatible with PostJoy eBikes?</h3><p>It is designed as a general bike phone holder and should fit most PostJoy eBike handlebars. Please check handlebar space before installation.</p></div>\n    <div class=\"pj-faq-item\"><h3>Can it be used on a regular bicycle?</h3><p>Yes. It can be used on most bicycles and electric bikes.</p></div>\n  </div>\n\n  <div class=\"pj-cta\">\n    <h2>Stay Connected. Ride Smarter.</h2>\n    <p>Mount, ride, and navigate — your phone, always within view.</p>\n  </div>\n\n</div>",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "help-drawer",
+    "product-recommendations",
+    "custom_liquid_JaLkd8",
+    "recently-viewed"
+  ]
+}

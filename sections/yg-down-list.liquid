@@ -1,0 +1,646 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    {%- render 'section-variables', section: section -%}
+  }
+  #shopify-section-{{ section.id }} .yg-grid {
+  line-height: 1.4;
+  display: grid;
+  grid-template-columns: repeat(var(--yg-grid), 1fr);
+  gap: 20px;
+}
+
+#shopify-section-{{ section.id }} .yg-grid .yg-down-card {
+  position: relative;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+#shopify-section-{{ section.id }} .yg-grid .yg-t-and-sku {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+}
+
+#shopify-section-{{ section.id }} .yg-grid .yg-btn-list {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+}
+
+#shopify-section-{{ section.id }} .yg-grid .yg-btn-list .yg-btn {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 4px;
+  background: #f7f7f7;
+  gap: 4px;
+}
+
+#shopify-section-{{ section.id }} .yg-t-and-sku .yg-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#shopify-section-{{ section.id }} .yg-t-and-sku .yg-sku {
+  font-size: 14px;
+  color: #807e7b;
+}
+
+#shopify-section-{{ section.id }} .yg-btn-list {
+  display: flex;
+  cursor: pointer;
+}
+
+#shopify-section-{{ section.id }} .yg-btn-list button {
+  display: none;
+}
+
+#shopify-section-{{ section.id }} .collage {
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1200px) {
+  #shopify-section-{{ section.id }} .yg-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #shopify-section-{{ section.id }} .yg-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #shopify-section-{{ section.id }} .yg-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+</style>
+
+{%- capture section_heading -%}
+  {%- render 'section-heading', section: section -%}
+{%- endcapture -%}
+<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
+  <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %}  relative">
+    <div class="collage on-scroll{% if section_heading == blank %} without-heading{% endif %} grid items-center">
+      {{- section_heading -}}
+    </div>
+    <div class="yg-grid" style="--yg-grid: {% if section.blocks.size > 4 %} 4 {% else %} {{ section.blocks.size }} {% endif %};">
+      {%- for block in section.blocks -%}
+        {%- assign yg_product = block.settings.product -%}
+        <div class="yg-down-card">
+          <div class="yg-t-and-sku">
+            <div class="yg-title">
+              {{ yg_product.metafields.custom.product_name.value | default: block.settings.title }}
+            </div>
+            <div class="yg-sku">{{ yg_product.first_available_variant.sku | default: block.settings.sku }}</div>
+          </div>
+          {%- liquid
+            assign image = yg_product.featured_image | default: block.settings.image
+          -%}
+          {%- if image != blank -%}
+            <div class="yg-image">
+              {{ image | image_url: width: image.width | image_tag: loading: 'lazy' }}
+            </div>
+          {%- endif -%}
+          <yg-btn-list class="yg-btn-list">
+            {%- for i in (1..3) -%}
+              {%- liquid
+                assign btn_title = 'btn_text_' | append: i
+                assign btn_url = 'btn_url_' | append: i
+                assign btn_icon = 'btn_icon_' | append: i
+                assign video_file = 'btn_video_' | append: i
+                assign title = blank
+                assign url = blank
+                assign icon = blank
+                assign video = blank
+                if block.settings[btn_title] != blank
+                  assign title = block.settings[btn_title]
+                endif
+
+                if block.settings[btn_url] != blank
+                  assign url = block.settings[btn_url]
+                endif
+
+                if block.settings[btn_icon] != blank
+                  assign icon = block.settings[btn_icon]
+                endif
+
+                if block.settings[video_file] != blank
+                  assign video = block.settings[video_file]
+                endif
+              -%}
+              {%- if title != blank -%}
+                <a
+                  class="yg-btn"
+                  {%- if url != blank -%}
+                    {%- unless url.type == 'youtube' or url.type == 'youtube' -%}
+                      href="{{ url }}"
+                    {%- endunless -%}
+                  {%- endif -%}
+                >
+                  {%- if icon != blank -%}
+                    {{ icon }}
+                  {%- endif -%}
+                  <p>{{ title }}</p>
+                  {%- if url != blank or video != blank -%}
+                    {%- if url.type == 'youtube' or url.type == 'youtube' or video != blank -%}
+                      <yg-open-popup class="yg-reviews-slide-button">
+                        <button type="button">
+                          <span class="sr-only">{{ 'general.accessibility.play_video' | t }}</span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="64"
+                            height="64"
+                            viewBox="0 0 64 64"
+                            fill="none"
+                          >
+                            <foreignObject x="4" y="4" width="56" height="56">
+                              <div xmlns="http://www.w3.org/1999/xhtml"
+                                   style="backdrop-filter:blur(2px);clip-path:url(#bgblur_0_23_1167_clip_path);height:100%;width:100%"></div>
+                            </foreignObject>
+                            <path data-figma-bg-blur-radius="4"
+                                  d="M32 56C18.7452 56 8 45.2547 8 32C8 18.7452 18.7452 8 32 8C45.2547 8 56 18.7452 56 32C56 45.2547 45.2547 56 32 56Z"
+                                  fill="#282731" fill-opacity="0.4"/>
+                            <path
+                              d="M27.0565 23C27.2652 23 27.4691 23.0624 27.6426 23.1793L40.5294 31.8616C41.0149 32.1886 41.1462 32.8516 40.8223 33.3422C40.745 33.4594 40.6454 33.56 40.5294 33.6383L27.6426 42.3205C27.1572 42.6477 26.5011 42.5151 26.1775 42.0244C26.0618 41.8491 26 41.643 26 41.4321V24.0677C26 23.478 26.4731 23 27.0565 23Z"
+                              fill="white"/>
+                            <defs>
+                              <clipPath id="bgblur_0_23_1167_clip_path" transform="translate(-4 -4)">
+                                <path
+                                  d="M32 56C18.7452 56 8 45.2547 8 32C8 18.7452 18.7452 8 32 8C45.2547 8 56 18.7452 56 32C56 45.2547 45.2547 56 32 56Z"/>
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                        <template>
+                          {%- if video != blank -%}
+                            {{-
+                              video
+                              | video_tag:
+                                playsinline: true,
+                                preload: 'metadata',
+                                autoplay: true,
+                                muted: true,
+                                loop: true,
+                                controls: true,
+                                image_size: '100%'
+                            -}}
+                          {% else %}
+                            {%- if url.type == 'youtube' -%}
+                              <iframe
+                                src="https://www.youtube.com/embed/{{ url.id }}?playsinline=1&autoplay=1&controls=0&mute=0&loop=1&playlist={{ url.id }}&enablejsapi=1&rel=0&modestbranding=1&origin={{ 'https://' | append: request.host | url_encode }}"
+                                allow="autoplay; encrypted-media"
+                                allowfullscreen="allowfullscreen"
+                              ></iframe>
+                            {%- elsif url.type == 'vimeo' -%}
+                              <iframe
+                                src="https://player.vimeo.com/video/{{ url.id }}?autopause=1&}background=1&autoplay=1&loop=1&muted=0&transparent=0&responsive=1&portrait=0&title=0&byline=0&color={{ settings.text_color | remove_first: '#' }}"
+                                allow="autoplay; encrypted-media;"
+                                allowfullscreen="allowfullscreen"
+                              ></iframe>
+                            {%- endif -%}
+                          {%- endif -%}
+                        </template>
+                      </yg-open-popup>
+                    {%- endif -%}
+                  {%- endif -%}
+                </a>
+              {%- endif -%}
+            {%- endfor -%}
+          </yg-btn-list>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    class YGBtnList extends HTMLElement {
+      constructor() {
+        super();
+      }
+      connectedCallback() {
+        this.Btn();
+      }
+      Btn() {
+        const $btns = this.querySelectorAll('.yg-btn');
+        $btns.forEach((el) => {
+          el.addEventListener('click', function () {
+            const btn = el.querySelector(".yg-reviews-slide-button button")
+            if (btn) {
+              btn.click();
+            }
+          });
+        });
+      }
+    }
+    if (!window.customElements.get('yg-btn-list')) {
+      window.customElements.define('yg-btn-list', YGBtnList);
+    }
+  });
+</script>
+{% schema %}
+{
+  "name": "YG down list",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__heading.content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "Multimedia collage"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "title-sm",
+          "label": "t:sections.global.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "title-md",
+          "label": "t:sections.global.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "title-lg tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__3.label"
+        },
+        {
+          "value": "title-xl tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__4.label"
+        }
+      ],
+      "default": "title-md",
+      "label": "t:sections.global.settings.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.global.settings.heading_alignment.label",
+      "options": [
+        {
+          "value": "text-left md:items-end md:flex-row",
+          "label": "t:sections.global.settings.heading_alignment.options__1.label"
+        },
+        {
+          "value": "text-center md:items-center",
+          "label": "t:sections.global.settings.heading_alignment.options__2.label"
+        },
+        {
+          "value": "text-right md:items-end md:flex-row-reverse",
+          "label": "t:sections.global.settings.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "text-left md:items-end md:flex-row"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.global.settings.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.global.settings.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.global.settings.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.global.settings.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.global.settings.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.global.settings.heading_tag.options__6.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.global.settings.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.global.settings.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.global.settings.heading_tag.options__9.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.global.settings.heading_tag.label",
+      "info": "t:sections.global.settings.heading_tag.info"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.global.settings.subheading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.global.settings.description.label",
+      "default": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.global.settings.button_label.label",
+      "info": "t:sections.global.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "button_icon",
+      "label": "t:sections.global.settings.button_icon.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__highlight.content",
+      "info": "t:sections.global.settings.header__highlight.info"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_text",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.global.settings.highlighted_text.options__1.label"
+        },
+        {
+          "value": "text",
+          "label": "t:sections.global.settings.highlighted_text.options__2.label"
+        },
+        {
+          "value": "full_text",
+          "label": "t:sections.global.settings.highlighted_text.options__3.label"
+        },
+        {
+          "value": "half_text",
+          "label": "t:sections.global.settings.highlighted_text.options__4.label"
+        },
+        {
+          "value": "underline",
+          "label": "t:sections.global.settings.highlighted_text.options__5.label"
+        },
+        {
+          "value": "stencil",
+          "label": "t:sections.global.settings.highlighted_text.options__6.label"
+        },
+        {
+          "value": "scribble",
+          "label": "t:sections.global.settings.highlighted_text.options__7.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.global.settings.highlighted_text.label"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_scribble",
+      "options": [
+        {
+          "value": "circle",
+          "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
+        },
+        {
+          "value": "basic-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
+        },
+        {
+          "value": "sketch-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
+        },
+        {
+          "value": "squiggle-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
+        },
+        {
+          "value": "squiggle-underline-2",
+          "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
+        }
+      ],
+      "default": "circle",
+      "label": "t:sections.global.settings.highlighted_scribble.label",
+      "info": "t:sections.global.settings.highlighted_scribble.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__colors.content",
+      "info": "t:sections.global.settings.header__colors.info"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.global.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.global.settings.color_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "t:sections.global.settings.gradient_background.label"
+    },
+    {
+      "type": "color",
+      "id": "color_highlight",
+      "label": "t:sections.global.settings.color_highlight.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_highlight",
+      "label": "t:sections.global.settings.gradient_highlight.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_text",
+      "label": "t:sections.global.settings.color_button_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_background",
+      "label": "t:sections.global.settings.color_button_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "color_button_gradient",
+      "label": "t:sections.global.settings.color_button_gradient.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__section.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_top.label",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_bottom.label",
+      "default": 72
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.global.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.global.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "t:sections.global.settings.rounded.label"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "product",
+      "type": "product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "header",
+          "content": "Custom"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "sku",
+          "label": "Sku"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "btn_text_1",
+          "label": "Button text 1"
+        },
+        {
+          "type": "url",
+          "id": "btn_url_1",
+          "label": "Button url 1"
+        },
+        {
+          "type": "html",
+          "id": "btn_icon_1",
+          "label": "Custom SVG icon 1"
+        },
+        {
+          "type": "text",
+          "id": "btn_text_2",
+          "label": "Button text 2"
+        },{
+          "type": "html",
+          "id": "btn_icon_2",
+          "label": "Custom SVG icon 2"
+        },
+        {
+          "type": "video",
+          "id": "btn_video_2",
+          "label": "Video 1"
+        },
+        {
+          "type": "video_url",
+          "id": "btn_url_2",
+          "accept": ["youtube", "vimeo"],
+          "label": "Button url 2"
+        },
+        {
+          "type": "text",
+          "id": "btn_text_3",
+          "label": "Button text 3"
+        },{
+          "type": "html",
+          "id": "btn_icon_3",
+          "label": "Custom SVG icon 3"
+        },
+        {
+          "type": "video",
+          "id": "btn_video_3",
+          "label": "Video 2"
+        },
+        {
+          "type": "video_url",
+          "id": "btn_url_3",
+          "accept": ["youtube", "vimeo"],
+          "label": "Button url 3"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "YG down list"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.overlay"]
+  }
+}
+{% endschema %}

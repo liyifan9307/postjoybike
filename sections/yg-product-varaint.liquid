@@ -1,0 +1,741 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    {%- render 'section-variables', section: section -%}
+  }
+  #shopify-section-{{ section.id }} .yg-bg-image {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#shopify-section-{{ section.id }} .yg-bg-image img{
+  width: 100%;
+}
+
+#shopify-section-{{ section.id }} .yg-product-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 40px;
+}
+
+#shopify-section-{{ section.id }} .yg-product-left {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  min-width: 50%;
+}
+
+#shopify-section-{{ section.id }} .yg-product-left img {
+  max-width: 100%;
+  height: auto;
+}
+
+#shopify-section-{{ section.id }} .yg-product-right {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  min-width: calc(50% - 40px);
+  text-align: center;
+  gap: 32px;
+}
+
+#shopify-section-{{ section.id }} .yg-product-right h2 {
+  margin-bottom: 12px;
+  color: #000;
+}
+
+#shopify-section-{{ section.id }} .yg-product-right .yg-content .yg-cont p {
+  font-size: 20px;
+  color: #575553;
+}
+
+#shopify-section-{{ section.id }} .yg-product-right h2 strong {
+  color: #f90;
+}
+
+#shopify-section-{{ section.id }} .yg-color-variants {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+#shopify-section-{{ section.id }} .yg-color-variants div:hover {
+  opacity: .8;
+}
+
+#shopify-section-{{ section.id }} .yg-product-right button {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+}
+
+#shopify-section-{{ section.id }} .yg-product-right button:hover {
+  background-color: #0056b3;
+}
+
+#shopify-section-{{ section.id }} .yg-product-left .yg-variant-image {
+  position: absolute;
+  transition: all .3s ease-in-out;
+  opacity: 0;
+}
+
+#shopify-section-{{ section.id }} .yg-product-left .yg-variant-image.active {
+  position: relative;
+  opacity: 1;
+}
+
+#shopify-section-{{ section.id }} .yg-variant-bg {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border-radius: 50%;
+}
+
+#shopify-section-{{ section.id }} .yg-variant-color {
+  padding: 8px;
+  cursor: pointer;
+  transition: border-color .3s ease-in-out;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 24px;
+  gap: 2px;
+}
+
+#shopify-section-{{ section.id }} .yg-variant-color span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  max-width: 0;
+  transition: all .3s ease-in-out;
+  opacity: 0;
+}
+
+#shopify-section-{{ section.id }} .yg-variant-color.active {
+  border-color: #000;
+  scroll-snap-align: center;
+}
+
+#shopify-section-{{ section.id }} .yg-variant-color.active span {
+  max-width: 1000px;
+  transition: all .3s ease-in;
+  opacity: 1;
+}
+
+#shopify-section-{{ section.id }} .yg-color-variants {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  /* 启用横向滚动时的自动对齐 */
+  -webkit-overflow-scrolling: touch;
+}
+
+#shopify-section-{{ section.id }} .yg-color-variants::-webkit-scrollbar {
+  display: none;
+}
+
+#shopify-section-{{ section.id }} .yg-variant-color {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ .yg-shopify-varaint.active {
+  position: fixed;
+  z-index: 6;
+  top: 92px;
+  left: 0;
+  width: 100%;
+}
+
+#shopify-section-{{ section.id }} .yg-product-varaint {
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  #shopify-section-{{ section.id }} .yg-product-container {
+    flex-direction: column;
+  }
+
+  #shopify-section-{{ section.id }} .yg-variant-color span {
+    max-width: 100%;
+    opacity: 1;
+  }
+}
+</style>
+
+{%- capture section_heading -%}
+  {%- render 'section-heading', section: section -%}
+{%- endcapture -%}
+<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
+  <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %}{% if section_heading == blank %} page-width--narrow{% endif %} relative">
+    {% comment %}
+      <div class="collage on-scroll{% if section_heading == blank %} without-heading{% endif %} grid items-center">
+        {{- section_heading -}}
+      </div>
+    {% endcomment %}
+    <yg-product-varaint class="yg-product-varaint">
+      {%- if section.settings.bg_image != blank -%}
+        <div class="yg-bg-image">
+          {{
+            section.settings.bg_image
+            | image_url: width: section.settings.bg_image.width
+            | image_tag: loading: 'lazy'
+          }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.product != blank -%}
+        <div class="yg-product-container">
+          <div class="yg-product-left">
+            {%- for variant in section.settings.product.variants -%}
+              {%- if forloop.first -%}
+                {{
+                  variant.featured_image
+                  | image_url: width: variant.featured_image.width
+                  | image_tag: loading: 'lazy', class: 'yg-variant-image active'
+                }}
+              {%- else -%}
+                {{
+                  variant.featured_image
+                  | image_url: width: variant.featured_image.width
+                  | image_tag: loading: 'lazy', class: 'yg-variant-image '
+                }}
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          <div class="yg-product-right">
+            <div class="yg-content">
+              <h2 class="{{ section.settings.title_size }}">
+                {{ section.settings.title | default: section.settings.product.title }}
+              </h2>
+              <div class="yg-cont">
+                {{
+                  section.settings.content
+                  | default: section.settings.product.metafields.custom.product_description.value
+                }}
+              </div>
+            </div>
+            <div class="yg-color-variants">
+              {%- for variant in section.settings.product.variants -%}
+                {%- assign value = variant.option1 %}
+                {%- liquid
+                  assign variant_color = value
+                  assign color_parts = variant_color | split: ' With'
+                  assign color = color_parts[0]
+                -%}
+                <div class="yg-variant-color {% if forloop.first %} active  {% endif %}">
+                  <div class="yg-variant-bg" style="background-color:{{ color | escape }};"></div>
+                  <span>{{ color | escape }}</span>
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </yg-product-varaint>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    class YGProductVaraint extends HTMLElement {
+      constructor() {
+        super();
+        this.lastScrollPosition = 0; // 上一次滚动的位置
+        this.isThrottled = false; // 滚动节流
+        this.Isindex = 0; // 当前索引
+      }
+
+      connectedCallback() {
+        this.entercolor();
+        const currentIsDesktop = window.innerWidth < 900; // 判断是否为小屏幕
+        if (currentIsDesktop) {
+          this.scrollcolor();
+          this.enTop();
+        }
+      }
+
+      show(array) {
+        array.forEach((el) => {
+          el.classList.remove('active'); // 移除所有元素的 "active" 类
+        });
+      }
+
+      enTop() {
+        // 监听滚动事件，当组件进入视野时，绑定 scrollcolor
+        window.addEventListener('scroll', this.scrollZU.bind(this));
+      }
+
+      scrollZU() {
+        const component = document.querySelector('.yg-shopify-varaint');
+        const scrollPosition = window.scrollY; // 获取当前的滚动位置
+        const componentTop = component.offsetTop; // 获取组件距离顶部的距离
+        const componentBottom = componentTop + component.offsetHeight; // 组件底部位置
+
+        if (scrollPosition + window.innerHeight > componentTop && scrollPosition < componentBottom) {
+          // 当组件滚入视窗时，激活组件并绑定 scrollcolor 事件
+          component.classList.add('active');
+          window.removeEventListener('scroll', this.scrollZU.bind(this)); // 移除 scrollZU 监听
+          window.addEventListener('scroll', this.scrollcolor.bind(this)); // 绑定 scrollcolor 事件
+        }
+      }
+
+      entercolor() {
+        const $this = this;
+        const colorSwatches = document.querySelectorAll('.yg-color-variants .yg-variant-color');
+        const images = document.querySelectorAll('.yg-variant-image');
+
+        colorSwatches.forEach((el, index) => {
+          el.addEventListener('mouseenter', function () {
+            $this.show(colorSwatches);
+            $this.show(images);
+            images[index].classList.add('active'); // 激活对应的图片
+            el.classList.add('active'); // 激活对应的颜色样本
+          });
+        });
+      }
+
+      scrollcolor() {
+        const colorSwatches = document.querySelectorAll('.yg-color-variants .yg-variant-color');
+        const images = document.querySelectorAll('.yg-variant-image');
+        const component = document.querySelector('.yg-shopify-varaint');
+
+        // 找到当前活跃的颜色和图片索引
+        let currentIndex = [...colorSwatches].findIndex((el) => el.classList.contains('active'));
+
+        if (this.isThrottled) return;
+        this.isThrottled = true;
+
+        const scrollPosition = window.scrollY;
+        const componentHeight = component.offsetHeight;
+
+        // 向下滚动时切换颜色和图片
+        if (scrollPosition > this.lastScrollPosition && currentIndex < colorSwatches.length - 1) {
+          currentIndex++;
+          this.updateActiveImage(colorSwatches, images, currentIndex);
+          this.Isindex = currentIndex + 1;
+        }
+        // 向上滚动时切换颜色和图片
+        else if (scrollPosition < this.lastScrollPosition && currentIndex > 0) {
+          currentIndex--;
+          this.updateActiveImage(colorSwatches, images, currentIndex);
+          this.Isindex = currentIndex - 1;
+        }
+
+        // 如果索引超出范围，停止切换
+        if (this.Isindex > colorSwatches.length - 1 || this.Isindex < 0) {
+          component.classList.remove('active');
+        }
+
+        // 检查组件是否完全滚出视窗
+        if (
+          scrollPosition + window.innerHeight < component.offsetTop ||
+          scrollPosition > component.offsetTop + componentHeight
+        ) {
+          // 当组件滚出视窗时，移除 active 类并解除 scrollcolor 监听
+          component.classList.remove('active');
+          window.removeEventListener('scroll', this.scrollcolor.bind(this)); // 移除 scrollcolor 事件
+          window.addEventListener('scroll', this.scrollZU.bind(this)); // 重新绑定 scrollZU 事件，检测是否重新进入视窗
+        }
+
+        this.lastScrollPosition = scrollPosition;
+
+        setTimeout(() => {
+          this.isThrottled = false;
+        }, 600);
+      }
+
+      updateActiveImage(colorSwatches, images, index) {
+        // 移除所有的 "active" 类
+        this.show(colorSwatches);
+        this.show(images);
+
+        // 为新的索引元素添加 "active" 类
+        colorSwatches[index].classList.add('active');
+        images[index].classList.add('active');
+      }
+    }
+
+    if (!window.customElements.get('yg-product-varaint')) {
+      window.customElements.define('yg-product-varaint', YGProductVaraint);
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "YG Product Varaint",
+  "class": "yg-shopify-varaint",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__heading.content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.global.settings.heading.label",
+      "default": "Multimedia collage"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "title-sm",
+          "label": "t:sections.global.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "title-md",
+          "label": "t:sections.global.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "title-lg tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__3.label"
+        },
+        {
+          "value": "title-xl tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__4.label"
+        }
+      ],
+      "default": "title-md",
+      "label": "t:sections.global.settings.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "t:sections.global.settings.heading_alignment.label",
+      "options": [
+        {
+          "value": "text-left md:items-end md:flex-row",
+          "label": "t:sections.global.settings.heading_alignment.options__1.label"
+        },
+        {
+          "value": "text-center md:items-center",
+          "label": "t:sections.global.settings.heading_alignment.options__2.label"
+        },
+        {
+          "value": "text-right md:items-end md:flex-row-reverse",
+          "label": "t:sections.global.settings.heading_alignment.options__3.label"
+        }
+      ],
+      "default": "text-left md:items-end md:flex-row"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "t:sections.global.settings.heading_tag.options__1.label"
+        },
+        {
+          "value": "h2",
+          "label": "t:sections.global.settings.heading_tag.options__2.label"
+        },
+        {
+          "value": "h3",
+          "label": "t:sections.global.settings.heading_tag.options__3.label"
+        },
+        {
+          "value": "h4",
+          "label": "t:sections.global.settings.heading_tag.options__4.label"
+        },
+        {
+          "value": "h5",
+          "label": "t:sections.global.settings.heading_tag.options__5.label"
+        },
+        {
+          "value": "h6",
+          "label": "t:sections.global.settings.heading_tag.options__6.label"
+        },
+        {
+          "value": "div",
+          "label": "t:sections.global.settings.heading_tag.options__7.label"
+        },
+        {
+          "value": "span",
+          "label": "t:sections.global.settings.heading_tag.options__8.label"
+        },
+        {
+          "value": "p",
+          "label": "t:sections.global.settings.heading_tag.options__9.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.global.settings.heading_tag.label",
+      "info": "t:sections.global.settings.heading_tag.info"
+    },
+    {
+      "type": "header",
+      "content": "Product"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "title_size",
+      "options": [
+        {
+          "value": "title-sm",
+          "label": "t:sections.global.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "title-md",
+          "label": "t:sections.global.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "title-lg tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__3.label"
+        },
+        {
+          "value": "title-xl tracking-heading",
+          "label": "t:sections.global.settings.heading_size.options__4.label"
+        }
+      ],
+      "default": "title-md",
+      "label": "Title size"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.global.settings.subheading.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.global.settings.description.label",
+      "default": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "t:sections.global.settings.button_label.label",
+      "info": "t:sections.global.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "t:sections.global.settings.button_link.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "t:sections.global.settings.button_external.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "button_icon",
+      "label": "t:sections.global.settings.button_icon.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__highlight.content",
+      "info": "t:sections.global.settings.header__highlight.info"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_text",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.global.settings.highlighted_text.options__1.label"
+        },
+        {
+          "value": "text",
+          "label": "t:sections.global.settings.highlighted_text.options__2.label"
+        },
+        {
+          "value": "full_text",
+          "label": "t:sections.global.settings.highlighted_text.options__3.label"
+        },
+        {
+          "value": "half_text",
+          "label": "t:sections.global.settings.highlighted_text.options__4.label"
+        },
+        {
+          "value": "underline",
+          "label": "t:sections.global.settings.highlighted_text.options__5.label"
+        },
+        {
+          "value": "stencil",
+          "label": "t:sections.global.settings.highlighted_text.options__6.label"
+        },
+        {
+          "value": "scribble",
+          "label": "t:sections.global.settings.highlighted_text.options__7.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.global.settings.highlighted_text.label"
+    },
+    {
+      "type": "select",
+      "id": "highlighted_scribble",
+      "options": [
+        {
+          "value": "circle",
+          "label": "t:sections.global.settings.highlighted_scribble.options__1.label"
+        },
+        {
+          "value": "basic-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__2.label"
+        },
+        {
+          "value": "sketch-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__3.label"
+        },
+        {
+          "value": "squiggle-underline",
+          "label": "t:sections.global.settings.highlighted_scribble.options__4.label"
+        },
+        {
+          "value": "squiggle-underline-2",
+          "label": "t:sections.global.settings.highlighted_scribble.options__5.label"
+        }
+      ],
+      "default": "circle",
+      "label": "t:sections.global.settings.highlighted_scribble.label",
+      "info": "t:sections.global.settings.highlighted_scribble.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__colors.content",
+      "info": "t:sections.global.settings.header__colors.info"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.global.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.global.settings.color_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "t:sections.global.settings.gradient_background.label"
+    },
+    {
+      "type": "color",
+      "id": "color_highlight",
+      "label": "t:sections.global.settings.color_highlight.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_highlight",
+      "label": "t:sections.global.settings.gradient_highlight.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_text",
+      "label": "t:sections.global.settings.color_button_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_background",
+      "label": "t:sections.global.settings.color_button_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "color_button_gradient",
+      "label": "t:sections.global.settings.color_button_gradient.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__section.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_top.label",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_bottom.label",
+      "default": 72
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.global.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.global.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "t:sections.global.settings.rounded.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "YG Product Varaint"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.overlay"]
+  }
+}
+{% endschema %}

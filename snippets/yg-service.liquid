@@ -1,0 +1,20 @@
+<div class="yg-service-wrapper">
+	{% for i in (1..6) %}
+		{% liquid
+			assign iconi = 'icon' | append: i
+			assign titlei = 'title' | append: i
+			assign icon = block.settings[iconi]
+			assign title = block.settings[titlei]
+		%}
+		{% if icon != blank or title != blank %}
+			<div class="yg-service-item">
+				{% if icon != blank %}
+					{{- icon | image_url: width: icon.width | image_tag: loading: 'lazy', is: 'lazy-image' -}}
+				{% endif %}
+				{% if title != blank %}
+					<span>{{ title }}</span>
+				{% endif %}
+			</div>
+		{% endif %}
+	{% endfor %}
+</div>

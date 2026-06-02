@@ -1,0 +1,325 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "spacing": {
+          "type": "spacing",
+          "settings": {
+            "height": 0,
+            "height_mobile": 0
+          }
+        },
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "title-xs"
+          }
+        },
+        "description_cz3Anq": {
+          "type": "description",
+          "settings": {
+            "cus_description": "",
+            "text_size": "subtext-md",
+            "text_max_size": 16,
+            "text_font": "body",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "spacing",
+        "breadcrumb",
+        "title",
+        "description_cz3Anq"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "show_image": true,
+        "image": "shopify://shop_images/1_40744185-9b24-468a-8a54-817d95d861fe.jpg",
+        "image_height": "adapt",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/2_c3cec662-043b-421a-a305-aa160feb34c7.jpg",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "zoom"
+      }
+    },
+    "scrolling_text_qgPQUN": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_ad6gjH": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Save $50 on Combos — Code QF50</strong>",
+            "text_size": 50,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_ad6gjH"
+      ],
+      "name": "t:sections.scrolling-text.presets.name",
+      "settings": {
+        "direction": "left",
+        "speed": 25,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "q-collection-fat-tire",
+            "per_row": 5,
+            "show_count": true
+          }
+        },
+        "promotion": {
+          "type": "promotion",
+          "settings": {
+            "position": 3,
+            "column_size": "1",
+            "image": "shopify://shop_images/b8a2ba33b567cdd887ca2e2efc4dd332.jpg",
+            "heading": "NEW LAUNCH",
+            "content": "<p>Spark 20\"x4.0\" Motorcycle Electric Bicycle</p>",
+            "button_label": "Shop now",
+            "button_link": "shopify://products/spark-moped-style-e-bike",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false,
+            "content_position": "md:items-end",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/b8a2ba33b567cdd887ca2e2efc4dd332.jpg",
+            "content_position_mobile": "items-center",
+            "text_alignment_mobile": "left",
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "promotion"
+      ],
+      "settings": {
+        "section_bg_color": "#f5f5f5",
+        "products_per_page": 18,
+        "columns": 4,
+        "columns_mobile": "1",
+        "pagination": "paginated",
+        "enable_filtering": true,
+        "filter_collapsed": false,
+        "filter_type": "sidebar",
+        "filter_color_swatches": true,
+        "enable_sorting": true,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_info_CT6wLn": {
+      "type": "yg-info",
+      "settings": {
+        "title": "Beyond the Pavement: Discover Fat Tire Electric Bikes",
+        "richtext": "<p>Fat tire electric bikes aren't your average ride – they're built tough for tackling sand, snow, mud, trails, and challenging streets with exceptional grip and stability. Combining electric power with go-anywhere tires, these e-bikes open up possibilities traditional bikes just can't match.</p><h3>Fat Tires vs. Regular Bikes & Tires</h3><p>While regular bicycles (including many standard electric bikes) are typically designed for speed and efficiency on smooth, paved surfaces using narrow, high-pressure tires and lighter frames, <strong>fat tire electric bikes</strong> are engineered for a completely different purpose: <strong>all-terrain capability and comfort</strong>.</p><p>The most obvious difference is the <strong>tires themselves</strong>. Standard bike tires are thin and inflated to high pressure to minimize rolling resistance, so they are ideal for speed on roads or complex paths. In stark contrast, fat tires are <strong>oversized</strong> – typically 4 inches wide or more – and are designed to run at <strong>low pressure</strong> (often below 20 PSI). This low pressure and large air volume create a much bigger contact patch with the ground.</p><p>This unique tire design provides several key benefits, <strong>unlike</strong> standard tires:</p><p><strong>Superior Flotation:</strong> They ride <em>over</em> soft surfaces like deep sand, snow, or mud instead of sinking into them.</p><p><strong>Increased Grip & Traction:</strong> The large contact patch and lower pressure provide incredible grip on loose, wet, or uneven ground.</p><p><strong>Built-in Cushioning:</strong> The large air volume acts like shock absorbers, smoothing out bumps, roots, and rough terrain for a more comfortable ride than standard tires.</p><p><strong>Enhanced Stability:</strong> The wider stance offers increased balance and stability, especially on challenging surfaces.</p><p>To support these capabilities, <strong>fat tire e-bikes</strong> require a more robust frame design, paired with powerful <a href=\"https://actbestbike.com/blogs/news/what-are-the-types-of-e-bike-motors-pros-and-cons-explained\" title=\"what are the types of e bike motors pros and cons explained\">electric motors</a> (often 500W to 1000W+) and larger batteries than many standard e-bikes, providing the necessary torque and range to power through tough conditions. This makes them heavier but significantly more versatile and stable in diverse landscapes.</p><h3>Essential Safety Tips for Enjoying Your Fat Tire E-Bike</h3><p>Enjoy the freedom of your fat tire e-bike while prioritizing safety:</p><p>Always wear a certified helmet.</p><p>Ensure your lights are functional and use them for visibility.</p><p>Take time to get used to the bike's weight and handling characteristics.</p><p>Ride cautiously on rough or unfamiliar terrain, adjusting speed.</p><p>Regularly inspect brakes, tire pressure, and suspension.</p><p><a href=\"https://actbestbike.com/blogs/news/fat-tire-vs-regular-ebike-comparison\" title=\"fat tire vs regular ebike comparison\">Fat tire electric bikes</a> offer unmatched versatility for tackling diverse landscapes.</p><h3>Finding Your Adventure Fat Tire E-Bike</h3><p>Choosing your fat tire electric bike involves looking at key features like motor power (for tackling hills), battery capacity (for ride distance), and suspension (for added comfort), based on the type of terrain you plan to explore. <strong>Browse our collection below</strong> and check the detailed specifications on each model to find the bike that has the capabilities you need for your chosen adventures.</p><p>Explore more affordable electric bikes on Qlife: <a href=\"https://actbestbike.com/collections/best-sellers\" title=\"best-selling electric bike\">best-selling electric bike</a> | <a href=\"https://actbestbike.com/collections/folding\" title=\"Folding Electric Bikes\">folding electric bikes</a> | <a href=\"https://actbestbike.com/collections/commuter-ebike\" title=\"Commuter electric bikes\">commuter electric bikes</a></p>",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_faq_88XxDi": {
+      "type": "yg-faq",
+      "blocks": {
+        "rich_text_FjDzEg": {
+          "type": "rich-text",
+          "settings": {
+            "heading": "FAQs",
+            "text": "",
+            "info": "<p>Please read our <a href=\"/pages/faqs\" title=\"FAQs\">FAQs</a> page to find out more.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_Wp4gJT": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Does Qlife bike really offer free shipping on all orders?</strong>",
+            "text": "<p>Qlife bike provides fast free shipping on all orders, without any minimum purchase amount requirement.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_fdWLQB": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What does the 365 - day warranty cover?</strong>",
+            "text": "<p>The 365 - day warranty means Qlife bike will offer after - sales service for 365 days from the date of purchase. This typically covers defects in materials or workmanship under normal use. If you encounter any problems with the bike during this period, you can contact our customer service for assistance, which may include repairs, replacement of parts, or other solutions as appropriate.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_qKC8KC": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Do Qlife bikes' batteries have safety certifications?</strong>",
+            "text": "<p>This certification encompasses comprehensive safety evaluations, including the batteries. It ensures that the batteries meet strict safety standards in terms of electrical performance, thermal management, and overall reliability. You can have peace of mind knowing that the batteries in our bikes have passed rigorous safety tests<br/><br/><br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_wVxjDj": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Where are Qlife bikes shipped from and how long will it take for delivery?</strong>",
+            "text": "<p>Qlife bikes are shipped from our US warehouse. Generally, the delivery time is within 3 - 8 days after you place your order. We aim to get your bike to you as soon as possible so you can start your cycling adventures.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_LY9hRW": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How is the security of my payment information ensured?</strong>",
+            "text": "<p>What measures does Qlife bike take to protect my payment information during the transaction?<br/><strong>A</strong>: Qlife bike uses secure payment processing systems. Your payment information is processed securely using advanced encryption technology and industry - standard security protocols. We take the protection of your personal and financial data very seriously and have implemented multiple layers of security to prevent unauthorized access and ensure the confidentiality of your information.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "contact_eYEgba": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "heading": "Didn’t find your answer?",
+            "text": "<p>Don't hestitate to contact us</p>",
+            "show_phone": false,
+            "avatar_height": 60,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "rich_text_FjDzEg",
+        "question_Wp4gJT",
+        "question_fdWLQB",
+        "question_qKC8KC",
+        "question_wVxjDj",
+        "question_LY9hRW",
+        "contact_eYEgba"
+      ],
+      "settings": {
+        "faq_bg_color": "#ffffff",
+        "form_bg_color": "#e6e5e5",
+        "info_bg_color": "#f5f5f5",
+        "style": "with-border",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#000000",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "scrolling_text_qgPQUN",
+    "main-collection",
+    "yg_info_CT6wLn",
+    "yg_faq_88XxDi"
+  ]
+}

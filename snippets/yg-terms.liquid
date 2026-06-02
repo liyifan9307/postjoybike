@@ -1,0 +1,11 @@
+{% if block.settings.content != blank or block.settings.img != blank %}
+	<div class="yg-terms-content-wrapper">
+		<a href="{{ block.settings.link }}" title="{{ block.settings.content }}">
+			<span>{{ block.settings.content }}</span>
+			
+			{% if block.settings.img != blank %}
+				{{- block.settings.img | image_url: width: block.settings.img.width | image_tag: loading: 'lazy', is: 'lazy-image' -}}
+			{% endif %}
+		</a>
+	</div>
+{% endif %}

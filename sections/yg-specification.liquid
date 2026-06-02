@@ -1,0 +1,285 @@
+<style>
+   #shopify-section-{{ section.id }} {
+     --section-padding-top: {{ section.settings.padding_top }}px;
+     --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  {%- render 'section-variables', section: section -%}
+   }
+
+   #shopify-section-{{ section.id }} .yg-products-container {
+     height: auto;
+     position: relative;
+     overflow: hidden;
+   }
+
+   #shopify-section-{{ section.id }} .yg-products-title {
+     line-height: 1.4;
+     font-size: var(--yg-h3);
+     color: #000;
+     font-style: normal;
+     font-weight: 700;
+     letter-spacing: -0.32px;
+   }
+
+   #shopify-section-{{ section.id }} .yg-products-content {
+     transition: height .3s ease;
+     overflow: hidden;
+   }
+
+   #shopify-section-{{ section.id }} .image-wrapper {
+     flex: 0 0 calc(50% - 57.5px);
+     padding: 0 98px 0 17px;
+   }
+
+   #shopify-section-{{ section.id }} .image-wrapper img {
+     width: 100%;
+     height: 100%;
+     object-fit: contain;
+   }
+
+   #shopify-section-{{ section.id }} .metafield-rich_text_field:not(:has(.metafield-rich_text_field)) {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     row-gap: 20px;
+     align-items: start;
+     width: 100%;
+   }
+
+   #shopify-section-{{ section.id }} .metafield-rich_text_field p {
+     margin: 0;
+     padding-right: 15px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     /*min-height: 80px;*/
+     font-size: 16px;
+     color: #9E9E9E;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     gap: 4px;
+     border-top: 1px solid #E6E5E5;
+     padding-top: 20px;
+   }
+
+   #shopify-section-{{ section.id }} .metafield-rich_text_field p:nth-child(-n+4) {
+     border-top: none;
+     padding-top: 0;
+   }
+
+   #shopify-section-{{ section.id }} .metafield-rich_text_field p strong {
+     display: block;
+     font-size: 20px;
+     color: #231F20;
+     font-style: normal;
+     font-weight: 600;
+     line-height: normal;
+   }
+
+   #shopify-section-{{ section.id }} .metafield-rich_text_field p:not(:has(strong)) {
+     grid-column: 1 / -1;
+     text-align: center;
+   }
+
+   #shopify-section-{{ section.id }} .yg-title-box {
+     display: flex;
+     align-items: center;
+     padding-bottom: 12px;
+     border-bottom: 1px solid #E6E5E5;
+     margin-bottom: 32px;
+     cursor: pointer;
+   }
+   #shopify-section-{{ section.id }} .yg-title-box .yg-arrow-down{
+     margin-left: auto;
+     transition: transform .3s ease;
+     width: 40px;
+     height: 40px;
+   }
+   #shopify-section-{{ section.id }} .yg-title-box.yg-hide .yg-arrow-down{
+     transform: rotate(180deg);
+   }
+
+   @media screen and (max-width: 768px) {
+     #shopify-section-{{ section.id }} .metafield-rich_text_field:not(:has(.metafield-rich_text_field)) {
+       grid-template-columns: repeat(2, 1fr);
+     }
+
+     #shopify-section-{{ section.id }} .yg-products-content {
+       flex-direction: column;
+     }
+
+     #shopify-section-{{ section.id }} .metafield-rich_text_field p strong {
+       font-size: 14px
+     }
+
+     #shopify-section-{{ section.id }} .metafield-rich_text_field p {
+       font-size: 12px;
+       justify-content: flex-start;
+       padding: 0 !important;
+       padding-top: 12px !important;
+     }
+
+     #shopify-section-{{ section.id }} .metafield-rich_text_field {
+       row-gap: 12px;
+       column-gap: 0;
+     }
+
+     #shopify-section-{{ section.id }} .yg-box {
+       padding: 0px !important;
+     }
+
+     #shopify-section-{{ section.id }} .yg-products-container {
+       padding: 30px 20px;
+     }
+     #shopify-section-{{ section.id }} .yg-title-box {
+       margin-bottom: 16px;
+     }
+   }
+</style>
+<div
+  class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}"
+>
+  <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
+    {%- render 'section-heading', section: section -%}
+    <div class="yg-box">
+      <yg-info class="yg-products-container">
+        {% if section.settings.title != blank %}
+          <div class="yg-title-box" is="title-box">
+            <h2 class="yg-products-title">{{ section.settings.title }}</h2>
+            {%- render 'icon', icon: 'yg-arrow-down', class: 'yg-arrow-down' -%}
+          </div>
+        {% endif %}
+        <div class="yg-products-content" is="content-box">
+          <div class="metafield-rich_text_field">
+            {% if section.settings.richtext != blank %}
+              {{ section.settings.richtext | replace: '|', '</strong><strong>' }}
+            {% endif %}
+          </div>
+        </div>
+      </yg-info>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "YG specification",
+  "tag": "section",
+  "class": "yg-products",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Specification"
+    },
+    {
+      "type": "richtext",
+      "id": "richtext",
+      "label": "Rich Text"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__colors.content",
+      "info": "t:sections.global.settings.header__colors.info"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "t:sections.global.settings.color_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "t:sections.global.settings.color_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "t:sections.global.settings.gradient_background.label"
+    },
+    {
+      "type": "color",
+      "id": "color_background_2",
+      "label": "t:sections.global.settings.color_background_2.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background_2",
+      "label": "t:sections.global.settings.gradient_background_2.label"
+    },
+    {
+      "type": "color",
+      "id": "color_highlight",
+      "label": "t:sections.global.settings.color_highlight.label"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_highlight",
+      "label": "t:sections.global.settings.gradient_highlight.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_text",
+      "label": "t:sections.global.settings.color_button_text.label"
+    },
+    {
+      "type": "color",
+      "id": "color_button_background",
+      "label": "t:sections.global.settings.color_button_background.label"
+    },
+    {
+      "type": "color_background",
+      "id": "color_button_gradient",
+      "label": "t:sections.global.settings.color_button_gradient.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.global.settings.header__section.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_top.label",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.global.settings.padding_bottom.label",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "t:sections.global.settings.divider.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "t:sections.global.settings.full_width.label",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "t:sections.global.settings.rounded.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "YG specification",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

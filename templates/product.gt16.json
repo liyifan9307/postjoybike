@@ -1,0 +1,1301 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb_fNxmEp": {
+          "type": "breadcrumb",
+          "settings": {
+            "show_collections_link": true,
+            "enable_product_top": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "show_price": false,
+            "show_rating": false
+          }
+        },
+        "price_Hxp9Jt": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false,
+            "show_rating": true,
+            "show_payment_terms": false,
+            "color_save": "#dc181c"
+          }
+        },
+        "yg_countdown_4cTMTX": {
+          "type": "yg_countdown",
+          "settings": {
+            "countdown": "{{ product.metafields.custom.product_countdown.value }}",
+            "label": "Classic $300 off Ends In:",
+            "code": "",
+            "button_label": "Button label",
+            "color_text": "#ffffff",
+            "color_background": "#fff1f2",
+            "gradient_background": "linear-gradient(90deg, rgba(219, 188, 34, 1), rgba(221, 39, 57, 1) 100%)"
+          }
+        },
+        "yg_icon_list_HW6B9x": {
+          "type": "yg_icon_list",
+          "settings": {
+            "icon_list": "custom.product_info",
+            "variant_name": "Size",
+            "color_heading": "#000000",
+            "color_text": "#807e7b",
+            "color_background": "#ffffff",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "yg_bundle_c8tLrK": {
+          "type": "yg_bundle",
+          "disabled": true,
+          "settings": {
+            "show_block": true,
+            "title_1": "",
+            "product_list_1": [],
+            "enable_required_1": true,
+            "title_2": "Optional Accessories:",
+            "product_list_2": [],
+            "enable_required_2": false,
+            "enable_promotion": "2",
+            "promotion_text": "Add & Save %",
+            "limit_number": 3,
+            "more_button_text": "Expand",
+            "more_less_text": "Expanded",
+            "title_color": "#808080",
+            "bg_color": "#ffffff"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false,
+            "color_background": "#ff9900"
+          }
+        },
+        "sticky_buy_button_dBaXrd": {
+          "type": "sticky_buy_button",
+          "settings": {}
+        },
+        "kaching_bundles_app_block_BFahch": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "{{product}}",
+            "manual_deal_block_id": ""
+          }
+        },
+        "yg_terms_aWWei3": {
+          "type": "yg_terms",
+          "settings": {
+            "content": "100% Protection Against Shipping Mishaps",
+            "img": "shopify://shop_images/image_106.png",
+            "link": ""
+          }
+        },
+        "yg_payment_4f4krK": {
+          "type": "yg_payment",
+          "settings": {
+            "title1": "Pay with Ease:",
+            "icons": "paypal,maestro,shopify_pay,google_pay,apple_pay,discover,klarna",
+            "title2": "Trusted Delivery:",
+            "icon1": "shopify://shop_images/20260415153628_6_2.png",
+            "icon2": "shopify://shop_images/20260415153628_4_2.png",
+            "icon3": "shopify://shop_images/20260415153628_5_2.png"
+          }
+        },
+        "collapsible_tab_qDE9RU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "style": "with-border",
+            "icon": "truck",
+            "heading": "Fast & Free Shipping",
+            "content": "<p>Shipped from the US warehouse, estimated delivery within 3-8 days<br/></p>",
+            "page": "",
+            "liquid": "",
+            "opened": false
+          }
+        },
+        "collapsible_tab_z7V9bm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "style": "with-border",
+            "icon": "shield",
+            "heading": "Warranty",
+            "content": "<p>All Postjoy ebikes are covered under our manufacturer's 1-year all-inclusive warranty for the original owner against all manufacturing defects (All free Accessories are not covered by warranty service).<br/><br/></p>",
+            "page": "",
+            "liquid": "",
+            "opened": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": ""
+          }
+        },
+        "yg_service_RHGR6c": {
+          "type": "yg_service",
+          "settings": {
+            "icon1": "shopify://shop_images/Warranty_e6ed3c86-a251-4229-a6ef-48d61c01bacd.png",
+            "title1": "1-Year Warranty",
+            "icon2": "shopify://shop_images/free.png",
+            "title2": "Free Shipping",
+            "icon3": "shopify://shop_images/return_fbb2e6d1-79ed-41b2-a039-eb00ff9c2c73.png",
+            "title3": "14-Days Return",
+            "title4": "",
+            "title5": "",
+            "title6": ""
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_fNxmEp",
+        "title",
+        "price_Hxp9Jt",
+        "yg_countdown_4cTMTX",
+        "yg_icon_list_HW6B9x",
+        "variant_picker",
+        "inventory",
+        "yg_bundle_c8tLrK",
+        "buy_buttons",
+        "sticky_buy_button_dBaXrd",
+        "kaching_bundles_app_block_BFahch",
+        "yg_terms_aWWei3",
+        "yg_payment_4f4krK",
+        "collapsible_tab_qDE9RU",
+        "collapsible_tab_z7V9bm",
+        "description",
+        "share",
+        "yg_service_RHGR6c"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_style2": true,
+        "media_size": 60,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "below",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "color_text": "",
+        "color_background": "",
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "rocket",
+            "heading": "Shipping Information",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#b45309",
+            "color_background": "#fffbeb",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "settings": {
+            "icon": "headphone",
+            "heading": "Customer Support",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#0369a1",
+            "color_background": "#f0f9ff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-3": {
+          "type": "content",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "FAQ’s",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#be123c",
+            "color_background": "#fff1f2",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#4d7c0f",
+            "color_background": "#f7fee7",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content-1",
+        "content-2",
+        "content-3",
+        "content-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Need help?",
+        "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
+      }
+    },
+    "yg_anchor_tab_UJ9UU7": {
+      "type": "yg-anchor-tab",
+      "blocks": {
+        "anchor_9a46TU": {
+          "type": "anchor",
+          "settings": {
+            "text": "Overview",
+            "section_number": 4
+          }
+        },
+        "anchor_BbFMEE": {
+          "type": "anchor",
+          "settings": {
+            "text": "Spec",
+            "section_number": 9
+          }
+        },
+        "anchor_F8aAd6": {
+          "type": "anchor",
+          "settings": {
+            "text": "Reviews",
+            "section_number": 10
+          }
+        }
+      },
+      "block_order": [
+        "anchor_9a46TU",
+        "anchor_BbFMEE",
+        "anchor_F8aAd6"
+      ],
+      "name": "YG anchor tab",
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/GT16-S.jpg",
+            "image_ratio": "landscape",
+            "content_position": "md:items-end md:justify-center",
+            "text_alignment": "center",
+            "image_ratio_mobile": "landscape",
+            "content_position_mobile": "items-end justify-center",
+            "text_alignment_mobile": "center",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/7_abb010f4-5567-4c36-a7ee-b077febc7f18.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/1_3.png",
+            "image_ratio": "portrait",
+            "content_position": "md:items-start md:justify-end",
+            "text_alignment": "right",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-start justify-end",
+            "text_alignment_mobile": "right",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": true,
+            "image": "shopify://shop_images/1_2.png",
+            "image_ratio": "landscape",
+            "content_position": "md:items-end md:justify-end",
+            "text_alignment": "right",
+            "image_ratio_mobile": "landscape",
+            "content_position_mobile": "items-end justify-end",
+            "text_alignment_mobile": "right",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4"
+      ],
+      "settings": {
+        "heading": "Why Choose the PostJoy GT16?",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Meet the PostJoy GT16 — a compact electric dirt bike built for riders who want more power, more control, and more freedom on every ride.<br/><br/>With a 3000W peak motor and up to 200Nm of torque, the GT16 delivers instant acceleration, confident climbing power, and a thrilling top speed of up to 40 MPH. From dirt trails and gravel roads to steep 45° climbs, this “Micro Beast” is ready to take on the terrain.<br/><br/>The 48V 25Ah removable battery gives you up to 100 miles of PAS range, so you can ride farther without constantly worrying about your next charge. Full suspension, hydraulic disc brakes, and 16\" x 3.0\" off-road tires work together to keep the ride stable, smooth, and controlled.<br/><br/>Finished with NFC smart unlock and a bold skull-motif headlight, the GT16 is more than an e-bike. It is a high-performance electric dirt bike built for adventure.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "basic-underline",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "video_with_text_overlay_TwR6Rr": {
+      "type": "video-with-text-overlay",
+      "blocks": {
+        "subheading_Nk3U8B": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_wX3eLf": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_UYda9A": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Nk3U8B",
+        "heading_wX3eLf",
+        "text_UYda9A"
+      ],
+      "name": "t:sections.video-with-text-overlay.presets.name",
+      "settings": {
+        "transparent_header": false,
+        "video": "shopify://files/videos/GT16.mp4",
+        "video_url": "",
+        "video_other_url": "",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "video_url_mobile": "",
+        "video_mobile_other_url": "",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "yg_image_with_text_list_KQztzz": {
+      "type": "yg-image-with-text-list",
+      "blocks": {
+        "item_FQddzf": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/3._61fc182d-616f-408a-9f18-9a818b57e62d.jpg",
+            "image_pos": "left",
+            "title": "<p><strong>3000W Peak Motor</strong><br/>Explosive Power for Dirt, Hills, and Daily Rides</p>",
+            "content": "<p>The GT16’s 3000W peak motor delivers strong acceleration, responsive throttle feel, and up to 200Nm of torque. Whether you are climbing steep hills, cutting through loose gravel, or cruising open paths, the GT16 gives you the power to ride with confidence.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_Y77eFc": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/BATTERY_25AH.png",
+            "image_pos": "right",
+            "title": "<p><strong>48V 25Ah</strong> Removable Battery<br/>Ride Farther. Charge Easier.</p>",
+            "content": "<p>Go longer between charges with a high-capacity 48V 25Ah battery. Enjoy up to 100 miles of PAS range, then remove the battery for convenient charging at home, in the office, or wherever your next adventure begins.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_6M3dHz": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 96,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/2_884a1e86-d2cc-4a32-9d2b-db57bf7cd86e.jpg",
+            "image_pos": "left",
+            "title": "<p><strong>Full Suspension System</strong><br/>Smooth Control on Rough Terrain</p>",
+            "content": "<p>The GT16’s full suspension system is built to absorb bumps, drops, and trail vibration. A high-travel front hydraulic fork and rear monoshock help keep the ride planted and stable, giving you more comfort, more traction, and more control when the terrain gets rough.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_VNaYcH": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/4_3a5a80aa-3e82-41dd-ac64-45c885515101.jpg",
+            "image_pos": "right",
+            "title": "<p><strong>16\" x 3.0\" Off-Road Tires</strong><br/>Confident Grip on Dirt, Gravel, and Pavement</p>",
+            "content": "<p>The GT16 rides on wide 16\" x 3.0\" motorcycle-style tires with aggressive tread for dependable traction. From dirt trails and gravel roads to city pavement, these tires help deliver stability, grip, and off-road confidence.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_zmQHGy": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/F16_riding_mode.jpg",
+            "image_pos": "left",
+            "title": "<p>Choose the <strong>Right Mode</strong> for Every Ride</p>",
+            "content": "<p>5 Ways to Ride<br/>Throttle, cruise, walk assist, pedal assist, or traditional bike mode — switch easily to match your road, range, and riding style.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_yn6kMp": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/F16_Hydraulic_Brake.jpg",
+            "image_pos": "right",
+            "title": "<p>Efficient<strong> Dual Hydraulic Brakes</strong></p>",
+            "content": "<p>The GT16 features front and rear hydraulic disc brakes for smooth, responsive, and reliable stopping power. Whether you are riding downhill, cornering, or cruising at higher speeds, the dual hydraulic braking system helps you stay in control with greater confidence.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_FQddzf",
+        "item_Y77eFc",
+        "item_6M3dHz",
+        "item_VNaYcH",
+        "item_zmQHGy",
+        "item_yn6kMp"
+      ],
+      "name": "YG image with text list",
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "blocks_BpfnqK": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_42b38e6_4hAkrw": {
+          "type": "ai_gen_block_42b38e6",
+          "settings": {
+            "section_title": "",
+            "section_subtitle": "",
+            "desktop_visible_columns": "3",
+            "card_style": "plain",
+            "text_alignment": "left",
+            "background_color": "#ffffff",
+            "image_1": "shopify://shop_images/F16_NFC_Smart_Unlock.jpg",
+            "title_1": "Tap to Unlock. Ride Smarter.",
+            "subtitle_1": "",
+            "button_label_1": "",
+            "button_url_1": "",
+            "image_2": "shopify://shop_images/F16_7-Speed_Gear_System.jpg",
+            "title_2": "7-Speed Gear System",
+            "subtitle_2": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "image_3": "shopify://shop_images/365_lbs_Max_Payload.jpg",
+            "title_3": "Ultimate Ride Comfort",
+            "subtitle_3": "",
+            "button_label_3": "",
+            "button_url_3": "",
+            "image_4": "shopify://shop_images/F16_light.jpg",
+            "title_4": "Bright Light",
+            "subtitle_4": "",
+            "button_label_4": "",
+            "button_url_4": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_42b38e6_4hAkrw"
+      ],
+      "name": "Multi-column slider",
+      "settings": {}
+    },
+    "yg_product_parameter_comparison_CqGc4d": {
+      "type": "yg-product-parameter-comparison",
+      "blocks": {
+        "parameter_title_RARTkc": {
+          "type": "parameter_title",
+          "settings": {
+            "header_title": "<ol><li><strong>Battery</strong></li><li><strong>Motor</strong></li><li><strong>Torque</strong></li><li><strong>Top Speed</strong></li><li><strong>Brake</strong></li><li><strong>Tires</strong></li><li><strong>Suspension</strong></li><li><strong>Range</strong></li><li><strong>MAX Payload Capacity</strong></li><li><strong>E-Bike Weight</strong></li><li><strong>E-Bike Class</strong></li><li><strong>Charger</strong></li><li><strong>Charging Time</strong></li><li><strong>IP Level</strong></li></ol>"
+          }
+        },
+        "product_parameter_L9zBwt": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-gt16-electric-dirt-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>200Nm</li><li>36Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX5</li></ol>"
+          }
+        },
+        "product_parameter_9XNr9Y": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-f30-electric-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+          }
+        },
+        "product_parameter_ExP4Mg": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-t20-electric-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX5</li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "parameter_title_RARTkc",
+        "product_parameter_L9zBwt",
+        "product_parameter_9XNr9Y",
+        "product_parameter_ExP4Mg"
+      ],
+      "name": "YG Parameter Comparison",
+      "settings": {
+        "heading": "Product compare",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h3",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#ff9900",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_specification_BGHDRh": {
+      "type": "yg-specification",
+      "name": "YG specification",
+      "settings": {
+        "title": "Specification",
+        "richtext": "<p>Battery<strong>48V 25Ah</strong></p><p>Torque <strong>200Nm</strong></p><p>Hub Motor<strong>Peak 3000W</strong></p><p>Top Speed<strong> 36MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 16x3.0''</strong></p><p>IP Level<strong>IPX5</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 3.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>99.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 100 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_product_exhibition_X48x8Y": {
+      "type": "yg-product-exhibition",
+      "blocks": {
+        "item_7E38xM": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/what_sinthebox-bike.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_YqRjPt": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/what_sinthebox-user_manual.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_tqEmTb": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/what_sinthebox-front_wheel.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_De9r7j": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/what_sinthebox-keys.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_4A8TkH": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/what_sinthebox-screws.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_jmfQAQ": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/what_sinthebox-pedals.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_qBgRaf": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/what_sinthebox-tools.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_g9Hnyb": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/what_sinthebox-charger.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_xkXw9A": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/what_sinthebox-mudguard.jpg",
+            "detail_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_7E38xM",
+        "item_YqRjPt",
+        "item_tqEmTb",
+        "item_De9r7j",
+        "item_4A8TkH",
+        "item_jmfQAQ",
+        "item_qBgRaf",
+        "item_g9Hnyb",
+        "item_xkXw9A"
+      ],
+      "name": "YG product exhibition",
+      "settings": {
+        "heading": "What's In The Box",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "gt16_creator_reviews_HXhaBF": {
+      "type": "gt16-creator-reviews",
+      "blocks": {
+        "review_xBqqMj": {
+          "type": "review",
+          "settings": {
+            "creator": "EV Tech Steven",
+            "platform": "YouTube",
+            "review_date": "Mar 18, 2026",
+            "review_text": "<p>A detailed performance review focused on the GT16’s top speed and acceleration, giving buyers a practical look at how the bike delivers power in real-world riding conditions.</p>",
+            "link": "https://www.youtube.com/watch?v=tDnkwqvKTtw",
+            "button_label": "Watch Review"
+          }
+        },
+        "review_MaAnra": {
+          "type": "review",
+          "settings": {
+            "creator": "Volted Adventures",
+            "platform": "YouTube",
+            "review_date": "Mar 15, 2026",
+            "review_text": "<p>This review explores whether the GT16 lives up to its mini stealth bomber reputation, highlighting its riding feel, off-road style, and overall performance.</p>",
+            "link": "https://www.youtube.com/watch?v=zG1yW1WxRzo",
+            "button_label": "Watch Review"
+          }
+        },
+        "review_Vk8GPp": {
+          "type": "review",
+          "settings": {
+            "creator": "True North Due South",
+            "platform": "YouTube",
+            "review_date": "Mar 27, 2026",
+            "review_text": "<p>A balanced review covering the GT16’s strengths, weaknesses, and real riding impressions, helping potential buyers understand what to expect.</p>",
+            "link": "https://www.youtube.com/watch?v=3CohPrvwGPM",
+            "button_label": "Watch Review"
+          }
+        },
+        "review_DaFcfz": {
+          "type": "review",
+          "settings": {
+            "creator": "HeroesNStuff",
+            "platform": "YouTube",
+            "review_date": "Apr 10, 2026",
+            "review_text": "<p>An in-depth look at the GT16 full-suspension mini electric dirt bike, highlighting its value, affordable positioning, and tubeless tire setup.</p>",
+            "link": "https://www.youtube.com/watch?v=AfA0t21aJi0",
+            "button_label": "Watch Review"
+          }
+        },
+        "review_gMtgXb": {
+          "type": "review",
+          "settings": {
+            "creator": "Trent In The Sip",
+            "platform": "YouTube",
+            "review_date": "Mar 6, 2026",
+            "review_text": "<p>A practical review of the GT16’s performance, features, and ride experience, offering an objective look at how it feels in everyday use.</p>",
+            "link": "https://www.youtube.com/watch?v=uAHueqfAPr0",
+            "button_label": "Watch Review"
+          }
+        },
+        "review_N9qXEJ": {
+          "type": "review",
+          "settings": {
+            "creator": "POV Nelson",
+            "platform": "YouTube",
+            "review_date": "Apr 19, 2026",
+            "review_text": "<p>A review positioning the GT16 as a legal electric bike with impressive performance and strong value at around the $999 price point.</p>",
+            "link": "https://www.youtube.com/watch?v=31HN0gT2ZKc",
+            "button_label": "Watch Review"
+          }
+        },
+        "review_fUa7jx": {
+          "type": "review",
+          "settings": {
+            "creator": "Electric Adventure Channel",
+            "platform": "YouTube",
+            "review_date": "Feb 28, 2026",
+            "review_text": "<p>A review of the GT16 as a $999 mini electric motorcycle-style bike, focusing on performance, ride experience, and its potential to disrupt the market.</p>",
+            "link": "https://www.youtube.com/watch?v=WRmkJt7iNTc",
+            "button_label": "Watch Review"
+          }
+        },
+        "review_rtW9AD": {
+          "type": "review",
+          "settings": {
+            "creator": "@electricadventurechannel",
+            "platform": "Instagram",
+            "review_date": "Apr 20, 2026",
+            "review_text": "<p>A short Instagram showcase presenting the GT16 as a versatile, go-anywhere electric ride built for different environments and use cases.</p>",
+            "link": "https://www.instagram.com/p/DXYM70FDIN1/",
+            "button_label": "View Post"
+          }
+        },
+        "review_EEGbnK": {
+          "type": "review",
+          "settings": {
+            "creator": "MastaBika",
+            "platform": "YouTube",
+            "review_date": "Feb 24, 2026",
+            "review_text": "<p>A full review focused on the GT16’s 36 mph top speed, 3000W motor, and whether this high-performance setup is suitable for younger riders.</p>",
+            "link": "https://www.youtube.com/watch?v=04GvqMwqeGs&t=53s",
+            "button_label": "Watch Review"
+          }
+        }
+      },
+      "block_order": [
+        "review_xBqqMj",
+        "review_MaAnra",
+        "review_Vk8GPp",
+        "review_DaFcfz",
+        "review_gMtgXb",
+        "review_N9qXEJ",
+        "review_fUa7jx",
+        "review_rtW9AD",
+        "review_EEGbnK"
+      ],
+      "name": "GT16 Creator Reviews",
+      "settings": {
+        "eyebrow": "Real Creator Reviews",
+        "heading": "What Riders Are Saying About the PostJoy GT16",
+        "description": "<p>From full YouTube reviews to quick Instagram and Shorts clips, creators across the e-bike community have been putting the PostJoy GT16 to the test. Explore real-world impressions covering speed, value, design, ride feel, and everyday usability.</p>",
+        "header_alignment": "center",
+        "mobile_header_alignment": "left",
+        "show_mobile_hint": true,
+        "container_width": 1200,
+        "columns_desktop": 3,
+        "columns_tablet": 2,
+        "mobile_card_width": 84,
+        "card_gap": 22,
+        "card_min_height": 270,
+        "mobile_card_min_height": 300,
+        "card_radius": 20,
+        "heading_size": 42,
+        "mobile_heading_size": 28,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "mobile_padding_top": 52,
+        "mobile_padding_bottom": 52,
+        "background_color": "#151515",
+        "background_color_bottom": "rgba(0,0,0,0)",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "muted_text_color": "#b8beca",
+        "card_text_color": "#c8ced8",
+        "accent_color": "#ff6a00",
+        "card_background_top": "#191d25",
+        "card_background_bottom": "#12151b",
+        "card_border_color": "#30343c",
+        "badge_background": "#2b1a0f",
+        "badge_text_color": "#ff9b4a",
+        "button_background": "#ff6a00",
+        "button_text_color": "#ffffff",
+        "button_hover_background": "#ff7f22",
+        "button_hover_text_color": "#ffffff"
+      }
+    },
+    "yg_video_slide_QtKRe6": {
+      "type": "yg-video-slide",
+      "blocks": {
+        "item_9wDUxH": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_NA84AG": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_8FxgW6": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_gykkYj": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_tt6YCE": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_TkYqxy": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_pce4g4": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_AGbJaW": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "https://www.youtube.com/watch?v=04GvqMwqeGs&t=53s",
+            "video_other_url": ""
+          }
+        },
+        "item_RrptzJ": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "https://www.youtube.com/watch?v=zG1yW1WxRzo&t=114s",
+            "video_other_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_9wDUxH",
+        "item_NA84AG",
+        "item_8FxgW6",
+        "item_gykkYj",
+        "item_tt6YCE",
+        "item_TkYqxy",
+        "item_pce4g4",
+        "item_AGbJaW",
+        "item_RrptzJ"
+      ],
+      "disabled": true,
+      "name": "YG video slide",
+      "settings": {
+        "heading": "Hear From the Community",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "bg_card": "#f1f8f8",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "1778163559483f9f55": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_gUGUqc": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_gUGUqc"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You may also like",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "help-drawer",
+    "yg_anchor_tab_UJ9UU7",
+    "collage",
+    "video_with_text_overlay_TwR6Rr",
+    "yg_image_with_text_list_KQztzz",
+    "blocks_BpfnqK",
+    "yg_product_parameter_comparison_CqGc4d",
+    "yg_specification_BGHDRh",
+    "yg_product_exhibition_X48x8Y",
+    "gt16_creator_reviews_HXhaBF",
+    "yg_video_slide_QtKRe6",
+    "1778163559483f9f55",
+    "product-recommendations"
+  ]
+}

@@ -1,0 +1,745 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "spacing": {
+          "type": "spacing",
+          "settings": {
+            "height": 0,
+            "height_mobile": 0
+          }
+        },
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "title-xs"
+          }
+        },
+        "description_cz3Anq": {
+          "type": "description",
+          "settings": {
+            "cus_description": "",
+            "text_size": "subtext-md",
+            "text_max_size": 16,
+            "text_font": "body",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "spacing",
+        "breadcrumb",
+        "title",
+        "description_cz3Anq"
+      ],
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "show_image": true,
+        "image": "shopify://shop_images/5333x1167_34f4e51f-2a64-4e5e-9478-85ef393f8d53.png",
+        "image_height": "adapt",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/1111x778_759074b5-1663-4e05-a0fe-ff7fc3b1cc93.png",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "zoom"
+      }
+    },
+    "scrolling_text_3ddYze": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_qcUhEz": {
+          "type": "text",
+          "settings": {
+            "text": "🎉 <strong>$15 OFF – Limited Time Only! Use Code QF15QK at Checkout.</strong> 🚴‍♀️",
+            "text_size": 36,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_qcUhEz"
+      ],
+      "disabled": true,
+      "name": "t:sections.scrolling-text.presets.name",
+      "settings": {
+        "direction": "left",
+        "speed": 20,
+        "grid_horizontal": 50,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 4,
+        "padding_bottom": 4,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "collage_ztpzAF": {
+      "type": "collage",
+      "blocks": {
+        "image_eQx7cU": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "shopify://collections/full-suspension-ebikes",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/960x1200_7d339df0-8d0d-49a1-a64b-e8d15e11552c.png",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_VjKYNP": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "shopify://products/triker-folding-3-wheels-electric-bike",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/EB58_960x1200_4e7a31b6-caa1-4c67-b953-ac3c7f42e496.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_nbh9am": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_gpDA6j": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_eQx7cU",
+        "image_VjKYNP",
+        "image_nbh9am",
+        "image_gpDA6j"
+      ],
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "Looking for an Eskute alternative?",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Discover powerful electric bikes with better value – starting at $449.<strong>More Power. Better Value. Lower Price.</strong>Compare before you buy.</p><p>Same 1500W Power.<br/>Up to $400 Less.<br/>Ships Faster From US.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "image_with_text_dhQF9R": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_cyUGHE": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_Qt4Eff": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_3cDWRD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Compare & Save $500",
+            "button_link": "shopify://collections/best-sellers",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_cyUGHE",
+        "text_Qt4Eff",
+        "button_3cDWRD"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/EB58_1200x1200_bd4b49e3-8190-4198-b801-645e37ca2037.jpg",
+        "image_height": "550px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_mobile": "shopify://shop_images/EB13_EB58P_EB30___960_1200-2.png",
+        "image_height_mobile": "adapt",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "yg_product_parameter_comparison_iXbA9i": {
+      "type": "yg-product-parameter-comparison",
+      "blocks": {
+        "parameter_title_ayHxPC": {
+          "type": "parameter_title",
+          "settings": {
+            "header_title": "<ol><li><strong>Feature</strong></li><li><strong>Price</strong></li><li><strong>Peak Motor</strong></li><li><strong>Top Speed</strong></li><li><strong>Range</strong></li><li><strong>Charging Time</strong></li><li><strong>Best For</strong><br/></li></ol>"
+          }
+        },
+        "product_parameter_hgiEhC": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "",
+            "product_title": "",
+            "prouduct_url": "shopify://collections/best-sellers",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>Qlifebike</li><li>From $449</li><li>Up To 3500W</li><li>Up To 37Mph</li><li>Up To 75Miles</li><li>4-6hrs</li><li>Value Riders<br/><br/></li></ol>"
+          }
+        },
+        "product_parameter_bWxK6k": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "",
+            "header_title_value": "<ol><li>Eskute</li><li>From $559</li><li>Up To 1500W</li><li>Up To 28Mph</li><li>Up To 65Miles</li><li>6-7hrs</li><li>Commuters<br/><br/></li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "parameter_title_ayHxPC",
+        "product_parameter_hgiEhC",
+        "product_parameter_bWxK6k"
+      ],
+      "name": "YG Parameter Comparison",
+      "settings": {
+        "heading": "Eskute Alternative",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "all-best-sellers",
+            "per_row": 5,
+            "show_count": true
+          }
+        },
+        "promotion": {
+          "type": "promotion",
+          "settings": {
+            "position": 3,
+            "column_size": "1",
+            "image": "shopify://shop_images/960_1200_6.jpg",
+            "heading": "Vela E5 Dirt Ebike",
+            "content": "<p>3500W 37Mph 200Nm 48V23Ah <br/></p>",
+            "button_label": "Shop now",
+            "button_link": "shopify://products/vela-e5-dirt-electri-bike-for-kids-adults",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false,
+            "content_position": "md:items-end",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/b8a2ba33b567cdd887ca2e2efc4dd332.jpg",
+            "content_position_mobile": "items-center",
+            "text_alignment_mobile": "left",
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "promotion"
+      ],
+      "settings": {
+        "section_bg_color": "#f5f5f5",
+        "products_per_page": 18,
+        "columns": 3,
+        "columns_mobile": "1",
+        "pagination": "paginated",
+        "enable_filtering": true,
+        "filter_collapsed": true,
+        "filter_type": "drawer",
+        "filter_color_swatches": true,
+        "enable_sorting": true,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "compact_product_bundle_dhyXz9": {
+      "type": "compact-product-bundle",
+      "blocks": {
+        "heading_RbfUHx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Product bundle",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_JmrX9x": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RbfUHx",
+        "text_JmrX9x"
+      ],
+      "disabled": true,
+      "name": "t:sections.compact-product-bundle.presets.name",
+      "settings": {
+        "collection": "",
+        "products": [],
+        "product_limit": 2,
+        "layout": "image_first",
+        "content_position": "md:items-center",
+        "text_alignment": "center",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-center",
+        "text_alignment_mobile": "center",
+        "swipe_on_mobile": true,
+        "show_variant_labels": true,
+        "picker_type": "button",
+        "enable_color_swatches": true,
+        "color_swatch_type": "color",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 40,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "yg_info_CT6wLn": {
+      "type": "yg-info",
+      "disabled": true,
+      "settings": {
+        "title": "About our best-selling electric bike collection",
+        "richtext": "<p>The <strong>best electric bikes</strong> from Qlife are here! Here, we have carefully selected a range of premium electric bikes, including commuter e-bikes, fat tire e-bikes, folding e-bikes and trikes. Whether you need a reliable city commuter or an adventurous option for nature trails and mountains, we have the perfect choice for everyone.</p><h3><strong>Convenient and Versatile Electric Bike Transportation</strong></h3><p><strong>Great value for money: Electric bikes</strong> are a great way to cut down on transportation expenses, especially with fuel prices rising. In addition to saving money on fuel, the <strong>most affordable e-bikes</strong> also have lower maintenance and repair costs than cars.</p><p><strong>Convenient and flexible: </strong><a href=\"https://actbestbike.com/collections/commuter-ebike\">Commuter e-bikes</a> make city transportation a breeze, allowing you to easily cut through congestion. For those seeking adventure, our fat tire e-bikes can handle a variety of terrains, from sand to mud and snow, adding a touch of excitement to your trip.</p><p><strong>Riding modes:</strong> Each Qlife electric bike comes with three riding modes: pure electric, pedal assist and regular riding. Switch between modes according to your needs and enjoy a customized riding experience.</p><p><strong>Stylish Design and Comfort</strong>: Our best electric bikes are carefully designed to balance performance and style, ensuring you travel in comfort and style.</p><h3><strong>How to Choose an Electric Bike?</strong></h3><p>When buying an electric bike, you can consider many aspects such as purpose, budget, range, motor type, battery capacity and frame style. Qlife offers a variety of electric bikes to suit different styles and functions, including:<br/>                ● <a href=\"https://actbestbike.com/collections/commuter-ebike\"><strong>Commuter Electric Bike</strong></a><strong>: </strong>Cityone 2.0 is our best-selling electric bike with a top speed of 28 mph and a range of up to 55 miles, perfect for city riding.<br/>                ● <a href=\"https://actbestbike.com/collections/fat-tire-electric-bike\"><strong>Fat Tire Electric Bike</strong></a><strong>:</strong> Models such as Racer Plus and Racer Fat Tire feature wide tires for stable and enjoyable riding on any terrain and in all weather conditions.<br/>                ● <a href=\"https://actbestbike.com/collections/folding\"><strong>Folding Electric Bike</strong></a><strong>: </strong>The lightweight Mars model is easy to store and transport, perfect for users who are often on the go.<br/>                ● <a href=\"https://actbestbike.com/products/triker-folding-3-wheels-electric-bike\"><strong>Trike</strong></a><strong>:</strong> Our trikes are designed for stability and balance, suitable for riders of all ages and skill levels.</p><h3><strong>Why Choose Qlife?</strong></h3><p><strong>Value of Excellent Service:</strong> Qlife bikes guarantee quality at an affordable price, providing excellent value for your investment. If you have any questions or need help, our customer service team is here to help.</p><p><strong>Easy to Assemble and Use:</strong> Most of our electric bikes are 95% pre-assembled and can be on the road with a simple installation. Each bike includes detailed instructions and video tutorials to get beginners up and running quickly.</p><p>By choosing an Qlife electric bike, you not only get an enhanced riding experience, but also a stylish and practical means of transportation at an unbeatable price. Whether you are a beginner or an experienced rider, our team is eager to help you find the electric bike that best suits your needs and make riding an enjoyable part of your life!</p><p>By browsing our best-selling models today, start your eco-friendly journey!</p><p>Explore more high-quality electric bikes on Qlife: <a href=\"https://actbestbike.com/collections/fat-tire-electric-bike\" title=\"fat tire ebike\">fat tire ebike</a> | <a href=\"https://actbestbike.com/collections/folding\" title=\"Folding Electric Bikes\">folding electric bikes</a> | <a href=\"https://actbestbike.com/collections/commuter-ebike\" title=\"Commuter electric bikes\">commuter electric bikes</a></p>",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_media_gallery_MtNbxp": {
+      "type": "yg-media-gallery",
+      "blocks": {
+        "media_TdNjLN": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/850_960_-1_0ce20d15-fc5a-461d-a27c-f7b526c36247.jpg",
+            "video_url": ""
+          }
+        },
+        "media_ECwhhB": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/2_d59ffe8b-7ede-447d-b6e0-1c267e1d3a6b.png",
+            "video_url": ""
+          }
+        },
+        "media_nhbXrY": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/850_960_5b62651e-5cc7-4397-b9dd-8797d8258ff0.jpg",
+            "video_url": ""
+          }
+        },
+        "media_Ledjnj": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/960_0316228a-609a-4fe7-aa0b-f0d5f9004960.jpg",
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "media_TdNjLN",
+        "media_ECwhhB",
+        "media_nhbXrY",
+        "media_Ledjnj"
+      ],
+      "name": "YG media gallery",
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_faq_88XxDi": {
+      "type": "yg-faq",
+      "blocks": {
+        "rich_text_FjDzEg": {
+          "type": "rich-text",
+          "settings": {
+            "heading": "FAQs",
+            "text": "",
+            "info": "<p>Please read our <a href=\"/pages/faqs\" title=\"FAQs\">FAQs</a> page to find out more.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_KXMMLy": {
+          "type": "question",
+          "settings": {
+            "title": "Is Qlife better than Eskute?",
+            "text": "<p>Qlife offers powerful motors, long range batteries and better value pricing.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_Wp4gJT": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Does Qlife bike really offer free shipping on all orders?</strong>",
+            "text": "<p>Qlife bike provides fast free shipping on all orders, without any minimum purchase amount requirement.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_fdWLQB": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What does the 365 - day warranty cover?</strong>",
+            "text": "<p>The 365 - day warranty means Qlife bike will offer after - sales service for 365 days from the date of purchase. This typically covers defects in materials or workmanship under normal use. If you encounter any problems with the bike during this period, you can contact our customer service for assistance, which may include repairs, replacement of parts, or other solutions as appropriate.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_qKC8KC": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Do Qlife bikes' batteries have safety certifications?</strong>",
+            "text": "<p>This certification encompasses comprehensive safety evaluations, including the batteries. It ensures that the batteries meet strict safety standards in terms of electrical performance, thermal management, and overall reliability. You can have peace of mind knowing that the batteries in our bikes have passed rigorous safety tests</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_wVxjDj": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Where are Qlife bikes shipped from and how long will it take for delivery?</strong>",
+            "text": "<p>Qlife bikes are shipped from our US warehouse. Generally, the delivery time is within 3 - 8 days after you place your order. We aim to get your bike to you as soon as possible so you can start your cycling adventures.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_LY9hRW": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How is the security of my payment information ensured?</strong>",
+            "text": "<p>What measures does Qlife bike take to protect my payment information during the transaction?<br/><strong>A</strong>: Qlife bike uses secure payment processing systems. Your payment information is processed securely using advanced encryption technology and industry - standard security protocols. We take the protection of your personal and financial data very seriously and have implemented multiple layers of security to prevent unauthorized access and ensure the confidentiality of your information.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "contact_eYEgba": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "heading": "Didn’t find your answer?",
+            "text": "<p>Don't hestitate to contact us</p>",
+            "show_phone": false,
+            "avatar_height": 60,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "rich_text_FjDzEg",
+        "question_KXMMLy",
+        "question_Wp4gJT",
+        "question_fdWLQB",
+        "question_qKC8KC",
+        "question_wVxjDj",
+        "question_LY9hRW",
+        "contact_eYEgba"
+      ],
+      "settings": {
+        "faq_bg_color": "#ffffff",
+        "form_bg_color": "#e6e5e5",
+        "info_bg_color": "#f5f5f5",
+        "style": "with-border",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#000000",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "scrolling_text_3ddYze",
+    "collage_ztpzAF",
+    "image_with_text_dhQF9R",
+    "yg_product_parameter_comparison_iXbA9i",
+    "main-collection",
+    "compact_product_bundle_dhyXz9",
+    "yg_info_CT6wLn",
+    "yg_media_gallery_MtNbxp",
+    "yg_faq_88XxDi"
+  ]
+}

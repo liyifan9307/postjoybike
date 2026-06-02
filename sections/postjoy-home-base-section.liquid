@@ -1,0 +1,1293 @@
+{% comment %}
+  PostJoy Home Base Section
+  Shopify Online Store 2.0 compatible section.
+{% endcomment %}
+
+<section id="PostJoyBase-{{ section.id }}" class="pj-base-section">
+  <div class="pj-container">
+
+    {% if section.settings.show_trust_bar %}
+      <div class="pj-trust-bar">
+        <div class="pj-trust-item">
+          <span class="pj-trust-icon">🚚</span>
+          <div>
+            <strong>Free Shipping</strong>
+            <p>Fast delivery on all e-bike orders.</p>
+          </div>
+        </div>
+
+        <div class="pj-trust-item">
+          <span class="pj-trust-icon">🇺🇸</span>
+          <div>
+            <strong>U.S. Warehouse</strong>
+            <p>Local fulfillment for faster delivery.</p>
+          </div>
+        </div>
+
+        <div class="pj-trust-item">
+          <span class="pj-trust-icon">🔒</span>
+          <div>
+            <strong>Secure Checkout</strong>
+            <p>Safe payment with trusted providers.</p>
+          </div>
+        </div>
+
+        <div class="pj-trust-item">
+          <span class="pj-trust-icon">🛠️</span>
+          <div>
+            <strong>Warranty Support</strong>
+            <p>Rider-focused after-sales assistance.</p>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+
+    {% if section.settings.show_intro %}
+      <div class="pj-block pj-intro">
+        <div class="pj-intro-text">
+          <p class="pj-kicker">{{ section.settings.intro_kicker }}</p>
+          <h2>{{ section.settings.intro_heading }}</h2>
+          <p class="pj-lead">{{ section.settings.intro_lead }}</p>
+          <p>{{ section.settings.intro_text }}</p>
+
+          <div class="pj-feature-grid">
+            <div class="pj-feature-card">
+              <span>01</span>
+              <h3>Factory-Backed Value</h3>
+              <p>Direct supply support helps deliver better performance for the price.</p>
+            </div>
+            <div class="pj-feature-card">
+              <span>02</span>
+              <h3>Quality Checked</h3>
+              <p>Core components are reviewed before your ride leaves the warehouse.</p>
+            </div>
+            <div class="pj-feature-card">
+              <span>03</span>
+              <h3>Fast Fulfillment</h3>
+              <p>U.S. warehouse shipping helps reduce waiting time for riders.</p>
+            </div>
+            <div class="pj-feature-card">
+              <span>04</span>
+              <h3>Real Support</h3>
+              <p>Our team helps with product questions, parts, warranty, and setup.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pj-intro-media">
+          {% if section.settings.intro_image != blank %}
+            {{
+              section.settings.intro_image
+              | image_url: width: 1200
+              | image_tag:
+                loading: 'lazy',
+                class: 'pj-image',
+                alt: section.settings.intro_heading
+            }}
+          {% else %}
+            <div class="pj-image-placeholder">
+              <div>
+                <span>POSTJOY</span>
+                <strong>Factory-Backed E-Rides</strong>
+                <p>Powerful electric bikes built for everyday adventure.</p>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+
+    {% if section.settings.show_models %}
+      <div class="pj-block pj-models">
+        <div class="pj-heading">
+          <p class="pj-kicker">{{ section.settings.models_kicker }}</p>
+          <h2>{{ section.settings.models_heading }}</h2>
+          <p>{{ section.settings.models_text }}</p>
+        </div>
+
+        <div class="pj-model-grid">
+          <div class="pj-model-card pj-model-featured">
+            <div class="pj-model-label">Best Power</div>
+            <h3>GT16</h3>
+            <p>Built for riders who want stronger off-road performance and long-distance power.</p>
+            <ul>
+              <li><strong>Peak Motor:</strong> 3000W</li>
+              <li><strong>Top Speed:</strong> 40 MPH</li>
+              <li><strong>Range:</strong> Up to 100 Miles</li>
+              <li><strong>Tires:</strong> 16×3.0</li>
+            </ul>
+            <div class="pj-price">$999.99</div>
+          </div>
+
+          <div class="pj-model-card">
+            <div class="pj-model-label">Fat Tire Value</div>
+            <h3>T20</h3>
+            <p>A capable fat tire e-bike for daily rides, light trails, and weekend fun.</p>
+            <ul>
+              <li><strong>Peak Motor:</strong> 2500W</li>
+              <li><strong>Top Speed:</strong> 30 MPH</li>
+              <li><strong>Range:</strong> Up to 80 Miles</li>
+              <li><strong>Tires:</strong> 20×4.0</li>
+            </ul>
+            <div class="pj-price">$699.99</div>
+          </div>
+
+          <div class="pj-model-card">
+            <div class="pj-model-label">Long Range</div>
+            <h3>F30</h3>
+            <p>Designed for riders who need strong range, comfort, and all-terrain confidence.</p>
+            <ul>
+              <li><strong>Peak Motor:</strong> 2500W</li>
+              <li><strong>Top Speed:</strong> 32 MPH</li>
+              <li><strong>Range:</strong> Up to 100 Miles</li>
+              <li><strong>Tires:</strong> 20×4.0</li>
+            </ul>
+            <div class="pj-price">$599.99</div>
+          </div>
+        </div>
+
+        {% if section.settings.models_button_label != blank %}
+          <div class="pj-button-wrap">
+            <a
+              class="pj-button"
+              href="{% if section.settings.models_button_link != blank %}{{ section.settings.models_button_link }}{% else %}/collections/all{% endif %}"
+            >
+              {{ section.settings.models_button_label }}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+
+    {% if section.settings.show_process %}
+      <div class="pj-block pj-process">
+        <div class="pj-heading">
+          <p class="pj-kicker">{{ section.settings.process_kicker }}</p>
+          <h2>{{ section.settings.process_heading }}</h2>
+          <p>{{ section.settings.process_text }}</p>
+        </div>
+
+        <div class="pj-process-grid">
+          <div class="pj-process-card">
+            <span>1</span>
+            <h3>Component Review</h3>
+            <p>Frame, motor, battery, brakes, controller, and display are reviewed before shipment.</p>
+          </div>
+          <div class="pj-process-card">
+            <span>2</span>
+            <h3>Electrical Check</h3>
+            <p>Wiring, throttle response, pedal assist, lighting, and display functions are checked.</p>
+          </div>
+          <div class="pj-process-card">
+            <span>3</span>
+            <h3>Brake & Ride Test</h3>
+            <p>Core riding functions are tested to support smoother braking, control, and acceleration.</p>
+          </div>
+          <div class="pj-process-card">
+            <span>4</span>
+            <h3>Packaging Check</h3>
+            <p>Orders are packed carefully to help reduce transit damage and improve delivery condition.</p>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+
+    {% if section.settings.show_shipping %}
+      <div class="pj-block pj-shipping">
+        <div class="pj-shipping-card">
+          <div class="pj-shipping-media">
+            {% if section.settings.shipping_image != blank %}
+              {{
+                section.settings.shipping_image
+                | image_url: width: 1200
+                | image_tag:
+                  loading: 'lazy',
+                  class: 'pj-image',
+                  alt: section.settings.shipping_heading
+              }}
+            {% else %}
+              <div class="pj-shipping-placeholder">
+                <span>U.S. Warehouse</span>
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="pj-shipping-text">
+            <p class="pj-kicker">{{ section.settings.shipping_kicker }}</p>
+            <h2>{{ section.settings.shipping_heading }}</h2>
+            <p>{{ section.settings.shipping_text }}</p>
+
+            <div class="pj-shipping-list">
+              <div>
+                <strong>Free Shipping</strong>
+                <span>No extra shipping fee on all e-bike orders.</span>
+              </div>
+              <div>
+                <strong>3–8 Business Days</strong>
+                <span>Most orders arrive within 3–8 business days after shipment.</span>
+              </div>
+              <div>
+                <strong>Local Fulfillment</strong>
+                <span>U.S. warehouse shipping helps riders receive their order faster.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+
+    {% if section.settings.show_faq %}
+      <div class="pj-block pj-faq">
+        <div class="pj-heading">
+          <p class="pj-kicker">{{ section.settings.faq_kicker }}</p>
+          <h2>{{ section.settings.faq_heading }}</h2>
+        </div>
+
+        <div class="pj-faq-list">
+          <details>
+            <summary>Where does PostJoy ship from?</summary>
+            <p>PostJoy ships from U.S. warehouses whenever available to help reduce delivery time.</p>
+          </details>
+
+          <details>
+            <summary>Is shipping free?</summary>
+            <p>Yes. PostJoy offers free shipping on all e-bike orders.</p>
+          </details>
+
+          <details>
+            <summary>How long does delivery usually take?</summary>
+            <p>Most U.S. orders arrive within 3–8 business days after shipment. Actual delivery time may vary by location and carrier.</p>
+          </details>
+
+          <details>
+            <summary>Do you offer warranty support?</summary>
+            <p>Yes. Eligible product issues are supported according to our warranty policy.</p>
+          </details>
+
+          <details>
+            <summary>How can I contact support?</summary>
+            <p>You can contact us at support@postjoyebike.com. Support hours are Monday–Friday, 8AM–5PM PST.</p>
+          </details>
+        </div>
+      </div>
+    {% endif %}
+
+
+    {% if section.settings.show_cta %}
+      <div class="pj-block pj-cta">
+        <p class="pj-kicker">{{ section.settings.cta_kicker }}</p>
+        <h2>{{ section.settings.cta_heading }}</h2>
+        <p>{{ section.settings.cta_text }}</p>
+
+        <div class="pj-cta-buttons">
+          {% if section.settings.cta_primary_label != blank %}
+            <a
+              class="pj-button pj-button-light"
+              href="{% if section.settings.cta_primary_link != blank %}{{ section.settings.cta_primary_link }}{% else %}/collections/all{% endif %}"
+            >
+              {{ section.settings.cta_primary_label }}
+            </a>
+          {% endif %}
+
+          {% if section.settings.cta_secondary_label != blank %}
+            <a
+              class="pj-button pj-button-outline"
+              href="{% if section.settings.cta_secondary_link != blank %}{{ section.settings.cta_secondary_link }}{% else %}/pages/contact{% endif %}"
+            >
+              {{ section.settings.cta_secondary_label }}
+            </a>
+          {% endif %}
+        </div>
+
+        <div class="pj-cta-note">
+          Free shipping · Secure checkout · U.S. warehouse delivery · Warranty support
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} .pj-base-section {
+    background: {{ section.settings.background_color }};
+    color: {{ section.settings.text_color }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  #shopify-section-{{ section.id }} .pj-container {
+    width: 100%;
+    max-width: {{ section.settings.page_width }}px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-base-section *,
+  #shopify-section-{{ section.id }} .pj-base-section *::before,
+  #shopify-section-{{ section.id }} .pj-base-section *::after {
+    box-sizing: border-box;
+  }
+
+  #shopify-section-{{ section.id }} .pj-block {
+    margin-top: 72px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-kicker {
+    margin: 0 0 10px;
+    color: {{ section.settings.accent_color }};
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  #shopify-section-{{ section.id }} h2,
+  #shopify-section-{{ section.id }} h3,
+  #shopify-section-{{ section.id }} p {
+    margin-top: 0;
+  }
+
+  #shopify-section-{{ section.id }} h2 {
+    margin-bottom: 16px;
+    color: {{ section.settings.heading_color }};
+    font-size: clamp(30px, 4vw, 50px);
+    line-height: 1.06;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+  }
+
+  #shopify-section-{{ section.id }} h3 {
+    color: {{ section.settings.heading_color }};
+  }
+
+  #shopify-section-{{ section.id }} p {
+    color: {{ section.settings.muted_color }};
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  #shopify-section-{{ section.id }} .pj-heading {
+    max-width: 780px;
+    margin: 0 auto 32px;
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .pj-lead {
+    color: {{ section.settings.text_color }};
+    font-size: 19px;
+    line-height: 1.62;
+    font-weight: 650;
+  }
+
+  #shopify-section-{{ section.id }} .pj-trust-bar {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-trust-item {
+    display: flex;
+    gap: 13px;
+    align-items: flex-start;
+    padding: 18px;
+    border: 1px solid {{ section.settings.border_color }};
+    border-radius: 18px;
+    background: {{ section.settings.card_background }};
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06);
+  }
+
+  #shopify-section-{{ section.id }} .pj-trust-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: {{ section.settings.accent_soft_color }};
+    font-size: 20px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-trust-item strong {
+    display: block;
+    margin-bottom: 4px;
+    color: {{ section.settings.heading_color }};
+    font-size: 15px;
+    line-height: 1.25;
+    font-weight: 850;
+  }
+
+  #shopify-section-{{ section.id }} .pj-trust-item p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  #shopify-section-{{ section.id }} .pj-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+    gap: 44px;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .pj-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-feature-card,
+  #shopify-section-{{ section.id }} .pj-model-card,
+  #shopify-section-{{ section.id }} .pj-process-card {
+    border: 1px solid {{ section.settings.border_color }};
+    border-radius: 20px;
+    background: {{ section.settings.card_background }};
+    box-shadow: 0 14px 40px rgba(15, 23, 42, 0.05);
+  }
+
+  #shopify-section-{{ section.id }} .pj-feature-card {
+    padding: 20px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-feature-card span,
+  #shopify-section-{{ section.id }} .pj-process-card span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    background: {{ section.settings.accent_soft_color }};
+    color: {{ section.settings.accent_color }};
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  #shopify-section-{{ section.id }} .pj-feature-card h3,
+  #shopify-section-{{ section.id }} .pj-process-card h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+    line-height: 1.25;
+    font-weight: 850;
+  }
+
+  #shopify-section-{{ section.id }} .pj-feature-card p,
+  #shopify-section-{{ section.id }} .pj-process-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #shopify-section-{{ section.id }} .pj-intro-media,
+  #shopify-section-{{ section.id }} .pj-shipping-media {
+    min-height: 420px;
+    border-radius: 28px;
+    overflow: hidden;
+    background: #111827;
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.18);
+  }
+
+  #shopify-section-{{ section.id }} .pj-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    object-fit: cover;
+  }
+
+  #shopify-section-{{ section.id }} .pj-image-placeholder,
+  #shopify-section-{{ section.id }} .pj-shipping-placeholder {
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    padding: 34px;
+    color: #ffffff;
+    background:
+      radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.22), transparent 26%),
+      radial-gradient(circle at 80% 5%, rgba(255, 122, 48, 0.38), transparent 24%),
+      linear-gradient(135deg, #101827 0%, #1f2937 50%, {{ section.settings.accent_color }} 130%);
+  }
+
+  #shopify-section-{{ section.id }} .pj-image-placeholder span {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.14);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+  }
+
+  #shopify-section-{{ section.id }} .pj-image-placeholder strong {
+    display: block;
+    max-width: 420px;
+    margin-bottom: 10px;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+  }
+
+  #shopify-section-{{ section.id }} .pj-image-placeholder p {
+    max-width: 380px;
+    margin: 0;
+    color: rgba(255,255,255,0.78);
+  }
+
+  #shopify-section-{{ section.id }} .pj-model-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-model-card {
+    position: relative;
+    padding: 26px;
+    overflow: hidden;
+  }
+
+  #shopify-section-{{ section.id }} .pj-model-featured {
+    border-color: {{ section.settings.accent_color }};
+    background:
+      linear-gradient(180deg, {{ section.settings.card_background }}, {{ section.settings.accent_soft_color }});
+  }
+
+  #shopify-section-{{ section.id }} .pj-model-label {
+    display: inline-flex;
+    margin-bottom: 16px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    background: {{ section.settings.accent_soft_color }};
+    color: {{ section.settings.accent_color }};
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  #shopify-section-{{ section.id }} .pj-model-card h3 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+  }
+
+  #shopify-section-{{ section.id }} .pj-model-card p {
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #shopify-section-{{ section.id }} .pj-model-card ul {
+    display: grid;
+    gap: 9px;
+    margin: 0 0 22px;
+    padding: 0;
+    list-style: none;
+  }
+
+  #shopify-section-{{ section.id }} .pj-model-card li {
+    color: {{ section.settings.text_color }};
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  #shopify-section-{{ section.id }} .pj-price {
+    color: {{ section.settings.heading_color }};
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 950;
+    letter-spacing: -0.03em;
+  }
+
+  #shopify-section-{{ section.id }} .pj-button-wrap {
+    margin-top: 28px;
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .pj-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 26px;
+    border-radius: 999px;
+    background: {{ section.settings.button_background }};
+    color: {{ section.settings.button_text }};
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 850;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+  }
+
+  #shopify-section-{{ section.id }} .pj-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+
+  #shopify-section-{{ section.id }} .pj-process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-process-card {
+    padding: 24px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-shipping-card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
+    gap: 42px;
+    align-items: center;
+  }
+
+  #shopify-section-{{ section.id }} .pj-shipping-placeholder {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .pj-shipping-placeholder span {
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 950;
+    letter-spacing: -0.04em;
+  }
+
+  #shopify-section-{{ section.id }} .pj-shipping-list {
+    display: grid;
+    gap: 13px;
+    margin-top: 26px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-shipping-list div {
+    padding: 18px;
+    border-left: 4px solid {{ section.settings.accent_color }};
+    border-radius: 16px;
+    background: {{ section.settings.card_background }};
+    box-shadow: 0 10px 32px rgba(15, 23, 42, 0.05);
+  }
+
+  #shopify-section-{{ section.id }} .pj-shipping-list strong {
+    display: block;
+    margin-bottom: 5px;
+    color: {{ section.settings.heading_color }};
+    font-size: 16px;
+    font-weight: 850;
+  }
+
+  #shopify-section-{{ section.id }} .pj-shipping-list span {
+    color: {{ section.settings.muted_color }};
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  #shopify-section-{{ section.id }} .pj-faq-list {
+    max-width: 880px;
+    margin: 0 auto;
+    display: grid;
+    gap: 12px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-faq-list details {
+    border: 1px solid {{ section.settings.border_color }};
+    border-radius: 18px;
+    background: {{ section.settings.card_background }};
+    overflow: hidden;
+    box-shadow: 0 10px 32px rgba(15, 23, 42, 0.04);
+  }
+
+  #shopify-section-{{ section.id }} .pj-faq-list summary {
+    position: relative;
+    cursor: pointer;
+    padding: 20px 54px 20px 22px;
+    color: {{ section.settings.heading_color }};
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 850;
+    list-style: none;
+  }
+
+  #shopify-section-{{ section.id }} .pj-faq-list summary::-webkit-details-marker {
+    display: none;
+  }
+
+  #shopify-section-{{ section.id }} .pj-faq-list summary::after {
+    content: "+";
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: {{ section.settings.accent_color }};
+    font-size: 26px;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  #shopify-section-{{ section.id }} .pj-faq-list details[open] summary::after {
+    content: "–";
+  }
+
+  #shopify-section-{{ section.id }} .pj-faq-list details p {
+    margin: 0;
+    padding: 0 22px 20px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  #shopify-section-{{ section.id }} .pj-cta {
+    padding: 64px 26px;
+    border-radius: 32px;
+    text-align: center;
+    background:
+      radial-gradient(circle at 18% 12%, rgba(255,255,255,0.22), transparent 28%),
+      radial-gradient(circle at 86% 6%, rgba(255,255,255,0.16), transparent 26%),
+      linear-gradient(135deg, {{ section.settings.cta_bg_1 }} 0%, {{ section.settings.cta_bg_2 }} 100%);
+  }
+
+  #shopify-section-{{ section.id }} .pj-cta h2 {
+    color: #ffffff;
+  }
+
+  #shopify-section-{{ section.id }} .pj-cta .pj-kicker {
+    color: rgba(255,255,255,0.82);
+  }
+
+  #shopify-section-{{ section.id }} .pj-cta p {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255,255,255,0.82);
+  }
+
+  #shopify-section-{{ section.id }} .pj-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 26px;
+  }
+
+  #shopify-section-{{ section.id }} .pj-button-light {
+    background: #ffffff;
+    color: #111827;
+  }
+
+  #shopify-section-{{ section.id }} .pj-button-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.5);
+  }
+
+  #shopify-section-{{ section.id }} .pj-cta-note {
+    margin-top: 22px;
+    color: rgba(255,255,255,0.76);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 989px) {
+    #shopify-section-{{ section.id }} .pj-trust-bar,
+    #shopify-section-{{ section.id }} .pj-model-grid,
+    #shopify-section-{{ section.id }} .pj-process-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #shopify-section-{{ section.id }} .pj-intro,
+    #shopify-section-{{ section.id }} .pj-shipping-card {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-shipping-media {
+      order: 2;
+    }
+
+    #shopify-section-{{ section.id }} .pj-shipping-text {
+      order: 1;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .pj-base-section {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-block {
+      margin-top: 52px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-trust-bar,
+    #shopify-section-{{ section.id }} .pj-feature-grid,
+    #shopify-section-{{ section.id }} .pj-model-grid,
+    #shopify-section-{{ section.id }} .pj-process-grid {
+      grid-template-columns: 1fr;
+    }
+
+    #shopify-section-{{ section.id }} .pj-trust-item {
+      padding: 16px;
+      border-radius: 16px;
+    }
+
+    #shopify-section-{{ section.id }} h2 {
+      font-size: 31px;
+      line-height: 1.08;
+    }
+
+    #shopify-section-{{ section.id }} p {
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    #shopify-section-{{ section.id }} .pj-lead {
+      font-size: 17px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-heading {
+      margin-bottom: 24px;
+      text-align: left;
+    }
+
+    #shopify-section-{{ section.id }} .pj-intro-media,
+    #shopify-section-{{ section.id }} .pj-shipping-media,
+    #shopify-section-{{ section.id }} .pj-image,
+    #shopify-section-{{ section.id }} .pj-image-placeholder,
+    #shopify-section-{{ section.id }} .pj-shipping-placeholder {
+      min-height: 300px;
+      border-radius: 22px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-image-placeholder {
+      padding: 24px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-image-placeholder strong {
+      font-size: 30px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-model-card,
+    #shopify-section-{{ section.id }} .pj-process-card,
+    #shopify-section-{{ section.id }} .pj-feature-card {
+      padding: 20px;
+      border-radius: 18px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-model-card h3 {
+      font-size: 28px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-price {
+      font-size: 26px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-button,
+    #shopify-section-{{ section.id }} .pj-cta-buttons .pj-button {
+      width: 100%;
+    }
+
+    #shopify-section-{{ section.id }} .pj-cta {
+      margin-left: -2px;
+      margin-right: -2px;
+      padding: 46px 18px;
+      border-radius: 24px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-cta-buttons {
+      flex-direction: column;
+    }
+
+    #shopify-section-{{ section.id }} .pj-faq-list summary {
+      padding: 18px 48px 18px 18px;
+      font-size: 15px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-faq-list details p {
+      padding: 0 18px 18px;
+      font-size: 14px;
+    }
+
+    #shopify-section-{{ section.id }} .pj-cta-note {
+      font-size: 13px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "PostJoy Base Section",
+  "tag": "section",
+  "class": "postjoy-base-section-wrapper",
+  "settings": [
+    {
+      "type": "header",
+      "content": "显示模块"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_trust_bar",
+      "label": "显示顶部信任条",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_intro",
+      "label": "显示品牌介绍模块",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_models",
+      "label": "显示产品型号模块",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_process",
+      "label": "显示质检流程模块",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shipping",
+      "label": "显示美国仓发货模块",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_faq",
+      "label": "显示 FAQ 模块",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cta",
+      "label": "显示底部 CTA 模块",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "品牌介绍内容"
+    },
+    {
+      "type": "text",
+      "id": "intro_kicker",
+      "label": "小标题",
+      "default": "Factory-Backed E-Rides"
+    },
+    {
+      "type": "text",
+      "id": "intro_heading",
+      "label": "标题",
+      "default": "More Power. More Value. More Confidence."
+    },
+    {
+      "type": "textarea",
+      "id": "intro_lead",
+      "label": "重点文案",
+      "default": "PostJoy brings factory-backed electric rides to everyday riders with stronger performance, better pricing, and dependable support."
+    },
+    {
+      "type": "textarea",
+      "id": "intro_text",
+      "label": "说明文案",
+      "default": "From powerful fat tire e-bikes to long-range commuter rides, we focus on practical performance, reliable fulfillment, and a smoother buying experience."
+    },
+    {
+      "type": "image_picker",
+      "id": "intro_image",
+      "label": "品牌介绍图片"
+    },
+    {
+      "type": "header",
+      "content": "产品型号模块"
+    },
+    {
+      "type": "text",
+      "id": "models_kicker",
+      "label": "小标题",
+      "default": "Find Your Ride"
+    },
+    {
+      "type": "text",
+      "id": "models_heading",
+      "label": "标题",
+      "default": "Popular PostJoy Models"
+    },
+    {
+      "type": "textarea",
+      "id": "models_text",
+      "label": "说明文案",
+      "default": "Compare power, range, and riding style to choose the model that fits your daily commute, weekend adventure, or off-road needs."
+    },
+    {
+      "type": "text",
+      "id": "models_button_label",
+      "label": "按钮文字",
+      "default": "Shop All Models"
+    },
+    {
+      "type": "url",
+      "id": "models_button_link",
+      "label": "按钮链接"
+    },
+    {
+      "type": "header",
+      "content": "质检流程模块"
+    },
+    {
+      "type": "text",
+      "id": "process_kicker",
+      "label": "小标题",
+      "default": "Quality Control"
+    },
+    {
+      "type": "text",
+      "id": "process_heading",
+      "label": "标题",
+      "default": "Checked Before Every Ride Ships"
+    },
+    {
+      "type": "textarea",
+      "id": "process_text",
+      "label": "说明文案",
+      "default": "Every PostJoy ride goes through key checks before shipment to support better reliability, safer handling, and a smoother unboxing experience."
+    },
+    {
+      "type": "header",
+      "content": "美国仓模块"
+    },
+    {
+      "type": "text",
+      "id": "shipping_kicker",
+      "label": "小标题",
+      "default": "Fast Local Fulfillment"
+    },
+    {
+      "type": "text",
+      "id": "shipping_heading",
+      "label": "标题",
+      "default": "Fast Shipping from U.S. Warehouses"
+    },
+    {
+      "type": "textarea",
+      "id": "shipping_text",
+      "label": "说明文案",
+      "default": "PostJoy orders are shipped from U.S. warehouses whenever available, helping riders receive their new e-bike faster with less waiting."
+    },
+    {
+      "type": "image_picker",
+      "id": "shipping_image",
+      "label": "美国仓图片"
+    },
+    {
+      "type": "header",
+      "content": "FAQ 模块"
+    },
+    {
+      "type": "text",
+      "id": "faq_kicker",
+      "label": "小标题",
+      "default": "FAQ"
+    },
+    {
+      "type": "text",
+      "id": "faq_heading",
+      "label": "标题",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "header",
+      "content": "CTA 模块"
+    },
+    {
+      "type": "text",
+      "id": "cta_kicker",
+      "label": "小标题",
+      "default": "Ready to Ride?"
+    },
+    {
+      "type": "text",
+      "id": "cta_heading",
+      "label": "标题",
+      "default": "Find Your Perfect Electric Ride Today"
+    },
+    {
+      "type": "textarea",
+      "id": "cta_text",
+      "label": "说明文案",
+      "default": "Shop factory-backed electric bikes with free shipping, secure checkout, U.S. warehouse delivery, and rider-focused support."
+    },
+    {
+      "type": "text",
+      "id": "cta_primary_label",
+      "label": "主按钮文字",
+      "default": "Shop E-Bikes"
+    },
+    {
+      "type": "url",
+      "id": "cta_primary_link",
+      "label": "主按钮链接"
+    },
+    {
+      "type": "text",
+      "id": "cta_secondary_label",
+      "label": "副按钮文字",
+      "default": "Contact Support"
+    },
+    {
+      "type": "url",
+      "id": "cta_secondary_link",
+      "label": "副按钮链接"
+    },
+    {
+      "type": "header",
+      "content": "颜色设置"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "背景色",
+      "default": "#f7f8fb"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "卡片背景色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "标题颜色",
+      "default": "#111827"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "正文颜色",
+      "default": "#1f2937"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "辅助文字颜色",
+      "default": "#5f6b7a"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "强调色",
+      "default": "#ff5a1f"
+    },
+    {
+      "type": "color",
+      "id": "accent_soft_color",
+      "label": "浅强调背景色",
+      "default": "#fff0e8"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "边框颜色",
+      "default": "#e5e7eb"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "按钮背景色",
+      "default": "#111827"
+    },
+    {
+      "type": "color",
+      "id": "button_text",
+      "label": "按钮文字颜色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cta_bg_1",
+      "label": "CTA 渐变色 1",
+      "default": "#111827"
+    },
+    {
+      "type": "color",
+      "id": "cta_bg_2",
+      "label": "CTA 渐变色 2",
+      "default": "#ff5a1f"
+    },
+    {
+      "type": "header",
+      "content": "间距设置"
+    },
+    {
+      "type": "range",
+      "id": "page_width",
+      "label": "内容最大宽度",
+      "min": 960,
+      "max": 1600,
+      "step": 20,
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "电脑端顶部间距",
+      "min": 0,
+      "max": 140,
+      "step": 4,
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "电脑端底部间距",
+      "min": 0,
+      "max": 140,
+      "step": 4,
+      "default": 76
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "手机端顶部间距",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "手机端底部间距",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "PostJoy Base Section"
+    }
+  ]
+}
+{% endschema %}

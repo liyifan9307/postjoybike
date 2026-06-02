@@ -1,0 +1,82 @@
+<div class="yg-bundle-item{% if forloop.index > limit_number %} hidden{% endif %}"
+		 data-product-id="{{ product.selected_or_first_available_variant.id }}" data-product-handle="{{ product.handle }}"
+		 data-sale-price="{{ product.selected_or_first_available_variant.price }}"
+		 data-regular-price="{{ product.selected_or_first_available_variant.compare_at_price }}">
+	{% if product.featured_image %}
+		<a class="yg-bundle-item-image" href="{{ product.url }}" title="{{ product.title }}">
+			{{- product.featured_image | image_url: width: product.featured_image.width | image_tag: loading: 'lazy', widths: '200,300,400,500,600,700,800,900,1000,1100,1200' -}}
+		</a>
+	{% endif %}
+	<div class="yg-bundle-item-inner">
+		<div class="yg-bundle-item-info">
+			<a class="yg-bundle-item-title" href="{{ product.url }}" title="{{ product.title }}">{{ product.title }}</a>
+			<div class="yg-bundle-item-details">
+				<div class="yg-bundle-item-price">
+					<div class="price price-sale">
+						<span class="sr-only">{{ 'products.price.sale_price' | t }}</span>
+						{% if product.selected_or_first_available_variant.price == 0 %}
+							<span
+								class="price-money">Free</span>
+						{% else %}
+							{%- if settings.currency_code_enabled -%}
+								<span
+									class="price-money">{{- product.selected_or_first_available_variant.price | money_with_currency -}}</span>
+							{%- else -%}
+								<span class="price-money">{{- product.selected_or_first_available_variant.price | money -}}</span>
+							{%- endif -%}
+						{% endif %}
+					</div>
+					<div
+						class="price price-regular{% unless product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price %} hidden{% endunless %}">
+						<span class="sr-only">{{ 'products.price.regular_price' | t }}</span>
+						{%- if settings.currency_code_enabled -%}
+							{% if product.selected_or_first_available_variant.compare_at_price %}
+								<span
+									class="price-money">{{- product.selected_or_first_available_variant.compare_at_price | money_with_currency -}}</span>
+							{% endif %}
+						{%- else -%}
+							{% if product.selected_or_first_available_variant.compare_at_price %}
+								<span
+									class="price-money">{{- product.selected_or_first_available_variant.compare_at_price | money -}}</span>
+							{% endif %}
+						{%- endif -%}
+					</div>
+				</div>
+				{% unless product.variants[0].title == 'Default Title' %}
+					<fieldset class="yg-bundle-variant-fieldset relative">
+						<button type="button" class="yg-bundle-variant-picker" title="{{ product.variants[0].title }}">
+							<span>{{ product.variants[0].title }}</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+								<path d="M12 6.5L8 10.5L4 6.5" stroke="#333333" stroke-width="1.5" stroke-linecap="square"
+											stroke-linejoin="round"/>
+							</svg>
+						</button>
+						<ul class="yg-bundle-variant-list">
+							{%- for variant in product.variants -%}
+								<li title="{{ variant.title }}" {% unless variant.available %}class="disabled"{% endunless %}
+										data-variant-id="{{ variant.id }}">{{ variant.title }}</li>
+							{% endfor %}
+						</ul>
+					</fieldset>
+				{% endunless %}
+			</div>
+		</div>
+		<div class="yg-bundle-checkbox">
+			<label>
+				<input type="checkbox" name="" value=""{% if enable_required %} checked{% endif %}/>
+				<span class="checkbox-wrapper">
+			<span class="checkbox-bg"></span>
+			  <svg fill="none" viewBox="0 0 24 24" class="checkbox-icon">
+				 <path
+					 stroke-linejoin="round"
+					 stroke-linecap="round"
+					 stroke-width="3"
+					 stroke="currentColor"
+					 d="M4 12L10 18L20 6"
+					 class="check-path"></path>
+			  </svg>
+			</span>
+			</label>
+		</div>
+	</div>
+</div>

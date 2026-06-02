@@ -1,0 +1,780 @@
+{% comment %}
+  Section: F30 Creator Reviews
+  File name: sections/f30-creator-reviews.liquid
+{% endcomment %}
+
+<section
+  id="f30-creator-reviews-{{ section.id }}"
+  class="f30-creator-reviews"
+>
+  <div class="f30-creator-reviews__container">
+    <div class="f30-creator-reviews__header">
+      {% if section.settings.eyebrow != blank %}
+        <p class="f30-creator-reviews__eyebrow">
+          {{ section.settings.eyebrow }}
+        </p>
+      {% endif %}
+
+      {% if section.settings.heading != blank %}
+        <h2 class="f30-creator-reviews__heading">
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.description != blank %}
+        <div class="f30-creator-reviews__description">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if section.blocks.size > 0 %}
+      <div class="f30-creator-reviews__slider-wrap">
+        <div class="f30-creator-reviews__grid" role="list">
+          {% for block in section.blocks %}
+            <article
+              class="f30-creator-reviews__card"
+              role="listitem"
+              {{ block.shopify_attributes }}
+            >
+              <div class="f30-creator-reviews__meta">
+                {% if block.settings.product != blank %}
+                  <span>{{ block.settings.product }}</span>
+                {% endif %}
+
+                {% if block.settings.platform != blank %}
+                  <span>{{ block.settings.platform }}</span>
+                {% endif %}
+              </div>
+
+              {% if block.settings.creator != blank %}
+                <h3 class="f30-creator-reviews__card-title">
+                  {{ block.settings.creator }}
+                </h3>
+              {% endif %}
+
+              {% if block.settings.review_text != blank %}
+                <div class="f30-creator-reviews__card-text">
+                  {{ block.settings.review_text }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.link != blank %}
+                <a
+                  class="f30-creator-reviews__button"
+                  href="{{ block.settings.link }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open {{ block.settings.platform | escape }} review by {{ block.settings.creator | escape }}"
+                >
+                  {% if block.settings.button_label != blank %}
+                    {{ block.settings.button_label }}
+                  {% else %}
+                    View Review
+                  {% endif %}
+                </a>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if section.settings.show_mobile_hint %}
+        <p class="f30-creator-reviews__mobile-hint">
+          Swipe to see more reviews
+        </p>
+      {% endif %}
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  #f30-creator-reviews-{{ section.id }} {
+    width: 100%;
+    background:
+      radial-gradient(circle at top left, rgba(0, 148, 255, 0.2), transparent 34%),
+      radial-gradient(circle at bottom right, rgba(47, 95, 255, 0.14), transparent 32%),
+      linear-gradient(180deg, {{ section.settings.background_color }} 0%, {{ section.settings.background_color_bottom }} 100%);
+    color: {{ section.settings.text_color }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__header {
+    max-width: 780px;
+    margin: 0 auto 44px;
+    text-align: {{ section.settings.header_alignment }};
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__eyebrow {
+    margin: 0 0 12px;
+    color: {{ section.settings.accent_color }};
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__heading {
+    margin: 0 0 16px;
+    color: {{ section.settings.heading_color }};
+    font-size: {{ section.settings.heading_size }}px;
+    line-height: 1.08;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__description {
+    margin: 0;
+    color: {{ section.settings.muted_text_color }};
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__description p {
+    margin: 0;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__slider-wrap {
+    width: 100%;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__grid {
+    display: grid;
+    grid-template-columns: repeat({{ section.settings.columns_desktop }}, minmax(0, 1fr));
+    gap: {{ section.settings.card_gap }}px;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: {{ section.settings.card_min_height }}px;
+    padding: 24px;
+    border: 1px solid {{ section.settings.card_border_color }};
+    border-radius: {{ section.settings.card_radius }}px;
+    background:
+      linear-gradient(180deg, {{ section.settings.card_background_top }} 0%, {{ section.settings.card_background_bottom }} 100%);
+    box-shadow: 0 18px 42px rgba(0, 20, 45, 0.32);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 38%),
+      radial-gradient(circle at top right, rgba(0, 148, 255, 0.22), transparent 42%);
+    opacity: 0.8;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__meta,
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card-title,
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card-text,
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__button {
+    position: relative;
+    z-index: 1;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__meta span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: {{ section.settings.badge_background }};
+    color: {{ section.settings.badge_text_color }};
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 800;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card-title {
+    margin: 0 0 12px;
+    color: {{ section.settings.heading_color }};
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card-text {
+    margin: 0 0 22px;
+    color: {{ section.settings.card_text_color }};
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card-text p {
+    margin: 0;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__button {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    min-height: 44px;
+    padding: 0 18px;
+    border-radius: 999px;
+    background: {{ section.settings.button_background }};
+    color: {{ section.settings.button_text_color }};
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 900;
+    text-decoration: none;
+    transition:
+      transform 0.22s ease,
+      background-color 0.22s ease,
+      color 0.22s ease,
+      box-shadow 0.22s ease;
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__button:hover {
+    transform: translateY(-2px);
+    background: {{ section.settings.button_hover_background }};
+    color: {{ section.settings.button_hover_text_color }};
+    box-shadow: 0 12px 26px rgba(0, 148, 255, 0.28);
+  }
+
+  #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__mobile-hint {
+    display: none;
+    margin: 14px 0 0;
+    color: {{ section.settings.muted_text_color }};
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+    opacity: 0.82;
+  }
+
+  @media screen and (max-width: 989px) {
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__grid {
+      grid-template-columns: repeat({{ section.settings.columns_tablet }}, minmax(0, 1fr));
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__heading {
+      font-size: calc({{ section.settings.heading_size }}px * 0.82);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    #f30-creator-reviews-{{ section.id }} {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__container {
+      max-width: 100%;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__header {
+      margin-bottom: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+      text-align: {{ section.settings.mobile_header_alignment }};
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__eyebrow {
+      font-size: 12px;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__heading {
+      font-size: {{ section.settings.mobile_heading_size }}px;
+      line-height: 1.12;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__description {
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__slider-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__slider-wrap::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 46px;
+      height: 100%;
+      pointer-events: none;
+      background: linear-gradient(
+        90deg,
+        rgba(6, 12, 24, 0),
+        {{ section.settings.background_color_bottom }}
+      );
+      z-index: 2;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__grid {
+      display: flex;
+      grid-template-columns: none;
+      gap: 16px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-padding-left: 16px;
+      padding-left: 16px;
+      padding-right: 42px;
+      padding-bottom: 8px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card {
+      flex: 0 0 {{ section.settings.mobile_card_width }}%;
+      min-width: 0;
+      min-height: {{ section.settings.mobile_card_min_height }}px;
+      padding: 20px;
+      border-radius: calc({{ section.settings.card_radius }}px * 0.85);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card-title {
+      font-size: 20px;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__card-text {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__button {
+      width: 100%;
+      min-height: 46px;
+    }
+
+    #f30-creator-reviews-{{ section.id }} .f30-creator-reviews__mobile-hint {
+      display: block;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "F30 Creator Reviews",
+  "tag": "section",
+  "class": "section-f30-creator-reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Real Creator Reviews"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Creators Are Talking About the F30"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>From detailed YouTube coverage to short-form Instagram posts, creators are sharing their real-world impressions of the F30’s design, everyday usability, riding experience, and overall value.</p>"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "label": "Header alignment",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "mobile_header_alignment",
+      "label": "Mobile header alignment",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_mobile_hint",
+      "label": "Show mobile swipe hint",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Container width",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "label": "Columns on tablet",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "mobile_card_width",
+      "label": "Mobile card width",
+      "min": 72,
+      "max": 92,
+      "step": 1,
+      "unit": "%",
+      "default": 84
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Card gap",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "card_min_height",
+      "label": "Card minimum height",
+      "min": 180,
+      "max": 420,
+      "step": 10,
+      "unit": "px",
+      "default": 260
+    },
+    {
+      "type": "range",
+      "id": "mobile_card_min_height",
+      "label": "Mobile card minimum height",
+      "min": 220,
+      "max": 460,
+      "step": 10,
+      "unit": "px",
+      "default": 280
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "Card border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 28,
+      "max": 68,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_size",
+      "label": "Mobile heading size",
+      "min": 22,
+      "max": 42,
+      "step": 1,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Desktop padding top",
+      "min": 24,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Desktop padding bottom",
+      "min": 24,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Mobile padding top",
+      "min": 20,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Mobile padding bottom",
+      "min": 20,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background top",
+      "default": "#06111f"
+    },
+    {
+      "type": "color",
+      "id": "background_color_bottom",
+      "label": "Background bottom",
+      "default": "#030814"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Base text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "muted_text_color",
+      "label": "Description text color",
+      "default": "#b8c7dc"
+    },
+    {
+      "type": "color",
+      "id": "card_text_color",
+      "label": "Card text color",
+      "default": "#c5d2e5"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#2ea8ff"
+    },
+    {
+      "type": "color",
+      "id": "card_background_top",
+      "label": "Card background top",
+      "default": "#0f243d"
+    },
+    {
+      "type": "color",
+      "id": "card_background_bottom",
+      "label": "Card background bottom",
+      "default": "#08172a"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border color",
+      "default": "#234a72"
+    },
+    {
+      "type": "color",
+      "id": "badge_background",
+      "label": "Badge background",
+      "default": "#0b365c"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#75c9ff"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background",
+      "default": "#1f9bff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Button hover background",
+      "default": "#4bb3ff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button hover text color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Creator review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "creator",
+          "label": "Creator name",
+          "default": "Creator Name"
+        },
+        {
+          "type": "text",
+          "id": "product",
+          "label": "Product",
+          "default": "F30"
+        },
+        {
+          "type": "text",
+          "id": "platform",
+          "label": "Platform",
+          "default": "YouTube"
+        },
+        {
+          "type": "richtext",
+          "id": "review_text",
+          "label": "Review text",
+          "default": "<p>A creator review sharing real-world impressions of the F30’s design, riding experience, usability, and value.</p>"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Review link"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "View Review"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "F30 Creator Reviews",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "creator": "Curiosity Cafe",
+            "product": "F30",
+            "platform": "YouTube",
+            "review_text": "<p>A YouTube review featuring the F30, giving viewers a closer look at its real-world riding experience, everyday practicality, design details, and overall value.</p>",
+            "link": "https://www.youtube.com/watch?v=biDFrN4Nw2M",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "Jimmy is Promo",
+            "product": "F30",
+            "platform": "YouTube",
+            "review_text": "<p>A creator video introducing the F30 and highlighting its key appeal for riders looking for a stylish, capable, and accessible electric ride.</p>",
+            "link": "https://www.youtube.com/watch?v=vIOK_2Y7_8U",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "@fraddee",
+            "product": "F30",
+            "platform": "Instagram",
+            "review_text": "<p>A short-form Instagram feature showcasing the F30’s visual style, compact presence, and lifestyle-friendly riding vibe for everyday electric mobility.</p>",
+            "link": "https://www.instagram.com/p/DX0eUL1s8Zw/",
+            "button_label": "View Post"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "america.timee",
+            "product": "F30",
+            "platform": "Instagram",
+            "review_text": "<p>An Instagram post presenting the F30 in a quick, social-first format, highlighting its modern look and approachable electric bike experience.</p>",
+            "link": "https://www.instagram.com/p/DX_vhU-RT-7/",
+            "button_label": "View Post"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,326 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "spacing": {
+          "type": "spacing",
+          "settings": {
+            "height": 0,
+            "height_mobile": 0
+          }
+        },
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "title-xs"
+          }
+        },
+        "description_cz3Anq": {
+          "type": "description",
+          "settings": {
+            "cus_description": "",
+            "text_size": "subtext-md",
+            "text_max_size": 16,
+            "text_font": "body",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "spacing",
+        "breadcrumb",
+        "title",
+        "description_cz3Anq"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "show_image": true,
+        "image": "shopify://shop_images/1_40744185-9b24-468a-8a54-817d95d861fe.jpg",
+        "image_height": "adapt",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/3_29cbc49c-3451-46cc-aef2-2cc4a1e0d395.jpg",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "zoom"
+      }
+    },
+    "scrolling_text_r7BjeT": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_WTetGG": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Save $50 on Combos — Code QF50</strong>",
+            "text_size": 50,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_WTetGG"
+      ],
+      "name": "t:sections.scrolling-text.presets.name",
+      "settings": {
+        "direction": "left",
+        "speed": 25,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "q-collection-commute",
+            "per_row": 5,
+            "show_count": true
+          }
+        },
+        "promotion": {
+          "type": "promotion",
+          "settings": {
+            "position": 3,
+            "column_size": "1",
+            "image": "shopify://shop_images/b8a2ba33b567cdd887ca2e2efc4dd332.jpg",
+            "heading": "NEW LAUNCH",
+            "content": "<p>Spark 20\"x4.0\" Motorcycle Electric Bicycle</p>",
+            "button_label": "Shop now",
+            "button_link": "shopify://products/spark-moped-style-e-bike",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false,
+            "content_position": "md:items-end",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/b8a2ba33b567cdd887ca2e2efc4dd332.jpg",
+            "content_position_mobile": "items-center",
+            "text_alignment_mobile": "left",
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "promotion"
+      ],
+      "settings": {
+        "section_bg_color": "#f5f5f5",
+        "products_per_page": 18,
+        "columns": 4,
+        "columns_mobile": "1",
+        "pagination": "paginated",
+        "enable_filtering": true,
+        "filter_collapsed": false,
+        "filter_type": "sidebar",
+        "filter_color_swatches": true,
+        "enable_sorting": true,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_info_CT6wLn": {
+      "type": "yg-info",
+      "disabled": true,
+      "settings": {
+        "title": "What’s the Best Commuter Electric Bike?",
+        "richtext": "<p>Are you tired of the hassle of commuting long distances to work every day? Or are you impatient when you are stuck in traffic? Qlifebike will change your commute with the <a href=\"https://actbestbike.com/collections/best-sellers\" title=\"best sellers\"><strong>best commuter electric bikes</strong></a>. Just consider the following factors when choosing an electric bike as a commuter tool.</p><h3>Core Performance: Efficiency Combined with Comfort</h3><h4>Motor and power</h4><p>Our electric bikes feature efficient <a href=\"https://actbestbike.com/blogs/news/what-are-the-types-of-e-bike-motors-pros-and-cons-explained\" title=\"what are the types of e bike motors pros and cons explained\">hub motors</a> that deliver reliable power, perfectly tailored for urban commuting. With power ratings up to 750W, they offer a stable and efficient riding experience, ensuring that your commute is smooth and responsive.</p><h4>Battery</h4><p><strong>For a 10-mile commute,</strong> a 400Wh battery is more than sufficient. It can easily handle the round-trip distance, providing enough power for your daily journey. It gets you to work and back without range anxiety.</p><p><strong>For a 20-mile commute,</strong> a 450-500Wh battery is ideal. This capacity gives you a comfortable buffer, ensuring that even if you take a slightly longer route or encounter unexpected detours, you won't run out of power.</p><p><strong>For a 30-mile commute,</strong> opt for a battery with ≥600Wh. Such a high-capacity battery can handle longer distances, allowing you to commute without worry. Our electric bikes come with removable batteries, making it convenient to charge at home or in the office.</p><h4>Frame</h4><p><strong>Commuter electric bikes</strong> are recommended to use lightweight frames, such as lightweight and durable aluminum frames. <a href=\"https://actbestbike.com/products/core-electric-bike\" title=\"core electric bike\">Step-through electric bikes</a> are suitable for women who need to wear skirts during commuting, and they are more convenient to cross, while foldable electric bikes are easy to carry up and down stairs and on subways or buses.</p><h4>Safety and Compliance</h4><p>Qlifebike electric bikes are categorized into <a href=\"https://actbestbike.com/blogs/news/ebike-classes-1-2-and-3\" title=\"ebike classes 1 2 and 3\">Class 2 (throttle assist) and Class 3</a> (higher pedal-assist speed), allowing you to choose the appropriate level based on state regulations and personal preferences. For safety, we recommend wearing protective gear such as helmets when riding electric bikes.</p><h3>The Outstanding Choice for Urban Commuting Ebikes</h3><p>At Qlifebike, our electric bikes are designed specifically for cities and commuters, with lightweight aluminum frames, comfortable saddles, and handlebars, making your commute more comfortable. In addition, Qlife Commuter City Electric Bike is equipped with a <a href=\"https://actbestbike.com/blogs/news/750w-vs-1000w-ebike-motor-comparison\" title=\"750w vs 1000w ebike motor comparison\">powerful motor of over 750W</a>, paired with a built-in lithium <a href=\"https://actbestbike.com/blogs/news/e-bike-battery-basics-facts\" title=\"e bike battery basics facts\">battery</a>, with a range of over 50 kilometers.</p><p>Explore more high-quality electric bikes on Qlife: <a href=\"https://actbestbike.com/collections/fat-tire-electric-bike\" title=\"fat tire ebike\">fat tire ebike</a> | <a href=\"https://actbestbike.com/collections/folding\" title=\"Folding Electric Bikes\">folding electric bikes</a> | <a href=\"https://actbestbike.com/collections/best-sellers\" title=\"Best selling electric bikes\">best selling electric bikes</a></p>",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_faq_88XxDi": {
+      "type": "yg-faq",
+      "blocks": {
+        "rich_text_FjDzEg": {
+          "type": "rich-text",
+          "settings": {
+            "heading": "FAQs",
+            "text": "",
+            "info": "<p>Please read our <a href=\"/pages/faqs\" title=\"FAQs\">FAQs</a> page to find out more.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_Wp4gJT": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Does Qlife bike really offer free shipping on all orders?</strong>",
+            "text": "<p>Qlife bike provides fast free shipping on all orders, without any minimum purchase amount requirement.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_fdWLQB": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What does the 365 - day warranty cover?</strong>",
+            "text": "<p>The 365 - day warranty means Qlife bike will offer after - sales service for 365 days from the date of purchase. This typically covers defects in materials or workmanship under normal use. If you encounter any problems with the bike during this period, you can contact our customer service for assistance, which may include repairs, replacement of parts, or other solutions as appropriate.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_qKC8KC": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Do Qlife bikes' batteries have safety certifications?</strong>",
+            "text": "<p>This certification encompasses comprehensive safety evaluations, including the batteries. It ensures that the batteries meet strict safety standards in terms of electrical performance, thermal management, and overall reliability. You can have peace of mind knowing that the batteries in our bikes have passed rigorous safety tests<br/><br/><br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_wVxjDj": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Where are Qlife bikes shipped from and how long will it take for delivery?</strong>",
+            "text": "<p>Qlife bikes are shipped from our US warehouse. Generally, the delivery time is within 3 - 8 days after you place your order. We aim to get your bike to you as soon as possible so you can start your cycling adventures.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_LY9hRW": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How is the security of my payment information ensured?</strong>",
+            "text": "<p>What measures does Qlife bike take to protect my payment information during the transaction?<br/><strong>A</strong>: Qlife bike uses secure payment processing systems. Your payment information is processed securely using advanced encryption technology and industry - standard security protocols. We take the protection of your personal and financial data very seriously and have implemented multiple layers of security to prevent unauthorized access and ensure the confidentiality of your information.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "contact_eYEgba": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "heading": "Didn’t find your answer?",
+            "text": "<p>Don't hestitate to contact us</p>",
+            "show_phone": false,
+            "avatar_height": 60,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "rich_text_FjDzEg",
+        "question_Wp4gJT",
+        "question_fdWLQB",
+        "question_qKC8KC",
+        "question_wVxjDj",
+        "question_LY9hRW",
+        "contact_eYEgba"
+      ],
+      "settings": {
+        "faq_bg_color": "#ffffff",
+        "form_bg_color": "#e6e5e5",
+        "info_bg_color": "#f5f5f5",
+        "style": "with-border",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#000000",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "scrolling_text_r7BjeT",
+    "main-collection",
+    "yg_info_CT6wLn",
+    "yg_faq_88XxDi"
+  ]
+}

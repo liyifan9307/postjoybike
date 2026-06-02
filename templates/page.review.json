@@ -1,0 +1,97 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "slideshow_YGC3EK": {
+      "type": "slideshow",
+      "blocks": {
+        "image_Lr3X4Y": {
+          "type": "image",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_Lr3X4Y"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "650px",
+        "content_width": "small",
+        "image_height_mobile": "auto",
+        "color_text": "#ffffff",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "custom_liquid_yXixMK": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "liquid": "<style>\n/* ===== Tabs ===== */\n.tab-buttons {\n  display: flex;\n  gap: 40px;\n  border-bottom: 1px solid #ddd;\n  margin-bottom: 30px;\n  font-size: 20px;\n  font-weight: 600;\n}\n\n.tab-buttons button {\n  background: none;\n  border: none;\n  padding: 15px 0;\n  cursor: pointer;\n  color: #333;\n}\n\n.tab-buttons button.active {\n  color: red;\n  border-bottom: 3px solid red;\n}\n\n.tab-content {\n  display: none;\n}\n\n.tab-content.active {\n  display: block;\n}\n\n/* ===== 视频网格 ===== */\n.video-grid {\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 20px;\n}\n\n.video-card iframe {\n  width: 100%;\n  aspect-ratio: 16 / 9;\n  border-radius: 12px;\n  border: none;\n}\n\n/* 平板 */\n@media (max-width: 1024px) {\n  .video-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n/* 手机 */\n@media (max-width: 768px) {\n  .video-grid {\n    grid-template-columns: 1fr;\n  }\n}\n</style>\n\n<!-- ===== Tabs Buttons ===== -->\n<div class=\"tab-buttons\">\n  <button class=\"active\" onclick=\"openTab(event, 'video')\">\n    Video Reviews\n  </button>\n  <button onclick=\"openTab(event, 'customer')\">\n    Customer Reviews\n  </button>\n</div>\n\n<!-- ===== Video Tab ===== -->\n<div id=\"video\" class=\"tab-content active\">\n\n  <div class=\"video-grid\">\n\n    <div class=\"video-card\">\n      <iframe src=\"https://www.youtube.com/embed/KBNlmP6tsso\" allowfullscreen></iframe>\n    </div>\n\n    <div class=\"video-card\">\n      <iframe src=\"https://www.youtube.com/embed/gtPspd2ARKI\" allowfullscreen></iframe>\n    </div>\n\n    <div class=\"video-card\">\n      <iframe src=\"https://www.youtube.com/embed/w3qjDWvGmkA\" allowfullscreen></iframe>\n    </div>\n\n    <div class=\"video-card\">\n      <iframe src=\"https://www.youtube.com/embed/h2p3CdFti3g\" allowfullscreen></iframe>\n    </div>\n\n    <div class=\"video-card\">\n      <iframe src=\"https://www.youtube.com/embed/RatUeCqqePM\" allowfullscreen></iframe>\n    </div>\n\n    <div class=\"video-card\">\n      <iframe src=\"https://www.youtube.com/embed/4t-3FfnACNo\" allowfullscreen></iframe>\n    </div>\n\n    <div class=\"video-card\">\n      <iframe src=\"https://www.youtube.com/embed/Uv78hZi1aHY\" allowfullscreen></iframe>\n    </div>\n\n  </div>\n\n</div>\n\n<!-- ===== Customer Reviews Tab ===== -->\n<div id=\"customer\" class=\"tab-content\">\n  <div class=\"jdgm-widget\" data-type=\"all_reviews\"></div>\n</div>\n\n<script>\nfunction openTab(evt, tabName) {\n  var tabcontent = document.querySelectorAll(\".tab-content\");\n  tabcontent.forEach(el => el.classList.remove(\"active\"));\n\n  var tabbuttons = document.querySelectorAll(\".tab-buttons button\");\n  tabbuttons.forEach(btn => btn.classList.remove(\"active\"));\n\n  document.getElementById(tabName).classList.add(\"active\");\n  evt.currentTarget.classList.add(\"active\");\n\n  /* 强制刷新 Judge.me，解决隐藏导致空白问题 */\n  if(tabName === \"customer\"){\n    setTimeout(function(){\n      if(window.jdgm && jdgm.reloadWidgets){\n        jdgm.reloadWidgets();\n      }\n    }, 300);\n  }\n}\n</script>",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "slideshow_YGC3EK",
+    "custom_liquid_yXixMK"
+  ]
+}

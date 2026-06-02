@@ -1,0 +1,299 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-base",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "image_with_text_overlay_4gCcCP": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_BwfqXy": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ride Freely. Ride Actbest.",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_6Ke7e9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience the perfect blend of performance, style, and eco-friendly innovation in every Actbest e-bike.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BwfqXy",
+        "text_6Ke7e9"
+      ],
+      "name": "t:sections.image-with-text-overlay.presets.name",
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/slideshow-banner-1-pc.png",
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/slideshow-banner-1-mb.png",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "rich_text_Kxg8Uy": {
+      "type": "rich-text",
+      "blocks": {
+        "breadcrumb_C9zxYK": {
+          "type": "breadcrumb",
+          "settings": {
+            "show_collections_link": true,
+            "select_collection": "accessories"
+          }
+        },
+        "text_HiJtRV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For more than 10 years, our team has specialized in eBike maintenance across Los Angeles. Regardless of the brand, our full-service shop is equipped to handle all your eBike needs. From essential repairs to detailed tune-ups and part replacements, trust us as your all-in-one destination for reliable eBike servicing. Let's keep your ride in top shape for everyday journeys!</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_C9zxYK",
+        "text_HiJtRV"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Experience Expert eBike Care with Our Comprehensive Service",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": false,
+        "rounded": false,
+        "full_width": true
+      }
+    },
+    "multicolumn_6rcpx7": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RTF9ke": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Frame_5_02214080-1153-4d98-946a-3846bf170edb.svg",
+            "image_ratio": "adapt",
+            "heading": "eBike Tune Up",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>Regular maintenance to your eBike is critical to maximizingit's performance as well as preventing costly repairs down the road.We recommend getting your eBike tuned every 6 months or 200-400 miles.</p>",
+            "button_label": "Schedule Build",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_WBFDRR": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Frame_6.svg",
+            "image_ratio": "adapt",
+            "heading": "eBike Repair",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>We offer a wide variety of repair services from warranty replacement to wheel building to brake bleeds and more. Trust our expert service team with over 15+ years diagnosing and fixing every type of eBike on the market to get you back riding.</p>",
+            "button_label": "Schedule Build",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_pnkKWU": {
+          "type": "column",
+          "settings": {
+            "show_border": false,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "image": "shopify://shop_images/Frame_7.svg",
+            "image_ratio": "adapt",
+            "heading": "eBike Build",
+            "heading_size": "text-lg-2xl",
+            "text": "<p>We would agree that some people can assemble an eBike, but making sure it's properly tuned & safety checked needs to be done by a trained service technician. Let our expert team build your eBike to ensure your eBike is safe and ready to ride.</p>",
+            "button_label": "Schedule Build",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "column_RTF9ke",
+        "column_WBFDRR",
+        "column_pnkKWU"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "gap": "large",
+        "columns": 3,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#ff9900",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "blog_posts_bjctHF": {
+      "type": "blog-posts",
+      "name": "t:sections.blog-posts.presets.name",
+      "settings": {
+        "show_view_all_icon": false,
+        "link_color": "#ff9900",
+        "hide_link_underline": true,
+        "blog": "news",
+        "post_limit": 3,
+        "columns": 3,
+        "carousel_on_desktop": false,
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "image_ratio": "landscape",
+        "show_tags": false,
+        "show_date": false,
+        "show_comments": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "heading": "Latest Stories",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "rgba(0,0,0,0)",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-page",
+    "image_with_text_overlay_4gCcCP",
+    "rich_text_Kxg8Uy",
+    "multicolumn_6rcpx7",
+    "blog_posts_bjctHF"
+  ]
+}

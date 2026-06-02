@@ -1,0 +1,279 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "17731962735ef01cb5": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_multicolumn_with_icons_XhkktG": {
+      "type": "yg-multicolumn-with-icons",
+      "blocks": {
+        "column_P6KfkH": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"30\" height=\"31\" viewbox=\"0 0 30 31\" fill=\"currentColor\">\n<path d=\"M8.99986 12.1632L21 4.82987M15 16.1632L27 8.82987M15 16.1632L3.00002 8.82987M15 16.1632V29.4965M1.66669 12.4535V18.5396C1.66669 19.8609 1.66669 20.5216 1.85627 21.1153C2.02405 21.6407 2.29863 22.1256 2.66279 22.5397C3.07431 23.0077 3.64085 23.3477 4.77391 24.0276L11.7072 28.1876C12.9044 28.9059 13.5031 29.2651 14.142 29.4053C14.7074 29.5295 15.2927 29.5295 15.858 29.4053C16.497 29.2651 17.0956 28.9059 18.2928 28.1876L25.2262 24.0276C26.3592 23.3477 26.9258 23.0077 27.3372 22.5397C27.7014 22.1256 27.976 21.6407 28.1438 21.1153C28.3334 20.5216 28.3334 19.8609 28.3334 18.5396V12.4535C28.3334 11.1321 28.3334 10.4714 28.1438 9.87777C27.976 9.35243 27.7014 8.86744 27.3372 8.45329C26.9258 7.98529 26.3592 7.64537 25.2262 6.96553L18.2928 2.80553C17.0956 2.08721 16.497 1.72805 15.858 1.58772C15.2927 1.4636 14.7074 1.4636 14.142 1.58772C13.5031 1.72805 12.9044 2.08721 11.7072 2.80553L4.77391 6.96553C3.64085 7.64537 3.07431 7.98529 2.66279 8.45329C2.29863 8.86744 2.02405 9.35243 1.85627 9.87777C1.66669 10.4714 1.66669 11.1321 1.66669 12.4535Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "heading": "Fast Free Shipping",
+            "text": "<p>Get free shipping on all orders </p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_U6LXqW": {
+          "type": "column",
+          "settings": {
+            "icon": "box",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"33\" viewbox=\"0 0 32 33\" fill=\"none\">\n<path d=\"M14 2.65128C15.2376 1.93675 16.7624 1.93675 18 2.65128L26.9904 7.84188C28.228 8.55641 28.9904 9.87692 28.9904 11.306V21.6872C28.9904 23.1162 28.228 24.4368 26.9904 25.1513L18 30.3419C16.7624 31.0564 15.2376 31.0564 14 30.3419L5.00962 25.1513C3.77201 24.4368 3.00962 23.1162 3.00962 21.6872V11.306C3.00962 9.87692 3.77201 8.55641 5.00962 7.84188L14 2.65128Z\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n<path opacity=\"0.1\" d=\"M15.1033 10.3136C15.4701 9.57032 16.5299 9.57032 16.8967 10.3136L18.1185 12.7891C18.2641 13.0842 18.5457 13.2888 18.8714 13.3361L21.6033 13.7331C22.4235 13.8523 22.751 14.8602 22.1575 15.4388L20.1807 17.3657C19.945 17.5954 19.8375 17.9264 19.8931 18.2508L20.3598 20.9717C20.4999 21.7886 19.6424 22.4115 18.9088 22.0258L16.4653 20.7412C16.174 20.5881 15.826 20.5881 15.5347 20.7412L13.0912 22.0258C12.3576 22.4115 11.5001 21.7886 11.6402 20.9717L12.1069 18.2508C12.1625 17.9264 12.055 17.5954 11.8193 17.3657L9.8425 15.4388C9.24898 14.8602 9.57649 13.8523 10.3967 13.7331L13.1286 13.3361C13.4543 13.2888 13.7359 13.0842 13.8815 12.7891L15.1033 10.3136Z\" fill=\"currentColor\"></path>\n<path d=\"M15.1033 10.3136C15.4701 9.57032 16.5299 9.57032 16.8967 10.3136L18.1185 12.7891C18.2641 13.0842 18.5457 13.2888 18.8714 13.3361L21.6033 13.7331C22.4235 13.8523 22.751 14.8602 22.1575 15.4388L20.1807 17.3657C19.945 17.5954 19.8375 17.9264 19.8931 18.2508L20.3598 20.9717C20.4999 21.7886 19.6424 22.4115 18.9088 22.0258L16.4653 20.7412C16.174 20.5881 15.826 20.5881 15.5347 20.7412L13.0912 22.0258C12.3576 22.4115 11.5001 21.7886 11.6402 20.9717L12.1069 18.2508C12.1625 17.9264 12.055 17.5954 11.8193 17.3657L9.8425 15.4388C9.24898 14.8602 9.57649 13.8523 10.3967 13.7331L13.1286 13.3361C13.4543 13.2888 13.7359 13.0842 13.8815 12.7891L15.1033 10.3136Z\" stroke=\"currentColor\" stroke-width=\"1.5\"></path>\n</svg>",
+            "heading": "365 Days Warranty",
+            "text": "<p>We will provide 365 days after-sales service</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_DVVk9L": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewbox=\"0 0 24 24\">\n <path fill=\"currentColor\" d=\"M8.96456 18C8.72194 19.6961 7.26324 21 5.5 21C3.73676 21 2.27806 19.6961 2.03544 18H1V6C1 5.44772 1.44772 5 2 5H16C16.5523 5 17 5.44772 17 6V8H20L23 12.0557V18H20.9646C20.7219 19.6961 19.2632 21 17.5 21C15.7368 21 14.2781 19.6961 14.0354 18H8.96456ZM15 7H3V15.0505C3.63526 14.4022 4.52066 14 5.5 14C6.8962 14 8.10145 14.8175 8.66318 16H14.3368C14.5045 15.647 14.7296 15.3264 15 15.0505V7ZM17 13H21V12.715L18.9917 10H17V13ZM17.5 19C18.1531 19 18.7087 18.5826 18.9146 18C18.9699 17.8436 19 17.6753 19 17.5C19 16.6716 18.3284 16 17.5 16C16.6716 16 16 16.6716 16 17.5C16 17.6753 16.0301 17.8436 16.0854 18C16.2913 18.5826 16.8469 19 17.5 19ZM7 17.5C7 16.6716 6.32843 16 5.5 16C4.67157 16 4 16.6716 4 17.5C4 17.6753 4.03008 17.8436 4.08535 18C4.29127 18.5826 4.84689 19 5.5 19C6.15311 19 6.70873 18.5826 6.91465 18C6.96992 17.8436 7 17.6753 7 17.5Z\"></path>\n</svg>",
+            "heading": "3-8 Days Delivery",
+            "text": "<p>Shipped from the US warehouse</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_rGPVme": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"33\" viewbox=\"0 0 32 33\" fill=\"none\">\n<path opacity=\"0.1\" d=\"M4 11.3225C4 9.817 4 9.06426 4.23675 8.40708C4.44601 7.82619 4.78692 7.30162 5.23276 6.87447C5.73715 6.39122 6.425 6.08551 7.80073 5.47408L12.5343 3.37028C13.8105 2.80307 14.4487 2.51947 15.112 2.40746C15.6999 2.30819 16.3001 2.30819 16.888 2.40746C17.5513 2.51947 18.1895 2.80307 19.4657 3.37028L24.1993 5.47408C25.5749 6.08551 26.2628 6.39122 26.7672 6.87447C27.2131 7.30162 27.554 7.82619 27.7632 8.40708C28 9.06426 28 9.817 28 11.3225V18.5964C28 20.2661 28 21.1009 27.7699 21.8588C27.5661 22.5296 27.2321 23.1537 26.7869 23.6954C26.284 24.3073 25.5893 24.7704 24.2001 25.6965L19.5501 28.7965C18.2671 29.652 17.6256 30.0796 16.9321 30.2457C16.3193 30.3926 15.6807 30.3926 15.0679 30.2457C14.3744 30.0796 13.7329 29.652 12.4499 28.7965L7.79989 25.6965C6.41061 24.7704 5.71596 24.3073 5.21309 23.6954C4.76789 23.1537 4.43388 22.5296 4.23013 21.8588C4 21.1009 4 20.2661 4 18.5964V11.3225Z\" fill=\"currentColor\"></path>\n<path d=\"M12 16.4966L14.6667 19.1633L20.6667 13.1633M12.5343 3.37028L7.80073 5.47408C6.425 6.08551 5.73715 6.39122 5.23276 6.87447C4.78692 7.30162 4.44601 7.82619 4.23675 8.40708C4 9.06426 4 9.817 4 11.3225V18.5964C4 20.2661 4 21.1009 4.23013 21.8588C4.43388 22.5296 4.76789 23.1537 5.21309 23.6954C5.71596 24.3073 6.41061 24.7704 7.79989 25.6965L12.4499 28.7965C13.7329 29.652 14.3744 30.0796 15.0679 30.2457C15.6807 30.3926 16.3193 30.3926 16.9321 30.2457C17.6256 30.0796 18.2671 29.652 19.5501 28.7965L24.2001 25.6965C25.5893 24.7704 26.284 24.3073 26.7869 23.6954C27.2321 23.1537 27.5661 22.5296 27.7699 21.8588C28 21.1009 28 20.2661 28 18.5964V11.3225C28 9.817 28 9.06426 27.7632 8.40708C27.554 7.82619 27.2131 7.30162 26.7672 6.87447C26.2628 6.39122 25.5749 6.08551 24.1993 5.47408L19.4657 3.37028C18.1895 2.80307 17.5513 2.51947 16.888 2.40746C16.3001 2.30819 15.6999 2.30819 15.112 2.40746C14.4487 2.51947 13.8105 2.80307 12.5343 3.37028Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "heading": "Secure payment",
+            "text": "<p>Your payment information is processed securely</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "column_2_cp7yh6": {
+          "type": "column_2",
+          "settings": {
+            "icon": "star",
+            "custom_icon": "",
+            "heading": "Safety Certified",
+            "text": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "#ff9900"
+          }
+        },
+        "column_2_k9VR3n": {
+          "type": "column_2",
+          "settings": {
+            "icon": "briefcase",
+            "custom_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"33\" height=\"32\" viewbox=\"0 0 33 32\" fill=\"none\">\n<path opacity=\"0.1\" d=\"M8.62001 23.2365H6.83334C5.36667 23.2365 4.16667 22.0498 4.16667 20.5698V16.3698C4.16667 14.9031 5.35334 13.7031 6.83334 13.7031H8.62001C10.0867 13.7031 11.2867 14.8898 11.2867 16.3698V20.5698C11.2867 22.0365 10.1 23.2365 8.62001 23.2365ZM27.9133 20.5698V16.3698C27.9133 14.9031 26.7267 13.7031 25.2467 13.7031H23.46C21.9933 13.7031 20.7933 14.8898 20.7933 16.3698V20.5698C20.7933 22.0365 21.98 23.2365 23.46 23.2365H25.2467C26.7133 23.2365 27.9133 22.0498 27.9133 20.5698Z\" fill=\"currentColor\"></path>\n<path d=\"M7.08667 23.2367V26.4767C7.08667 27.9034 8.51334 29.3301 10.4067 29.3301H16.0333M27.9133 18.3701V14.2234C27.9267 7.65008 22.6067 2.33008 16.0467 2.33008C9.48667 2.33008 4.16667 7.65008 4.16667 14.2101V18.3567M16.86 29.3167C16.86 29.7567 16.5 30.1167 16.06 30.1167C15.62 30.1167 15.26 29.7567 15.26 29.3167M16.86 29.3167C16.86 28.8767 16.5 28.5167 16.06 28.5167C15.62 28.5167 15.26 28.8767 15.26 29.3167M16.86 29.3167H15.26M27.9267 19.6767V17.2767C27.9267 16.1701 27.9267 15.6101 27.74 15.1834C27.5 14.5967 27.0333 14.1434 26.46 13.9034C26.02 13.7167 25.4733 13.7167 24.3667 13.7167C23.26 13.7167 22.7 13.7167 22.2733 13.9034C21.6867 14.1434 21.2333 14.6101 20.9933 15.1834C20.8067 15.6234 20.8067 16.1701 20.8067 17.2767V19.6767C20.8067 20.7834 20.8067 21.3434 20.9933 21.7701C21.2333 22.3567 21.7 22.8101 22.2733 23.0501C22.7133 23.2367 23.26 23.2367 24.3667 23.2367C25.4733 23.2367 26.0333 23.2367 26.46 23.0501C27.0467 22.8101 27.5 22.3434 27.74 21.7701C27.9267 21.3301 27.9267 20.7834 27.9267 19.6767ZM7.74 23.2367C8.84667 23.2367 9.40667 23.2367 9.83334 23.0501C10.42 22.8101 10.8733 22.3434 11.1133 21.7701C11.3 21.3301 11.3 20.7834 11.3 19.6767V17.2767C11.3 16.1701 11.3 15.6101 11.1133 15.1834C10.8733 14.5967 10.4067 14.1434 9.83334 13.9034C9.39334 13.7167 8.84667 13.7167 7.74 13.7167C6.63334 13.7167 6.07334 13.7167 5.64667 13.9034C5.06 14.1434 4.60667 14.6101 4.36667 15.1834C4.18001 15.6234 4.18001 16.1701 4.18001 17.2767V19.6767C4.18001 20.7834 4.18001 21.3434 4.36667 21.7701C4.60667 22.3567 5.07334 22.8101 5.64667 23.0501C6.08667 23.2367 6.63334 23.2367 7.74 23.2367Z\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "heading": "We Are Here To Help",
+            "text": "<p>Please contact us if you have any question</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "button_text": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "button_color": "#ff9900"
+          }
+        }
+      },
+      "block_order": [
+        "column_P6KfkH",
+        "column_U6LXqW",
+        "column_DVVk9L",
+        "column_rGPVme",
+        "column_2_cp7yh6",
+        "column_2_k9VR3n"
+      ],
+      "settings": {
+        "style": "with-background",
+        "columns": 2,
+        "columns_2": 2,
+        "text_alignment": "left",
+        "text_alignment_2": "center",
+        "mobile_columns": "2",
+        "mobile_columns_2": "1",
+        "enable_position": true,
+        "text_alignment_mobile": "left",
+        "text_alignment_mobile_2": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#ffffff",
+        "color_background": "#000000",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "logo_social": {
+          "type": "logo_social",
+          "settings": {
+            "logo_height": 50,
+            "show_social": false,
+            "enable_follow_on_shop": false
+          }
+        },
+        "link_list-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Products",
+            "menu": "footer-menu-2",
+            "container_width": 50,
+            "opened": false
+          }
+        },
+        "link_list-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
+            "menu": "",
+            "container_width": 50,
+            "opened": false
+          }
+        },
+        "link_list_aFMJLH": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Policy",
+            "menu": "footer-menu-3",
+            "container_width": 50,
+            "opened": false
+          }
+        },
+        "link_list_wBUd8G": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Explore",
+            "menu": "",
+            "container_width": 50,
+            "opened": false
+          }
+        },
+        "brand_information": {
+          "type": "brand_information",
+          "settings": {
+            "heading": "",
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "support@postjoyebike.com",
+            "button_link_2": "mailto:support@postjoyebike.com",
+            "button_label_3": "",
+            "button_link_3": "tel:+1 716 452 9382",
+            "button_label_4": "Hours：8AM-5PM PST Monday-Friday",
+            "button_link_4": "",
+            "container_width": 95,
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "logo_social",
+        "link_list-2",
+        "link_list-1",
+        "link_list_aFMJLH",
+        "link_list_wBUd8G",
+        "brand_information"
+      ],
+      "settings": {
+        "invert_newsletter_others": false,
+        "enable_newsletter": true,
+        "newsletter_heading": "Receive the latest articles, tips, and offers from Brand",
+        "newsletter_heading_size": "md:title-sm",
+        "newsletter_text": "",
+        "newsletter_logo_height": 50,
+        "show_social": true,
+        "enable_follow_on_shop": false,
+        "color_text": "#ffffff",
+        "color_background": "#000000",
+        "gradient_background": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#000000",
+        "color_button_gradient": "",
+        "input_color_text": "#000000",
+        "input_color_bg": "#ffffff",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    },
+    "footer-copyright": {
+      "type": "footer-copyright",
+      "settings": {
+        "enable_language_selector": true,
+        "enable_country_selector": true,
+        "show_policy": false,
+        "show_payment_icons": true,
+        "monochrome_payment_icons": false,
+        "payment_icons_text": "<body>\n<style>\n\n  .row {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 4px;\n    align-items: center;\n  }\n</style>\n\n\n\n<div class=\"row\">\n\n<svg width=\"44.98\" height=\"18.93\" viewbox=\"0 0 1448 609\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<title>Visa Payment Badge</title>\n<path d=\"M0 304.493C0 180.585 0 118.631 30.3995 74.5079C42.2947 57.2427 57.2427 42.2947 74.5079 30.3995C118.631 0 180.585 0 304.493 0H1142.75C1266.65 0 1328.61 0 1372.73 30.3995C1390 42.2947 1404.95 57.2427 1416.84 74.5079C1447.24 118.631 1447.24 180.585 1447.24 304.493C1447.24 428.402 1447.24 490.356 1416.84 534.479C1404.95 551.744 1390 566.692 1372.73 578.587C1328.61 608.987 1266.65 608.987 1142.75 608.987H304.494C180.585 608.987 118.631 608.987 74.5079 578.587C57.2427 566.692 42.2947 551.744 30.3995 534.479C0 490.356 0 428.402 0 304.493Z\" fill=\"#1A1F71\"></path>\n<text x=\"724\" y=\"420\" font-family=\"Arial Black, Arial, sans-serif\" font-size=\"280\" font-weight=\"900\" font-style=\"italic\" fill=\"#FFFFFF\" text-anchor=\"middle\" letter-spacing=\"20\">VISA</text>\n<rect x=\"280\" y=\"430\" width=\"888\" height=\"18\" fill=\"#F7B600\"></rect>\n</svg>\n\n<svg width=\"44.98\" height=\"18.93\" viewbox=\"0 0 1448 609\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<title>Mastercard Payment Badge</title>\n<path d=\"M0 304.493C0 180.585 0 118.631 30.3995 74.5079C42.2947 57.2427 57.2427 42.2947 74.5079 30.3995C118.631 0 180.585 0 304.493 0H1142.75C1266.65 0 1328.61 0 1372.73 30.3995C1390 42.2947 1404.95 57.2427 1416.84 74.5079C1447.24 118.631 1447.24 180.585 1447.24 304.493C1447.24 428.402 1447.24 490.356 1416.84 534.479C1404.95 551.744 1390 566.692 1372.73 578.587C1328.61 608.987 1266.65 608.987 1142.75 608.987H304.494C180.585 608.987 118.631 608.987 74.5079 578.587C57.2427 566.692 42.2947 551.744 30.3995 534.479C0 490.356 0 428.402 0 304.493Z\" fill=\"#FFFFFF\"></path>\n<circle cx=\"620\" cy=\"304\" r=\"180\" fill=\"#EB001B\"></circle>\n<circle cx=\"828\" cy=\"304\" r=\"180\" fill=\"#F79E1B\"></circle>\n<path d=\"M724 175a180 180 0 0 0 0 258a180 180 0 0 0 0 -258Z\" fill=\"#FF5F00\"></path>\n<text x=\"724\" y=\"560\" font-family=\"Arial, sans-serif\" font-size=\"80\" font-weight=\"700\" fill=\"#0B051D\" text-anchor=\"middle\" letter-spacing=\"2\">mastercard</text>\n</svg>\n\n<svg width=\"44.98\" height=\"18.93\" viewbox=\"0 0 1448 609\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<title>Maestro Payment Badge</title>\n<path d=\"M0 304.493C0 180.585 0 118.631 30.3995 74.5079C42.2947 57.2427 57.2427 42.2947 74.5079 30.3995C118.631 0 180.585 0 304.493 0H1142.75C1266.65 0 1328.61 0 1372.73 30.3995C1390 42.2947 1404.95 57.2427 1416.84 74.5079C1447.24 118.631 1447.24 180.585 1447.24 304.493C1447.24 428.402 1447.24 490.356 1416.84 534.479C1404.95 551.744 1390 566.692 1372.73 578.587C1328.61 608.987 1266.65 608.987 1142.75 608.987H304.494C180.585 608.987 118.631 608.987 74.5079 578.587C57.2427 566.692 42.2947 551.744 30.3995 534.479C0 490.356 0 428.402 0 304.493Z\" fill=\"#FFFFFF\"></path>\n<circle cx=\"620\" cy=\"270\" r=\"170\" fill=\"#EB001B\"></circle>\n<circle cx=\"828\" cy=\"270\" r=\"170\" fill=\"#0099DF\"></circle>\n<path d=\"M724 150a170 170 0 0 0 0 240a170 170 0 0 0 0 -240Z\" fill=\"#6C6BBD\"></path>\n<text x=\"724\" y=\"540\" font-family=\"Arial, sans-serif\" font-size=\"90\" font-weight=\"700\" fill=\"#0B051D\" text-anchor=\"middle\" letter-spacing=\"3\">maestro</text>\n</svg>\n\n<svg width=\"44.98\" height=\"18.93\" viewbox=\"0 0 1448 609\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<title>JCB Payment Badge</title>\n<path d=\"M0 304.493C0 180.585 0 118.631 30.3995 74.5079C42.2947 57.2427 57.2427 42.2947 74.5079 30.3995C118.631 0 180.585 0 304.493 0H1142.75C1266.65 0 1328.61 0 1372.73 30.3995C1390 42.2947 1404.95 57.2427 1416.84 74.5079C1447.24 118.631 1447.24 180.585 1447.24 304.493C1447.24 428.402 1447.24 490.356 1416.84 534.479C1404.95 551.744 1390 566.692 1372.73 578.587C1328.61 608.987 1266.65 608.987 1142.75 608.987H304.494C180.585 608.987 118.631 608.987 74.5079 578.587C57.2427 566.692 42.2947 551.744 30.3995 534.479C0 490.356 0 428.402 0 304.493Z\" fill=\"#FFFFFF\"></path>\n<rect x=\"380\" y=\"170\" width=\"220\" height=\"270\" rx=\"40\" fill=\"#0E4C96\"></rect>\n<rect x=\"614\" y=\"170\" width=\"220\" height=\"270\" rx=\"40\" fill=\"#BE1833\"></rect>\n<rect x=\"848\" y=\"170\" width=\"220\" height=\"270\" rx=\"40\" fill=\"#23A94B\"></rect>\n<text x=\"490\" y=\"345\" font-family=\"Arial Black, sans-serif\" font-size=\"160\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">J</text>\n<text x=\"724\" y=\"345\" font-family=\"Arial Black, sans-serif\" font-size=\"160\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">C</text>\n<text x=\"958\" y=\"345\" font-family=\"Arial Black, sans-serif\" font-size=\"160\" font-weight=\"900\" fill=\"#FFFFFF\" text-anchor=\"middle\">B</text>\n</svg>\n\n<svg width=\"44.98\" height=\"18.93\" viewbox=\"0 0 1448 609\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<title>American Express Payment Badge</title>\n<path d=\"M0 304.493C0 180.585 0 118.631 30.399\"></path></svg>\n</div>\n</body>",
+        "show_copyright": true,
+        "copyright_text": "",
+        "color_text": "#ffffff",
+        "color_background": "#171717",
+        "gradient_background": "",
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false
+      }
+    }
+  },
+  "order": [
+    "17731962735ef01cb5",
+    "yg_multicolumn_with_icons_XhkktG",
+    "footer",
+    "footer-copyright"
+  ]
+}

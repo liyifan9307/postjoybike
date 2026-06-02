@@ -1,0 +1,324 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "spacing": {
+          "type": "spacing",
+          "settings": {
+            "height": 0,
+            "height_mobile": 0
+          }
+        },
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "title-xs"
+          }
+        },
+        "description_cz3Anq": {
+          "type": "description",
+          "settings": {
+            "cus_description": "",
+            "text_size": "subtext-md",
+            "text_max_size": 16,
+            "text_font": "body",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "spacing",
+        "breadcrumb",
+        "title",
+        "description_cz3Anq"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "show_image": true,
+        "image": "shopify://shop_images/1_40744185-9b24-468a-8a54-817d95d861fe.jpg",
+        "image_height": "adapt",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/2_c3cec662-043b-421a-a305-aa160feb34c7.jpg",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "zoom"
+      }
+    },
+    "scrolling_text_yK4CfY": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_wwtfH3": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Save $50 on Combos — Code QF50</strong>",
+            "text_size": 50,
+            "text_font": "body",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_wwtfH3"
+      ],
+      "name": "t:sections.scrolling-text.presets.name",
+      "settings": {
+        "direction": "left",
+        "speed": 25,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "folding",
+            "per_row": 5,
+            "show_count": true
+          }
+        },
+        "promotion": {
+          "type": "promotion",
+          "settings": {
+            "position": 3,
+            "column_size": "1",
+            "image": "shopify://shop_images/3_6bf429d5-6208-474a-8b75-05a7f6aae5b2.jpg",
+            "heading": "",
+            "content": "<p>Foldable</p>",
+            "button_label": "Shop now",
+            "button_link": "shopify://products/speedy-folding-electric-bike-for-adults",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false,
+            "content_position": "md:items-end",
+            "text_alignment": "left",
+            "content_position_mobile": "items-center",
+            "text_alignment_mobile": "left",
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "promotion"
+      ],
+      "settings": {
+        "section_bg_color": "#f5f5f5",
+        "products_per_page": 18,
+        "columns": 4,
+        "columns_mobile": "1",
+        "pagination": "paginated",
+        "enable_filtering": true,
+        "filter_collapsed": false,
+        "filter_type": "sidebar",
+        "filter_color_swatches": true,
+        "enable_sorting": true,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_info_CT6wLn": {
+      "type": "yg-info",
+      "settings": {
+        "title": "Find the best folding electric bike",
+        "richtext": "<p>Folding electric bikes are easy to store and transport. They can be quickly folded into a compact size, making them easy to fit in the trunk of a car, carry on public transportation, or store in a small space. actbest <strong>folding electric bikes</strong> offer a variety of models. You can choose based on your commuting habits, the terrain you ride on, and the storage conditions; for long commutes, choose a model with a long range.</p><h3>Compact Folding Electric Bikes</h3><p>Compact folding electric bikes are the ultimate companions for city dwellers. Their design prioritizes convenience and maneuverability. It's a breeze to navigate crowded city streets with these bikes. After the ride is over, folding them is a quick and easy process. In just a few seconds, you can turn them into a compact form that's easy to carry. This makes them suitable for public transportation such as buses or subways. If you live in a small apartment or work with limited storage space, you can hide them in a corner, under a desk, or even in a closet.</p><h3>Folding Three-Wheel Electric Bikes</h3><p><a href=\"https://actbestbike.com/products/triker-folding-3-wheels-electric-bike\" title=\"Folding 3 Wheels Electric Bike\">Folding three-wheel electric bikes</a> are an excellent choice for those looking for enhanced stability. These electric tricycles have excellent stability and are suitable for all types of riders. Elderly people, beginners and people with poor physical coordination can easily learn to ride. Their open or closed rear compartments provide ample storage space. Small vendors can use them to transport goods for sale, while families can carry large items such as furniture. It is a practical and versatile choice for a variety of needs.</p><h3>Why choose Actbestbike folding electric bike?</h3><p><strong>Actbestbike folding electric bikes</strong> have excellent long-distance capabilities and strong performance. Our folding electric bikes are equipped with high-capacity batteries, with a range of at least 30 miles on a single charge, and some models can even reach 65 miles. Whether it is daily commuting or long-distance travel on weekends, there is no need to worry about power issues. In terms of performance, the motor power ranges from 500W to 1000W. The 1000W motor can help fast acceleration and easy climbing, and can ride smoothly even on steep slopes; on flat roads, the 500W motor can meet the speed and power requirements, providing reliable protection for riding on different terrains.</p><p>Explore more high-quality electric bikes on actbest: <a href=\"https://actbestbike.com/collections/fat-tire-electric-bike\" title=\"fat tire ebike\">fat tire ebike</a> | <a href=\"https://actbestbike.com/collections/commuter-ebike\" title=\"Commuter electric bikes\">commuter electric bikes</a> | <a href=\"https://actbestbike.com/collections/best-sellers\" title=\"Best Selling Electric Bikes\">best selling electric eikes</a></p>",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_faq_88XxDi": {
+      "type": "yg-faq",
+      "blocks": {
+        "rich_text_FjDzEg": {
+          "type": "rich-text",
+          "settings": {
+            "heading": "FAQs",
+            "text": "",
+            "info": "<p>Please read our <a href=\"/pages/faqs\" title=\"FAQs\">FAQs</a> page to find out more.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_Wp4gJT": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Does Qlife bike really offer free shipping on all orders?</strong>",
+            "text": "<p>Qlife bike provides fast free shipping on all orders, without any minimum purchase amount requirement.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_fdWLQB": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What does the 365 - day warranty cover?</strong>",
+            "text": "<p>The 365 - day warranty means Qlife bike will offer after - sales service for 365 days from the date of purchase. This typically covers defects in materials or workmanship under normal use. If you encounter any problems with the bike during this period, you can contact our customer service for assistance, which may include repairs, replacement of parts, or other solutions as appropriate.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_qKC8KC": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Do Qlife bikes' batteries have safety certifications?</strong>",
+            "text": "<p>This certification encompasses comprehensive safety evaluations, including the batteries. It ensures that the batteries meet strict safety standards in terms of electrical performance, thermal management, and overall reliability. You can have peace of mind knowing that the batteries in our bikes have passed rigorous safety tests<br/><br/><br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_wVxjDj": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Where are Qlife</strong> <strong>bikes shipped from and how long will it take for delivery?</strong>",
+            "text": "<p>Qlife bikes are shipped from our US warehouse. Generally, the delivery time is within 3 - 8 days after you place your order. We aim to get your bike to you as soon as possible so you can start your cycling adventures.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_LY9hRW": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How is the security of my payment information ensured?</strong>",
+            "text": "<p>What measures does Qlife bike take to protect my payment information during the transaction?<br/><strong>A</strong>: Qlife bike uses secure payment processing systems. Your payment information is processed securely using advanced encryption technology and industry-standard security protocols. We take the protection of your personal and financial data very seriously and have implemented multiple layers of security to prevent unauthorized access and ensure the confidentiality of your information.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "contact_eYEgba": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "heading": "Didn’t find your answer?",
+            "text": "<p>Don't hestitate to contact us</p>",
+            "show_phone": false,
+            "avatar_height": 60,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "rich_text_FjDzEg",
+        "question_Wp4gJT",
+        "question_fdWLQB",
+        "question_qKC8KC",
+        "question_wVxjDj",
+        "question_LY9hRW",
+        "contact_eYEgba"
+      ],
+      "settings": {
+        "faq_bg_color": "#ffffff",
+        "form_bg_color": "#e6e5e5",
+        "info_bg_color": "#f5f5f5",
+        "style": "with-border",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#000000",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "scrolling_text_yK4CfY",
+    "main-collection",
+    "yg_info_CT6wLn",
+    "yg_faq_88XxDi"
+  ]
+}

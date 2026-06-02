@@ -1,0 +1,185 @@
+{%- capture direction -%}{% render 'direction' %}{%- endcapture -%}
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}" dir="{{ direction }}">
+<head>
+<meta name="google-site-verification" content="RIuDfm0I_ZIwLys01ufh9-0o_g1W1YWea9qtYVD1Ivs" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5B8NKWSF');</script>
+<!-- End Google Tag Manager -->
+  
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11321575482"></script> 
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11321575482'); </script>
+<meta name="facebook-domain-verification" content="tlzjo4vhz9vs1m1y647ikw52muwpxw" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_button_background }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+  {% # theme-check-disable RemoteAsset %}
+  <link rel="dns-prefetch" href="https://ajax.googleapis.com">
+  <link rel="dns-prefetch" href="https://maps.googleapis.com">
+  <link rel="dns-prefetch" href="https://maps.gstatic.com">
+  {% # theme-check-enable RemoteAsset %}
+
+  {%- if settings.favicon != blank -%}
+    <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32, height: 32 }}" type="image/png" />
+  {%- endif -%}
+
+  <title>
+    {{- page_title -}}
+    {%- if current_tags -%}
+      {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
+    {%- endif -%}
+    {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+    {%- if request.page_type == 'password' -%}
+      {{- shop.name -}}
+    {%- else -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    {%- endif -%}
+  </title>
+
+  {%- if page_description -%}
+    <meta name="description" content="{{ page_description | escape }}">
+  {%- endif -%}
+
+  {%- liquid
+  render 'social-meta-tags'
+  
+  render 'css-variables'
+  echo 'theme.css' | asset_url | stylesheet_tag: preload: true
+  
+  render 'yg-css-variables'
+
+  echo 'swiper-bundle.min.css' | asset_url | stylesheet_tag: preload: true
+  echo 'yg-style.css' | asset_url | stylesheet_tag: preload: true
+  if direction == 'rtl'
+    echo 'rtl.css' | asset_url | stylesheet_tag: preload: true
+  endif
+-%}
+
+  <link rel="stylesheet" href="{{ 'apps.css' | asset_url }}" media="print" fetchpriority="low" onload="this.media='all'">
+
+  {{ content_for_header }}
+
+  <script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+  <script src="{{ 'yg-script.js' | asset_url }}" defer="defer"></script>
+  
+  {%- if settings.enable_tab_attention -%}
+    <script src="{{ 'tab-attention.js' | asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- if request.page_type contains 'customers/' -%}
+    <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+  {%- endif -%}
+
+  {%- render 'js-variables' -%}
+</head>
+
+<body class="template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}{% if request.path == '/challenge' %} template-challange{% endif %}{% if request.design_mode %} shopify-design-mode{% endif %}" data-rounded-button="{{ settings.rounded_button }}" data-rounded-input="{{ settings.rounded_input }}" data-rounded-block="{{ settings.rounded_block }}" data-rounded-card="{{ settings.rounded_card }}" data-button-hover="{{ settings.buttons_hover }}"{% if settings.enable_lazy_image %} data-lazy-image{% endif %} data-title-animation data-page-rendering>
+  <a class="sr-only skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B8NKWSF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  {%- liquid
+    if settings.enable_page_transition
+      render 'loading-bar'
+    endif
+    
+    render 'mouse-cursor'
+
+    sections 'header-group'
+    sections 'overlay-group'
+  -%}
+
+  <div class="page-container" id="PageContainer">
+    <main class="main-content relative" id="MainContent" role="main">
+      {{ content_for_layout }}
+    </main>
+
+    <footer-group class="footer-group block w-full">
+      {%- sections 'footer-group' -%}
+    </footer-group>
+  </div>
+
+  <ul hidden>
+    <li id="a11y-refresh-page-message">{{ 'general.accessibility.refresh_page' | t }}</li>
+    <li id="a11y-new-window-message">{{ 'general.accessibility.link_messages.new_window' | t }}</li>
+  </ul>
+
+  {%- if request.design_mode == false and settings.preload_links -%}
+    <script src="{{ 'instant-page.js' | asset_url }}" type="module" fetchpriority="low" defer="defer"></script>
+  {%- endif -%}
+  {% render 'yg-popup-box' %}
+
+  <script type="text/javascript">
+window.data_9382 = window.data_9382 || [];
+window.data_9382.push({
+'gdpr': '${GDPR}',
+'gdpr_consent': '${GDPR_CONSENT_874}',
+'gdpr_pd': '${GDPR_PD}',
+'us_privacy': '${US_PRIVACY}'
+});
+</script>
+{% if template contains 'index' %}
+<script type="text/javascript">
+	window.data_9382[0]['PageType'] = 'home';
+	window.data_9382[0]['pagetype'] = 'home';
+</script>
+{% elsif template contains 'product' %}
+<script type="text/javascript">
+	window.data_9382[0]['pagetype'] = 'product';
+	window.data_9382[0]['PageType'] = 'product';
+	window.data_9382[0]['pdt_id'] =ShopifyAnalytics.meta.product.variants[0].id;
+</script >
+{% elsif template contains 'collection' %}
+<script type="text/javascript">
+	window.data_9382[0]['pagetype'] = 'category';
+	window.data_9382[0]['PageType'] = 'category';
+</script>
+{% elsif template contains 'cart' %}
+<script type="text/javascript">
+	window.data_9382[0]['pagetype'] = 'basket';
+	window.data_9382[0]['PageType'] = 'basket';
+</script>
+{% elsif template contains 'checkout' %}
+<script type="text/javascript">
+	window.data_9382[0]['pagetype'] = 'basket';
+	window.data_9382[0]['PageType'] = 'basket';
+</script>
+{% else %}
+<script type="text/javascript">
+	window.data_9382[0]['pagetype'] = 'generic';
+	window.data_9382[0]['PageType'] = 'generic';
+</script>
+{% endif %}
+<script type="text/javascript">
+const script0a1 = document.createElement('script');
+script0a1.setAttribute('src','https://cdn.preciso.net/p0n6t4c/t2g?9382');
+script0a1.setAttribute('async', '');
+script0a1.id = 'madv2014rtg';
+script0a1.type = 'text/javascript';
+document.head.appendChild(script0a1);
+</script>
+<script>
+(function() {
+var script = document.createElement('script');
+script.id = 'minty-onsite-script';
+script.src = 'https://cdn.addshoppers.com/minty/shopify-onsite/executeminty.js';
+script.async = true;
+script.defer = true;
+document.head.appendChild(script);
+})();
+</script>
+</body>
+</html>

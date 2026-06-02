@@ -1,0 +1,54 @@
+<style>
+  /* 自定义css属性 */
+  :root {
+    --yg-h0: 72px;
+    --yg-h1: 56px;
+    --yg-h2: 44px;
+    --yg-h3: 32px;
+    --yg-h4: 28px;
+    --yg-h5: 22px;
+    --yg-h6: 20px;
+  }
+
+  @media (max-width: 1279px) {
+    :root {
+      --yg-h0: 56px;
+      --yg-h1: 40px;
+      --yg-h2: 32px;
+      --yg-h3: 26px;
+      --yg-h4: 22px;
+      --yg-h5: 18px;
+      --yg-h6: 16px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    :root {
+      --yg-h0: 44px;
+      --yg-h1: 32px;
+      --yg-h2: 28px;
+      --yg-h3: 22px;
+      --yg-h4: 18px;
+      --yg-h5: 18px;
+      --yg-h6: 16px;
+    }
+  }
+  /* 自定义css属性 */
+
+  /* 对原模板进行覆盖 */
+  :root {
+    --text-h0: var(--yg-h0);
+    --text-h1: var(--yg-h1);
+    --text-h2: var(--yg-h2);
+    --text-h3: var(--yg-h3);
+    --text-h4: var(--yg-h4);
+    --text-h5: var(--yg-h5);
+    --text-h6: var(--yg-h6);
+
+    --title-sm: var(--text-h3);
+    --title-md: var(--text-h2);
+    --title-lg: var(--text-h1);
+    --title-xl: var(--text-h0);
+  }
+  /* 对原模板进行覆盖 */
+</style>

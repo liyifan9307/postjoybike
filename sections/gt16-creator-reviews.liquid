@@ -1,0 +1,876 @@
+{% comment %}
+  Section: GT16 Creator Reviews
+  File name: sections/gt16-creator-reviews.liquid
+{% endcomment %}
+
+<section
+  id="gt16-creator-reviews-{{ section.id }}"
+  class="gt16-creator-reviews"
+>
+  <div class="gt16-creator-reviews__container">
+    <div class="gt16-creator-reviews__header">
+      {% if section.settings.eyebrow != blank %}
+        <p class="gt16-creator-reviews__eyebrow">
+          {{ section.settings.eyebrow }}
+        </p>
+      {% endif %}
+
+      {% if section.settings.heading != blank %}
+        <h2 class="gt16-creator-reviews__heading">
+          {{ section.settings.heading }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.description != blank %}
+        <div class="gt16-creator-reviews__description">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if section.blocks.size > 0 %}
+      <div class="gt16-creator-reviews__slider-wrap">
+        <div class="gt16-creator-reviews__grid" role="list">
+          {% for block in section.blocks %}
+            <article
+              class="gt16-creator-reviews__card"
+              role="listitem"
+              {{ block.shopify_attributes }}
+            >
+              <div class="gt16-creator-reviews__meta">
+                {% if block.settings.platform != blank %}
+                  <span>{{ block.settings.platform }}</span>
+                {% endif %}
+
+                {% if block.settings.review_date != blank %}
+                  <span>{{ block.settings.review_date }}</span>
+                {% endif %}
+              </div>
+
+              {% if block.settings.creator != blank %}
+                <h3 class="gt16-creator-reviews__card-title">
+                  {{ block.settings.creator }}
+                </h3>
+              {% endif %}
+
+              {% if block.settings.review_text != blank %}
+                <div class="gt16-creator-reviews__card-text">
+                  {{ block.settings.review_text }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.link != blank %}
+                <a
+                  class="gt16-creator-reviews__button"
+                  href="{{ block.settings.link }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open review by {{ block.settings.creator | escape }}"
+                >
+                  {% if block.settings.button_label != blank %}
+                    {{ block.settings.button_label }}
+                  {% else %}
+                    Watch Review
+                  {% endif %}
+                </a>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if section.settings.show_mobile_hint %}
+        <p class="gt16-creator-reviews__mobile-hint">
+          Swipe to see more reviews
+        </p>
+      {% endif %}
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  #gt16-creator-reviews-{{ section.id }} {
+    width: 100%;
+    background:
+      radial-gradient(circle at top left, rgba(255, 106, 0, 0.16), transparent 34%),
+      linear-gradient(180deg, {{ section.settings.background_color }} 0%, {{ section.settings.background_color_bottom }} 100%);
+    color: {{ section.settings.text_color }};
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__header {
+    max-width: 780px;
+    margin: 0 auto 44px;
+    text-align: {{ section.settings.header_alignment }};
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__eyebrow {
+    margin: 0 0 12px;
+    color: {{ section.settings.accent_color }};
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__heading {
+    margin: 0 0 16px;
+    color: {{ section.settings.heading_color }};
+    font-size: {{ section.settings.heading_size }}px;
+    line-height: 1.08;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__description {
+    margin: 0;
+    color: {{ section.settings.muted_text_color }};
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__description p {
+    margin: 0;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__slider-wrap {
+    width: 100%;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__grid {
+    display: grid;
+    grid-template-columns: repeat({{ section.settings.columns_desktop }}, minmax(0, 1fr));
+    gap: {{ section.settings.card_gap }}px;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: {{ section.settings.card_min_height }}px;
+    padding: 24px;
+    border: 1px solid {{ section.settings.card_border_color }};
+    border-radius: {{ section.settings.card_radius }}px;
+    background:
+      linear-gradient(180deg, {{ section.settings.card_background_top }} 0%, {{ section.settings.card_background_bottom }} 100%);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.08), transparent 38%);
+    opacity: 0.75;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__meta,
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card-title,
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card-text,
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__button {
+    position: relative;
+    z-index: 1;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__meta span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: {{ section.settings.badge_background }};
+    color: {{ section.settings.badge_text_color }};
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 800;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card-title {
+    margin: 0 0 12px;
+    color: {{ section.settings.heading_color }};
+    font-size: 22px;
+    line-height: 1.25;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card-text {
+    margin: 0 0 22px;
+    color: {{ section.settings.card_text_color }};
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card-text p {
+    margin: 0;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__button {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    min-height: 44px;
+    padding: 0 18px;
+    border-radius: 999px;
+    background: {{ section.settings.button_background }};
+    color: {{ section.settings.button_text_color }};
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 900;
+    text-decoration: none;
+    transition:
+      transform 0.22s ease,
+      background-color 0.22s ease,
+      color 0.22s ease,
+      box-shadow 0.22s ease;
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__button:hover {
+    transform: translateY(-2px);
+    background: {{ section.settings.button_hover_background }};
+    color: {{ section.settings.button_hover_text_color }};
+    box-shadow: 0 12px 24px rgba(255, 106, 0, 0.22);
+  }
+
+  #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__mobile-hint {
+    display: none;
+    margin: 14px 0 0;
+    color: {{ section.settings.muted_text_color }};
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+    opacity: 0.82;
+  }
+
+  @media screen and (max-width: 989px) {
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__grid {
+      grid-template-columns: repeat({{ section.settings.columns_tablet }}, minmax(0, 1fr));
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__heading {
+      font-size: calc({{ section.settings.heading_size }}px * 0.82);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    #gt16-creator-reviews-{{ section.id }} {
+      padding-top: {{ section.settings.mobile_padding_top }}px;
+      padding-bottom: {{ section.settings.mobile_padding_bottom }}px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__container {
+      max-width: 100%;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__header {
+      margin-bottom: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+      text-align: {{ section.settings.mobile_header_alignment }};
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__eyebrow {
+      font-size: 12px;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__heading {
+      font-size: {{ section.settings.mobile_heading_size }}px;
+      line-height: 1.12;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__description {
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__slider-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__slider-wrap::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 46px;
+      height: 100%;
+      pointer-events: none;
+      background: linear-gradient(
+        90deg,
+        rgba(15, 17, 21, 0),
+        {{ section.settings.background_color_bottom }}
+      );
+      z-index: 2;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__grid {
+      display: flex;
+      grid-template-columns: none;
+      gap: 16px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-padding-left: 16px;
+      padding-left: 16px;
+      padding-right: 42px;
+      padding-bottom: 8px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card {
+      flex: 0 0 {{ section.settings.mobile_card_width }}%;
+      min-width: 0;
+      min-height: {{ section.settings.mobile_card_min_height }}px;
+      padding: 20px;
+      border-radius: calc({{ section.settings.card_radius }}px * 0.85);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card-title {
+      font-size: 20px;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__card-text {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__button {
+      width: 100%;
+      min-height: 46px;
+    }
+
+    #gt16-creator-reviews-{{ section.id }} .gt16-creator-reviews__mobile-hint {
+      display: block;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "GT16 Creator Reviews",
+  "tag": "section",
+  "class": "section-gt16-creator-reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Real Creator Reviews"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What Riders Are Saying About the PostJoy GT16"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>From full YouTube reviews to quick Instagram and Shorts clips, creators across the e-bike community have been putting the PostJoy GT16 to the test. Explore real-world impressions covering speed, value, design, ride feel, and everyday usability.</p>"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "label": "Header alignment",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "mobile_header_alignment",
+      "label": "Mobile header alignment",
+      "default": "left",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "show_mobile_hint",
+      "label": "Show mobile swipe hint",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Container width",
+      "min": 900,
+      "max": 1600,
+      "step": 20,
+      "unit": "px",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "label": "Columns on tablet",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "mobile_card_width",
+      "label": "Mobile card width",
+      "min": 72,
+      "max": 92,
+      "step": 1,
+      "unit": "%",
+      "default": 84
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "label": "Card gap",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 22
+    },
+    {
+      "type": "range",
+      "id": "card_min_height",
+      "label": "Card minimum height",
+      "min": 180,
+      "max": 420,
+      "step": 10,
+      "unit": "px",
+      "default": 270
+    },
+    {
+      "type": "range",
+      "id": "mobile_card_min_height",
+      "label": "Mobile card minimum height",
+      "min": 220,
+      "max": 460,
+      "step": 10,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "Card border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 28,
+      "max": 68,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "mobile_heading_size",
+      "label": "Mobile heading size",
+      "min": 22,
+      "max": 42,
+      "step": 1,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Desktop padding top",
+      "min": 24,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Desktop padding bottom",
+      "min": 24,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Mobile padding top",
+      "min": 20,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Mobile padding bottom",
+      "min": 20,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 52
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background top",
+      "default": "#0f1115"
+    },
+    {
+      "type": "color",
+      "id": "background_color_bottom",
+      "label": "Background bottom",
+      "default": "#08090c"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Base text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "muted_text_color",
+      "label": "Description text color",
+      "default": "#b8beca"
+    },
+    {
+      "type": "color",
+      "id": "card_text_color",
+      "label": "Card text color",
+      "default": "#c8ced8"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#ff6a00"
+    },
+    {
+      "type": "color",
+      "id": "card_background_top",
+      "label": "Card background top",
+      "default": "#191d25"
+    },
+    {
+      "type": "color",
+      "id": "card_background_bottom",
+      "label": "Card background bottom",
+      "default": "#12151b"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border color",
+      "default": "#30343c"
+    },
+    {
+      "type": "color",
+      "id": "badge_background",
+      "label": "Badge background",
+      "default": "#2b1a0f"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#ff9b4a"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Button background",
+      "default": "#ff6a00"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Button hover background",
+      "default": "#ff7f22"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button hover text color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Creator review",
+      "settings": [
+        {
+          "type": "text",
+          "id": "creator",
+          "label": "Creator name",
+          "default": "Creator Name"
+        },
+        {
+          "type": "text",
+          "id": "platform",
+          "label": "Platform",
+          "default": "YouTube"
+        },
+        {
+          "type": "text",
+          "id": "review_date",
+          "label": "Review date",
+          "default": "Mar 18, 2026"
+        },
+        {
+          "type": "richtext",
+          "id": "review_text",
+          "label": "Review text",
+          "default": "<p>A creator review highlighting the PostJoy GT16’s real-world riding performance, value, and overall user experience.</p>"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Review link"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label",
+          "default": "Watch Review"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "GT16 Creator Reviews",
+      "category": "Custom",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "creator": "EV Tech Steven",
+            "platform": "YouTube",
+            "review_date": "Mar 18, 2026",
+            "review_text": "<p>A detailed performance review focused on the GT16’s top speed and acceleration, giving buyers a practical look at how the bike delivers power in real-world riding conditions.</p>",
+            "link": "https://www.youtube.com/watch?v=tDnkwqvKTtw",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "Volted Adventures",
+            "platform": "YouTube",
+            "review_date": "Mar 15, 2026",
+            "review_text": "<p>This review explores whether the GT16 lives up to its mini stealth bomber reputation, highlighting its riding feel, off-road style, and overall performance.</p>",
+            "link": "https://www.youtube.com/watch?v=zG1yW1WxRzo",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "True North Due South",
+            "platform": "YouTube",
+            "review_date": "Mar 27, 2026",
+            "review_text": "<p>A balanced review covering the GT16’s strengths, weaknesses, and real riding impressions, helping potential buyers understand what to expect.</p>",
+            "link": "https://www.youtube.com/watch?v=3CohPrvwGPM",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "HeroesNStuff",
+            "platform": "YouTube",
+            "review_date": "Apr 10, 2026",
+            "review_text": "<p>An in-depth look at the GT16 full-suspension mini electric dirt bike, highlighting its value, affordable positioning, and tubeless tire setup.</p>",
+            "link": "https://www.youtube.com/watch?v=AfA0t21aJi0",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "Trent In The Sip",
+            "platform": "YouTube",
+            "review_date": "Mar 6, 2026",
+            "review_text": "<p>A practical review of the GT16’s performance, features, and ride experience, offering an objective look at how it feels in everyday use.</p>",
+            "link": "https://www.youtube.com/watch?v=uAHueqfAPr0",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "POV Nelson",
+            "platform": "YouTube",
+            "review_date": "Apr 19, 2026",
+            "review_text": "<p>A review positioning the GT16 as a legal electric bike with impressive performance and strong value at around the $999 price point.</p>",
+            "link": "https://www.youtube.com/watch?v=31HN0gT2ZKc",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "POV Nelson Shorts",
+            "platform": "YouTube Shorts",
+            "review_date": "Apr 16, 2026",
+            "review_text": "<p>A quick short-form review that highlights the GT16’s legal e-bike positioning, accessible price, and surprisingly strong performance.</p>",
+            "link": "https://www.youtube.com/shorts/FIwXYU16dwg",
+            "button_label": "Watch Short"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "@pov_nelson",
+            "platform": "Instagram",
+            "review_date": "Apr 22, 2026",
+            "review_text": "<p>An ASMR-style first-person showcase of the GT16, focusing on close-up details, riding sounds, and an immersive mini electric dirt bike feel.</p>",
+            "link": "https://www.instagram.com/p/DXc4Nrsodv3/",
+            "button_label": "View Post"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "Electric Adventure Channel",
+            "platform": "YouTube",
+            "review_date": "Feb 28, 2026",
+            "review_text": "<p>A review of the GT16 as a $999 mini electric motorcycle-style bike, focusing on performance, ride experience, and its potential to disrupt the market.</p>",
+            "link": "https://www.youtube.com/watch?v=WRmkJt7iNTc",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "@ev_tech_steven",
+            "platform": "Instagram",
+            "review_date": "Apr 13, 2026",
+            "review_text": "<p>A short-form look at the GT16’s Surron-inspired design, punchy power, and exciting ride feel in a compact electric bike format.</p>",
+            "link": "https://www.instagram.com/p/DXF8aegDcBe/",
+            "button_label": "View Post"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "@electricadventurechannel",
+            "platform": "Instagram",
+            "review_date": "Apr 20, 2026",
+            "review_text": "<p>A short Instagram showcase presenting the GT16 as a versatile, go-anywhere electric ride built for different environments and use cases.</p>",
+            "link": "https://www.instagram.com/p/DXYM70FDIN1/",
+            "button_label": "View Post"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "MastaBika",
+            "platform": "YouTube",
+            "review_date": "Feb 24, 2026",
+            "review_text": "<p>A full review focused on the GT16’s 36 mph top speed, 3000W motor, and whether this high-performance setup is suitable for younger riders.</p>",
+            "link": "https://www.youtube.com/watch?v=04GvqMwqeGs&t=53s",
+            "button_label": "Watch Review"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "creator": "MastaBika",
+            "platform": "Instagram",
+            "review_date": "May 7, 2026",
+            "review_text": "<p>A lifestyle-style Instagram clip showing a father and son riding the GT16, highlighting its fun, approachable, and family-friendly appeal.</p>",
+            "link": "https://www.instagram.com/p/DYAHG9SP_g9/",
+            "button_label": "View Post"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,46 @@
+<div class="product-info__payments" {{ block.shopify_attributes }}>
+  <div class="yg-payment-container">
+    {% if block.settings.title1 != blank or block.settings.logo1 != blank %}
+      <div class="yg-payment-frame">
+        <div class="yg-payment-title">
+          {% assign logo1 = block.settings.logo1 %}
+          {% if logo1 != blank %}
+            {{- logo1 | image_url: width: logo1.width | image_tag: loading: 'lazy', widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
+          {% endif %}
+          {{ block.settings.title1 }}
+        </div>
+        <div class="yg-payment-list">
+          {% if block.settings.icons != blank %}
+            {% assign payment_types = block.settings.icons | split: ',' %}
+          {% endif %}
+          {% assign yg_payment_types = payment_types | default: shop.enabled_payment_types %}
+          {%- for type in yg_payment_types -%}
+            {{- type | payment_type_svg_tag -}}
+          {%- endfor -%}
+        </div>
+      </div>
+    {% endif %}
+    {% if block.settings.title2 != blank or block.settings.logo2 != blank %}
+      <div class="yg-payment-frame">
+        <div class="yg-payment-title">
+          {% assign logo2 = block.settings.logo2 %}
+          {% if logo2 != blank %}
+            {{- logo2 | image_url: width: logo2.width | image_tag: loading: 'lazy', widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
+          {% endif %}
+          {{ block.settings.title2 }}
+        </div>
+        <div class="yg-payment-wrapper">
+          {% for i in (1..4) %}
+            {% capture icon %}icon{{ i }}{% endcapture %}
+            {% assign icon = block.settings[icon] %}
+            {% if icon != blank %}
+              <div class="yg-payment-item">
+                {{- icon | image_url: width: icon.width | image_tag: loading: 'lazy', widths: '200,300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200' -}}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>

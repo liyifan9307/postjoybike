@@ -1,0 +1,850 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb_fNxmEp": {
+          "type": "breadcrumb",
+          "settings": {
+            "show_collections_link": true,
+            "enable_product_top": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "show_price": false,
+            "show_rating": false
+          }
+        },
+        "price_Hxp9Jt": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false,
+            "show_rating": true,
+            "show_payment_terms": false,
+            "color_save": "#dc181c"
+          }
+        },
+        "yg_countdown_4cTMTX": {
+          "type": "yg_countdown",
+          "settings": {
+            "countdown": "{{ product.metafields.custom.product_countdown.value }}",
+            "label": "Classic $300 off Ends In:",
+            "code": "",
+            "button_label": "Button label",
+            "color_text": "#ffffff",
+            "color_background": "#fff1f2",
+            "gradient_background": "linear-gradient(90deg, rgba(219, 188, 34, 1), rgba(221, 39, 57, 1) 100%)"
+          }
+        },
+        "yg_icon_list_HW6B9x": {
+          "type": "yg_icon_list",
+          "settings": {
+            "icon_list": "custom.product_info",
+            "variant_name": "Size",
+            "color_heading": "#000000",
+            "color_text": "#807e7b",
+            "color_background": "#ffffff",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "yg_bundle_c8tLrK": {
+          "type": "yg_bundle",
+          "disabled": true,
+          "settings": {
+            "show_block": true,
+            "title_1": "",
+            "product_list_1": [],
+            "enable_required_1": true,
+            "title_2": "Optional Accessories:",
+            "product_list_2": [],
+            "enable_required_2": false,
+            "enable_promotion": "2",
+            "promotion_text": "Add & Save %",
+            "limit_number": 3,
+            "more_button_text": "Expand",
+            "more_less_text": "Expanded",
+            "title_color": "#808080",
+            "bg_color": "#ffffff"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false,
+            "color_background": "#ff9900"
+          }
+        },
+        "sticky_buy_button_dBaXrd": {
+          "type": "sticky_buy_button",
+          "settings": {}
+        },
+        "kaching_bundles_app_block_xt89QA": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "{{product}}",
+            "manual_deal_block_id": ""
+          }
+        },
+        "yg_terms_aWWei3": {
+          "type": "yg_terms",
+          "settings": {
+            "content": "100% Protection Against Shipping Mishaps",
+            "img": "shopify://shop_images/image_106.png",
+            "link": ""
+          }
+        },
+        "yg_payment_4f4krK": {
+          "type": "yg_payment",
+          "settings": {
+            "title1": "Pay with Ease:",
+            "icons": "paypal,maestro,shopify_pay,google_pay,apple_pay,discover,klarna",
+            "title2": "Trusted Delivery:",
+            "icon1": "shopify://shop_images/20260415153628_6_2.png",
+            "icon2": "shopify://shop_images/20260415153628_4_2.png",
+            "icon3": "shopify://shop_images/20260415153628_5_2.png"
+          }
+        },
+        "collapsible_tab_qDE9RU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "style": "with-border",
+            "icon": "truck",
+            "heading": "Fast & Free Shipping",
+            "content": "<p>Shipped from the US warehouse, estimated delivery within 3-8 days<br/></p>",
+            "page": "",
+            "liquid": "",
+            "opened": false
+          }
+        },
+        "collapsible_tab_z7V9bm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "style": "with-border",
+            "icon": "shield",
+            "heading": "Warranty",
+            "content": "<p>All Postjoy ebikes are covered under our manufacturer's 1-year all-inclusive warranty for the original owner against all manufacturing defects (All free Accessories are not covered by warranty service).<br/><br/></p>",
+            "page": "",
+            "liquid": "",
+            "opened": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": ""
+          }
+        },
+        "yg_service_RHGR6c": {
+          "type": "yg_service",
+          "settings": {
+            "icon1": "shopify://shop_images/Warranty_e6ed3c86-a251-4229-a6ef-48d61c01bacd.png",
+            "title1": "1-Year Warranty",
+            "icon2": "shopify://shop_images/free.png",
+            "title2": "Free Shipping",
+            "icon3": "shopify://shop_images/return_fbb2e6d1-79ed-41b2-a039-eb00ff9c2c73.png",
+            "title3": "14-Days Return",
+            "title4": "",
+            "title5": "",
+            "title6": ""
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_fNxmEp",
+        "title",
+        "price_Hxp9Jt",
+        "yg_countdown_4cTMTX",
+        "yg_icon_list_HW6B9x",
+        "variant_picker",
+        "inventory",
+        "yg_bundle_c8tLrK",
+        "buy_buttons",
+        "sticky_buy_button_dBaXrd",
+        "kaching_bundles_app_block_xt89QA",
+        "yg_terms_aWWei3",
+        "yg_payment_4f4krK",
+        "collapsible_tab_qDE9RU",
+        "collapsible_tab_z7V9bm",
+        "description",
+        "share",
+        "yg_service_RHGR6c"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_style2": true,
+        "media_size": 60,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "below",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "color_text": "",
+        "color_background": "",
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "rocket",
+            "heading": "Shipping Information",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#b45309",
+            "color_background": "#fffbeb",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "settings": {
+            "icon": "headphone",
+            "heading": "Customer Support",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#0369a1",
+            "color_background": "#f0f9ff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-3": {
+          "type": "content",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "FAQ’s",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#be123c",
+            "color_background": "#fff1f2",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#4d7c0f",
+            "color_background": "#f7fee7",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content-1",
+        "content-2",
+        "content-3",
+        "content-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Need help?",
+        "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
+      }
+    },
+    "lookbook_EtEqDi": {
+      "type": "lookbook",
+      "name": "t:sections.lookbook.name",
+      "settings": {
+        "image": "shopify://shop_images/G10_full_details.jpg",
+        "image_mobile": "shopify://shop_images/1000.jpg",
+        "heading": "Commute Faster. Ride Comfortably.",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "heading_position": "none",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "text",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 30,
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "slideshow_rqLhMe": {
+      "type": "slideshow",
+      "blocks": {
+        "image_TTcFU9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/f1a4fd523768656f345b0875f5274a6e_e14cd0a5-4cd8-4899-9c09-907c02f2bba8.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_TTcFU9"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "show_navigation": false,
+        "image_height": "650px",
+        "content_width": "small",
+        "image_height_mobile": "auto",
+        "color_text": "#ffffff",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "yg_image_with_text_list_KQztzz": {
+      "type": "yg-image-with-text-list",
+      "blocks": {
+        "item_FQddzf": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 0,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/1000W-25MPH.jpg",
+            "image_mb": "shopify://shop_images/PostJoy_K10_1000_Peak_Motor.jpg",
+            "image_pos": "left",
+            "title": "<p>Powerful Motor for Everyday Commutes</p>",
+            "content": "<p>Powered by a high-performance motor with up to 1000W peak output, this electric scooter delivers smooth acceleration and reliable performance for city streets, neighborhood rides, daily commuting, and moderate hills.<br/>Up to 25 MPH top speed<br/>Supports riders up to 300 lbs</p>",
+            "param_title_1": "Up to 25 MPH top speed",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_Y77eFc": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/25MPH-35MILES.jpg",
+            "image_mb": "shopify://shop_images/PostJoy_K10_48V_13Ah.jpg",
+            "image_pos": "right",
+            "title": "<p>Long Range 48V Battery</p>",
+            "content": "<p>The removable 48V 13Ah battery provides up to 35 miles per charge, giving you the confidence to commute, shop, and explore without constantly looking for an outlet.<br/>Removable battery design<br/>First full charge: about 6 hours</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_yxmgJc": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/G10_three_speed.jpg",
+            "image_mb": "shopify://shop_images/PostJoy_K10_adjustable.jpg",
+            "image_pos": "left",
+            "title": "<p>Ride Seated or Standing — Your Choice</p>",
+            "content": "<p>Designed with an adjustable padded seat and a wide anti-slip deck, this scooter lets you enjoy a more relaxed seated ride for longer trips or stand when you want a more traditional scooter experience.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_4A6yqg": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/G10_scene.jpg",
+            "image_mb": "shopify://shop_images/PostJoy_K10_scene.jpg",
+            "image_pos": "right",
+            "title": "<p>Smooth Ride on Rough City Roads</p>",
+            "content": "<p>Large 14-inch air-filled tires and dual shock suspension help absorb bumps, potholes, and uneven pavement, making every ride smoother, safer, and more stable.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_qBUgpX": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/G10_LCD_Display.jpg",
+            "image_mb": "shopify://shop_images/PostJoy_K10_LCD_display.jpg",
+            "image_pos": "left",
+            "title": "<p>Built for Safer Day & Night Riding</p>",
+            "content": "<p>Stay visible and in control with bright front and rear lights, responsive dual disc brakes, and a stable wide deck designed for confident riding in different conditions.<br/>Bright LED headlight<br/>Rear brake light</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_Y7pTzw": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/G10_foldable_design.jpg",
+            "image_mb": "shopify://shop_images/PostJoy_K10_foldable_design.jpg",
+            "image_pos": "right",
+            "title": "<p>Foldable & Easy to Store</p>",
+            "content": "<p>The foldable frame makes it easy to store the scooter in your apartment, garage, office, car trunk, or take it along with public transportation when needed.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_PFNqNk": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/G10_power_protection.jpg",
+            "image_mb": "shopify://shop_images/K10_Charging.jpg",
+            "image_pos": "left",
+            "title": "<h2>Power Protection Design</h2>",
+            "content": "<p>ower on, power off, and charge with confidence. The scooter features a dedicated battery switch button that allows one-press battery control for simple daily operation. Before charging, press the battery switch button once, then connect the charger through the protected charging port.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_FQddzf",
+        "item_Y77eFc",
+        "item_yxmgJc",
+        "item_4A6yqg",
+        "item_qBUgpX",
+        "item_Y7pTzw",
+        "item_PFNqNk"
+      ],
+      "name": "YG image with text list",
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "17781662114bdf5166": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c5c9273_VY4gYh": {
+          "type": "ai_gen_block_c5c9273",
+          "disabled": true,
+          "settings": {
+            "section_title": "",
+            "section_subtitle": "",
+            "columns_count": 3,
+            "image_ratio": "square",
+            "card_style": "plain",
+            "text_alignment": "left",
+            "show_divider": false,
+            "desktop_width_percent": 100,
+            "background_color": "#ffffff",
+            "title_color": "#000000",
+            "text_color": "#000000",
+            "button_color": "#000000",
+            "button_hover_color": "#333333",
+            "image_1": "shopify://shop_images/NFCUnlocking.jpg",
+            "title_1": "NFC Unlocking & Smart Display",
+            "subtitle_1": "The smart display shows speed, battery level, mileage, riding mode, cruise status, and brake alerts, while NFC unlocking adds convenience and security.",
+            "button_label_1": "",
+            "button_url_1": "",
+            "image_2": "shopify://shop_images/LEDHeadlight_BrakeLight.jpg",
+            "title_2": "Bright LED Lighting System",
+            "subtitle_2": "Bright LED headlights, taillight, and brake light improve visibility during day and night rides, helping make every trip safer.",
+            "button_label_2": "",
+            "button_url_2": "",
+            "image_3": "shopify://shop_images/4f11d32c6febf32612c5f8446b8f845f_b9378db0-cf97-4f40-9d77-439b35d5b0b4.jpg",
+            "title_3": "High Load Capacity & UL2272 Certified",
+            "subtitle_3": "With a strong frame supporting up to 365 lbs and UL2272 certification, this electric scooter is designed for adult riders seeking power, safety, and reliability.",
+            "button_label_3": "",
+            "button_url_3": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c5c9273_VY4gYh"
+      ],
+      "settings": {}
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_product_geometry_cjHakK": {
+      "type": "yg-product-geometry",
+      "blocks": {
+        "commodity_LLiTpC": {
+          "type": "commodity",
+          "settings": {
+            "image_car": "shopify://shop_images/G10_dimension.jpg",
+            "image_body": "shopify://shop_images/8_22d36b3b-19ae-40c9-81c2-9f9ce42e6250.jpg",
+            "button_l": "Size",
+            "button_r": "Fit"
+          }
+        },
+        "icon_list_zHBHDb": {
+          "type": "icon_list",
+          "settings": {
+            "icon": "shopify://shop_images/Height.svg",
+            "title": "5'4\" – 6'2\"",
+            "content": "Recommended Height"
+          }
+        },
+        "icon_list_BM8wkK": {
+          "type": "icon_list",
+          "settings": {
+            "icon": "shopify://shop_images/lbs.png",
+            "title": "300lbs",
+            "content": "Max Capacity"
+          }
+        },
+        "icon_list_3B8h6a": {
+          "type": "icon_list",
+          "settings": {
+            "icon": "shopify://shop_images/lbs.png",
+            "title": "45lbs",
+            "content": "Scooter Weight"
+          }
+        }
+      },
+      "block_order": [
+        "commodity_LLiTpC",
+        "icon_list_zHBHDb",
+        "icon_list_BM8wkK",
+        "icon_list_3B8h6a"
+      ],
+      "name": "YG product geometry",
+      "settings": {
+        "title": "Find Your Perfect Fit",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_product_parameter_comparison_CqGc4d": {
+      "type": "yg-product-parameter-comparison",
+      "blocks": {
+        "parameter_title_RARTkc": {
+          "type": "parameter_title",
+          "settings": {
+            "header_title": "<ol><li><strong>Battery</strong></li><li><strong>Motor</strong></li><li><strong>Torque</strong></li><li><strong>Top Speed</strong></li><li><strong>Brake</strong></li><li><strong>Tires</strong></li><li><strong>Suspension</strong></li><li><strong>Range</strong></li><li><strong>MAX Payload Capacity</strong></li><li><strong>E-Bike Weight</strong></li><li><strong>E-Bike Class</strong></li><li><strong>Charger</strong></li><li><strong>Charging Time</strong></li><li><strong>IP Level</strong></li></ol>"
+          }
+        },
+        "product_parameter_L9zBwt": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-gt16-electric-dirt-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>200Nm</li><li>40Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+          }
+        },
+        "product_parameter_9XNr9Y": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-f30-electric-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+          }
+        },
+        "product_parameter_ExP4Mg": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-t20-electric-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "parameter_title_RARTkc",
+        "product_parameter_L9zBwt",
+        "product_parameter_9XNr9Y",
+        "product_parameter_ExP4Mg"
+      ],
+      "disabled": true,
+      "name": "YG Parameter Comparison",
+      "settings": {
+        "heading": "Product compare",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h3",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#ff9900",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_specification_BGHDRh": {
+      "type": "yg-specification",
+      "name": "YG specification",
+      "settings": {
+        "title": "Specification",
+        "richtext": "<p>Battery<strong>48V 13Ah</strong></p><p>Peak Motor<strong>1000W Peak </strong></p><p>Top Speed<strong> Up To 25MPH</strong></p><p>Brake<strong>Dual Disc Brakes</strong></p><p>Charging Time<strong> 5-6H</strong></p><p>MAX Payload Capacity<strong>300 lbs</strong></p><p>Ranger<strong>Up to 35 Miles</strong></p><p>Tire Size<strong>14 Inches<br/><br/></strong></p><p>Charging Time<strong>About 5 Hours</strong></p><p>Seat<strong>Adjustable Padded Seat</strong></p><p>Foldable<strong>Yes</strong></p><p>Frame Material<strong>Alloy Steel / Aluminum frame referenced in listing</strong></p><p></p>",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You may also like",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "help-drawer",
+    "lookbook_EtEqDi",
+    "slideshow_rqLhMe",
+    "yg_image_with_text_list_KQztzz",
+    "17781662114bdf5166",
+    "recently-viewed",
+    "yg_product_geometry_cjHakK",
+    "yg_product_parameter_comparison_CqGc4d",
+    "yg_specification_BGHDRh",
+    "product-recommendations"
+  ]
+}

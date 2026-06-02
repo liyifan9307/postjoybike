@@ -1,0 +1,289 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "spacing": {
+          "type": "spacing",
+          "settings": {
+            "height": 0,
+            "height_mobile": 0
+          }
+        },
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "title-xs"
+          }
+        },
+        "description_cz3Anq": {
+          "type": "description",
+          "settings": {
+            "cus_description": "",
+            "text_size": "subtext-md",
+            "text_max_size": 16,
+            "text_font": "body",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "spacing",
+        "breadcrumb",
+        "title",
+        "description_cz3Anq"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "show_image": true,
+        "image": "shopify://shop_images/1_36c0e19c-d184-440a-ab16-f5078f98a209.jpg",
+        "image_height": "adapt",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_mobile": "shopify://shop_images/9d0c8229b604de27cbc095b8256e40a8.jpg",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_overlay": "#000000",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "zoom"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "",
+            "per_row": 5,
+            "show_count": true
+          }
+        },
+        "promotion": {
+          "type": "promotion",
+          "settings": {
+            "position": 3,
+            "column_size": "1",
+            "image": "shopify://shop_images/Fat-tire-Ebike_f8c785d0-c534-439a-96d1-d8adddc0266f.jpg",
+            "heading": "",
+            "content": "<p>Racer 20x4.0\" Fat Tire E-Bike</p>",
+            "button_label": "Shop now",
+            "button_link": "shopify://products/qlife-racer-fat-tire-electric-bike",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false,
+            "content_position": "md:items-end",
+            "text_alignment": "left",
+            "content_position_mobile": "items-center",
+            "text_alignment_mobile": "left",
+            "color_text": "#ffffff",
+            "color_button_text": "#000000",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "promotion"
+      ],
+      "settings": {
+        "section_bg_color": "#f5f5f5",
+        "products_per_page": 18,
+        "columns": 4,
+        "columns_mobile": "1",
+        "pagination": "paginated",
+        "enable_filtering": true,
+        "filter_collapsed": false,
+        "filter_type": "sidebar",
+        "filter_color_swatches": true,
+        "enable_sorting": true,
+        "padding_top": 40,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_info_CT6wLn": {
+      "type": "yg-info",
+      "disabled": true,
+      "settings": {
+        "title": "About our best-selling electric bike collection",
+        "richtext": "<p>The <strong>best electric bikes</strong> from Actbest are here! Here, we have carefully selected a range of premium electric bikes, including commuter e-bikes, fat tire e-bikes, folding e-bikes and trikes. Whether you need a reliable city commuter or an adventurous option for nature trails and mountains, we have the perfect choice for everyone.</p><h3><strong>Convenient and Versatile Electric Bike Transportation</strong></h3><p><strong>Great value for money: Electric bikes</strong> are a great way to cut down on transportation expenses, especially with fuel prices rising. In addition to saving money on fuel, the <strong>most affordable e-bikes</strong> also have lower maintenance and repair costs than cars.</p><p><strong>Convenient and flexible: </strong><a href=\"https://actbestbike.com/collections/commuter-ebike\">Commuter e-bikes</a> make city transportation a breeze, allowing you to easily cut through congestion. For those seeking adventure, our fat tire e-bikes can handle a variety of terrains, from sand to mud and snow, adding a touch of excitement to your trip.</p><p><strong>Riding modes:</strong> Each Actbest electric bike comes with three riding modes: pure electric, pedal assist and regular riding. Switch between modes according to your needs and enjoy a customized riding experience.</p><p><strong>Stylish Design and Comfort</strong>: Our best electric bikes are carefully designed to balance performance and style, ensuring you travel in comfort and style.</p><h3><strong>How to Choose an Electric Bike?</strong></h3><p>When buying an electric bike, you can consider many aspects such as purpose, budget, range, motor type, battery capacity and frame style. Actbest offers a variety of electric bikes to suit different styles and functions, including:<br/>                ● <a href=\"https://actbestbike.com/collections/commuter-ebike\"><strong>Commuter Electric Bike</strong></a><strong>: </strong>Core is our best-selling electric bike with a top speed of 22 mph and a range of up to 50 miles, perfect for city riding.<br/>                ● <a href=\"https://actbestbike.com/collections/fat-tire-electric-bike\"><strong>Fat Tire Electric Bike</strong></a><strong>:</strong> Models such as Ranger and Knight feature wide tires for stable and enjoyable riding on any terrain and in all weather conditions.<br/>                ● <a href=\"https://actbestbike.com/collections/folding\"><strong>Folding Electric Bike</strong></a><strong>: </strong>The lightweight Mars model is easy to store and transport, perfect for users who are often on the go.<br/>                ● <a href=\"https://actbestbike.com/products/triker-folding-3-wheels-electric-bike\"><strong>Trike</strong></a><strong>:</strong> Our trikes are designed for stability and balance, suitable for riders of all ages and skill levels.</p><h3><strong>Why Choose Actbest?</strong></h3><p><strong>Value of Excellent Service:</strong> Actbest bikes guarantee quality at an affordable price, providing excellent value for your investment. If you have any questions or need help, our customer service team is here to help.</p><p><strong>Easy to Assemble and Use:</strong> Most of our electric bikes are 95% pre-assembled and can be on the road with a simple installation. Each bike includes detailed instructions and video tutorials to get beginners up and running quickly.</p><p>By choosing an Actbest electric bike, you not only get an enhanced riding experience, but also a stylish and practical means of transportation at an unbeatable price. Whether you are a beginner or an experienced rider, our team is eager to help you find the electric bike that best suits your needs and make riding an enjoyable part of your life!</p><p>By browsing our best-selling models today, start your eco-friendly journey!</p><p>Explore more high-quality electric bikes on actbest: <a href=\"https://actbestbike.com/collections/fat-tire-electric-bike\" title=\"fat tire ebike\">fat tire ebike</a> | <a href=\"https://actbestbike.com/collections/folding\" title=\"Folding Electric Bikes\">folding electric bikes</a> | <a href=\"https://actbestbike.com/collections/commuter-ebike\" title=\"Commuter electric bikes\">commuter electric bikes</a></p>",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_faq_88XxDi": {
+      "type": "yg-faq",
+      "blocks": {
+        "rich_text_FjDzEg": {
+          "type": "rich-text",
+          "settings": {
+            "heading": "FAQs",
+            "text": "",
+            "info": "<p>Please read our <a href=\"/pages/faqs\" title=\"FAQs\">FAQs</a> page to find out more.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_Wp4gJT": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Does Actbest bike really offer free shipping on all orders?</strong>",
+            "text": "<p>Actbest bike provides fast free shipping on all orders, without any minimum purchase amount requirement.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_fdWLQB": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>What does the 365 - day warranty cover?</strong>",
+            "text": "<p>The 365 - day warranty means Actbest bike will offer after - sales service for 365 days from the date of purchase. This typically covers defects in materials or workmanship under normal use. If you encounter any problems with the bike during this period, you can contact our customer service for assistance, which may include repairs, replacement of parts, or other solutions as appropriate.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_qKC8KC": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Do Actbest bikes' batteries have safety certifications?</strong>",
+            "text": "<p>Actbest bikes are Certified to UL 2849. This certification encompasses comprehensive safety evaluations, including the batteries. It ensures that the batteries meet strict safety standards in terms of electrical performance, thermal management, and overall reliability. You can have peace of mind knowing that the batteries in our bikes have passed rigorous safety tests<br/><br/><br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_wVxjDj": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>Where are Actbest bikes shipped from and how long will it take for delivery?</strong>",
+            "text": "<p>Actbest bikes are shipped from our US warehouse. Generally, the delivery time is within 3 - 8 days after you place your order. We aim to get your bike to you as soon as possible so you can start your cycling adventures.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_LY9hRW": {
+          "type": "question",
+          "settings": {
+            "title": "<strong>How is the security of my payment information ensured?</strong>",
+            "text": "<p>What measures does Actbest bike take to protect my payment information during the transaction?<br/><strong>A</strong>: Actbest bike uses secure payment processing systems. Your payment information is processed securely using advanced encryption technology and industry - standard security protocols. We take the protection of your personal and financial data very seriously and have implemented multiple layers of security to prevent unauthorized access and ensure the confidentiality of your information.<br/><br/></p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "contact_eYEgba": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "heading": "Didn’t find your answer?",
+            "text": "<p>Don't hestitate to contact us</p>",
+            "show_phone": false,
+            "avatar_height": 60,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "rich_text_FjDzEg",
+        "question_Wp4gJT",
+        "question_fdWLQB",
+        "question_qKC8KC",
+        "question_wVxjDj",
+        "question_LY9hRW",
+        "contact_eYEgba"
+      ],
+      "settings": {
+        "faq_bg_color": "#ffffff",
+        "form_bg_color": "#e6e5e5",
+        "info_bg_color": "#f5f5f5",
+        "style": "with-border",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#000000",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "main-collection",
+    "yg_info_CT6wLn",
+    "yg_faq_88XxDi"
+  ]
+}

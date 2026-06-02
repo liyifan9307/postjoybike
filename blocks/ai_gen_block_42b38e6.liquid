@@ -1,0 +1,846 @@
+{% doc %}
+  @prompt
+    【功能】多列图文横向滑动展示（Multi-Column Slider）
+    
+    【响应式列数】
+    - PC（>1024px）：显示3列，可通过 schema 配置为 2/3/4
+    - 平板（768~1024px）：显示2列
+    - 手机（<768px）：显示1.2列（右侧露出下一张边缘）
+    
+    【图片显示规则 — 必须严格执行，这是最重要的部分】
+    图片必须完整显示，不裁切、不变形。
+    
+    正确写法：
+      .column__image-wrapper {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        background: #f5f5f5;
+      }
+      .column__image-wrapper img {
+        width: 100%;
+        height: auto;        /* 必须 height: auto，绝对不能写固定高度 */
+        display: block;
+        object-fit: unset;   /* 绝对不能写 object-fit: cover */
+      }
+    
+    禁止的写法（会导致图片被截断）：
+      ❌ height: 200px / height: 300px 等任何固定高度
+      ❌ aspect-ratio: 1/1 等固定比例
+      ❌ object-fit: cover
+      ❌ img { position: absolute }
+    
+    【Liquid 图片输出方式】
+    {% if block.settings.image %}
+      <div class="column__image-wrapper">
+        {{ block.settings.image | image_url: width: 1200 | image_tag:
+           loading: 'lazy',
+           widths: '400, 600, 800, 1200',
+           sizes: '(max-width: 768px) 80vw, 30vw',
+           alt: block.settings.image.alt | default: block.settings.title
+        }}
+      </div>
+    {% else %}
+      <div class="column__image-wrapper" style="padding-top:66%;position:relative;background:#f0f0f0;">
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      </div>
+    {% endif %}
+    
+    【每列结构】
+    图片 → 标题 → 描述文案 → CTA按钮（可选）
+    
+    【Slider 技术实现】
+    - 纯原生 CSS scroll-snap-type: x mandatory，不用任何第三方库
+    - 隐藏滚动条（scrollbar-width: none）
+    - PC 端显示左右箭头（内联SVG），移动端隐藏
+    - 底部 Dots 指示器，JS 监听 scroll 高亮当前点
+    - 箭头首尾自动禁用（opacity: 0.3 + pointer-events: none）
+    
+    【Schema 配置项】
+    Section 级别：
+    - section_title（text）
+    - section_subtitle（text）
+    - desktop_visible_columns（select: 2/3/4，默认3）
+    - card_style（select: plain/shadow，默认plain）
+    - text_alignment（select: left/center，默认left）
+    - background_color（color，默认#ffffff）
+    
+    Block 级别（每列）：
+    - image（image_picker）
+    - title（text）
+    - subtitle（textarea）
+    - button_label（text，可选）
+    - button_url（url，可选）
+    
+    【代码要求】
+    1. 输出完整 .liquid 文件，不省略任何代码
+    2. CSS 选择器加前缀 #shopify-section-{{ section.id }} 防止样式污染
+    3. JS 用 IIFE 包裹，同时监听 DOMContentLoaded 和 shopify:section:load
+    4. Presets 预置 4 个示例 block
+    5. 兼容 Shopify OS 2.0
+    
+    请直接输出完整代码。
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-multi-column-slider-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: 60px 20px;
+    display: block;
+  }
+
+  .ai-slider-container-{{ ai_gen_id }} {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .ai-slider-header-{{ ai_gen_id }} {
+    text-align: {{ block.settings.text_alignment }};
+    margin-bottom: 40px;
+  }
+
+  .ai-slider-title-{{ ai_gen_id }} {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: #171717;
+  }
+
+  .ai-slider-subtitle-{{ ai_gen_id }} {
+    font-size: 16px;
+    color: #171717;
+    opacity: 0.7;
+    margin: 0;
+  }
+
+  .ai-slider-wrapper-{{ ai_gen_id }} {
+    position: relative;
+  }
+
+  .ai-slider-track-{{ ai_gen_id }} {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 10px;
+  }
+
+  .ai-slider-track-{{ ai_gen_id }}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-slider-column-{{ ai_gen_id }} {
+    flex: 0 0 calc((100% - 40px) / {{ block.settings.desktop_visible_columns }});
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-column-card-{{ ai_gen_id }} {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    {% if block.settings.card_style == 'shadow' %}
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    {% endif %}
+  }
+
+  .ai-column-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background: #f5f5f5;
+    {% if block.settings.card_style == 'shadow' %}
+      border-radius: 12px 12px 0 0;
+    {% else %}
+      border-radius: 12px;
+    {% endif %}
+  }
+
+  .ai-column-image-wrapper-{{ ai_gen_id }} img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-column-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    padding-top: 66%;
+    position: relative;
+    background: #f0f0f0;
+    {% if block.settings.card_style == 'shadow' %}
+      border-radius: 12px 12px 0 0;
+    {% else %}
+      border-radius: 12px;
+    {% endif %}
+  }
+
+  .ai-column-image-placeholder-{{ ai_gen_id }} svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-column-content-{{ ai_gen_id }} {
+    padding: 20px;
+    text-align: {{ block.settings.text_alignment }};
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-column-title-{{ ai_gen_id }} {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #171717;
+  }
+
+  .ai-column-subtitle-{{ ai_gen_id }} {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #171717;
+    opacity: 0.8;
+    margin: 0 0 20px;
+    flex-grow: 1;
+  }
+
+  .ai-column-button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #171717;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-column-button-{{ ai_gen_id }}:hover {
+    opacity: 0.8;
+  }
+
+  .ai-slider-nav-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-slider-nav-{{ ai_gen_id }}:hover {
+    background: #f5f5f5;
+  }
+
+  .ai-slider-nav-{{ ai_gen_id }}.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  .ai-slider-nav-prev-{{ ai_gen_id }} {
+    left: -20px;
+  }
+
+  .ai-slider-nav-next-{{ ai_gen_id }} {
+    right: -20px;
+  }
+
+  .ai-slider-nav-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    stroke: #171717;
+  }
+
+  .ai-slider-dots-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 30px;
+  }
+
+  .ai-slider-dot-{{ ai_gen_id }} {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #171717;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border: none;
+    padding: 0;
+  }
+
+  .ai-slider-dot-{{ ai_gen_id }}.active {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .ai-slider-column-{{ ai_gen_id }} {
+      flex: 0 0 calc((100% - 20px) / 2);
+    }
+
+    .ai-slider-nav-{{ ai_gen_id }} {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-multi-column-slider-{{ ai_gen_id }} {
+      padding: 40px 15px;
+    }
+
+    .ai-slider-column-{{ ai_gen_id }} {
+      flex: 0 0 83.33%;
+    }
+
+    .ai-slider-title-{{ ai_gen_id }} {
+      font-size: 24px;
+    }
+
+    .ai-column-content-{{ ai_gen_id }} {
+      padding: 15px;
+    }
+  }
+{% endstyle %}
+
+<multi-column-slider-{{ ai_gen_id }} class="ai-multi-column-slider-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-slider-container-{{ ai_gen_id }}">
+    {% if block.settings.section_title != blank or block.settings.section_subtitle != blank %}
+      <div class="ai-slider-header-{{ ai_gen_id }}">
+        {% if block.settings.section_title != blank %}
+          <h2 class="ai-slider-title-{{ ai_gen_id }}">{{ block.settings.section_title }}</h2>
+        {% endif %}
+        {% if block.settings.section_subtitle != blank %}
+          <p class="ai-slider-subtitle-{{ ai_gen_id }}">{{ block.settings.section_subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-slider-wrapper-{{ ai_gen_id }}">
+      <button class="ai-slider-nav-{{ ai_gen_id }} ai-slider-nav-prev-{{ ai_gen_id }}" aria-label="Previous slide">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <div class="ai-slider-track-{{ ai_gen_id }}" data-slider-track>
+        {% if block.settings.image_1 != blank or block.settings.title_1 != blank %}
+          <div class="ai-slider-column-{{ ai_gen_id }}">
+            <div class="ai-column-card-{{ ai_gen_id }}">
+              {% if block.settings.image_1 %}
+                <div class="ai-column-image-wrapper-{{ ai_gen_id }}">
+                  {{ block.settings.image_1 | image_url: width: 1200 | image_tag:
+                    loading: 'lazy',
+                    widths: '400, 600, 800, 1200',
+                    sizes: '(max-width: 768px) 80vw, 30vw',
+                    alt: block.settings.image_1.alt | default: block.settings.title_1
+                  }}
+                </div>
+              {% else %}
+                <div class="ai-column-image-placeholder-{{ ai_gen_id }}">
+                  {{ 'image' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+              <div class="ai-column-content-{{ ai_gen_id }}">
+                {% if block.settings.title_1 != blank %}
+                  <h3 class="ai-column-title-{{ ai_gen_id }}">{{ block.settings.title_1 }}</h3>
+                {% endif %}
+                {% if block.settings.subtitle_1 != blank %}
+                  <p class="ai-column-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_1 }}</p>
+                {% endif %}
+                {% if block.settings.button_label_1 != blank and block.settings.button_url_1 != blank %}
+                  <a href="{{ block.settings.button_url_1 }}" class="ai-column-button-{{ ai_gen_id }}">
+                    {{ block.settings.button_label_1 }}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.image_2 != blank or block.settings.title_2 != blank %}
+          <div class="ai-slider-column-{{ ai_gen_id }}">
+            <div class="ai-column-card-{{ ai_gen_id }}">
+              {% if block.settings.image_2 %}
+                <div class="ai-column-image-wrapper-{{ ai_gen_id }}">
+                  {{ block.settings.image_2 | image_url: width: 1200 | image_tag:
+                    loading: 'lazy',
+                    widths: '400, 600, 800, 1200',
+                    sizes: '(max-width: 768px) 80vw, 30vw',
+                    alt: block.settings.image_2.alt | default: block.settings.title_2
+                  }}
+                </div>
+              {% else %}
+                <div class="ai-column-image-placeholder-{{ ai_gen_id }}">
+                  {{ 'image' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+              <div class="ai-column-content-{{ ai_gen_id }}">
+                {% if block.settings.title_2 != blank %}
+                  <h3 class="ai-column-title-{{ ai_gen_id }}">{{ block.settings.title_2 }}</h3>
+                {% endif %}
+                {% if block.settings.subtitle_2 != blank %}
+                  <p class="ai-column-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_2 }}</p>
+                {% endif %}
+                {% if block.settings.button_label_2 != blank and block.settings.button_url_2 != blank %}
+                  <a href="{{ block.settings.button_url_2 }}" class="ai-column-button-{{ ai_gen_id }}">
+                    {{ block.settings.button_label_2 }}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.image_3 != blank or block.settings.title_3 != blank %}
+          <div class="ai-slider-column-{{ ai_gen_id }}">
+            <div class="ai-column-card-{{ ai_gen_id }}">
+              {% if block.settings.image_3 %}
+                <div class="ai-column-image-wrapper-{{ ai_gen_id }}">
+                  {{ block.settings.image_3 | image_url: width: 1200 | image_tag:
+                    loading: 'lazy',
+                    widths: '400, 600, 800, 1200',
+                    sizes: '(max-width: 768px) 80vw, 30vw',
+                    alt: block.settings.image_3.alt | default: block.settings.title_3
+                  }}
+                </div>
+              {% else %}
+                <div class="ai-column-image-placeholder-{{ ai_gen_id }}">
+                  {{ 'image' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+              <div class="ai-column-content-{{ ai_gen_id }}">
+                {% if block.settings.title_3 != blank %}
+                  <h3 class="ai-column-title-{{ ai_gen_id }}">{{ block.settings.title_3 }}</h3>
+                {% endif %}
+                {% if block.settings.subtitle_3 != blank %}
+                  <p class="ai-column-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_3 }}</p>
+                {% endif %}
+                {% if block.settings.button_label_3 != blank and block.settings.button_url_3 != blank %}
+                  <a href="{{ block.settings.button_url_3 }}" class="ai-column-button-{{ ai_gen_id }}">
+                    {{ block.settings.button_label_3 }}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if block.settings.image_4 != blank or block.settings.title_4 != blank %}
+          <div class="ai-slider-column-{{ ai_gen_id }}">
+            <div class="ai-column-card-{{ ai_gen_id }}">
+              {% if block.settings.image_4 %}
+                <div class="ai-column-image-wrapper-{{ ai_gen_id }}">
+                  {{ block.settings.image_4 | image_url: width: 1200 | image_tag:
+                    loading: 'lazy',
+                    widths: '400, 600, 800, 1200',
+                    sizes: '(max-width: 768px) 80vw, 30vw',
+                    alt: block.settings.image_4.alt | default: block.settings.title_4
+                  }}
+                </div>
+              {% else %}
+                <div class="ai-column-image-placeholder-{{ ai_gen_id }}">
+                  {{ 'image' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+              <div class="ai-column-content-{{ ai_gen_id }}">
+                {% if block.settings.title_4 != blank %}
+                  <h3 class="ai-column-title-{{ ai_gen_id }}">{{ block.settings.title_4 }}</h3>
+                {% endif %}
+                {% if block.settings.subtitle_4 != blank %}
+                  <p class="ai-column-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle_4 }}</p>
+                {% endif %}
+                {% if block.settings.button_label_4 != blank and block.settings.button_url_4 != blank %}
+                  <a href="{{ block.settings.button_url_4 }}" class="ai-column-button-{{ ai_gen_id }}">
+                    {{ block.settings.button_label_4 }}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+
+      <button class="ai-slider-nav-{{ ai_gen_id }} ai-slider-nav-next-{{ ai_gen_id }}" aria-label="Next slide">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="ai-slider-dots-{{ ai_gen_id }}" data-slider-dots></div>
+  </div>
+</multi-column-slider-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class MultiColumnSlider{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.track = null;
+        this.prevBtn = null;
+        this.nextBtn = null;
+        this.dotsContainer = null;
+        this.dots = [];
+        this.currentIndex = 0;
+        this.totalSlides = 0;
+      }
+
+      connectedCallback() {
+        this.track = this.querySelector('[data-slider-track]');
+        this.prevBtn = this.querySelector('.ai-slider-nav-prev-{{ ai_gen_id }}');
+        this.nextBtn = this.querySelector('.ai-slider-nav-next-{{ ai_gen_id }}');
+        this.dotsContainer = this.querySelector('[data-slider-dots]');
+
+        if (!this.track) return;
+
+        this.totalSlides = this.track.children.length;
+        this.createDots();
+        this.setupEventListeners();
+        this.updateNavigation();
+      }
+
+      createDots() {
+        if (!this.dotsContainer || this.totalSlides === 0) return;
+
+        for (let i = 0; i < this.totalSlides; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'ai-slider-dot-{{ ai_gen_id }}';
+          dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+          dot.addEventListener('click', () => this.goToSlide(i));
+          this.dotsContainer.appendChild(dot);
+          this.dots.push(dot);
+        }
+
+        if (this.dots.length > 0) {
+          this.dots[0].classList.add('active');
+        }
+      }
+
+      setupEventListeners() {
+        if (this.prevBtn) {
+          this.prevBtn.addEventListener('click', () => this.prev());
+        }
+
+        if (this.nextBtn) {
+          this.nextBtn.addEventListener('click', () => this.next());
+        }
+
+        this.track.addEventListener('scroll', () => {
+          this.updateCurrentIndex();
+          this.updateNavigation();
+        });
+      }
+
+      updateCurrentIndex() {
+        const scrollLeft = this.track.scrollLeft;
+        const slideWidth = this.track.children[0].offsetWidth;
+        const gap = 20;
+        this.currentIndex = Math.round(scrollLeft / (slideWidth + gap));
+        this.updateDots();
+      }
+
+      updateDots() {
+        this.dots.forEach((dot, index) => {
+          if (index === this.currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+
+      updateNavigation() {
+        if (!this.prevBtn || !this.nextBtn) return;
+
+        const scrollLeft = this.track.scrollLeft;
+        const maxScroll = this.track.scrollWidth - this.track.clientWidth;
+
+        if (scrollLeft <= 0) {
+          this.prevBtn.classList.add('disabled');
+        } else {
+          this.prevBtn.classList.remove('disabled');
+        }
+
+        if (scrollLeft >= maxScroll - 1) {
+          this.nextBtn.classList.add('disabled');
+        } else {
+          this.nextBtn.classList.remove('disabled');
+        }
+      }
+
+      prev() {
+        if (this.currentIndex > 0) {
+          this.goToSlide(this.currentIndex - 1);
+        }
+      }
+
+      next() {
+        if (this.currentIndex < this.totalSlides - 1) {
+          this.goToSlide(this.currentIndex + 1);
+        }
+      }
+
+      goToSlide(index) {
+        const slideWidth = this.track.children[0].offsetWidth;
+        const gap = 20;
+        this.track.scrollLeft = index * (slideWidth + gap);
+        this.currentIndex = index;
+        this.updateDots();
+      }
+    }
+
+    const initSlider = () => {
+      if (!customElements.get('multi-column-slider-{{ ai_gen_id }}')) {
+        customElements.define('multi-column-slider-{{ ai_gen_id }}', MultiColumnSlider{{ ai_gen_id }});
+      }
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSlider);
+    } else {
+      initSlider();
+    }
+
+    document.addEventListener('shopify:section:load', initSlider);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Multi-column slider",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Title",
+      "default": "Featured collection"
+    },
+    {
+      "type": "text",
+      "id": "section_subtitle",
+      "label": "Subtitle",
+      "default": "Discover our latest products"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "desktop_visible_columns",
+      "label": "Desktop columns",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "select",
+      "id": "card_style",
+      "label": "Card style",
+      "options": [
+        {
+          "value": "plain",
+          "label": "Plain"
+        },
+        {
+          "value": "shadow",
+          "label": "Shadow"
+        }
+      ],
+      "default": "plain"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Column 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title",
+      "default": "Feature one"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle_1",
+      "label": "Description",
+      "default": "Share details about your product features"
+    },
+    {
+      "type": "text",
+      "id": "button_label_1",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_url_1",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Column 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title",
+      "default": "Feature two"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle_2",
+      "label": "Description",
+      "default": "Share details about your product features"
+    },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_url_2",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Column 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_3",
+      "label": "Title",
+      "default": "Feature three"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle_3",
+      "label": "Description",
+      "default": "Share details about your product features"
+    },
+    {
+      "type": "text",
+      "id": "button_label_3",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_url_3",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Column 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_4",
+      "label": "Title",
+      "default": "Feature four"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle_4",
+      "label": "Description",
+      "default": "Share details about your product features"
+    },
+    {
+      "type": "text",
+      "id": "button_label_4",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_url_4",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi-column slider"
+    }
+  ]
+}
+{% endschema %}

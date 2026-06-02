@@ -1,0 +1,362 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "icon": "truck",
+            "text": "Free Fast Shipping On All Ebike！",
+            "link": "",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "announcement-2": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "icon": "email",
+            "text": "A question? Visit our contact page",
+            "link": "",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-1",
+        "announcement-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_social": false,
+        "enable_language_selector": false,
+        "enable_country_selector": false,
+        "invert_icons_selectors": false,
+        "announcement_position": "center",
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "show_navigation": false,
+        "color_text": "#fafafa",
+        "color_background": "#1f1f1f",
+        "gradient_background": "",
+        "color_highlight": "#ffddbf",
+        "gradient_highlight": "",
+        "hide_homepage": false,
+        "full_width": true,
+        "rounded": true
+      }
+    },
+    "scrolling_text_g89nzK": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_hyD6ct": {
+          "type": "text",
+          "settings": {
+            "text": "<a href=\"/products/postjoy-gt16-electric-dirt-bike\" title=\"PostJoy GT16 Electric Dirt Bike\">Free Fast Shipping On All Ebike！ GT16 Now $300 Off-Limited</a>",
+            "text_size": 16,
+            "text_font": "heading",
+            "highlighted_text": "none",
+            "highlighted_scribble": "squiggle-underline-2"
+          }
+        }
+      },
+      "block_order": [
+        "text_hyD6ct"
+      ],
+      "name": "t:sections.scrolling-text.presets.name",
+      "settings": {
+        "direction": "left",
+        "speed": 20,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "linear-gradient(323deg, rgba(23, 23, 23, 0.79), rgba(255, 235, 0, 1) 39%, rgba(169, 71, 224, 0.81) 73%)",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "countdown_condensed_qWY9L8": {
+      "type": "countdown-condensed",
+      "blocks": {
+        "text_7pNKFK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>🌿Sping Sale — Save Up to $900</p>",
+            "text_font": "heading",
+            "text_alignment": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_nFYkeq": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h6><strong>Shipping Notice: Orders placed Jan 23–27 will be dispatched on Jan 28–29.</strong></h6>",
+            "text_font": "body",
+            "text_alignment": "center",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_7pNKFK",
+        "text_nFYkeq"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_text": "#000000",
+        "color_background": "#ff9900",
+        "gradient_background": "",
+        "color_highlight": "#ffddbf",
+        "gradient_highlight": "",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "yg_mega_menu_iWzWQz": {
+          "type": "yg_mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_title": "Ebike",
+            "tab_title1": "Shop by Category",
+            "show_menu_image": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "promo_image_ratio_1": "adapt",
+            "promo_heading_1": "Motorcycle Ebike",
+            "promo_subtext_1": "",
+            "promo_overlay_content_1": true,
+            "promo_link_1": "shopify://collections/full-suspension-ebikes",
+            "promo_tag_1": "",
+            "promo_color_text_1": "#ffffff",
+            "promo_color_overlay_1": "#000000",
+            "promo_overlay_opacity_1": 40,
+            "promo_image_ratio_2": "adapt",
+            "promo_heading_2": "Commute Ebikes",
+            "promo_subtext_2": "",
+            "promo_overlay_content_2": true,
+            "promo_link_2": "shopify://collections/electric-commuter-bikes",
+            "promo_tag_2": "",
+            "promo_color_text_2": "#ffffff",
+            "promo_color_overlay_2": "#000000",
+            "promo_overlay_opacity_2": 40,
+            "promo_image_ratio_3": "adapt",
+            "promo_heading_3": "3 Wheel Ebike",
+            "promo_subtext_3": "",
+            "promo_overlay_content_3": true,
+            "promo_link_3": "shopify://collections/trike",
+            "promo_tag_3": "",
+            "promo_color_text_3": "#ffffff",
+            "promo_color_overlay_3": "#000000",
+            "promo_overlay_opacity_3": 40,
+            "promo_image_ratio_4": "adapt",
+            "promo_heading_4": "Fat Tire Ebikes",
+            "promo_subtext_4": "",
+            "promo_overlay_content_4": true,
+            "promo_link_4": "shopify://collections/fat-tire-ebikes",
+            "promo_tag_4": "",
+            "promo_color_text_4": "#ffffff",
+            "promo_color_overlay_4": "#000000",
+            "promo_overlay_opacity_4": 40,
+            "promo_image_ratio_5": "adapt",
+            "promo_heading_5": "Folding Ebikes",
+            "promo_subtext_5": "",
+            "promo_overlay_content_5": true,
+            "promo_link_5": "shopify://collections/folding-electric-bikes",
+            "promo_tag_5": "",
+            "promo_color_text_5": "#ffffff",
+            "promo_color_overlay_5": "#000000",
+            "promo_overlay_opacity_5": 40,
+            "tab_title2": "Shop by Model",
+            "menu_2": "",
+            "menu2_image_ratio": "adapt",
+            "menu2_heading": "Ride Freely. Ride Qlife.",
+            "menu2_content": "Experience the perfect blend of performance, style, and eco-friendly innovation in every Qlife e-bike.",
+            "menu2_label": "Shop Sale",
+            "menu2_link": "shopify://products/spark-moped-style-e-bike",
+            "color_background": "#f5f5f5"
+          }
+        },
+        "mega_menu_iaQ7az": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_title": "Support",
+            "menu_width": "medium",
+            "show_menu_image": false,
+            "button_label": "Contact Us",
+            "button_link": "shopify://pages/contact",
+            "promo_image_ratio_1": "adapt",
+            "promo_heading_1": "",
+            "promo_subtext_1": "",
+            "promo_overlay_content_1": true,
+            "promo_link_1": "",
+            "promo_tag_1": "",
+            "promo_color_text_1": "#ffffff",
+            "promo_color_overlay_1": "#000000",
+            "promo_overlay_opacity_1": 40,
+            "promo_image_ratio_2": "adapt",
+            "promo_heading_2": "",
+            "promo_subtext_2": "",
+            "promo_overlay_content_2": true,
+            "promo_link_2": "",
+            "promo_tag_2": "",
+            "promo_color_text_2": "#ffffff",
+            "promo_color_overlay_2": "#000000",
+            "promo_overlay_opacity_2": 40,
+            "promo_image_ratio_3": "adapt",
+            "promo_heading_3": "",
+            "promo_subtext_3": "",
+            "promo_overlay_content_3": true,
+            "promo_link_3": "",
+            "promo_tag_3": "",
+            "promo_color_text_3": "#ffffff",
+            "promo_color_overlay_3": "#000000",
+            "promo_overlay_opacity_3": 40,
+            "promo_image_ratio_4": "adapt",
+            "promo_heading_4": "",
+            "promo_subtext_4": "",
+            "promo_overlay_content_4": true,
+            "promo_link_4": "",
+            "promo_tag_4": "",
+            "promo_color_text_4": "#ffffff",
+            "promo_color_overlay_4": "#000000",
+            "promo_overlay_opacity_4": 40,
+            "promo_image_ratio_5": "adapt",
+            "promo_heading_5": "",
+            "promo_subtext_5": "",
+            "promo_overlay_content_5": true,
+            "promo_link_5": "",
+            "promo_tag_5": "",
+            "promo_color_text_5": "#ffffff",
+            "promo_color_overlay_5": "#000000",
+            "promo_overlay_opacity_5": 40
+          }
+        },
+        "mega_menu_WkJ98i": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_title": "Explore",
+            "menu_width": "medium",
+            "show_menu_image": false,
+            "button_label": "",
+            "button_link": "",
+            "promo_image_ratio_1": "adapt",
+            "promo_heading_1": "",
+            "promo_subtext_1": "",
+            "promo_overlay_content_1": true,
+            "promo_link_1": "",
+            "promo_tag_1": "",
+            "promo_color_text_1": "#ffffff",
+            "promo_color_overlay_1": "#000000",
+            "promo_overlay_opacity_1": 40,
+            "promo_image_ratio_2": "adapt",
+            "promo_heading_2": "",
+            "promo_subtext_2": "",
+            "promo_overlay_content_2": true,
+            "promo_link_2": "",
+            "promo_tag_2": "",
+            "promo_color_text_2": "#ffffff",
+            "promo_color_overlay_2": "#000000",
+            "promo_overlay_opacity_2": 40,
+            "promo_image_ratio_3": "adapt",
+            "promo_heading_3": "",
+            "promo_subtext_3": "",
+            "promo_overlay_content_3": true,
+            "promo_link_3": "",
+            "promo_tag_3": "",
+            "promo_color_text_3": "#ffffff",
+            "promo_color_overlay_3": "#000000",
+            "promo_overlay_opacity_3": 40,
+            "promo_image_ratio_4": "adapt",
+            "promo_heading_4": "",
+            "promo_subtext_4": "",
+            "promo_overlay_content_4": true,
+            "promo_link_4": "",
+            "promo_tag_4": "",
+            "promo_color_text_4": "#ffffff",
+            "promo_color_overlay_4": "#000000",
+            "promo_overlay_opacity_4": 40,
+            "promo_image_ratio_5": "adapt",
+            "promo_heading_5": "",
+            "promo_subtext_5": "",
+            "promo_overlay_content_5": true,
+            "promo_link_5": "",
+            "promo_tag_5": "",
+            "promo_color_text_5": "#ffffff",
+            "promo_color_overlay_5": "#000000",
+            "promo_overlay_opacity_5": 40
+          }
+        }
+      },
+      "block_order": [
+        "yg_mega_menu_iWzWQz",
+        "mega_menu_iaQ7az",
+        "mega_menu_WkJ98i"
+      ],
+      "settings": {
+        "menu": "main-menu",
+        "menu_mobile": "",
+        "menu_active": "block",
+        "hover_menu": true,
+        "header_layout": "left-center",
+        "sticky_header_type": "always",
+        "enable_language_selector_desktop": false,
+        "enable_country_selector_desktop": false,
+        "show_country_name_dekstop": false,
+        "show_country_flag_desktop": false,
+        "logo_position_mobile": "center",
+        "show_social": true,
+        "enable_language_selector": true,
+        "enable_country_selector": true,
+        "transparent_color_text": "#ffffff",
+        "color_text": "#171717",
+        "color_background": "#ffffff",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "padding_top_mobile": 4,
+        "padding_bottom_mobile": 4,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "scrolling_text_g89nzK",
+    "countdown_condensed_qWY9L8",
+    "header"
+  ]
+}

@@ -1,0 +1,378 @@
+{%- liquid
+	assign countdown = block.settings.countdown
+	assign img = block.settings.img
+	assign label = block.settings.label
+	assign code = block.settings.code
+	assign button_label = block.settings.button_label
+	assign color_text = block.settings.color_text
+	assign color_background = block.settings.color_background
+	assign gradient_background = block.settings.gradient_background | default: block.settings.color_background
+-%}
+<style>
+  .yg-product-countdown-container {
+    --bg_color: {{ gradient_background }};
+    --color_text: {{ color_text }};
+  }
+
+  .yg-product-discount {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    color: var(--color_text);
+    background: var(--bg_color);
+    flex-direction: column;
+  }
+
+  .yg-product-label-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .yg-product-discount-info {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .yg-product-discount-info svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .yg-product-discount-label {
+    font-size: 1.375rem;
+    line-height: 1.4;
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+  }
+
+  .yg-product-discount-code {
+    display: flex;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .yg-product-discount-btn {
+    display: flex;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;
+    padding-inline: 0.75rem;
+    padding-block: 6px;
+    font-size: 0.6875rem;
+    color: #000;
+    background: var(--color_text);
+  }
+
+  .tooltip {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tooltip .tooltip-text {
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    width: auto;
+    padding: 0 12px;
+    color: #fff;
+    line-height: 40px;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #343434;
+    border-radius: 6px;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    top: -200%;
+    pointer-events: none;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .tooltip .tooltip-text::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-color: #555 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px;
+    content: '';
+  }
+
+  .yg-product-discount-frame {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .yg-product-countdown-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .tooltip:hover .tooltip-text {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    top: -160%;
+  }
+
+  .hide-tooltip {
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  .show-tooltip {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .yg-discount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+  }
+
+  .yg-product-countdown-timer {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+  }
+
+  .yg-product-countdown-timer-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .yg-product-countdown-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 700;
+  }
+
+  .yg-product-countdown-title {
+    font-size: 0.625rem;
+    opacity: 0.6;
+  }
+
+  .yg-product-countdown-split {
+    font-size: 0.75rem;
+    opacity: 0.6;
+  }
+
+  @media (max-width: 767px) {
+    .yg-product-discount {
+      padding: 0.25rem 0.5rem;
+    }
+
+    .yg-product-discount-label {
+      font-size: 1.125rem;
+    }
+
+    .yg-product-countdown-timer {
+      gap: 0.625rem;
+    }
+
+    .yg-product-discount-info {
+      gap: 6px;
+    }
+
+    .yg-product-discount-code {
+      padding: 0.25rem;
+      gap: 0.25rem;
+      font-size: 0.625rem;
+    }
+
+    .yg-discount {
+      display: block;
+      padding-block: 8px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .yg-product-discount-label {
+      font-size: 13px;
+    }
+
+    .yg-product-discount {
+      padding-inline: 4px;
+    }
+  }
+
+  @media (max-width: 341px) {
+    .yg-product-discount {
+      padding-inline: 8px 4px;
+      gap: 3px;
+    }
+
+    .yg-product-discount-code {
+      padding: 10px 4px;
+    }
+
+    .yg-product-discount-btn {
+      padding-inline: 12px;
+    }
+  }
+</style>
+{% if discount_code != blank or countdown != blank %}
+	<div class="yg-product-discount-wrapper">
+		<yg-discount class="yg-product-discount">
+			<div class="yg-product-label-wrapper">
+				<div class="yg-product-discount-info">
+					<svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+						<path
+							d="M16.2553 2.66992C18.6485 2.66992 20.5886 4.61002 20.5886 7.00325C20.5886 7.79304 20.3773 8.53347 20.0082 9.17112L24.922 9.16992V11.3366H22.7553V22.1699C22.7553 22.7682 22.2703 23.2532 21.672 23.2532H4.33862C3.74032 23.2532 3.25529 22.7682 3.25529 22.1699V11.3366H1.08862V9.16992L6.00237 9.17112C5.63325 8.53347 5.42196 7.79304 5.42196 7.00325C5.42196 4.61002 7.36205 2.66992 9.75529 2.66992C11.0501 2.66992 12.2123 3.23782 13.0063 4.13812C13.7983 3.23782 14.9605 2.66992 16.2553 2.66992ZM14.0886 11.3366H11.922V22.1699H14.0886V11.3366ZM9.75529 4.83659C8.55867 4.83659 7.58862 5.80664 7.58862 7.00325C7.58862 8.14548 8.47249 9.08126 9.59359 9.16397L9.75529 9.16992H11.922V7.00325C11.922 5.91813 11.1243 5.01934 10.0833 4.86126L9.917 4.84252L9.75529 4.83659ZM16.2553 4.83659C15.113 4.83659 14.1773 5.72046 14.0946 6.84156L14.0886 7.00325V9.16992H16.2553C17.3975 9.16992 18.3333 8.28605 18.416 7.16495L18.422 7.00325C18.422 5.80664 17.452 4.83659 16.2553 4.83659Z"
+							fill="white"/>
+					</svg>
+					<div class="yg-product-discount-label">{{ label }}</div>
+				</div>
+				{% if img != blank %}
+					{{- img | image_url: width: img.width | image_tag: loading: 'lazy', is: 'lazy-image' -}}
+				{% endif %}
+			</div>
+				<div class="yg-product-discount-frame">
+          {% if countdown != blank %}
+					<div class="yg-product-countdown-timer">
+						<div class="yg-product-countdown-timer-item yg-product-countdown-timer-day">
+							<div class="yg-product-countdown-count" id="discount_days">0</div>
+							<div class="yg-product-countdown-title" id="discount_days_unit">DAY</div>
+						</div>
+						<div class="yg-product-countdown-split">|</div>
+						<div class="yg-product-countdown-timer-item yg-product-countdown-timer-hours">
+							<div class="yg-product-countdown-count" id="discount_hours">0</div>
+							<div class="yg-product-countdown-title" id="discount_hours_unit">HOUR</div>
+						</div>
+						<div class="yg-product-countdown-split">|</div>
+						<div class="yg-product-countdown-timer-item yg-product-countdown-timer-min">
+							<div class="yg-product-countdown-count" id="discount_minutes">0</div>
+							<div class="yg-product-countdown-title" id="discount_minutes_unit">MIN</div>
+						</div>
+						<div class="yg-product-countdown-split">|</div>
+						<div class="yg-product-countdown-timer-item yg-product-countdown-timer-sec">
+							<div class="yg-product-countdown-count" id="discount_seconds">0</div>
+							<div class="yg-product-countdown-title" id="discount_seconds_unit">SEC</div>
+						</div>
+					</div>
+          {% endif %}
+          
+          {% if code != blank and button_label != blank %}
+					<div class="yg-product-countdown-inner">
+						<div class="yg-product-discount-code" data-clipboard-text="{{ code }}">Code: {{ code }}</div>
+						<div class="tooltip">
+							<button class="yg-product-discount-btn">
+								<span class="tooltip-text" id="myTooltip">{{ button_label }}</span>
+								<span>{{ button_label }}</span>
+							</button>
+						</div>
+					</div>
+          {% endif %}
+				</div>
+		</yg-discount>
+	</div>
+	<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      class YGDiscount extends HTMLElement {
+        constructor() {
+          super()
+          this.init()
+          this.end_time = new Date('{{ block.settings.countdown }}').getTime();
+          console.log("end_time", this.end_time)
+          this.countdownInterval = null;
+          this.startCountdown();
+        }
+
+        init() {
+          let btn = this.querySelector(".yg-product-discount-btn");
+          if(btn) {
+             btn.addEventListener("click", () => {
+               this.copyText();
+             });
+          }
+        }
+
+        startCountdown() {
+          this.handleCountdown(this.end_time);
+
+          this.countdownInterval = setInterval(() => {
+            this.handleCountdown(this.end_time);
+          }, 1000);
+        }
+
+        isMobileDevice() {
+          return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        copyText() {
+          let copyText = this.querySelector(".yg-product-discount-code");
+          let button_copy = this.querySelector(".yg-product-discount-btn")
+          navigator.clipboard.writeText(copyText.getAttribute("data-clipboard-text"));
+          let tooltip = this.querySelector(".tooltip-text");
+          tooltip.innerText = "Code Copied!";
+          if (this.isMobileDevice()) {
+            tooltip.classList.remove('hide-tooltip')
+            tooltip.classList.add('show-tooltip')
+            setTimeout(() => {
+              this.hideTip(tooltip)
+            }, 1000)
+          }
+        }
+
+        hideTip(tooltip) {
+          tooltip.innerText = "Copy";
+          tooltip.classList.remove('show-tooltip')
+          tooltip.classList.add('hide-tooltip')
+        }
+
+        handleCountdown(end_time) {
+          const discount_days = this.querySelector('#discount_days');
+          const discount_hours = this.querySelector('#discount_hours');
+          const discount_minutes = this.querySelector('#discount_minutes');
+          const discount_seconds = this.querySelector('#discount_seconds');
+          const now = new Date().getTime();
+          const timeRemaining = end_time - now;
+
+          if (timeRemaining <= 0) {
+            if (this.countdownInterval) {
+              clearInterval(this.countdownInterval);
+            }
+            if (discount_days) discount_days.textContent = '0';
+            if (discount_hours) discount_hours.textContent = '0';
+            if (discount_minutes) discount_minutes.textContent = '0';
+            if (discount_seconds) discount_seconds.textContent = '0';
+            return;
+          }
+
+          let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+          let hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          let minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+          let seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+          if (discount_days) discount_days.textContent = days;
+          if (discount_hours) discount_hours.textContent = hours;
+          if (discount_minutes) discount_minutes.textContent = minutes;
+          if (discount_seconds) discount_seconds.textContent = seconds;
+        }
+      }
+
+      if (!window.customElements.get('yg-discount')) {
+        window.customElements.define('yg-discount', YGDiscount)
+      }
+    })
+	</script>
+
+{% endif %}

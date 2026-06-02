@@ -1,0 +1,59 @@
+{% if values_blocks %}
+  <div class="yg-parameter-values">
+    <div class="yg-parameter-value yg-product-image">
+      {%- liquid
+        assign img = blank
+        assign img_title = 'image'
+        assign product_title = blank
+        assign product_link = blank
+        assign product = values_blocks.settings.product
+        assign block = values_blocks.settings
+
+        if block.product_title != blank
+          assign product_title = block.product_title
+        endif
+        if block.prouduct_url != blank
+          assign product_link = block.prouduct_url
+        endif
+
+        if product != blank
+          assign img = product.featured_image
+          assign img_title = product.title
+          assign product_title = product.metafields.custom.product_name.value | default: product.title
+          assign product_link = product.url
+        else
+          assign img = block.product_img
+          assign img_title = block.product_img.title
+        endif
+      -%}
+
+      {% if img != blank %}
+        <div class="yg-image">
+          {{
+            img
+            | image_url: width: img.width
+            | image_tag: loading: 'lazy', alt: img_title
+            | default: 'Product image'
+          }}
+        </div>
+      {% endif %}
+
+      {% if product_title != blank %}
+        <div class="yg-title  heading h4">
+          {{ product_title }}
+        </div>
+      {% endif %}
+
+      {% if block.button_title != blank %}
+        <a
+          class="yg-link"
+          {%- if product_link != blank -%}
+            href="{{ product_link }}"
+          {%- endif -%}
+        >
+          {{ block.button_title }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

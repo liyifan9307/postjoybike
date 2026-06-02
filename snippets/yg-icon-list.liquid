@@ -1,0 +1,91 @@
+<style>
+  .yg-icon-list-wrapper {
+    display: block;
+    background: var(--color-background);
+    color: var(--color-text);
+    border-radius: 1rem;
+    padding: 1.125rem;
+  }
+
+  .yg-icon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+
+  .yg-icon-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .yg-icon-list-title {
+    text-align: center;
+    color: var(--color-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .yg-icon-list-content {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 767px) {
+    .yg-icon-list-title {
+      font-size: 0.75rem;
+    }
+
+    .yg-icon-list-content {
+      font-size: 0.6875rem;
+    }
+  }
+</style>
+{% liquid
+  assign icon_list = block.settings.icon_list
+  assign key = icon_list | split: '.' | first
+  assign value = icon_list | split: '.' | last
+  assign values = product.metafields[key][value].value
+%}
+
+{% if values %}
+  <yg-icon-list class="yg-icon-list-wrapper" data-variant="{{ block.settings.variant_name }}">
+    <ul class="yg-icon-list">
+      {% for meta in values %}
+        {% assign index = forloop.index %}
+        {% for i in (1..6) %}
+          {% liquid
+            assign imgi = 'img_' | append: i
+            assign titlei = 'title_' | append: i
+            assign contenti = 'content_' | append: i
+            assign img = meta[imgi]
+            assign title = meta[titlei]
+            assign content = meta[contenti]
+          %}
+          {% if title != blank or content != blank %}
+            <li class="yg-icon-list-item {% if index != 1 %} hide {% endif %}" data-index="{{index}}">
+              {% if img != blank %}
+                {{-
+                  img
+                  | image_url: width: img.width
+                  | image_tag: alt: product.title, loading: 'lazy', is: 'lazy-image'
+                -}}
+              {% endif %}
+              {% if title != blank %}
+                <span class="yg-icon-list-title">
+                  {{ title }}
+                </span>
+              {% endif %}
+              {% if content != blank %}
+                <span class="yg-icon-list-content">
+                  {{ content }}
+                </span>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+  </yg-icon-list>
+{% endif %}

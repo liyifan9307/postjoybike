@@ -1,0 +1,1029 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb_fNxmEp": {
+          "type": "breadcrumb",
+          "settings": {
+            "show_collections_link": true,
+            "enable_product_top": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "show_price": false,
+            "show_rating": false
+          }
+        },
+        "price_Hxp9Jt": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false,
+            "show_rating": true,
+            "show_payment_terms": false,
+            "color_save": "#dc181c"
+          }
+        },
+        "yg_countdown_4cTMTX": {
+          "type": "yg_countdown",
+          "settings": {
+            "countdown": "{{ product.metafields.custom.product_countdown.value }}",
+            "label": "Classic $300 off Ends In:",
+            "code": "",
+            "button_label": "Button label",
+            "color_text": "#ffffff",
+            "color_background": "#fff1f2",
+            "gradient_background": "linear-gradient(90deg, rgba(219, 188, 34, 1), rgba(221, 39, 57, 1) 100%)"
+          }
+        },
+        "yg_icon_list_HW6B9x": {
+          "type": "yg_icon_list",
+          "settings": {
+            "icon_list": "custom.product_info",
+            "variant_name": "Size",
+            "color_heading": "#000000",
+            "color_text": "#807e7b",
+            "color_background": "#ffffff",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "yg_bundle_c8tLrK": {
+          "type": "yg_bundle",
+          "disabled": true,
+          "settings": {
+            "show_block": true,
+            "title_1": "",
+            "product_list_1": [],
+            "enable_required_1": true,
+            "title_2": "Optional Accessories:",
+            "product_list_2": [],
+            "enable_required_2": false,
+            "enable_promotion": "2",
+            "promotion_text": "Add & Save %",
+            "limit_number": 3,
+            "more_button_text": "Expand",
+            "more_less_text": "Expanded",
+            "title_color": "#808080",
+            "bg_color": "#ffffff"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false,
+            "color_background": "#ff9900"
+          }
+        },
+        "sticky_buy_button_Vydait": {
+          "type": "sticky_buy_button",
+          "settings": {}
+        },
+        "kaching_bundles_app_block_nPPVBU": {
+          "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
+          "settings": {
+            "product": "{{product}}",
+            "manual_deal_block_id": ""
+          }
+        },
+        "yg_terms_aWWei3": {
+          "type": "yg_terms",
+          "settings": {
+            "content": "100% Protection Against Shipping Mishaps",
+            "img": "shopify://shop_images/image_106.png",
+            "link": ""
+          }
+        },
+        "yg_payment_4f4krK": {
+          "type": "yg_payment",
+          "settings": {
+            "title1": "Pay with Ease:",
+            "icons": "paypal,maestro,shopify_pay,google_pay,apple_pay,discover,klarna",
+            "title2": "Trusted Delivery:",
+            "icon1": "shopify://shop_images/20260415153628_6_2.png",
+            "icon2": "shopify://shop_images/20260415153628_4_2.png",
+            "icon3": "shopify://shop_images/20260415153628_5_2.png"
+          }
+        },
+        "collapsible_tab_qDE9RU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "style": "with-border",
+            "icon": "truck",
+            "heading": "Fast & Free Shipping",
+            "content": "<p>Shipped from the US warehouse, estimated delivery within 3-8 days<br/></p>",
+            "page": "",
+            "liquid": "",
+            "opened": false
+          }
+        },
+        "collapsible_tab_z7V9bm": {
+          "type": "collapsible_tab",
+          "settings": {
+            "style": "with-border",
+            "icon": "shield",
+            "heading": "Warranty",
+            "content": "<p>All Postjoy ebikes are covered under our manufacturer's 1-year all-inclusive warranty for the original owner against all manufacturing defects (All free Accessories are not covered by warranty service).<br/><br/></p>",
+            "page": "",
+            "liquid": "",
+            "opened": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": ""
+          }
+        },
+        "yg_service_RHGR6c": {
+          "type": "yg_service",
+          "settings": {
+            "icon1": "shopify://shop_images/Warranty_e6ed3c86-a251-4229-a6ef-48d61c01bacd.png",
+            "title1": "1-Year Warranty",
+            "icon2": "shopify://shop_images/free.png",
+            "title2": "Free Shipping",
+            "icon3": "shopify://shop_images/return_fbb2e6d1-79ed-41b2-a039-eb00ff9c2c73.png",
+            "title3": "14-Days Return",
+            "title4": "",
+            "title5": "",
+            "title6": ""
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_fNxmEp",
+        "title",
+        "price_Hxp9Jt",
+        "yg_countdown_4cTMTX",
+        "yg_icon_list_HW6B9x",
+        "variant_picker",
+        "inventory",
+        "yg_bundle_c8tLrK",
+        "buy_buttons",
+        "sticky_buy_button_Vydait",
+        "kaching_bundles_app_block_nPPVBU",
+        "yg_terms_aWWei3",
+        "yg_payment_4f4krK",
+        "collapsible_tab_qDE9RU",
+        "collapsible_tab_z7V9bm",
+        "description",
+        "share",
+        "yg_service_RHGR6c"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_style2": true,
+        "media_size": 60,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "below",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "color_text": "",
+        "color_background": "",
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "rocket",
+            "heading": "Shipping Information",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#b45309",
+            "color_background": "#fffbeb",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "settings": {
+            "icon": "headphone",
+            "heading": "Customer Support",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#0369a1",
+            "color_background": "#f0f9ff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-3": {
+          "type": "content",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "FAQ’s",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#be123c",
+            "color_background": "#fff1f2",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#4d7c0f",
+            "color_background": "#f7fee7",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content-1",
+        "content-2",
+        "content-3",
+        "content-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Need help?",
+        "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
+      }
+    },
+    "video-hero": {
+      "type": "video-hero",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "Video slide 1",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "slide-2": {
+          "type": "slide",
+          "settings": {
+            "heading": "Video slide 2",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "slide-3": {
+          "type": "slide",
+          "settings": {
+            "heading": "Video slide 3",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "slide-4": {
+          "type": "slide",
+          "settings": {
+            "heading": "Video slide 4",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-2",
+        "slide-3",
+        "slide-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "video_url": "https://www.youtube.com/watch?v=WRmkJt7iNTc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "content_width": "medium",
+        "video_url_mobile": "",
+        "color_text": "#ffffff",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/3_e08fbd4b-8213-4a08-bb5a-01c67617b4c9.jpg",
+            "image_ratio": "landscape",
+            "content_position": "md:items-end md:justify-center",
+            "text_alignment": "center",
+            "image_ratio_mobile": "landscape",
+            "content_position_mobile": "items-end justify-center",
+            "text_alignment_mobile": "center",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/1_9764a41e-4a07-45ee-b714-f1aba9b5b872.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/2_a2478f95-d61b-4d6b-b9c8-1b916e7922c2.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-start md:justify-end",
+            "text_alignment": "right",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-start justify-end",
+            "text_alignment_mobile": "right",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": true,
+            "image": "shopify://shop_images/T20_92403f3d-1e20-40ad-a55f-fd452495678c.jpg",
+            "image_ratio": "landscape",
+            "content_position": "md:items-end md:justify-end",
+            "text_alignment": "right",
+            "image_ratio_mobile": "landscape",
+            "content_position_mobile": "items-end justify-end",
+            "text_alignment_mobile": "right",
+            "highlighted_text": "text",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#fde047",
+            "gradient_highlight": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4"
+      ],
+      "settings": {
+        "heading": "<strong>Why Choose PostJoy T20 Electric Bike?</strong>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>The <strong>PostJoy T20</strong> is where classic retro aesthetics meet modern urban performance. Inspired by timeless motorcycle design, the T20 is crafted for riders who want to make a statement while enjoying a smooth, powerful ride across city streets and coastal paths alike.</p><p>Powered by a formidable <strong>2500W peak motor</strong>, the T20 offers effortless acceleration and a <strong>30 MPH top speed</strong>, making daily commutes and weekend cruises faster and more exciting. Its high-capacity 48V 20Ah battery ensures you stay on the move, delivering an impressive <strong>80-mile PAS range</strong> that lets you explore without range anxiety.</p><p>Designed for ultimate stability, the <strong>20\"x4.0\" fat tires</strong> and <strong>full suspension system</strong> iron out bumps in the road, providing a \"floating on air\" feel whether you're on pavement or sand. With the cutting-edge <strong>NFC smart unlock</strong> for keyless convenience and a bold retro silhouette, the T20 isn't just a bike—it’s the ultimate fusion of <strong>vintage style and electric freedom</strong>.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "basic-underline",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "slideshow_rqLhMe": {
+      "type": "slideshow",
+      "blocks": {
+        "image_TTcFU9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/f1a4fd523768656f345b0875f5274a6e_e14cd0a5-4cd8-4899-9c09-907c02f2bba8.jpg",
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_TTcFU9"
+      ],
+      "disabled": true,
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 5,
+        "show_navigation": false,
+        "image_height": "650px",
+        "content_width": "small",
+        "image_height_mobile": "auto",
+        "color_text": "#ffffff",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "video_with_text_overlay_TwR6Rr": {
+      "type": "video-with-text-overlay",
+      "blocks": {
+        "subheading_Nk3U8B": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_wX3eLf": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_UYda9A": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Nk3U8B",
+        "heading_wX3eLf",
+        "text_UYda9A"
+      ],
+      "disabled": true,
+      "name": "t:sections.video-with-text-overlay.presets.name",
+      "settings": {
+        "transparent_header": false,
+        "video": "shopify://files/videos/GT16.mp4",
+        "video_url": "",
+        "video_other_url": "",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "video_url_mobile": "",
+        "video_mobile_other_url": "",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "yg_image_with_text_list_KQztzz": {
+      "type": "yg-image-with-text-list",
+      "blocks": {
+        "item_FQddzf": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/c65856e9539bef4c59afa02509c05e7c_855a8afb-de0d-40ff-860b-b8ed1cf8a573.jpg",
+            "image_pos": "left",
+            "title": "<p><strong>2500W Peak Mid-Drive Motor</strong></p><p>Explosive Power. Instant Acceleration.</p>",
+            "content": "",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_Y77eFc": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/393a2c4dab2b6a867a84cfb03689bbc8.jpg",
+            "image_pos": "left",
+            "title": "<p><strong>48V 20Ah</strong> Removable Battery<br/><br/></p>",
+            "content": "<p>The <strong>48V 20Ah high-capacity battery</strong> delivers a massive 8<strong>0-mile PAS range</strong>, providing the ultimate balance of power and endurance. With its <strong>removable design</strong>, you can easily <strong>charge anywhere</strong> and enjoy the freedom to explore deeper into the wild. Reliable, convenient, and built for <strong>long-distance thrills</strong>.<br/><br/></p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_6M3dHz": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 96,
+            "item_margin_bottom": 70,
+            "image": "shopify://shop_images/2026-04-17_113813_102.png",
+            "image_pos": "left",
+            "title": "<p><strong> Full Suspension System</strong><br/>Ride Smooth, Dominate the Wild</p>",
+            "content": "<p>The <strong>PostJoy GT16</strong> is engineered with a professional-grade full suspension system, transforming the roughest trails into your personal playground. At the front, the <strong>high-travel hydraulic fork</strong> is built to soak up heavy hits and high-speed vibrations, while the <strong>rear monoshock</strong> provides exceptional stability, ensuring your rear wheel stays planted for maximum traction during hill attacks.</p><p>Whether you're sticking a landing from a backyard jump, shredding through muddy mountain tracks, or navigating bumpy urban shortcuts, the GT16’s suspension delivers a <strong>perfectly balanced, stable, and plush ride</strong>. Combined with its agile <strong>99 lbs lightweight frame</strong>, you get a machine that doesn't just ride—it conquers any terrain with total control and comfort.</p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_VNaYcH": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/716379a6af28df1e390e9d74573c532a.jpg",
+            "image_pos": "left",
+            "title": "<p><strong>All-Terrain Monster Fat Tires</strong><br/>Maximum Stability. Dominate Every Surface.</p>",
+            "content": "<p><br/>Featuring <strong>massive 20x4.0-inch fat tires</strong>, the [Model Name] provides a massive contact patch for <strong>unmatched stability</strong>. Whether you're gliding over loose sand, thick snow, or rugged forest trails, these high-volume tires deliver <strong>superior floatation and grip</strong>. Conquer the elements with confidence and style.<br/><br/></p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_FQddzf",
+        "item_Y77eFc",
+        "item_6M3dHz",
+        "item_VNaYcH"
+      ],
+      "name": "YG image with text list",
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "You may also like",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_product_parameter_comparison_wTfEje": {
+      "type": "yg-product-parameter-comparison",
+      "blocks": {
+        "parameter_title_TEpbkx": {
+          "type": "parameter_title",
+          "settings": {
+            "header_title": "<ol><li><strong>Battery</strong></li><li><strong>Motor</strong></li><li><strong>Torque</strong></li><li><strong>Top Speed</strong></li><li><strong>Brake</strong></li><li><strong>Tires</strong></li><li><strong>Suspension</strong></li><li><strong>Range</strong></li><li><strong>MAX Payload Capacity</strong></li><li><strong>E-Bike Weight</strong></li><li><strong>E-Bike Class</strong></li><li><strong>Charger</strong></li><li><strong>Charging Time</strong></li><li><strong>IP Level</strong></li></ol>"
+          }
+        },
+        "product_parameter_gPUhGQ": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-t20-electric-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+          }
+        },
+        "product_parameter_8KpCeJ": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-f30-electric-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+          }
+        },
+        "product_parameter_ABm9Ug": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "s9-fat-tire-electric-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>200Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+          }
+        }
+      },
+      "block_order": [
+        "parameter_title_TEpbkx",
+        "product_parameter_gPUhGQ",
+        "product_parameter_8KpCeJ",
+        "product_parameter_ABm9Ug"
+      ],
+      "name": "YG Parameter Comparison",
+      "settings": {
+        "heading": "Product compare",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h3",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#ff9900",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_specification_BGHDRh": {
+      "type": "yg-specification",
+      "name": "YG specification",
+      "settings": {
+        "title": "Specification",
+        "richtext": "<p>Battery<strong>48V 20Ah</strong></p><p>Torque 1<strong>00Nm</strong></p><p>Hub Motor<strong>Peak 2500W</strong></p><p>Top Speed<strong> 30MPH</strong></p><p>Brake<strong>Front and Rear Disc Brakes</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 20x4.0''</strong></p><p>IP Level<strong>IPX5</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 2.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>81.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Ranger<strong>Up to 80 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_video_slide_QtKRe6": {
+      "type": "yg-video-slide",
+      "blocks": {
+        "item_9wDUxH": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_NA84AG": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_8FxgW6": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_gykkYj": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_tt6YCE": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_TkYqxy": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_pce4g4": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "",
+            "video_other_url": ""
+          }
+        },
+        "item_AGbJaW": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "https://www.youtube.com/watch?v=04GvqMwqeGs&t=53s",
+            "video_other_url": ""
+          }
+        },
+        "item_RrptzJ": {
+          "type": "item",
+          "settings": {
+            "external_video_url": "https://www.youtube.com/watch?v=zG1yW1WxRzo&t=114s",
+            "video_other_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_9wDUxH",
+        "item_NA84AG",
+        "item_8FxgW6",
+        "item_gykkYj",
+        "item_tt6YCE",
+        "item_TkYqxy",
+        "item_pce4g4",
+        "item_AGbJaW",
+        "item_RrptzJ"
+      ],
+      "disabled": true,
+      "name": "YG video slide",
+      "settings": {
+        "heading": "Hear From the Community",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "bg_card": "#f1f8f8",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 24,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "help-drawer",
+    "video-hero",
+    "collage",
+    "slideshow_rqLhMe",
+    "video_with_text_overlay_TwR6Rr",
+    "yg_image_with_text_list_KQztzz",
+    "product-recommendations",
+    "recently-viewed",
+    "yg_product_parameter_comparison_wTfEje",
+    "yg_specification_BGHDRh",
+    "yg_video_slide_QtKRe6"
+  ]
+}

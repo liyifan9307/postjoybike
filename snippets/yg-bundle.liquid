@@ -1,0 +1,729 @@
+<style>
+  .yg-bundle-wrapper {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .yg-bundle-product-container {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1.125rem;
+    border-radius: 1rem;
+    background-color: {{ block.settings.bg_color }};
+  }
+
+  .yg-bundle-header-tab {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--color);
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .yg-bundle-header-tab span {
+    color: #F90;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .yg-bundle-product-list {
+    display: grid;
+    gap: 0.375rem;
+  }
+
+  .yg-bundle-product-list.is-required .yg-bundle-checkbox {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+  .yg-bundle-item {
+    display: flex;
+    align-items: center;
+    border: 1.5px solid #E6E5E5;
+    border-radius: 0.75rem;
+		transition: all ease-in-out 0.3s;
+  }
+
+  .yg-bundle-item.active {
+		border: 1.5px solid #F90;
+	}
+
+  .yg-bundle-item.hidden {
+    display: none;
+  }
+
+  .yg-bundle-item-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0.75rem;
+  }
+
+  .yg-bundle-item-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 4.25rem;
+    height: 100%;
+    border-right: 1.5px solid #F5F5F5;
+    overflow: hidden;
+  }
+
+  .yg-bundle-item-image img {
+    width: 100%;
+    border-radius: 0.75rem;
+  }
+
+  .yg-bundle-item-info {
+    display: grid;
+    gap: .5rem;
+  }
+
+  .yg-bundle-checkbox {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .yg-bundle-checkbox input {
+    display: none;
+  }
+
+  .yg-bundle-checkbox .checkbox-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 8px;
+  }
+
+  .yg-bundle-checkbox .checkbox-bg {
+    --checkbox-border: #C7C7C7;
+
+    position: absolute;
+    transition: all 0.2s ease;
+    border: 2px solid var(--checkbox-border);
+    border-radius: 3px;
+    background: white;
+    inset: 0;
+  }
+
+  .yg-bundle-checkbox .checkbox-icon {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    transition: all 0.2s ease;
+    transform: scale(0);
+    color: white;
+    inset: 0;
+  }
+
+  .yg-bundle-checkbox input:checked ~ .checkbox-wrapper .checkbox-bg {
+    --checkbox-color: #F90;
+
+    border-color: var(--checkbox-color);
+    background: var(--checkbox-color);
+  }
+
+  .yg-bundle-checkbox input:checked ~ .checkbox-wrapper .checkbox-icon {
+    transform: scale(1);
+  }
+
+  .yg-bundle-checkbox input:checked ~ .checkbox-wrapper .check-path {
+    stroke-dashoffset: 0;
+  }
+
+  /* Hover Effects */
+  .yg-bundle-checkbox:hover .checkbox-wrapper {
+    transform: scale(1.05);
+  }
+
+  /* Active Animation */
+  .ios-checkbox:active .checkbox-wrapper {
+    transform: scale(0.95);
+  }
+
+  /* Focus Styles */
+  .ios-checkbox input:focus ~ .checkbox-wrapper .checkbox-bg {
+    box-shadow: 0 0 0 4px #dbeafe;
+  }
+
+  .yg-bundle-checkbox .check-path {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    transition: stroke-dashoffset 0.3s ease 0.1s;
+  }
+
+  .yg-bundle-item-details {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .yg-bundle-item-title {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #575757;
+  }
+
+  .yg-bundle-item-price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .yg-bundle-item-price .price-sale {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #F46340;
+  }
+
+  .yg-bundle-item-price .price-regular {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    color: #A9A9A9;
+    text-decoration-line: line-through;
+  }
+
+  .yg-bundle-variant-fieldset {
+    position: relative;
+    padding: 0;
+    border: none;
+		min-width: 120px;
+  }
+
+  .yg-bundle-variant-picker {
+    --color: #808080;
+
+    font-size: 0.75rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.25rem;
+		width: 100%;
+    max-width: 120px;
+    padding-block: 0.125rem;
+    padding-inline: 6px;
+    color: var(--color);
+    border: 0.6px solid var(--color);
+    border-radius: 3px;
+  }
+
+  .yg-bundle-variant-picker span {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    text-align: left;
+  }
+
+  .yg-bundle-variant-picker svg {
+    width: 0.75rem;
+    transition: transform ease-in-out 0.3s;
+  }
+
+  .yg-bundle-variant-picker.active svg {
+    transform: rotate(180deg);
+  }
+
+  .yg-bundle-variant-list {
+    position: absolute;
+    z-index: -1;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 270px;
+    padding-block: 4px;
+    padding-inline-start: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    color: #808080;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 2%);
+    margin-block-start: 2px;
+  }
+
+  .yg-bundle-variant-list.active {
+    z-index: 1;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .yg-bundle-variant-list li {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    width: 100%;
+    padding-block: 2px;
+    padding-inline: 6px;
+    list-style: none;
+    cursor: pointer;
+    transition: color ease-in-out 0.3s;
+    text-align: left;
+    color: #808080;
+  }
+
+  .yg-bundle-variant-list li.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  .yg-bundle-variant-list li:hover {
+    background: #f2f2f2;
+  }
+
+  .yg-bundle-more-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block-start: 0.75rem;
+    text-align: center;
+  }
+
+  .yg-bundle-more-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  .yg-bundle-more-button svg {
+		transition: all ease-in-out 0.3s;
+	}
+
+  .yg-bundle-more-button.active svg {
+		transform: rotate(180deg);
+	}
+
+  @media (max-width: 768px) {
+    .yg-bundle-product-container {
+      padding: 10px;
+    }
+  }
+</style>
+<yg-bundle class="yg-bundle-container">
+	<div class="yg-bundle-wrapper">
+		{% for i in (1..2) %}
+			<div class="yg-bundle-product-container">
+				{% liquid
+					assign titlei = 'title_' | append: i
+					assign title = block.settings[titlei]
+					assign promotion = block.settings.enable_promotion
+					assign discount_items = product.metafields.custom.bundle_mininum_items.value
+					assign discount_rate = product.metafields.custom.bundle_discount_rate
+					assign promotion = block.settings.enable_promotion
+					assign promotion_text = block.settings.promotion_text
+					
+					assign show_promotion = false
+					if promotion == '2' and forloop.last
+						assign show_promotion = true
+					endif
+					if promotion == '1' and forloop.first
+						assign show_promotion = true
+					endif
+				%}
+				{% if title != blank %}
+					<div
+						class="yg-bundle-header-tab{% if forloop.first %} active{% endif %}{% if promotion == '1' and forloop.first %} is-promotion{% endif %}{% if promotion == '2' and forloop.last %} is-promotion{% endif %}"
+						data-discount-limit="{{ discount_items }}" data-discount-rate="{{ discount_rate }}"
+						style="--color: {{ block.settings.title_color }}; --active-color: {{ block.settings.title_active_color }}">
+						{{ title }}
+						{% if show_promotion %}
+							<span>{{ promotion_text }}</span>
+						{% endif %}
+					</div>
+				{% endif %}
+				{% liquid
+					assign product_listi = 'product_list_' | append: i
+					assign enable_requiredi = 'enable_required_' | append: i
+					assign product_list = block.settings[product_listi]
+					assign enable_required = block.settings[enable_requiredi]
+					assign promotion = block.settings.enable_promotion
+					assign class = 'yg-bundle-product-list'
+					if forloop.last and promotion == '2'
+						assign class = class | append: ' is-promotion'
+					endif
+					if forloop.first and promotion == '1'
+						assign class = class | append: ' is-promotion'
+					endif
+					if enable_required
+						assign class = class | append: ' is-required'
+						if promotion == '2'
+							assign class = class | append: ' is-promotion'
+						endif
+						if forloop.first
+							if promotion == '1'
+								assign class = class | append: ' is-promotion'
+							endif
+						endif
+					endif
+					echo '<div class="' | append: class | append: '" >'
+					for product in product_list
+						render 'yg-bundle-product', product: product, enable_required: enable_required, forloop: forloop, limit_number: block.settings.limit_number
+					endfor
+					if product_list.count > block.settings.limit_number
+						echo '<div class="yg-bundle-more-wrapper">'
+						echo '<button class="btn yg-bundle-more-button">'
+						echo '<span>' | append: block.settings.more_button_text | append: '</span>'
+						render 'icon', icon: 'yg-arrow-down', size: 'lg'
+						echo '</button>'
+						echo '</div>'
+					endif
+					echo '</div>'
+				%}
+			</div>
+		{% endfor %}
+	</div>
+</yg-bundle>
+<script>
+  window.expand_btn = {
+    more_btn: '{{ block.settings.more_button_text }}',
+    less_btn: '{{ block.settings.more_less_text }}'
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    class YGBundle extends HTMLElement {
+      constructor() {
+        super();
+        this.init();
+      }
+
+      init() {
+        this.$headers = this.querySelectorAll(".yg-bundle-header-tab");
+        this.$blocks = this.querySelectorAll(".yg-bundle-product-list");
+
+        this.$headers.forEach((header, index) => {
+          header.addEventListener("click", () => this.switchTab(index));
+        });
+
+        this.toggleDropdown();
+        this.showMore();
+        this.checkboxBinder();
+        this.variantPicker();
+      }
+
+      switchTab(index) {
+        this.$headers.forEach((header) => header.classList.remove("active"));
+        this.$blocks.forEach((panel) => panel.classList.remove("active"));
+
+        this.$headers[index].classList.add("active");
+        this.$blocks[index].classList.add("active");
+      }
+
+      toggleDropdown() {
+        this.$btns = this.querySelectorAll(".yg-bundle-variant-picker");
+        this.$btns.forEach((btn, index) => {
+          btn.addEventListener("click", (event) => {
+            event.stopPropagation();
+            const $fieldset = btn.closest(".yg-bundle-variant-fieldset");
+            const $dropdown = $fieldset.querySelector(".yg-bundle-variant-list");
+            const isActive = btn.classList.contains("active");
+            this.closeAllDropdowns();
+            // btn.classList.toggle('active');
+            // $dropdown.classList.toggle('active');
+            if (!isActive) {
+              btn.classList.add("active");
+              $dropdown.classList.add("active");
+            }
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!event.target.closest(".yg-bundle-variant-picker")) {
+            this.closeAllDropdowns();
+          }
+        });
+      }
+
+      closeAllDropdowns() {
+        this.$btns.forEach((btn) => btn.classList.remove("active"));
+        this.querySelectorAll(".yg-bundle-variant-list").forEach(($dropdown) => {
+          $dropdown.classList.remove("active");
+        });
+      }
+
+      showMore() {
+        this.$buttons = this.querySelectorAll(".yg-bundle-more-button");
+        this.$buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const $list = btn.closest(".yg-bundle-product-list");
+            const $items = $list.querySelectorAll(".yg-bundle-item");
+            const $hiddenItems = $list.querySelectorAll(".yg-bundle-item.hidden");
+            const isShowingMore =
+              btn.querySelector('span').textContent.trim() === window.expand_btn.more_btn;
+
+            if (isShowingMore) {
+              $hiddenItems.forEach((item) => {
+                item.classList.remove("hidden");
+              });
+              btn.querySelector('span').textContent = window.expand_btn.less_btn;
+              btn.classList.add("active");
+            } else {
+              $items.forEach((item, index) => {
+                if (index >= 3) {
+                  item.classList.add("hidden");
+                }
+              });
+              btn.querySelector('span').textContent = window.expand_btn.more_btn;
+              btn.classList.remove("active");
+            }
+          });
+        });
+      }
+
+      checkboxBinder() {
+        const $checkboxes = this.querySelectorAll(
+          '.yg-bundle-item input[type="checkbox"]',
+        );
+        $checkboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", () => {
+            const bundleItem = checkbox.closest(".yg-bundle-item");
+            bundleItem.classList.toggle("active", this.checked);
+
+            this.applyPromotion();
+          });
+        });
+      }
+
+      applyPromotion() {
+        const $allPromoItems = this.querySelectorAll(
+          ".yg-bundle-product-list.is-promotion .yg-bundle-item",
+        );
+        const $promoItems = this.querySelectorAll(
+          ".yg-bundle-product-list.is-promotion .yg-bundle-item.active",
+        );
+        if (!$allPromoItems.length) {
+          return;
+        }
+        const selectedPromoCount = $promoItems.length;
+
+        const $promoHeader = this.querySelector(
+          ".yg-bundle-header-tab.is-promotion",
+        );
+        const $limit =
+          parseInt($promoHeader?.getAttribute("data-discount-limit")) || 0;
+        const discountRate =
+          parseFloat($promoHeader?.getAttribute("data-discount-rate")) || 0;
+
+        let totalOriginalPrice = 0;
+        let totalDiscountedPrice = 0;
+        const remaining = $limit - selectedPromoCount;
+        $allPromoItems.forEach((item) => {
+          const priceContainer = item.querySelector(".yg-bundle-item-price");
+          const salePriceDiv = priceContainer.querySelector(".price-sale");
+          const regularPriceDiv = priceContainer.querySelector(".price-regular");
+          const salePriceSpan = salePriceDiv.querySelector(".price-money");
+          if (selectedPromoCount >= $limit && $limit > 0) {
+            const originalSalePrice = parseFloat(item.dataset.salePrice);
+            const originalRegularPrice = originalSalePrice;
+            salePriceSpan.innerHTML = `${theme.Currency.formatMoney(originalSalePrice * (1 - discountRate / 100), theme.settings.moneyFormat)}`;
+
+            let regularPriceSpan = regularPriceDiv.querySelector(".price-money");
+            if (!regularPriceSpan) {
+              regularPriceSpan = document.createElement("span");
+              regularPriceSpan.className = "price-money";
+              const hiddenSpan =
+                regularPriceDiv.querySelector(".visually-hidden");
+              if (hiddenSpan) {
+                hiddenSpan.insertAdjacentElement("afterend", regularPriceSpan);
+              } else {
+                regularPriceDiv.appendChild(regularPriceSpan);
+              }
+            }
+            regularPriceSpan.innerHTML = `${theme.Currency.formatMoney(originalRegularPrice, theme.settings.moneyFormat)}`;
+            regularPriceDiv.classList.remove("hidden");
+          } else if (selectedPromoCount < $limit) {
+            const originalSalePrice = `${theme.Currency.formatMoney(parseFloat(item.dataset.salePrice), theme.settings.moneyFormat)}`;
+            const originalRegularPrice = parseFloat(item.dataset.regularPrice);
+
+            salePriceSpan.innerHTML = originalSalePrice;
+
+            const regularPriceSpan =
+              regularPriceDiv.querySelector(".price-money");
+            if (regularPriceSpan) {
+              if (originalRegularPrice) {
+                regularPriceSpan.innerHTML = `${theme.Currency.formatMoney(originalRegularPrice, theme.settings.moneyFormat)}`;
+              } else {
+                regularPriceSpan.innerHTML = "";
+                regularPriceDiv.classList.add("hidden");
+              }
+            }
+          }
+        });
+
+        if (remaining > 0) {
+          $promoHeader.querySelector('span').textContent = `Add ${remaining}&, save ${discountRate}%`;
+        } else {
+          $promoItems.forEach((item) => {
+            const originalPriceElement =
+              item.querySelector(".price.price-regular .price-money") ||
+              item.querySelector(".price.price-sale .price-money");
+
+            // console.log("originalPriceElement: ", originalPriceElement);
+            const salePriceElement = item.querySelector(
+              ".price.price-sale .price-money",
+            );
+
+            let originalPrice =
+              parseFloat(
+                originalPriceElement.textContent.replace(/[^0-9.]/g, ""),
+              ) * 100;
+
+            let salePrice =
+              parseFloat(salePriceElement.textContent.replace(/[^0-9.]/g, "")) *
+              100;
+
+            totalOriginalPrice += originalPrice;
+            totalDiscountedPrice += salePrice;
+          });
+
+          const totalSavings = `${theme.Currency.formatMoney(totalOriginalPrice - totalDiscountedPrice, theme.settings.moneyFormat)}`;
+
+          const totalHtml = document.createElement("div");
+          totalHtml.innerHTML = totalSavings;
+          const savingsText = totalHtml.textContent || totalHtml.innerText;
+          $promoHeader.querySelector('span').textContent = `Order Now & Save ${savingsText}`;
+        }
+      }
+
+      variantPicker() {
+        const $variants = this.querySelectorAll(".yg-bundle-variant-list li");
+        Array.from($variants).forEach((variantInput) => {
+          variantInput.addEventListener("click", () => {
+            const $fieldset = variantInput.closest(".yg-bundle-variant-fieldset");
+            const variantPicker = $fieldset.querySelector(
+              ".yg-bundle-variant-picker",
+            );
+            const $list = variantInput.closest(".yg-bundle-variant-list");
+            variantPicker.classList.remove("active");
+            $fieldset.classList.remove("active");
+            $list.classList.remove("active");
+            variantPicker.querySelector("span").innerHTML =
+              variantInput.innerHTML;
+            const variantId = variantInput.getAttribute("data-variant-id");
+            let productItem = variantPicker.closest(".yg-bundle-item");
+            productItem.setAttribute("data-product-id", variantId);
+
+            this.updateProduct(variantInput, productItem);
+          });
+        });
+      }
+
+      updateProduct(variantInput, productItem) {
+        if (productItem) {
+          const productHandle = productItem.getAttribute("data-product-handle");
+          const variantId = variantInput.getAttribute("data-variant-id");
+
+          const salePrice = productItem.querySelector(".price.price-sale");
+          const regularPrice = productItem.querySelector(".price.price-regular");
+
+          const clearOldPrice = (priceContainer) => {
+            priceContainer
+              .querySelectorAll(".price-money")
+              .forEach((el) => el.remove());
+          };
+
+          if (productHandle && variantId) {
+            fetch(window.Shopify.routes.root + `products/${productHandle}.js`)
+              .then((response) => {
+                if (!response.ok) {
+                  throw new Error(
+                    `Failed to fetch product: ${response.statusText}`,
+                  );
+                }
+                return response.json();
+              })
+              .then((product) => {
+                const matchingVariant = product.variants.find(
+                  (variant) => variant.id.toString() === variantId,
+                );
+                // console.log("matchingVariant: ", JSON.stringify(matchingVariant, null, 2));
+
+                if (matchingVariant.price) {
+                  clearOldPrice(salePrice);
+
+                  const salePriceHtml = `${theme.Currency.formatMoney(matchingVariant.price, theme.settings.moneyFormat)}`;
+                  let salePriceSpan = salePrice.querySelector(".price-money");
+                  if (!salePriceSpan) {
+                    salePriceSpan = document.createElement("span");
+                    salePriceSpan.className = "price-money";
+                    salePriceSpan.innerHTML = salePriceHtml;
+                  } else {
+                    salePriceSpan.innerHTML = salePriceHtml;
+                  }
+
+                  salePrice.appendChild(salePriceSpan);
+                  productItem.setAttribute(
+                    "data-sale-price",
+                    matchingVariant.price,
+                  );
+                }
+
+                if (matchingVariant.compare_at_price) {
+                  clearOldPrice(regularPrice);
+
+                  const regularPriceHtml = `${theme.Currency.formatMoney(matchingVariant.compare_at_price, theme.settings.moneyFormat)}`;
+                  let regularPriceSpan =
+                    regularPrice.querySelector(".price-money");
+                  if (!regularPriceSpan) {
+                    regularPriceSpan = document.createElement("span");
+                    regularPriceSpan.className = "price-money";
+                    regularPriceSpan.innerHTML = regularPriceHtml;
+                  } else {
+                    regularPriceSpan.innerHTML = regularPriceHtml;
+                  }
+                  regularPrice.appendChild(regularPriceSpan);
+                  productItem.setAttribute(
+                    "data-regular-price",
+                    matchingVariant.compare_at_price,
+                  );
+                }
+
+                this.applyPromotion();
+
+                const productAvailable = matchingVariant.available;
+                if (productAvailable === true) {
+                  variantInput.classList.remove("disabled");
+                } else {
+                  variantInput.classList.add("disabled");
+                }
+              })
+              .catch((error) => {
+                console.error("Error fetching product:", error);
+              });
+          }
+        }
+      }
+    }
+
+    if (!window.customElements.get("yg-bundle")) {
+      customElements.define("yg-bundle", YGBundle);
+    }
+  });
+</script>

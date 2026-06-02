@@ -1,0 +1,122 @@
+{%- comment -%}
+  Renders a product card
+
+  Accepts:
+  - product: {Object} Product Liquid object (optional)
+  - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+  - image_ratio: {String} Size of the product image card. Values are "square", "landscape" and "portrait". Default is "square" (optional)
+  - image_fill: {Boolean} Zoom image to fill space. Default: false (optional)
+  - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
+  - show_vendor: {Boolean} Show the product vendor. Default: false
+  - show_rating: {Boolean} Show the product rating. Default: false
+  - show_countdown: {Boolean} Show the countdown timer.
+  - show_quick_add: {Boolean} Show the quick add button.
+  - show_quick_view: {Boolean} Show the quick view button.
+  - show_color_swatches: {Boolean} Show the color swatches.
+  - show_save_amount: {Boolean} Show save amount.
+  - amount_type: {String} Save amount type.
+  - show_icon_list: {Boolean} Show icon list.
+  - product_id: {String} The ID of the current product.
+  - section_id: {String} The ID of the section that contains this card.
+  - block_id: {String} The ID of the block that contains this card.
+
+  Usage:
+  {% render 'product-card', show_vendor: section.settings.show_vendor %}
+{%- endcomment -%}
+
+{%- if product != blank -%}
+  {%- liquid
+    assign featured_media = product.featured_media
+    assign product_media = product.media
+    assign media_count = product_media.size
+    
+    assign product_url = product.url | within: collection
+    if settings.product_disable_collection_portion
+      assign product_url = product.url
+    endif
+  -%}
+  <div class="yg-product-card card product-card product-card--{{ settings.card_style }}{% if settings.card_border_thickness > 0 %} product-card--thickness{% endif %}{% unless featured_media %} no-media{% endunless %}{% if product.available and show_quick_add and mobile_quick_add %} mobile:with-quick-add{% endif %} flex flex-col leading-none relative">
+    <yg-product-hover class="yg-product-hover">
+      {%- if featured_media -%}
+        <div class="product-card__media relative h-auto">
+          <a
+            class="block relative media media--{{ image_ratio }}{% unless image_fill %} media--contain{% endunless %}{% unless show_secondary_image and media_count > 1 %} overflow-hidden{% endunless %}"
+            href="{{ product_url }}"
+            aria-label="{{ product.title | escape }}"
+            tabindex="-1"
+          >
+            {%- unless featured_media.media_type == 'video' or featured_media.media_type == 'external_video' -%}
+              {%- if show_secondary_image and media_count > 1 -%}
+                <template>
+                  {%- for media in product_media limit: 4 -%}
+                    <div class="media media--height{% unless image_fill %} media--contain{% endunless %} w-full h-full overflow-hidden">
+                      {{-
+                      media
+                      | image_url: width: media.width
+                      | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', is: 'lazy-image'
+                      -}}
+                    </div>
+                  {%- endfor -%}
+                </template>
+                <secondary-media
+                  class="product-card__carousel block absolute top-0 left-0 w-full h-full hidden md:block"
+                ></secondary-media>
+              {%- endif -%}
+              
+              {{-
+              featured_media
+              | image_url: width: featured_media.width
+              | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', is: 'lazy-image'
+              -}}
+            {%- else -%}
+              {%- render 'product-video',
+                video: featured_media,
+                muted: false,
+                autoplay: false,
+                loop: false,
+                cover_image: featured_media,
+                show_play_button: true,
+                class: 'relative w-full overflow-hidden'
+              -%}
+            {%- endunless -%}
+          </a>
+        </div>
+      {%- else -%}
+        <div class="product-card__media h-auto overflow-hidden">
+          <span class="block aspect-{{ image_ratio }}"></span>
+        </div>
+      {%- endif -%}
+      <div class="product-card__content grow flex flex-col{% if featured_media %} justify-start text-center{% else %} justify-center items-center absolute top-0 left-0 w-full h-full{% endif %}">
+        <div class="product-card__details flex flex-col lg:flex-row items-baseline gap-2 w-full yg-top">
+          <p class="grow ">
+            <a
+              class="reversed-link text-base-xl  h4"
+              href="{{ product_url }}"
+            >
+              {%- assign title = product.metafields.custom.product_name.value | default: product.title -%}
+              {{- title | escape -}}
+            </a>
+          </p>
+          {%- if product.metafields.custom.product_introduction.value != blank -%}
+            <div class="w-full">
+              <a
+                class="yg-introduction caption reversed-link  leading-none tracking-widest"
+                href="{{ product_url }}"
+              >
+                {{- product.metafields.custom.product_introduction.value | escape -}}
+              </a>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </yg-product-hover>
+  </div>
+{%- else -%}
+  {%- render 'product-card-placeholder',
+    placeholder: 'image',
+    image_ratio: image_ratio,
+    text_alignment: text_alignment,
+    show_vendor: show_vendor,
+    show_rating: show_rating
+  -%}
+{%- endif -%}

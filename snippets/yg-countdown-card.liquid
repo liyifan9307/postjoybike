@@ -1,0 +1,108 @@
+{%- liquid
+  assign countdown = product.metafields.custom.product_countdown.value
+-%}
+
+{% if countdown != blank %}
+  <div class="yg-product-discount-wrapper">
+    <yg-discount-card class="yg-product-discount">
+      <div class="yg-product-label-wrapper">
+        <div class="yg-product-discount-info">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+            <path d="M10.0033 0.973145C11.476 0.973145 12.6699 2.16705 12.6699 3.63981C12.6699 4.12583 12.5399 4.58148 12.3127 4.97388L15.3366 4.97314V6.30647H14.0033V12.9731C14.0033 13.3413 13.7048 13.6398 13.3366 13.6398H2.66992C2.30173 13.6398 2.00326 13.3413 2.00326 12.9731V6.30647H0.669922V4.97314L3.69377 4.97388C3.46661 4.58148 3.33659 4.12583 3.33659 3.63981C3.33659 2.16705 4.53049 0.973145 6.00325 0.973145C6.80007 0.973145 7.51527 1.32262 8.00387 1.87665C8.49127 1.32262 9.20647 0.973145 10.0033 0.973145ZM7.3366 6.30647H3.33659V12.3065H7.3366V6.30647ZM12.6699 6.30647H8.66993V12.3065H12.6699V6.30647ZM6.00325 2.30648C5.26687 2.30648 4.66992 2.90343 4.66992 3.63981C4.66992 4.34272 5.21384 4.91859 5.90375 4.96949L6.00325 4.97314H7.3366V3.63981C7.3366 2.97204 6.84573 2.41894 6.20511 2.32166L6.10277 2.31013L6.00325 2.30648ZM10.0033 2.30648C9.30033 2.30648 8.72447 2.8504 8.6736 3.5403L8.66993 3.63981V4.97314H10.0033C10.7061 4.97314 11.282 4.42922 11.3329 3.73932L11.3366 3.63981C11.3366 2.90343 10.7397 2.30648 10.0033 2.30648Z" fill="#C25C00"/>
+          </svg>
+          <div class="yg-product-discount-frame">
+            <div class="yg-product-countdown-timer">
+              <div class="yg-product-countdown-timer-item yg-product-countdown-timer-day">
+                <div class="yg-product-countdown-count" id="discount_days">0</div>
+                <div class="yg-product-countdown-title" id="discount_days_unit">d</div>
+              </div>
+              <div class="yg-product-countdown-split">:</div>
+              <div class="yg-product-countdown-timer-item yg-product-countdown-timer-hours">
+                <div class="yg-product-countdown-count" id="discount_hours">0</div>
+                <div class="yg-product-countdown-title" id="discount_hours_unit">h</div>
+              </div>
+              <div class="yg-product-countdown-split">:</div>
+              <div class="yg-product-countdown-timer-item yg-product-countdown-timer-min">
+                <div class="yg-product-countdown-count" id="discount_minutes">0</div>
+                <div class="yg-product-countdown-title" id="discount_minutes_unit">m</div>
+              </div>
+              <div class="yg-product-countdown-split">:</div>
+              <div class="yg-product-countdown-timer-item yg-product-countdown-timer-sec">
+                <div class="yg-product-countdown-count" id="discount_seconds">0</div>
+                <div class="yg-product-countdown-title" id="discount_seconds_unit">s</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </yg-discount-card>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      class YGDiscountCard extends HTMLElement {
+        constructor() {
+          super();
+          this.init();
+          this.end_time = new Date('{{ product.metafields.custom.product_countdown.value }}').getTime();
+          this.countdownInterval = null;
+          this.startCountdown();
+        }
+
+        init() {
+          // let btn = this.querySelector('.yg-product-discount-btn');
+          // btn.addEventListener('click', () => {
+          //   this.copyText();
+          // });
+        }
+
+        startCountdown() {
+          this.handleCountdown(this.end_time);
+
+          this.countdownInterval = setInterval(() => {
+            this.handleCountdown(this.end_time);
+          }, 1000);
+        }
+
+        hideTip(tooltip) {
+          tooltip.innerText = 'Copy';
+          tooltip.classList.remove('show-tooltip');
+          tooltip.classList.add('hide-tooltip');
+        }
+
+        handleCountdown(end_time) {
+          const discount_days = this.querySelector('#discount_days');
+          const discount_hours = this.querySelector('#discount_hours');
+          const discount_minutes = this.querySelector('#discount_minutes');
+          const discount_seconds = this.querySelector('#discount_seconds');
+          const now = new Date().getTime();
+          const timeRemaining = end_time - now;
+
+          if (timeRemaining <= 0) {
+            if (this.countdownInterval) {
+              clearInterval(this.countdownInterval);
+            }
+            if (discount_days) discount_days.textContent = '0';
+            if (discount_hours) discount_hours.textContent = '0';
+            if (discount_minutes) discount_minutes.textContent = '0';
+            if (discount_seconds) discount_seconds.textContent = '0';
+            return;
+          }
+
+          let days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+          let hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          let minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+          let seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+          if (discount_days) discount_days.textContent = days;
+          if (discount_hours) discount_hours.textContent = hours;
+          if (discount_minutes) discount_minutes.textContent = minutes;
+          if (discount_seconds) discount_seconds.textContent = seconds;
+        }
+      }
+
+      if (!window.customElements.get('yg-discount-card')) {
+        window.customElements.define('yg-discount-card', YGDiscountCard);
+      }
+    });
+  </script>
+{% endif %}

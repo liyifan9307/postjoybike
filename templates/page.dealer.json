@@ -1,0 +1,104 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-lg md:text-2xl",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become a Qlife Dealer",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p> </p><p>📩 Email: <strong>partner@qlifebike.com</strong></p><p>Partner with Qlife. Power More Rides.<br/><br/>Qlife is a fast-growing electric bike brand trusted by riders across the U.S. We design high-performance eBikes with premium components, competitive pricing, and strong after-sales support. We’re now expanding our authorized dealer network and looking for partners who want to grow together.<br/><br/>Why Become a Qlife Dealer?<br/>🚀 High-Demand Products<br/><br/>Best-selling full suspension, fat tire & commuter eBikes<br/><br/>Strong value-to-price ratio, ideal for retail conversion<br/><br/>Continuous new product launches<br/><br/>💰 Attractive Dealer Margins<br/><br/>Competitive wholesale pricing<br/><br/>Tiered discounts based on order volume<br/><br/>Long-term profitability support<br/><br/>📦 Reliable Supply Chain<br/><br/>U.S. warehouse fulfillment<br/><br/>Stable inventory & fast restocking<br/><br/>Bulk and mixed-model ordering available<br/><br/>Who We’re Looking For<br/><br/>We welcome partners with:<br/><br/>Local bike shops<br/><br/>eBike specialty stores<br/><br/>Outdoor & mobility retailers<br/><br/>No matter the size of your business, if you’re passionate about eMobility, we’d love to hear from you.<br/><br/>Dealer Benefits at a Glance<br/><br/>✔ Authorized Qlife Dealer status<br/><br/>✔ Access to wholesale pricing<br/><br/>✔ Priority inventory allocation<br/><br/>✔ Long-term partnership opportunities<br/><br/>How It Works<br/><br/>Step 1 – Submit Dealer Application<br/><br/>Tell us about your business, sales channels, and market.<br/><br/>Step 2 – Review & Approval<br/><br/>Our team will review your application and contact you within 2–3 business days.<br/><br/>Step 3 – Start Selling Qlife<br/><br/>Place your first order, get listed as an authorized dealer, and start growing.<br/><br/>Apply to Become a Qlife Dealer<br/><br/>📩 Email: <strong>partner@qlifebike.com</strong><br/><br/>Frequently Asked Questions<br/><br/>Q: Is there a minimum order quantity?<br/>A: Yes, MOQ depends on product models and region. Details will be shared after approval.<br/><br/>Q: Do you support dropshipping?<br/>A: Currently, we focus on wholesale & authorized retail partnerships.<br/><br/>Q: Do you offer exclusivity?<br/>A: Regional exclusivity may be available based on sales volume and market coverage.<br/><br/>Let’s Build the Future of eBikes Together<br/><br/>Join Qlife and bring high-quality electric bikes to more riders.<br/><br/>Become a Qlife Dealer Today.</p>",
+            "text_size": "subtext-lg",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": false,
+        "rounded": false,
+        "full_width": true
+      }
+    },
+    "empty-space": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 120,
+        "mobile_height": 44,
+        "color_background": "",
+        "gradient_background": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "empty-space"
+  ]
+}

@@ -1,0 +1,1913 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "countdown_timer_76a4f3": {
+      "type": "countdown-timer",
+      "blocks": {
+        "heading_BC9zF9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Combo Sale",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "timer_KJtmNb": {
+          "type": "timer",
+          "settings": {
+            "year": "2025",
+            "month": "07",
+            "day": "25",
+            "hour": "00",
+            "minute": "00",
+            "text_font": "heading",
+            "text_size": "title-lg tracking-heading",
+            "message": ""
+          }
+        },
+        "button_fb8U3H": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Free Gifts",
+            "button_link": "shopify://collections/combo-sale",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_BC9zF9",
+        "timer_KJtmNb",
+        "button_fb8U3H"
+      ],
+      "disabled": true,
+      "name": "t:sections.countdown-timer.presets.name",
+      "settings": {
+        "transparent_header": false,
+        "image_height": "adapt",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "adapt",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "yg_slideshow_9gbDek": {
+      "type": "yg-slideshow",
+      "blocks": {
+        "image_P43iwN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/banner-new.jpg",
+            "image_mobile": "shopify://shop_images/banner-new-1.jpg",
+            "heading": "",
+            "sub_heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://products/postjoy-gt16-electric-dirt-bike",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_rHmEYm": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://products/vela-e5-dirt-electri-bike-for-kids-adults",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_9JiNym": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://collections/best-sellers",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_jakGjF": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "sub_heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://collections/best-sellers",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
+        "image_McrJ9f": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "heading": "<p>Combo Sale</p>",
+            "sub_heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h5",
+            "button_label": "ONLY $399 EACH",
+            "button_link": "shopify://collections/combo-sale",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "image_P43iwN",
+        "image_rHmEYm",
+        "image_9JiNym",
+        "image_jakGjF",
+        "image_McrJ9f"
+      ],
+      "settings": {
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "image_height": "adapt",
+        "content_width": "small",
+        "image_height_mobile": "adapt",
+        "color_text": "#ffffff",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#ff9900",
+        "color_button_gradient": "",
+        "color_overlay": "rgba(0,0,0,0)",
+        "overlay_opacity": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "yg_featured_collections_jtUt77": {
+      "type": "yg-featured-collections",
+      "blocks": {
+        "collection_FRq3Vp": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "electric-dirt-bike",
+            "products": [],
+            "title": "Electric Dirt Bike"
+          }
+        },
+        "collection_pikei4": {
+          "type": "collection",
+          "settings": {
+            "collection": "hot-sales",
+            "products": [],
+            "title": "Full Suspension"
+          }
+        },
+        "collection_YWTaWU": {
+          "type": "collection",
+          "settings": {
+            "collection": "mountain-electric-bike",
+            "products": [],
+            "title": ""
+          }
+        },
+        "collection_WjKrcA": {
+          "type": "collection",
+          "settings": {
+            "collection": "escooter",
+            "products": [],
+            "title": "Escooter"
+          }
+        },
+        "collection_ktmFnr": {
+          "type": "collection",
+          "settings": {
+            "collection": "bike-accessories",
+            "products": [],
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_FRq3Vp",
+        "collection_pikei4",
+        "collection_YWTaWU",
+        "collection_WjKrcA",
+        "collection_ktmFnr"
+      ],
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "show_view_all": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "heading": "Explore All E-Bikes",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#ff9900",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "custom_liquid_TfmUPd": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>PostJoy Rider Spotlight — Homepage Section</title>\n<script src=\"https://cdn.tailwindcss.com\"></script>\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');\n  * { font-family: 'Inter', sans-serif; }\n  \n  .gradient-bg {\n    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);\n  }\n  \n  .accent-gradient {\n    background: linear-gradient(135deg, #f97316 0%, #eab308 100%);\n  }\n  \n  .accent-text {\n    background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n    background-clip: text;\n  }\n  \n  .card-hover {\n    transition: all 0.3s ease;\n  }\n  \n  .card-hover:hover {\n    transform: translateY(-5px);\n    border-color: rgba(249, 115, 22, 0.5);\n  }\n  \n  .grid-pattern {\n    background-image: \n      linear-gradient(rgba(249, 115, 22, 0.05) 1px, transparent 1px),\n      linear-gradient(90deg, rgba(249, 115, 22, 0.05) 1px, transparent 1px);\n    background-size: 50px 50px;\n  }\n  \n  .hashtag-chip {\n    transition: all 0.2s ease;\n    cursor: pointer;\n  }\n  \n  .hashtag-chip:hover {\n    background: rgba(249, 115, 22, 0.2);\n    border-color: #f97316;\n    transform: translateY(-2px);\n  }\n</style>\n</head>\n<body class=\"gradient-bg text-white\">\n\n<!-- ============ POSTJOY RIDER SPOTLIGHT — HOMEPAGE SECTION ============ -->\n<section class=\"relative overflow-hidden\">\n  \n  <!-- Grid Pattern Background -->\n  <div class=\"absolute inset-0 grid-pattern opacity-50\"></div>\n  \n  <!-- Decorative Glow Orbs -->\n  <div class=\"absolute top-20 left-10 w-72 h-72 bg-orange-500 rounded-full blur-3xl opacity-20\"></div>\n  <div class=\"absolute bottom-20 right-10 w-96 h-96 bg-yellow-500 rounded-full blur-3xl opacity-10\"></div>\n  \n  <div class=\"relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24\">\n    \n    <!-- ============ CONNECT WITH US ON SOCIAL ============ -->\n    <div id=\"connect-with-us\" class=\"mb-20\">\n      <div class=\"text-center mb-12\">\n        <div class=\"inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 rounded-full px-4 py-2 mb-5\">\n          <span class=\"text-orange-400 text-xs font-semibold tracking-widest uppercase\">Join the Community</span>\n        </div>\n        <h2 class=\"text-3xl md:text-4xl lg:text-5xl font-black mb-3\">Connect With Us on Social</h2>\n        <p class=\"text-slate-400 text-lg max-w-2xl mx-auto\">Follow, post, and tag — get featured on our channels and rewarded for sharing your ride.</p>\n      </div>\n      \n      <div class=\"grid md:grid-cols-3 gap-6 lg:gap-8\">\n        \n        <!-- Step 1 — Follow -->\n        <div class=\"card-hover bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center\">\n          <div class=\"accent-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black text-black\">\n            1\n          </div>\n          <div class=\"text-4xl mb-4\">👥</div>\n          <h3 class=\"text-xl font-bold mb-3\">Follow PostJoy</h3>\n          <p class=\"text-slate-400 text-sm leading-relaxed mb-5\">\n            Follow <span class=\"text-orange-400 font-semibold\">@PostJoyEbike</span> on Facebook & Instagram to stay in the loop on launches, drops, and rider stories.\n          </p>\n          <div class=\"flex justify-center gap-3\">\n            <a href=\"#\" class=\"bg-white/5 hover:bg-orange-500/20 border border-white/10 hover:border-orange-500/50 w-10 h-10 rounded-full flex items-center justify-center transition-all\" aria-label=\"Facebook\">\n              <svg class=\"w-5 h-5 text-white\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z\"/></svg>\n            </a>\n            <a href=\"#\" class=\"bg-white/5 hover:bg-orange-500/20 border border-white/10 hover:border-orange-500/50 w-10 h-10 rounded-full flex items-center justify-center transition-all\" aria-label=\"Instagram\">\n              <svg class=\"w-5 h-5 text-white\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z\"/></svg>\n            </a>\n          </div>\n        </div>\n        \n        <!-- Step 2 — Post & Tag -->\n        <div class=\"card-hover bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center\">\n          <div class=\"accent-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black text-black\">\n            2\n          </div>\n          <div class=\"text-4xl mb-4\">📲</div>\n          <h3 class=\"text-xl font-bold mb-3\">Post & Tag Us</h3>\n          <p class=\"text-slate-400 text-sm leading-relaxed\">\n            Share your ride moments — unboxings, trail rides, commutes, or reviews. Tag <span class=\"text-orange-400 font-semibold\">@PostJoyEbike</span> and use <span class=\"text-orange-400 font-semibold\">#RideWithPostJoy</span>.\n          </p>\n        </div>\n        \n        <!-- Step 3 — Get Noticed -->\n        <div class=\"card-hover bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center\">\n          <div class=\"accent-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black text-black\">\n            3\n          </div>\n          <div class=\"text-4xl mb-4\">🎁</div>\n          <h3 class=\"text-xl font-bold mb-3\">Get Featured & Rewarded</h3>\n          <p class=\"text-slate-400 text-sm leading-relaxed\">\n            Selected riders get reposted on our official channels and have a chance to receive <span class=\"accent-text font-bold\">$50 in free PostJoy accessories</span>.\n          </p>\n        </div>\n        \n      </div>\n    </div>\n    \n    <!-- ============ HASHTAG CLOUD ============ -->\n    <div>\n      <div class=\"text-center mb-8\">\n        <h2 class=\"text-2xl md:text-3xl lg:text-4xl font-black mb-2\">Tag Us. Get Found.</h2>\n        <p class=\"text-slate-400 text-base md:text-lg\">Use these hashtags to boost your chances.</p>\n      </div>\n      \n      <div class=\"max-w-4xl mx-auto\">\n        <p class=\"text-xs uppercase tracking-wider text-orange-400 font-bold mb-3 text-center\">Primary Tags</p>\n        <div class=\"flex flex-wrap gap-3 justify-center mb-8\">\n          <span class=\"hashtag-chip bg-orange-500/10 border border-orange-500/40 text-orange-300 px-4 py-2 rounded-full text-sm font-semibold\">#RideWithPostJoy</span>\n          <span class=\"hashtag-chip bg-orange-500/10 border border-orange-500/40 text-orange-300 px-4 py-2 rounded-full text-sm font-semibold\">#PostJoyEbike</span>\n          <span class=\"hashtag-chip bg-orange-500/10 border border-orange-500/40 text-orange-300 px-4 py-2 rounded-full text-sm font-semibold\">#PostJoyRiders</span>\n        </div>\n      \n      </div>\n    </div>\n    \n  </div>\n</section>\n\n</body>\n</html>",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "yg_reviews_swiper_6rTeh6": {
+      "type": "yg-reviews-swiper",
+      "blocks": {
+        "block_WenmhR": {
+          "type": "block",
+          "settings": {
+            "video_or_youtube": "video",
+            "video_url": "https://www.youtube.com/watch?v=zG1yW1WxRzo&t=114s",
+            "rating": 5,
+            "yg_rating_color": "#ffaa00",
+            "title": "EV Tech Steven",
+            "content": "<p>Provides a detailed review of the PostJoy GT16 electric bike, with a strong focus on its top speed and acceleration performance. The video tests how the bike performs in real-world riding conditions and gives potential buyers a practical understanding of its power delivery, speed capability, and overall performance.</p>",
+            "yg_show_image": false,
+            "user": "Family Fun Pack",
+            "time": "<p>10.5Million YouTube Followers</p>",
+            "yg_overlay": "#000000",
+            "yg_image_mask": 30,
+            "card_background": "#ffffff"
+          }
+        },
+        "block_nT9qx8": {
+          "type": "block",
+          "settings": {
+            "video_or_youtube": "video",
+            "video_url": "https://www.youtube.com/watch?v=31HN0gT2ZKc",
+            "rating": 5,
+            "yg_rating_color": "#ffaa00",
+            "title": "POV Nelson",
+            "content": "<p>Reviews the PostJoy GT16 as a legal electric bike priced around $999. The video praises the bike for its impressive performance and strong value, presenting it as a surprisingly capable and affordable transportation option.</p>",
+            "yg_show_image": false,
+            "user": "John Doe",
+            "time": "<p>17.1Million YouTube Followers</p>",
+            "yg_overlay": "#000000",
+            "yg_image_mask": 30,
+            "card_background": "#ffffff"
+          }
+        },
+        "block_6GRC3z": {
+          "type": "block",
+          "settings": {
+            "video_or_youtube": "video",
+            "video_url": "https://www.youtube.com/watch?v=04GvqMwqeGs&t=53s",
+            "rating": 5,
+            "yg_rating_color": "#ffaa00",
+            "title": "Volted Adventures",
+            "content": "<p>Reviews the PostJoy GT16 and explores whether it deserves the nickname of a “mini stealth bomber.” The video focuses on the bike’s real-world performance, riding feel, and overall capability, helping viewers judge whether the GT16 lives up to its aggressive styling and performance claims.</p>",
+            "yg_show_image": false,
+            "user": "John Doe",
+            "time": "<p>17.1Million YouTube Followers</p>",
+            "yg_overlay": "#000000",
+            "yg_image_mask": 30,
+            "card_background": "#ffffff"
+          }
+        },
+        "block_Mn4GGg": {
+          "type": "block",
+          "settings": {
+            "video_or_youtube": "video",
+            "video_url": "https://www.youtube.com/watch?v=WRmkJt7iNTc&t=1s",
+            "rating": 5,
+            "yg_rating_color": "#ffaa00",
+            "title": "True North Due South",
+            "content": "<p>Gives a comprehensive review of the PostJoy GT16 mini electric dirt bike, breaking down its strengths, weaknesses, and real riding impressions. The content is aimed at potential buyers who want a balanced overview before purchasing, covering both positive features and practical limitations.</p>",
+            "yg_show_image": false,
+            "user": "John Doe",
+            "time": "<p>17.1Million YouTube Followers</p>",
+            "yg_overlay": "#000000",
+            "yg_image_mask": 30,
+            "card_background": "#ffffff"
+          }
+        },
+        "block_yV4P6U": {
+          "type": "block",
+          "settings": {
+            "video_or_youtube": "video",
+            "video_url": "https://www.youtube.com/watch?v=AfA0t21aJi0",
+            "rating": 5,
+            "yg_rating_color": "#ffaa00",
+            "title": "HeroesNStuff",
+            "content": "<p>Takes an in-depth look at the PostJoy GT16 full-suspension mini electric dirt bike. The review highlights the bike’s strong value for money, affordable price point, and tubeless tire setup. The video discusses whether this budget-friendly electric bike could be one of the best options in its category.</p>",
+            "yg_show_image": false,
+            "user": "John Doe",
+            "time": "<p>17.1Million YouTube Followers</p>",
+            "yg_overlay": "#000000",
+            "yg_image_mask": 30,
+            "card_background": "#ffffff"
+          }
+        },
+        "block_W8cpkX": {
+          "type": "block",
+          "settings": {
+            "video_or_youtube": "video",
+            "video_url": "https://www.youtube.com/watch?v=uAHueqfAPr0",
+            "rating": 5,
+            "yg_rating_color": "#ffaa00",
+            "title": "Trent In The Sip",
+            "content": "<p>Reviews the PostJoy GT16 electric dirt bike by analyzing its performance, features, and riding experience. The video offers an objective look at how the bike feels in use, helping potential buyers understand its practical strengths and overall user experience.</p>",
+            "yg_show_image": false,
+            "user": "John Doe",
+            "time": "<p>17.1Million YouTube Followers</p>",
+            "yg_overlay": "#000000",
+            "yg_image_mask": 30,
+            "card_background": "#ffffff"
+          }
+        },
+        "block_mPqiDM": {
+          "type": "block",
+          "settings": {
+            "video_or_youtube": "video",
+            "video_url": "https://www.youtube.com/watch?v=WRmkJt7iNTc",
+            "rating": 5,
+            "yg_rating_color": "#ffaa00",
+            "title": "Electric Adventure Channel",
+            "content": "<p>Reviews the PostJoy GT16 as a $999 mini electric motorcycle-style bike that could disrupt the market. The video focuses on performance, riding experience, and market potential, evaluating whether the GT16 offers enough value and capability to stand out in the electric bike space.</p>",
+            "yg_show_image": false,
+            "user": "John Doe",
+            "time": "<p>17.1Million YouTube Followers</p>",
+            "yg_overlay": "#000000",
+            "yg_image_mask": 30,
+            "card_background": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "block_WenmhR",
+        "block_nT9qx8",
+        "block_6GRC3z",
+        "block_Mn4GGg",
+        "block_yV4P6U",
+        "block_W8cpkX",
+        "block_mPqiDM"
+      ],
+      "settings": {
+        "heading": "Rider Reviews",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "postjoy_home_base_section_Lt4y8k": {
+      "type": "postjoy-home-base-section",
+      "name": "PostJoy Base Section",
+      "settings": {
+        "show_trust_bar": true,
+        "show_intro": true,
+        "show_models": false,
+        "show_process": true,
+        "show_shipping": true,
+        "show_faq": true,
+        "show_cta": false,
+        "intro_kicker": "Factory-Backed E-Rides",
+        "intro_heading": "More Power. More Value. More Confidence.",
+        "intro_lead": "PostJoy brings factory-backed electric rides to everyday riders with stronger performance, better pricing, and dependable support.",
+        "intro_text": "From powerful fat tire e-bikes to long-range commuter rides, we focus on practical performance, reliable fulfillment, and a smoother buying experience.",
+        "intro_image": "shopify://shop_images/1_5da9b65d-bb3b-4145-b451-c8e825c909e1.jpg",
+        "models_kicker": "Find Your Ride",
+        "models_heading": "Popular PostJoy Models",
+        "models_text": "Compare power, range, and riding style to choose the model that fits your daily commute, weekend adventure, or off-road needs.",
+        "models_button_label": "Shop All Models",
+        "models_button_link": "",
+        "process_kicker": "Quality Control",
+        "process_heading": "Checked Before Every Ride Ships",
+        "process_text": "Every PostJoy ride goes through key checks before shipment to support better reliability, safer handling, and a smoother unboxing experience.",
+        "shipping_kicker": "Fast Local Fulfillment",
+        "shipping_heading": "Fast Shipping from U.S. Warehouses",
+        "shipping_text": "PostJoy orders are shipped from U.S. warehouses whenever available, helping riders receive their new e-bike faster with less waiting.",
+        "shipping_image": "shopify://shop_images/postjoyebike_factory_1.jpg",
+        "faq_kicker": "FAQ",
+        "faq_heading": "Frequently Asked Questions",
+        "cta_kicker": "Ready to Ride?",
+        "cta_heading": "Find Your Perfect Electric Ride Today",
+        "cta_text": "Shop factory-backed electric bikes with free shipping, secure checkout, U.S. warehouse delivery, and rider-focused support.",
+        "cta_primary_label": "Shop E-Bikes",
+        "cta_primary_link": "",
+        "cta_secondary_label": "Contact Support",
+        "cta_secondary_link": "",
+        "background_color": "#f5f5f5",
+        "card_background": "#ffffff",
+        "heading_color": "#111827",
+        "text_color": "#1f2937",
+        "muted_color": "#5f6b7a",
+        "accent_color": "#ff5a1f",
+        "accent_soft_color": "#fff0e8",
+        "border_color": "#e5e7eb",
+        "button_background": "#111827",
+        "button_text": "#ffffff",
+        "cta_bg_1": "#111827",
+        "cta_bg_2": "#ff5a1f",
+        "page_width": 1200,
+        "padding_top": 56,
+        "padding_bottom": 76,
+        "mobile_padding_top": 36,
+        "mobile_padding_bottom": 48
+      }
+    },
+    "yg_rich_text_HiEM4F": {
+      "type": "yg-rich-text",
+      "blocks": {
+        "sub_ADzGkp": {
+          "type": "sub",
+          "settings": {
+            "sub": "",
+            "sub_color": "#ff9900"
+          }
+        },
+        "heading_rgGAnm": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Reimagining <em>Joyful Rides </em></p><p>for Every Generation<br/></p>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "basic-underline"
+          }
+        },
+        "text_JWQ3PK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Qlife, we’re redefining the riding experience with a focus on those who need it most. Built on the pillars of Safety, Comfort, and Accessibility, our mission is to make mobility easier, more enjoyable, and worry-free. With thoughtful design and purpose-driven innovation, we remove barriers and open the road to freedom—so everyone, regardless of age or ability, can ride with confidence and joy.<br/></p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_column_XTDg9K": {
+          "type": "image-column",
+          "settings": {
+            "title_1": "Combo Sale",
+            "sub_1": "Save $50 on Combos — Code QF50",
+            "btn_link_1": "shopify://collections/combo-sale",
+            "btn_label_1": "Shop Now",
+            "item_color_background_1": "",
+            "item_gradient_background_1": "linear-gradient(180deg, rgba(102, 102, 102, 0), rgba(0, 0, 0, 1) 100%)",
+            "content_color_1": "#ffffff",
+            "title_2": "Vela E5 Dirt Electric Bike",
+            "sub_2": "Peak 3500W,36Mph,200Nm,48V23Ah",
+            "btn_link_2": "shopify://products/vela-e5-dirt-electri-bike-for-kids-adults",
+            "btn_label_2": "Shop Now",
+            "item_color_background_2": "",
+            "item_gradient_background_2": "",
+            "content_color_2": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "sub_ADzGkp",
+        "heading_rgGAnm",
+        "text_JWQ3PK",
+        "image_column_XTDg9K"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "medium",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#ffffff",
+        "color_button_background": "#ff9900",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "collage_Wq63M7": {
+      "type": "collage",
+      "blocks": {
+        "image_cB4w7P": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "<strong>commute ebikes</strong>",
+            "link": "shopify://collections/electric-commuter-bikes",
+            "invert_subheading_heading": false,
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_cnTY6F": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "<strong>Fat Tire Ebikes</strong>",
+            "link": "shopify://collections/fat-tire-ebikes",
+            "invert_subheading_heading": false,
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_GbURHC": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "<strong>Motorcycle Ebikes</strong>",
+            "link": "shopify://collections/full-suspension-ebikes",
+            "invert_subheading_heading": false,
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_mmMKWx": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "3 Wheel Ebikes",
+            "link": "shopify://collections/trike",
+            "invert_subheading_heading": false,
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_cB4w7P",
+        "image_cnTY6F",
+        "image_GbURHC",
+        "image_mmMKWx"
+      ],
+      "disabled": true,
+      "name": "t:sections.collage.presets.name",
+      "settings": {
+        "heading": "Explore the world with <em><strong>Qlife</strong></em> Ebikes",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "yg_collection_list_ca6zQw": {
+      "type": "yg-collection-list",
+      "blocks": {
+        "collection_EfTNyr": {
+          "type": "collection",
+          "settings": {
+            "collection": "full-suspension-ebikes",
+            "title": "Full Suspension  E-Bike",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_zAwyPf": {
+          "type": "collection",
+          "settings": {
+            "collection": "trike",
+            "title": "Triker Ebike",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_J84FL6": {
+          "type": "collection",
+          "settings": {
+            "collection": "fat-tire-ebikes",
+            "title": "Fat Tire Ebikes",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_jFiAqY": {
+          "type": "collection",
+          "settings": {
+            "collection": "electric-commuter-bikes",
+            "title": "Commute Ebikes",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_L4yArV": {
+          "type": "collection",
+          "settings": {
+            "collection": "folding-electric-bikes",
+            "title": "Folding Ebikes",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_bDyffY": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_EfTNyr",
+        "collection_zAwyPf",
+        "collection_J84FL6",
+        "collection_jFiAqY",
+        "collection_L4yArV",
+        "collection_bDyffY"
+      ],
+      "disabled": true,
+      "settings": {
+        "columns": 3,
+        "carousel_on_desktop": true,
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "heading": "Explore Our Ebikes",
+        "heading_size": "title-md",
+        "button_label": "All Products>",
+        "button_link": "shopify://collections/best-sellers",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h3",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#000000",
+        "gradient_highlight": "",
+        "color_heading": "#000000",
+        "gradient_heading": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "countdown_timer_NH66bn": {
+      "type": "countdown-timer",
+      "blocks": {
+        "heading_TEfb7M": {
+          "type": "heading",
+          "settings": {
+            "heading": "Countdown timer",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "timer_CTpzD8": {
+          "type": "timer",
+          "settings": {
+            "year": "2026",
+            "month": "01",
+            "day": "1",
+            "hour": "03",
+            "minute": "00",
+            "text_font": "heading",
+            "text_size": "title-lg tracking-heading",
+            "message": ""
+          }
+        },
+        "button_phmMzt": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_TEfb7M",
+        "timer_CTpzD8",
+        "button_phmMzt"
+      ],
+      "disabled": true,
+      "name": "t:sections.countdown-timer.presets.name",
+      "settings": {
+        "transparent_header": false,
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image_comparison_mCzPd4": {
+      "type": "image-comparison",
+      "blocks": {
+        "image_nWCXRT": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "content_position": "end",
+            "color_text": "#ffffff"
+          }
+        },
+        "image_DKk8W3": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "content_position": "end",
+            "color_text": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_nWCXRT",
+        "image_DKk8W3"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-comparison.presets.name",
+      "settings": {
+        "layout": "horizontal",
+        "image_height": "adapt",
+        "image_height_mobile": "adapt",
+        "heading": "Image comparison",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "images_with_text_overlay_89m8ax": {
+      "type": "images-with-text-overlay",
+      "blocks": {
+        "subheading_nWt3DF": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Add a tagline",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_J8BJVn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text overlay",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_3mjtHc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nWt3DF",
+        "heading_J8BJVn",
+        "text_3mjtHc"
+      ],
+      "disabled": true,
+      "name": "t:sections.images-with-text-overlay.presets.name",
+      "settings": {
+        "transparent_header": false,
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 52,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "portfolio_on_scroll_PFCqGF": {
+      "type": "portfolio-on-scroll",
+      "blocks": {
+        "profile_BbKpex": {
+          "type": "profile",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_wcPWgx": {
+          "type": "profile",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_G63dng": {
+          "type": "profile",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        },
+        "profile_tzrUk4": {
+          "type": "profile",
+          "settings": {
+            "heading": "Heading",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "color_text": "#ffffff",
+            "color_background": "#171717"
+          }
+        }
+      },
+      "block_order": [
+        "profile_BbKpex",
+        "profile_wcPWgx",
+        "profile_G63dng",
+        "profile_tzrUk4"
+      ],
+      "disabled": true,
+      "name": "t:sections.portfolio-on-scroll.presets.name",
+      "settings": {
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "heading": "Multimedia collage",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "images_with_text_GDdLq4": {
+      "type": "images-with-text",
+      "blocks": {
+        "heading_3NF4Ri": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_8DGiE7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_WRVpM9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_3NF4Ri",
+        "text_8DGiE7",
+        "button_WRVpM9"
+      ],
+      "disabled": true,
+      "name": "t:sections.images-with-text.presets.name",
+      "settings": {
+        "image_ratio": "portrait",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "yg_richtext_grid_P7jtza": {
+      "type": "yg-richtext-grid",
+      "blocks": {
+        "item_zLfVhf": {
+          "type": "item",
+          "settings": {
+            "title": "Maximum Power,",
+            "unit": "Ultimate Control",
+            "sub": "Unleash high-torque performance built for any terrain."
+          }
+        },
+        "item_ktHNY9": {
+          "type": "item",
+          "settings": {
+            "title": "Rider Tested",
+            "unit": "Expert Approved",
+            "sub": "Trusted by real U.S. riders and top e-bike influencers."
+          }
+        },
+        "item_aFL3xV": {
+          "type": "item",
+          "settings": {
+            "title": "Endless Joy,",
+            "unit": "Effortless Ride",
+            "sub": "Designed to bring pure riding happiness to every adventure."
+          }
+        },
+        "item_QdUmaU": {
+          "type": "item",
+          "settings": {
+            "title": "Risk-Free",
+            "unit": "U.S. Support",
+            "sub": "Fast U.S. shipping, 14-day trial, and a 2-year warranty."
+          }
+        }
+      },
+      "block_order": [
+        "item_zLfVhf",
+        "item_ktHNY9",
+        "item_aFL3xV",
+        "item_QdUmaU"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Why Choose <em>PostJoy</em>?",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "medium",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Off-road thrills and urban cruising shouldn't cost a fortune. At PostJoy, we believe in making high-performance electric rides accessible to everyone! From our powerhouse electric dirt bikes to our sleek retro commuters, we deliver massive torque, premium build quality, and eco-friendly technology—all at a price that leaves the competition in the dust.</p><p>We don't just sell bikes; we build trust. Backed by fast shipping from our local US warehouses, a 14-day trial, and a rock-solid 2-year warranty, we’re here to fuel your adventures with complete peace of mind. Break free from the ordinary. Choose PostJoy, and ride the future today!</p><p><strong>Find Your Perfect Ride Now!</strong></p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "basic-underline",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "yg_rich_text_aUXeMf": {
+      "type": "yg-rich-text",
+      "blocks": {
+        "image_column_GeDfJK": {
+          "type": "image-column",
+          "settings": {
+            "title_1": "We're local",
+            "sub_1": "Ships from US warehouse",
+            "btn_link_1": "shopify://pages/shipping-policy",
+            "btn_label_1": "Learn More",
+            "item_color_background_1": "",
+            "item_gradient_background_1": "linear-gradient(0deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)",
+            "content_color_1": "",
+            "title_2": "SEEL",
+            "sub_2": "Worry-Free Delivery",
+            "btn_link_2": "/",
+            "btn_label_2": "",
+            "item_color_background_2": "rgba(0,0,0,0)",
+            "item_gradient_background_2": "linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 100%)",
+            "content_color_2": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_GeDfJK"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#f5f5f5",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#ff9900",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "scrolling_banner_Mc4pYh": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "image_jf9Wj9": {
+          "type": "image",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "heading": "<em><strong>FaceBook Group</strong></em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "subheading": "",
+            "description": "<p>Join our Facebook group to connect with fellow Qlife owners, share your riding experiences, and get the latest updates. Be part of exclusive events and exciting news you won’t want to miss!<br/><br/></p>",
+            "button_label": "Join Us",
+            "button_link": "https://www.facebook.com/groups/636226869571908/",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_fEU7QH": {
+          "type": "image",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "heading": "<em>Our Story</em>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "subheading": "",
+            "description": "<p>At Qlife Bike, we believe freedom and joy should be accessible to all. We create innovative E-Trikes and E-Bikes for diverse lifestyles, featuring advanced tech like rear differentials, fat tires, and foldable designs. Join us in riding toward a smarter, greener, and more joyful future.<br/><br/></p>",
+            "button_label": "Who We Are",
+            "button_link": "shopify://pages/about-us",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "full_text",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "image_6DDHPf": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "heading": "",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "subheading": "",
+            "description": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image_jf9Wj9",
+        "image_fEU7QH",
+        "image_6DDHPf"
+      ],
+      "disabled": true,
+      "name": "t:sections.scrolling-banner.presets.name",
+      "settings": {
+        "image_height": "650px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "items-center",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "blog_posts_collage_hLF33R": {
+      "type": "blog-posts-collage",
+      "name": "t:sections.blog-posts-collage.presets.name",
+      "settings": {
+        "blog": "news",
+        "post_limit": 3,
+        "show_view_all": false,
+        "show_view_all_icon": false,
+        "link_color": "#ff9900",
+        "hide_link_underline": true,
+        "image_ratio": "landscape",
+        "show_tags": true,
+        "show_date": true,
+        "show_comments": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "heading": "Blog posts",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "1773196023b8ed1a9c": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_media_gallery_9Jda7f": {
+      "type": "yg-media-gallery",
+      "blocks": {
+        "title_QLmVcw": {
+          "type": "title",
+          "settings": {
+            "title": "Shared from our community",
+            "content": "Join a growing community of e-bike enthusiasts! From group rides to insider tips, our Qlife Facebook Group is where riders come together to share experiences, ask questions, and celebrate the joy of electric biking.",
+            "btn_label": "Join Our FB Group",
+            "btn_link": "https://www.facebook.com/profile.php?id=61575618203429"
+          }
+        },
+        "media_eRXDt3": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_TUEPmG": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_8K7r4h": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_hMDLrC": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_QLmVcw",
+        "media_eRXDt3",
+        "media_TUEPmG",
+        "media_8K7r4h",
+        "media_hMDLrC"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#ff9900",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "reveal_testimonials_G4MnAn": {
+      "type": "reveal-testimonials",
+      "blocks": {
+        "testimonial_rRhnXK": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Jessica Raftary</p><p><strong>Awesome 3-Wheel Bike</strong><br/>Easy to pedal and smooth ride. I look forward to many fun adventures as I go on bike rides while camping. The 3 wheel bike is easy to fold and transport. I love the stability I feel while riding.<br/><br/></p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "shopify://products/triker-folding-3-wheels-electric-bike",
+            "image_ratio": "adapt",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_eXYpab": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Bojack Call</p><p>Daughters first e-bike<br/>Bought the white one for my daughter and wife bought the black one. They have put 40 miles on it already. The bike is a lot lighter than my ebike which made it more power and if you do run out of battery it pedals like a regular bike with ease. Would highly recommend, alot of features for the price.<br/></p><p><br/><br/></p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "shopify://products/cityone-2-0-commute-electric-bike",
+            "image_ratio": "adapt",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_YyMmpW": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Keith A. Valdez</p><p>Absolutely great bike! <br/>Fantastic ride, easy to put together and easier to ride! The charger/battery doesn't directly indicate that it's charging but the charging cable does change color to indicate charging and fully charged. The size of the bike is very satisfying. It feels very durable. It was a great price. a really amazing deal! :)</p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "shopify://products/qlife-racer-fat-tire-electric-bike",
+            "image_ratio": "adapt",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_Cyrq68": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Kimberly</p><p>Great purchase!<br/>My wife and I bought these bikes as they were the most affordable electric bikes we could find. We were really impressed with the peddle assist and speed. We've ridden the bikes about 4 times now and really enjoy them. The only thing we changed was the seats. We bought more padded seats to make longer rides more enjoyable. Overall we are happy with the purchase.<br/><br/><br/></p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "shopify://products/cityone-2-0-mountain-electric-bike",
+            "image_ratio": "adapt",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_ad4FtM": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Ehlay</p><p>Amazing product! Perfect for everyday use<br/>Absolutely love this bike. The top speed is 28+Mph. Would definitely recommend for anybody wanting to trail ride, or just cruising around town! The horn is very loud.Overall I’ve been riding this bike for about 2 and a half weeks and have been very happy with it. Would 100% buy again.<br/></p>",
+            "author": "",
+            "author_info": "",
+            "author_url": "shopify://products/spark-moped-style-e-bike",
+            "image_ratio": "adapt",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_rRhnXK",
+        "testimonial_eXYpab",
+        "testimonial_YyMmpW",
+        "testimonial_Cyrq68",
+        "testimonial_ad4FtM"
+      ],
+      "disabled": true,
+      "name": "t:sections.reveal-testimonials.presets.name",
+      "settings": {
+        "heading": "What people are saying",
+        "heading_size": "title-md",
+        "heading_tag": "h2",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "yg_brand_U8weFQ": {
+      "type": "yg-brand",
+      "blocks": {
+        "item_pmb3en": {
+          "type": "item",
+          "settings": {
+            "content": "Take advantage of our latest deals and seasonal discounts. From free accessories to exclusive bundles, we’ve got special offers designed to help you get the most out of your new e-bike.",
+            "name": "—— Electrek"
+          }
+        },
+        "item_LLNQYy": {
+          "type": "item",
+          "settings": {
+            "content": "Take advantage of our latest deals and seasonal discounts. From free accessories to exclusive bundles, we’ve got special offers designed to help you get the most out of your new e-bike.",
+            "name": "—— Electrek"
+          }
+        },
+        "item_Tzihba": {
+          "type": "item",
+          "settings": {
+            "content": "Take advantage of our latest deals and seasonal discounts. From free accessories to exclusive bundles, we’ve got special offers designed to help you get the most out of your new e-bike.",
+            "name": "—— Electrek"
+          }
+        },
+        "item_QenGUJ": {
+          "type": "item",
+          "settings": {
+            "content": "Take advantage of our latest deals and seasonal discounts. From free accessories to exclusive bundles, we’ve got special offers designed to help you get the most out of your new e-bike.",
+            "name": "—— Electrek"
+          }
+        },
+        "item_CmkHEB": {
+          "type": "item",
+          "settings": {
+            "content": "Take advantage of our latest deals and seasonal discounts. From free accessories to exclusive bundles, we’ve got special offers designed to help you get the most out of your new e-bike.",
+            "name": "—— Electrek"
+          }
+        },
+        "item_WWV3R8": {
+          "type": "item",
+          "settings": {
+            "content": "Take advantage of our latest deals and seasonal discounts. From free accessories to exclusive bundles, we’ve got special offers designed to help you get the most out of your new e-bike.",
+            "name": "—— Electrek"
+          }
+        },
+        "item_yLpAic": {
+          "type": "item",
+          "settings": {
+            "content": "Take advantage of our latest deals and seasonal discounts. From free accessories to exclusive bundles, we’ve got special offers designed to help you get the most out of your new e-bike.",
+            "name": "—— Electrek"
+          }
+        },
+        "item_e4Fb9Q": {
+          "type": "item",
+          "settings": {
+            "content": "Take advantage of our latest deals and seasonal discounts. From free accessories to exclusive bundles, we’ve got special offers designed to help you get the most out of your new e-bike.",
+            "name": "—— Electrek"
+          }
+        }
+      },
+      "block_order": [
+        "item_pmb3en",
+        "item_LLNQYy",
+        "item_Tzihba",
+        "item_QenGUJ",
+        "item_CmkHEB",
+        "item_WWV3R8",
+        "item_yLpAic",
+        "item_e4Fb9Q"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "#fff3e0",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "padding_top_mobile": 48,
+        "padding_bottom_mobile": 48,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_media_gallery_94hJGq": {
+      "type": "yg-media-gallery",
+      "blocks": {
+        "title_eQBNDA": {
+          "type": "title",
+          "settings": {
+            "title": "Shared from our community",
+            "content": "Join a growing community of e-bike enthusiasts! From group rides to insider tips, our Qlife Facebook Group is where riders come together to share experiences, ask questions, and celebrate the joy of electric biking.",
+            "btn_label": "Join Our FB Group",
+            "btn_link": "https://www.facebook.com/groups/693115309491816/"
+          }
+        },
+        "media_JMbJqg": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_iJWzU4": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_KrfpjG": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_adYFJK": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_Q7Khxw": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_feTKx8": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_hehw9B": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        },
+        "media_zLqWNn": {
+          "type": "media",
+          "settings": {
+            "video_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "title_eQBNDA",
+        "media_JMbJqg",
+        "media_iJWzU4",
+        "media_KrfpjG",
+        "media_adYFJK",
+        "media_Q7Khxw",
+        "media_feTKx8",
+        "media_hehw9B",
+        "media_zLqWNn"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": false,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "#ff9900",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "blog_posts_collage_QGLMcw": {
+      "type": "blog-posts-collage",
+      "disabled": true,
+      "settings": {
+        "blog": "news",
+        "post_limit": 3,
+        "show_view_all": true,
+        "show_view_all_icon": false,
+        "link_color": "#ff9900",
+        "hide_link_underline": true,
+        "image_ratio": "landscape",
+        "show_tags": false,
+        "show_date": true,
+        "show_comments": false,
+        "show_author": false,
+        "show_excerpt": true,
+        "heading": "Latest Stories",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "countdown_timer_76a4f3",
+    "yg_slideshow_9gbDek",
+    "yg_featured_collections_jtUt77",
+    "custom_liquid_TfmUPd",
+    "yg_reviews_swiper_6rTeh6",
+    "postjoy_home_base_section_Lt4y8k",
+    "yg_rich_text_HiEM4F",
+    "collage_Wq63M7",
+    "yg_collection_list_ca6zQw",
+    "countdown_timer_NH66bn",
+    "image_comparison_mCzPd4",
+    "images_with_text_overlay_89m8ax",
+    "portfolio_on_scroll_PFCqGF",
+    "images_with_text_GDdLq4",
+    "yg_richtext_grid_P7jtza",
+    "yg_rich_text_aUXeMf",
+    "scrolling_banner_Mc4pYh",
+    "blog_posts_collage_hLF33R",
+    "1773196023b8ed1a9c",
+    "yg_media_gallery_9Jda7f",
+    "reveal_testimonials_G4MnAn",
+    "yg_brand_U8weFQ",
+    "yg_media_gallery_94hJGq",
+    "blog_posts_collage_QGLMcw"
+  ]
+}

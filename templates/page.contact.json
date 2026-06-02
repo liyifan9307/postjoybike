@@ -1,0 +1,269 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "heading_size": "title-xl",
+        "heading_alignment": "text-left",
+        "heading_tag": "h1",
+        "text_size": "text-lg md:text-2xl",
+        "padding_top": 72,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_GwENAB": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "spacing_Bgek7T": {
+          "type": "spacing",
+          "settings": {
+            "height": 84,
+            "height_mobile": 28
+          }
+        },
+        "heading_98CGAj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Email: <a href=\"mailto:support@postjoyebike.com\" title=\"mailto:support@postjoyebike.com\">support@postjoyebike.com</a>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "spacing_QmiaVB": {
+          "type": "spacing",
+          "settings": {
+            "height": 40,
+            "height_mobile": 28
+          }
+        },
+        "heading_9kCBeY": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<strong>Phone number:       </strong><a href=\"tel:+1 716 452 9382\">+1 716 452 9382</a>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_zCLpxn": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "heading_4aiAh3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<a>Hours：8AM-5PM PST Monday-Friday</a>",
+            "heading_size": "title-sm",
+            "heading_tag": "h3",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "heading_GwENAB",
+        "spacing_Bgek7T",
+        "heading_98CGAj",
+        "spacing_QmiaVB",
+        "heading_9kCBeY",
+        "heading_zCLpxn",
+        "heading_4aiAh3"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": false,
+        "rounded": false,
+        "full_width": true
+      }
+    },
+    "empty-space": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 120,
+        "mobile_height": 44,
+        "color_background": "",
+        "gradient_background": ""
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "blocks": {
+        "contact_jd3rqD": {
+          "type": "contact",
+          "settings": {
+            "heading": "Customer service",
+            "text": "<p>shop@yourstore.com</p>"
+          }
+        },
+        "contact-1": {
+          "type": "contact",
+          "disabled": true,
+          "settings": {
+            "heading": "Address",
+            "text": "<p>service@actbest.net</p>"
+          }
+        },
+        "contact-2": {
+          "type": "contact",
+          "settings": {
+            "heading": "Email",
+            "text": "<p>service@qlifebike.com</p>"
+          }
+        },
+        "contact-3": {
+          "type": "contact",
+          "settings": {
+            "heading": "Phone",
+            "text": "<p>+1 716 452 9382<br/>Hours 8 AM-5 PM PST<br/>Monday-Friday</p>"
+          }
+        },
+        "media": {
+          "type": "media",
+          "settings": {
+            "heading": "Follow us"
+          }
+        },
+        "custom_field-1": {
+          "type": "custom_field",
+          "disabled": true,
+          "settings": {
+            "type": "text",
+            "title": "Phone number",
+            "required": false,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": ""
+          }
+        },
+        "custom_field-2": {
+          "type": "custom_field",
+          "disabled": true,
+          "settings": {
+            "type": "select",
+            "title": "Subject",
+            "required": false,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": "Product, Order, Press, Other"
+          }
+        }
+      },
+      "block_order": [
+        "contact_jd3rqD",
+        "contact-1",
+        "contact-2",
+        "contact-3",
+        "media",
+        "custom_field-1",
+        "custom_field-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 120,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich-text",
+    "empty-space",
+    "contact-form"
+  ]
+}
