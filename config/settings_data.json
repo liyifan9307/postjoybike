@@ -173,11 +173,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "pagefly-page-builder": {
-        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": false,
-        "settings": {}
-      },
       "7872257831342662540": {
         "type": "shopify://apps/worry-free-purchase/blocks/index/c61a403d-127f-4a83-aa2d-dd891cc35fd1",
         "disabled": false,
@@ -196,6 +191,26 @@
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
+        "settings": {}
+      },
+      "8764476057892802672": {
+        "type": "shopify://apps/stoq/blocks/main/4bb73be2-b7c2-4870-949f-c528145452a3",
+        "disabled": false,
+        "settings": {}
+      },
+      "1602673961235493340": {
+        "type": "shopify://apps/impact-com/blocks/consent_mode/adac1a7f-d17f-4936-8a12-45628cdd8add",
+        "disabled": false,
+        "settings": {}
+      },
+      "1373006865992778634": {
+        "type": "shopify://apps/impact-com/blocks/utt/adac1a7f-d17f-4936-8a12-45628cdd8add",
+        "disabled": false,
+        "settings": {}
+      },
+      "pagefly-page-builder": {
+        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "disabled": true,
         "settings": {}
       }
     }

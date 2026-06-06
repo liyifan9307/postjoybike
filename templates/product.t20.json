@@ -818,7 +818,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
         "product_parameter_8KpCeJ": {
@@ -828,7 +828,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
         "product_parameter_ABm9Ug": {
@@ -838,7 +838,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>200Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>50Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         }
       },
@@ -882,7 +882,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 20Ah</strong></p><p>Torque 1<strong>00Nm</strong></p><p>Hub Motor<strong>Peak 2500W</strong></p><p>Top Speed<strong> 30MPH</strong></p><p>Brake<strong>Front and Rear Disc Brakes</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 20x4.0''</strong></p><p>IP Level<strong>IPX5</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 2.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>81.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Ranger<strong>Up to 80 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 20Ah</strong></p><p>Torque <strong>50Nm</strong></p><p>Hub Motor<strong>Peak 2500W</strong></p><p>Top Speed<strong> 30MPH</strong></p><p>Brake<strong>Front and Rear Disc Brakes</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 20x4.0''</strong></p><p>IP Level<strong>IPX5</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 2.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>81.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Ranger<strong>Up to 80 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -895,6 +895,101 @@
         "color_button_gradient": "",
         "padding_top": 0,
         "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_product_exhibition_Nj3GxV": {
+      "type": "yg-product-exhibition",
+      "blocks": {
+        "item_Nzymb8": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/T20_bike.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_7Jziwr": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/t20_wheel.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_yTFUbD": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/T20_charger.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_NxRKm4": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/t20_keys.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_BPM6Ve": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/t20_pedals.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_FqGTQz": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/t20_screws.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_HyTRjP": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/t20_tools.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_daXMcC": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/t20_fender.jpg",
+            "detail_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_Nzymb8",
+        "item_7Jziwr",
+        "item_yTFUbD",
+        "item_NxRKm4",
+        "item_BPM6Ve",
+        "item_FqGTQz",
+        "item_HyTRjP",
+        "item_daXMcC"
+      ],
+      "name": "YG product exhibition",
+      "settings": {
+        "heading": "What's In The Box",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -1024,6 +1119,7 @@
     "recently-viewed",
     "yg_product_parameter_comparison_wTfEje",
     "yg_specification_BGHDRh",
+    "yg_product_exhibition_Nj3GxV",
     "yg_video_slide_QtKRe6"
   ]
 }

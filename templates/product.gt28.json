@@ -802,6 +802,126 @@
         "rounded": false
       }
     },
+    "yg_product_exhibition_dLgF7R": {
+      "type": "yg-product-exhibition",
+      "blocks": {
+        "item_Kd8kqC": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_ebike.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_AU7Xg8": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/F26_user_manual.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_LdU8LJ": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_charger.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_VmwqTw": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_keys.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_EYaECa": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_handlebar.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_FChhT3": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_wheel.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_biUg4j": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_fender.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_WqgEzQ": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/F26_pedals.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_hX4b6i": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/F26_seat.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_6Rh6q3": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_kickstand.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_NFyE8U": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_tool_kit.jpg",
+            "detail_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_Kd8kqC",
+        "item_AU7Xg8",
+        "item_LdU8LJ",
+        "item_VmwqTw",
+        "item_EYaECa",
+        "item_FChhT3",
+        "item_biUg4j",
+        "item_WqgEzQ",
+        "item_hX4b6i",
+        "item_6Rh6q3",
+        "item_NFyE8U"
+      ],
+      "disabled": true,
+      "name": "YG product exhibition",
+      "settings": {
+        "heading": "What's In The Box",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -845,6 +965,7 @@
     "yg_product_geometry_cjHakK",
     "yg_product_parameter_comparison_CqGc4d",
     "yg_specification_BGHDRh",
+    "yg_product_exhibition_dLgF7R",
     "product-recommendations"
   ]
 }

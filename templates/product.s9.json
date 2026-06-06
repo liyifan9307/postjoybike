@@ -845,7 +845,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>200Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>50Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
         "product_parameter_9XNr9Y": {
@@ -855,25 +855,14 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
-          }
-        },
-        "product_parameter_ExP4Mg": {
-          "type": "product_parameter",
-          "settings": {
-            "product": "postjoy-t20-electric-bike",
-            "product_title": "",
-            "prouduct_url": "",
-            "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         }
       },
       "block_order": [
         "parameter_title_RARTkc",
         "product_parameter_L9zBwt",
-        "product_parameter_9XNr9Y",
-        "product_parameter_ExP4Mg"
+        "product_parameter_9XNr9Y"
       ],
       "name": "YG Parameter Comparison",
       "settings": {

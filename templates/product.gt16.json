@@ -334,6 +334,13 @@
             "section_number": 9
           }
         },
+        "anchor_FgatVw": {
+          "type": "anchor",
+          "settings": {
+            "text": "What's In The Box",
+            "section_number": 9
+          }
+        },
         "anchor_F8aAd6": {
           "type": "anchor",
           "settings": {
@@ -345,6 +352,7 @@
       "block_order": [
         "anchor_9a46TU",
         "anchor_BbFMEE",
+        "anchor_FgatVw",
         "anchor_F8aAd6"
       ],
       "name": "YG anchor tab",
@@ -484,7 +492,7 @@
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Meet the PostJoy GT16 — a compact electric dirt bike built for riders who want more power, more control, and more freedom on every ride.<br/><br/>With a 3000W peak motor and up to 200Nm of torque, the GT16 delivers instant acceleration, confident climbing power, and a thrilling top speed of up to 40 MPH. From dirt trails and gravel roads to steep 45° climbs, this “Micro Beast” is ready to take on the terrain.<br/><br/>The 48V 25Ah removable battery gives you up to 100 miles of PAS range, so you can ride farther without constantly worrying about your next charge. Full suspension, hydraulic disc brakes, and 16\" x 3.0\" off-road tires work together to keep the ride stable, smooth, and controlled.<br/><br/>Finished with NFC smart unlock and a bold skull-motif headlight, the GT16 is more than an e-bike. It is a high-performance electric dirt bike built for adventure.</p>",
+        "description": "<p>Meet the PostJoy GT16 — a compact electric dirt bike built for riders who want more power, more control, and more freedom on every ride.<br/><br/>With a <strong>3000W</strong> peak motor and up to <strong>70Nm</strong> of torque, the GT16 delivers instant acceleration, confident climbing power, and a thrilling top speed of up to 40 MPH. From dirt trails and gravel roads to steep 45° climbs, this “Micro Beast” is ready to take on the terrain.<br/><br/>The <strong>48V 25Ah</strong> removable battery gives you up to 100 miles of PAS range, so you can ride farther without constantly worrying about your next charge. Full suspension, hydraulic disc brakes, and 16\" x 3.0\" off-road tires work together to keep the ride stable, smooth, and controlled.<br/><br/>Finished with NFC smart unlock and a bold skull-motif headlight, the GT16 is more than an e-bike. It is a high-performance electric dirt bike built for adventure.</p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,
@@ -768,7 +776,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>200Nm</li><li>36Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX5</li></ol>"
+            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>70Nm</li><li>36Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX5</li></ol>"
           }
         },
         "product_parameter_9XNr9Y": {
@@ -778,7 +786,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
         "product_parameter_ExP4Mg": {
@@ -788,7 +796,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX5</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX5</li></ol>"
           }
         }
       },
@@ -832,7 +840,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 25Ah</strong></p><p>Torque <strong>200Nm</strong></p><p>Hub Motor<strong>Peak 3000W</strong></p><p>Top Speed<strong> 36MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 16x3.0''</strong></p><p>IP Level<strong>IPX5</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 3.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>99.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 100 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 25Ah</strong></p><p>Torque <strong>70Nm</strong></p><p>Hub Motor<strong>Peak 3000W</strong></p><p>Top Speed<strong> 36MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 16x3.0''</strong></p><p>IP Level<strong>IPX5</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 3.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>99.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 100 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",

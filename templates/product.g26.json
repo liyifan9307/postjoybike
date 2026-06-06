@@ -787,7 +787,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 10Ah</strong></p><p>Torque <strong>50Nm</strong></p><p>Hub Motor<strong>1500W Peak</strong></p><p>Top Speed<strong> 25MPH</strong></p><p>Brake<strong>Precision Disc Brakes</strong></p><p>Suspension<strong> ‎Front Suspension Fork</strong></p><p>Tires<strong> 26\" x 2.0\"</strong></p><p>IP Level<strong>IPX5</strong></p><p>MAX Payload Capacity<strong>350 lbs</strong></p><p>E-Bike Weight<strong>49.6 lbs</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Ranger<strong>Up to 65 Miles</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 10Ah</strong></p><p>Torque <strong>28Nm</strong></p><p>Hub Motor<strong>1500W Peak</strong></p><p>Top Speed<strong> 25MPH</strong></p><p>Brake<strong>Precision Disc Brakes</strong></p><p>Suspension<strong> ‎Front Suspension Fork</strong></p><p>Tires<strong> 26\" x 2.0\"</strong></p><p>IP Level<strong>IPX5</strong></p><p>MAX Payload Capacity<strong>350 lbs</strong></p><p>E-Bike Weight<strong>49.6 lbs</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Ranger<strong>Up to 65 Miles</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -800,6 +800,109 @@
         "color_button_gradient": "",
         "padding_top": 0,
         "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_product_exhibition_3y69rV": {
+      "type": "yg-product-exhibition",
+      "blocks": {
+        "item_VrzAAA": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/G26_bike.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_zJetbg": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/g26_user_manual.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_N6RzUj": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/G26_wheel.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_RKFjeK": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/G26_charger.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_HHHn3r": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/G26_seat.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_gHUtrG": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/g26_pedals.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_GxwqR4": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/g26_tool_kits.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_tJMPV4": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/g26_fender.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_VqhVrE": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/G26_keys.jpg",
+            "detail_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_VrzAAA",
+        "item_zJetbg",
+        "item_N6RzUj",
+        "item_RKFjeK",
+        "item_HHHn3r",
+        "item_gHUtrG",
+        "item_GxwqR4",
+        "item_tJMPV4",
+        "item_VqhVrE"
+      ],
+      "name": "YG product exhibition",
+      "settings": {
+        "heading": "What's In The Box",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -848,6 +951,7 @@
     "yg_product_geometry_cjHakK",
     "yg_product_parameter_comparison_CqGc4d",
     "yg_specification_BGHDRh",
+    "yg_product_exhibition_3y69rV",
     "product-recommendations"
   ]
 }

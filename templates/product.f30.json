@@ -496,7 +496,7 @@
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>The <strong>PostJoy F30</strong> is the ultimate heavy-duty explorer, engineered for those who demand maximum utility without compromising on power. Built with a reinforced frame and a high-efficiency powertrain, the F30 is your go-to machine for long-distance hauls and rugged adventures alike.</p><p>Don't let the sleek folding design fool you—under the hood lies a <strong>2500W peak motor</strong> delivering <strong>100Nm of torque</strong>, propelling you to a <strong>top speed of 32 MPH</strong>. What truly sets the F30 apart is its incredible endurance; the 48V 20Ah battery is optimized to deliver an industry-leading <strong>100-mile range</strong>, making it the perfect companion for cross-town commutes or weekend-long trail sessions.</p><p>With a <strong>MAX payload capacity of 385 lbs</strong>, the F30 is the strongest in its class, easily handling extra gear or heavier riders with ease. The <strong>20\"x4.0\" all-terrain fat tires</strong> and <strong>full suspension</strong> ensure a stable, vibration-free ride over gravel, mud, or pavement. Combined with <strong>NFC smart security</strong> for a keyless, modern experience, the PostJoy F30 is the versatile powerhouse built to go further and carry more.</p>",
+        "description": "<p>The <strong>PostJoy F30</strong> is the ultimate heavy-duty explorer, engineered for those who demand maximum utility without compromising on power. Built with a reinforced frame and a high-efficiency powertrain, the F30 is your go-to machine for long-distance hauls and rugged adventures alike.</p><p>Don't let the sleek folding design fool you—under the hood lies a <strong>2500W peak motor</strong> delivering <strong>50Nm of torque</strong>, propelling you to a <strong>top speed of 32 MPH</strong>. What truly sets the F30 apart is its incredible endurance; the 48V 20Ah battery is optimized to deliver an industry-leading <strong>100-mile range</strong>, making it the perfect companion for cross-town commutes or weekend-long trail sessions.</p><p>With a <strong>MAX payload capacity of 385 lbs</strong>, the F30 is the strongest in its class, easily handling extra gear or heavier riders with ease. The <strong>20\"x4.0\" all-terrain fat tires</strong> and <strong>full suspension</strong> ensure a stable, vibration-free ride over gravel, mud, or pavement. Combined with <strong>NFC smart security</strong> for a keyless, modern experience, the PostJoy F30 is the versatile powerhouse built to go further and carry more.</p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,
@@ -818,7 +818,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
         "product_parameter_CrnDp4": {
@@ -828,7 +828,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>200Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>50Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
         "product_parameter_nj3UMN": {
@@ -838,7 +838,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         }
       },
@@ -882,7 +882,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 20Ah</strong></p><p>Torque <strong>100Nm</strong></p><p>Hub Motor<strong>Peak 2500W</strong></p><p>Top Speed<strong> 32MPH</strong></p><p>Brake<strong>Front and Rear Disc Brakes</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 20x4.0''</strong></p><p>IP Level<strong>IPX6</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 2.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>385 lbs</strong></p><p>E-Bike Weight<strong>81.2 LBS</strong></p><p>Speed Transmission <strong>Single speeds</strong></p><p>Ranger<strong>Up to 100 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 20Ah</strong></p><p>Torque <strong>50Nm</strong></p><p>Hub Motor<strong>Peak 2500W</strong></p><p>Top Speed<strong> 32MPH</strong></p><p>Brake<strong>Front and Rear Disc Brakes</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 20x4.0''</strong></p><p>IP Level<strong>IPX6</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 2.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>385 lbs</strong></p><p>E-Bike Weight<strong>81.2 LBS</strong></p><p>Speed Transmission <strong>Single speeds</strong></p><p>Ranger<strong>Up to 100 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",

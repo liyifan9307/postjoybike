@@ -198,7 +198,7 @@
           "type": "collection",
           "disabled": true,
           "settings": {
-            "collection": "electric-dirt-bike",
+            "collection": "electric-dirt-bikes",
             "products": [],
             "title": "Electric Dirt Bike"
           }
@@ -214,7 +214,7 @@
         "collection_YWTaWU": {
           "type": "collection",
           "settings": {
-            "collection": "mountain-electric-bike",
+            "collection": "electric-mountain-bike",
             "products": [],
             "title": ""
           }
@@ -222,7 +222,7 @@
         "collection_WjKrcA": {
           "type": "collection",
           "settings": {
-            "collection": "escooter",
+            "collection": "electric-scooters",
             "products": [],
             "title": "Escooter"
           }
