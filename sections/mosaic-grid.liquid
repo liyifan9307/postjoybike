@@ -1,0 +1,1344 @@
+{%- liquid
+  assign cols_mobile = section.settings.columns_mobile | plus: 0
+  assign cols_desktop = section.settings.columns_desktop | plus: 0
+-%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    {%- render 'section-variables', section: section -%}
+    --mosaic-grid-gap: {{ section.settings.gap }}px;
+    --mosaic-grid-cols: {{ cols_mobile }};
+    --mosaic-grid-row-height: 100px;
+    --mosaic-grid-unit-w: {{ section.settings.unit_width }};
+    --mosaic-grid-unit-h: {{ section.settings.unit_height }};
+  }
+
+  @media screen and (min-width: 1024px) {
+    #shopify-section-{{ section.id }} {
+      --mosaic-grid-cols: {{ cols_desktop }};
+    }
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--mosaic-grid-cols), minmax(0, 1fr));
+    grid-auto-rows: var(--mosaic-grid-row-height);
+    gap: var(--mosaic-grid-gap);
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: {{ section.settings.radius }}px;
+    background: rgb(var(--color-background));
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__item[media-error] .mosaic-grid__fallback,
+  #shopify-section-{{ section.id }} .mosaic-grid__item[media-error] .mosaic-grid__fallback {
+    display: grid;
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__media {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__media img,
+  #shopify-section-{{ section.id }} .mosaic-grid__media video,
+  #shopify-section-{{ section.id }} .mosaic-grid__media iframe,
+  #shopify-section-{{ section.id }} .mosaic-grid__media svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__fallback {
+    position: absolute;
+    inset: 0;
+    display: none;
+    place-items: center;
+    padding: 16px;
+    background: #fff;
+    border: 2px dashed #e5e5e5;
+    color: #1a1a1a;
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__fallback-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__fallback-subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    opacity: 0.8;
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    padding: {{ section.settings.content_padding }}px;
+    pointer-events: none;
+    align-items: var(--mosaic-cell-align-items, center);
+    justify-content: var(--mosaic-cell-justify-content, center);
+    text-align: var(--mosaic-cell-text-align, left);
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__content-inner {
+    pointer-events: auto;
+    max-width: 100%;
+    color: rgb(var(--mosaic-cell-text-color));
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__heading {
+    font-size: var(--mosaic-cell-heading-size);
+    line-height: var(--mosaic-cell-heading-line-height);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__text {
+    margin-top: 8px;
+    font-size: var(--mosaic-cell-text-size);
+    line-height: var(--mosaic-cell-text-line-height);
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__media-variant {
+    width: 100%;
+    height: 100%;
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__media-variant--desktop {
+    display: none;
+  }
+
+  #shopify-section-{{ section.id }} .mosaic-grid__content-variant--desktop {
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    #shopify-section-{{ section.id }} .mosaic-grid__media-variant--mobile {
+      display: none;
+    }
+
+    #shopify-section-{{ section.id }} .mosaic-grid__media-variant--desktop {
+      display: block;
+    }
+
+    #shopify-section-{{ section.id }} .mosaic-grid__content-variant--mobile {
+      display: none;
+    }
+
+    #shopify-section-{{ section.id }} .mosaic-grid__content-variant--desktop {
+      display: block;
+    }
+  }
+
+  {%- for block in section.blocks -%}
+    {%- liquid
+      assign cell_align_items_mobile = 'center'
+      assign cell_justify_content_mobile = 'center'
+      assign cell_text_align_mobile = 'left'
+      case block.settings.text_position_mobile
+        when 'tl'
+          assign cell_align_items_mobile = 'flex-start'
+          assign cell_justify_content_mobile = 'flex-start'
+          assign cell_text_align_mobile = 'left'
+        when 'tc'
+          assign cell_align_items_mobile = 'flex-start'
+          assign cell_justify_content_mobile = 'center'
+          assign cell_text_align_mobile = 'center'
+        when 'tr'
+          assign cell_align_items_mobile = 'flex-start'
+          assign cell_justify_content_mobile = 'flex-end'
+          assign cell_text_align_mobile = 'right'
+        when 'ml'
+          assign cell_align_items_mobile = 'center'
+          assign cell_justify_content_mobile = 'flex-start'
+          assign cell_text_align_mobile = 'left'
+        when 'mc'
+          assign cell_align_items_mobile = 'center'
+          assign cell_justify_content_mobile = 'center'
+          assign cell_text_align_mobile = 'center'
+        when 'mr'
+          assign cell_align_items_mobile = 'center'
+          assign cell_justify_content_mobile = 'flex-end'
+          assign cell_text_align_mobile = 'right'
+        when 'bl'
+          assign cell_align_items_mobile = 'flex-end'
+          assign cell_justify_content_mobile = 'flex-start'
+          assign cell_text_align_mobile = 'left'
+        when 'bc'
+          assign cell_align_items_mobile = 'flex-end'
+          assign cell_justify_content_mobile = 'center'
+          assign cell_text_align_mobile = 'center'
+        when 'br'
+          assign cell_align_items_mobile = 'flex-end'
+          assign cell_justify_content_mobile = 'flex-end'
+          assign cell_text_align_mobile = 'right'
+      endcase
+
+      assign cell_align_items_desktop = 'center'
+      assign cell_justify_content_desktop = 'center'
+      assign cell_text_align_desktop = 'left'
+      case block.settings.text_position_desktop
+        when 'tl'
+          assign cell_align_items_desktop = 'flex-start'
+          assign cell_justify_content_desktop = 'flex-start'
+          assign cell_text_align_desktop = 'left'
+        when 'tc'
+          assign cell_align_items_desktop = 'flex-start'
+          assign cell_justify_content_desktop = 'center'
+          assign cell_text_align_desktop = 'center'
+        when 'tr'
+          assign cell_align_items_desktop = 'flex-start'
+          assign cell_justify_content_desktop = 'flex-end'
+          assign cell_text_align_desktop = 'right'
+        when 'ml'
+          assign cell_align_items_desktop = 'center'
+          assign cell_justify_content_desktop = 'flex-start'
+          assign cell_text_align_desktop = 'left'
+        when 'mc'
+          assign cell_align_items_desktop = 'center'
+          assign cell_justify_content_desktop = 'center'
+          assign cell_text_align_desktop = 'center'
+        when 'mr'
+          assign cell_align_items_desktop = 'center'
+          assign cell_justify_content_desktop = 'flex-end'
+          assign cell_text_align_desktop = 'right'
+        when 'bl'
+          assign cell_align_items_desktop = 'flex-end'
+          assign cell_justify_content_desktop = 'flex-start'
+          assign cell_text_align_desktop = 'left'
+        when 'bc'
+          assign cell_align_items_desktop = 'flex-end'
+          assign cell_justify_content_desktop = 'center'
+          assign cell_text_align_desktop = 'center'
+        when 'br'
+          assign cell_align_items_desktop = 'flex-end'
+          assign cell_justify_content_desktop = 'flex-end'
+          assign cell_text_align_desktop = 'right'
+      endcase
+    -%}
+
+    #shopify-block-{{ block.id }} {
+      grid-column: span {{ block.settings.col_span_mobile }};
+      grid-row: span {{ block.settings.row_span_mobile }};
+      --mosaic-cell-text-color: {{ block.settings.text_color_mobile.rgb }};
+      --mosaic-cell-heading-size: {{ block.settings.heading_size_mobile }}px;
+      --mosaic-cell-heading-line-height: {{ block.settings.heading_line_height_mobile }}px;
+      --mosaic-cell-text-size: {{ block.settings.text_size_mobile }}px;
+      --mosaic-cell-text-line-height: {{ block.settings.text_line_height_mobile }}px;
+      --mosaic-cell-align-items: {{ cell_align_items_mobile }};
+      --mosaic-cell-justify-content: {{ cell_justify_content_mobile }};
+      --mosaic-cell-text-align: {{ cell_text_align_mobile }};
+    }
+
+    @media screen and (min-width: 1024px) {
+      #shopify-block-{{ block.id }} {
+        grid-column: span {{ block.settings.col_span_desktop }};
+        grid-row: span {{ block.settings.row_span_desktop }};
+        --mosaic-cell-text-color: {{ block.settings.text_color_desktop.rgb }};
+        --mosaic-cell-heading-size: {{ block.settings.heading_size_desktop }}px;
+        --mosaic-cell-heading-line-height: {{ block.settings.heading_line_height_desktop }}px;
+        --mosaic-cell-text-size: {{ block.settings.text_size_desktop }}px;
+        --mosaic-cell-text-line-height: {{ block.settings.text_line_height_desktop }}px;
+        --mosaic-cell-align-items: {{ cell_align_items_desktop }};
+        --mosaic-cell-justify-content: {{ cell_justify_content_desktop }};
+        --mosaic-cell-text-align: {{ cell_text_align_desktop }};
+      }
+    }
+  {%- endfor -%}
+</style>
+
+<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
+  <div class="page-width{% if section.settings.full_width %} page-width--full{% endif %} relative">
+    {%- render 'section-heading', section: section -%}
+
+    <mosaic-grid class="mosaic-grid" data-unit-w="{{ section.settings.unit_width }}" data-unit-h="{{ section.settings.unit_height }}">
+      {%- for block in section.blocks -%}
+        <div
+          id="shopify-block-{{ block.id }}"
+          class="mosaic-grid__item"
+          {{ block.shopify_attributes }}
+        >
+          <div class="mosaic-grid__media media">
+            {%- liquid
+              assign media_type_mobile = block.settings.media_type_mobile
+              assign media_type_desktop = block.settings.media_type_desktop
+
+              assign image_mobile = block.settings.image_mobile
+              assign image_desktop = block.settings.image_desktop
+
+              assign video_mobile = block.settings.video_mobile
+              assign video_desktop = block.settings.video_desktop
+
+              assign video_url_mobile = block.settings.video_url_mobile
+              assign video_url_desktop = block.settings.video_url_desktop
+
+              assign video_autoplay_mobile = block.settings.video_autoplay_mobile
+              assign video_autoplay_desktop = block.settings.video_autoplay_desktop
+
+              assign video_muted_mobile = block.settings.video_muted_mobile
+              assign video_muted_desktop = block.settings.video_muted_desktop
+
+              assign video_loop_mobile = block.settings.video_loop_mobile
+              assign video_loop_desktop = block.settings.video_loop_desktop
+
+              if image_desktop == blank
+                assign image_desktop = image_mobile
+              endif
+
+              if video_desktop == blank
+                assign video_desktop = video_mobile
+              endif
+
+              if video_url_desktop == blank
+                assign video_url_desktop = video_url_mobile
+              endif
+            -%}
+
+            <div class="mosaic-grid__media-variant mosaic-grid__media-variant--mobile">
+              {%- if media_type_mobile == 'video' -%}
+                {%- render 'video',
+                  video: video_mobile,
+                  video_url: video_url_mobile,
+                  muted: video_muted_mobile,
+                  autoplay: video_autoplay_mobile,
+                  loop: video_loop_mobile,
+                  show_play_button: false,
+                  class: 'w-full h-full'
+                -%}
+              {%- else -%}
+                {%- if image_mobile != blank -%}
+                  {{- image_mobile | image_url: width: image_mobile.width | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000', is: 'lazy-image', alt: image_mobile.alt | escape -}}
+                {%- else -%}
+                {{ 'hero-apparel-1' | placeholder_svg_tag }}
+                {%- endif -%}
+              {%- endif -%}
+            </div>
+
+            <div class="mosaic-grid__media-variant mosaic-grid__media-variant--desktop">
+              {%- if media_type_desktop == 'video' -%}
+                {%- render 'video',
+                  video: video_desktop,
+                  video_url: video_url_desktop,
+                  muted: video_muted_desktop,
+                  autoplay: video_autoplay_desktop,
+                  loop: video_loop_desktop,
+                  show_play_button: false,
+                  class: 'w-full h-full'
+                -%}
+              {%- else -%}
+                {%- if image_desktop != blank -%}
+                  {{- image_desktop | image_url: width: image_desktop.width | image_tag: loading: 'lazy', widths: '300,400,500,600,700,800,900,1000,1200,1400,1600,1800,2000', is: 'lazy-image', alt: image_desktop.alt | escape -}}
+                {%- else -%}
+                {{ 'hero-apparel-1' | placeholder_svg_tag }}
+                {%- endif -%}
+              {%- endif -%}
+            </div>
+
+            <div class="mosaic-grid__fallback" hidden>
+              <div class="mosaic-grid__fallback-title">资源加载失败</div>
+              <div class="mosaic-grid__fallback-subtitle">请检查链接或重新上传</div>
+            </div>
+          </div>
+
+          {%- liquid
+            assign heading_mobile = block.settings.heading_mobile
+            if heading_mobile == blank
+              assign heading_mobile = block.settings.heading
+            endif
+
+            assign text_mobile = block.settings.text_mobile
+            if text_mobile == blank
+              assign text_mobile = block.settings.text
+            endif
+
+            assign heading_desktop = block.settings.heading_desktop
+            if heading_desktop == blank
+              assign heading_desktop = heading_mobile
+            endif
+
+            assign text_desktop = block.settings.text_desktop
+            if text_desktop == blank
+              assign text_desktop = text_mobile
+            endif
+          -%}
+
+          {%- if heading_mobile != blank or text_mobile != blank or heading_desktop != blank or text_desktop != blank -%}
+            <div class="mosaic-grid__content">
+              <div class="mosaic-grid__content-inner mosaic-grid__content-variant mosaic-grid__content-variant--mobile">
+                {%- if heading_mobile != blank -%}
+                  <div class="mosaic-grid__heading">{{ heading_mobile }}</div>
+                {%- endif -%}
+                {%- if text_mobile != blank -%}
+                  <div class="mosaic-grid__text">{{ text_mobile }}</div>
+                {%- endif -%}
+              </div>
+
+              <div class="mosaic-grid__content-inner mosaic-grid__content-variant mosaic-grid__content-variant--desktop">
+                {%- if heading_desktop != blank -%}
+                  <div class="mosaic-grid__heading">{{ heading_desktop }}</div>
+                {%- endif -%}
+                {%- if text_desktop != blank -%}
+                  <div class="mosaic-grid__text">{{ text_desktop }}</div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </mosaic-grid>
+  </div>
+</div>
+
+<script>
+  if (!customElements.get('mosaic-grid')) {
+    class MosaicGrid extends HTMLElement {
+      connectedCallback() {
+        this.resizeObserver = new ResizeObserver(() => this.syncRowHeight());
+        this.resizeObserver.observe(this);
+        this.bindImageFallback();
+        this.syncRowHeight();
+      }
+
+      disconnectedCallback() {
+        this.resizeObserver?.disconnect();
+      }
+
+      bindImageFallback() {
+        const images = this.querySelectorAll('img[is="lazy-image"]');
+        images.forEach((img) => {
+          img.addEventListener(
+            'error',
+            () => {
+              const item = img.closest('.mosaic-grid__item');
+              if (!item) return;
+              item.setAttribute('media-error', '');
+              const fallback = item.querySelector('.mosaic-grid__fallback');
+              if (fallback) fallback.hidden = false;
+            },
+            { once: true }
+          );
+        });
+      }
+
+      syncRowHeight() {
+        const styles = getComputedStyle(this);
+        const cols = parseInt(styles.getPropertyValue('--mosaic-grid-cols'), 10);
+        const gap = parseFloat(styles.getPropertyValue('--mosaic-grid-gap')) || 0;
+        const unitW = parseFloat(this.dataset.unitW || styles.getPropertyValue('--mosaic-grid-unit-w')) || 780;
+        const unitH = parseFloat(this.dataset.unitH || styles.getPropertyValue('--mosaic-grid-unit-h')) || 480;
+        const width = this.clientWidth;
+        if (!cols || width <= 0) return;
+        const colW = (width - gap * (cols - 1)) / cols;
+        const rowH = colW * (unitH / unitW);
+        this.style.setProperty('--mosaic-grid-row-height', `${rowH}px`);
+      }
+
+      playAll() {
+        this.querySelectorAll('video-media').forEach((el) => el.play());
+      }
+
+      pauseAll() {
+        this.querySelectorAll('video-media').forEach((el) => el.pause());
+      }
+    }
+
+    customElements.define('mosaic-grid', MosaicGrid);
+  }
+</script>
+
+{% schema %}
+{
+  "name": "宫格组件",
+  "settings": [
+    {
+      "type": "header",
+      "content": "标题"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "标题",
+      "default": "Key Features"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "title-sm",
+          "label": "小"
+        },
+        {
+          "value": "title-md",
+          "label": "中"
+        },
+        {
+          "value": "title-lg tracking-heading",
+          "label": "大"
+        },
+        {
+          "value": "title-xl tracking-heading",
+          "label": "超大"
+        }
+      ],
+      "default": "title-md",
+      "label": "标题尺寸"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "标题对齐",
+      "options": [
+        {
+          "value": "text-left md:items-end md:flex-row",
+          "label": "左对齐"
+        },
+        {
+          "value": "text-center md:items-center",
+          "label": "居中"
+        },
+        {
+          "value": "text-right md:items-end md:flex-row-reverse",
+          "label": "右对齐"
+        }
+      ],
+      "default": "text-left md:items-end md:flex-row"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "标题1（H1）"
+        },
+        {
+          "value": "h2",
+          "label": "标题2（H2）"
+        },
+        {
+          "value": "h3",
+          "label": "标题3（H3）"
+        },
+        {
+          "value": "h4",
+          "label": "标题4（H4）"
+        },
+        {
+          "value": "h5",
+          "label": "标题5（H5）"
+        },
+        {
+          "value": "h6",
+          "label": "标题6（H6）"
+        },
+        {
+          "value": "div",
+          "label": "容器（DIV）"
+        },
+        {
+          "value": "span",
+          "label": "行内（SPAN）"
+        },
+        {
+          "value": "p",
+          "label": "段落（P）"
+        }
+      ],
+      "default": "h2",
+      "label": "标题标签",
+      "info": "t:sections.global.settings.heading_tag.info"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "副标题"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "描述"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "按钮文案",
+      "info": "t:sections.global.settings.button_label.info"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "按钮链接"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_external",
+      "label": "新窗口打开",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "button_icon",
+      "label": "显示图标",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "颜色",
+      "info": "t:sections.global.settings.header__colors.info"
+    },
+    {
+      "type": "color",
+      "id": "color_text",
+      "label": "文本颜色"
+    },
+    {
+      "type": "color",
+      "id": "color_background",
+      "label": "背景颜色"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_background",
+      "label": "背景渐变"
+    },
+    {
+      "type": "color",
+      "id": "color_highlight",
+      "label": "高亮颜色"
+    },
+    {
+      "type": "color_background",
+      "id": "gradient_highlight",
+      "label": "高亮渐变"
+    },
+    {
+      "type": "color",
+      "id": "color_button_text",
+      "label": "按钮文字颜色"
+    },
+    {
+      "type": "color",
+      "id": "color_button_background",
+      "label": "按钮背景颜色"
+    },
+    {
+      "type": "color_background",
+      "id": "color_button_gradient",
+      "label": "按钮渐变"
+    },
+    {
+      "type": "header",
+      "content": "网格"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "间距",
+      "min": 0,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "radius",
+      "label": "单元格圆角",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "label": "文案内边距",
+      "min": 0,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "移动端列数",
+      "options": [
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "label": "PC 列数",
+      "options": [
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" }
+      ],
+      "default": "4"
+    },
+    {
+      "type": "range",
+      "id": "unit_width",
+      "label": "基准宽度（用于算行高）",
+      "min": 100,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "default": 780
+    },
+    {
+      "type": "range",
+      "id": "unit_height",
+      "label": "基准高度（用于算行高）",
+      "min": 100,
+      "max": 1000,
+      "step": 10,
+      "unit": "px",
+      "default": 480
+    },
+    {
+      "type": "header",
+      "content": "区块"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "上边距",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "下边距",
+      "default": 72
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "分割线",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "全宽",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "圆角"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "cell",
+      "name": "单元格",
+      "settings": [
+        {
+          "type": "header",
+          "content": "响应式说明",
+          "info": "移动端为默认值；当屏幕宽度 ≥ 1024px 时使用 PC 配置。"
+        },
+        {
+          "type": "header",
+          "content": "布局（移动端）"
+        },
+        {
+          "type": "select",
+          "id": "col_span_mobile",
+          "label": "跨列",
+          "options": [
+            { "value": "1", "label": "1" },
+            { "value": "2", "label": "2" }
+          ],
+          "default": "2"
+        },
+        {
+          "type": "range",
+          "id": "row_span_mobile",
+          "label": "跨行",
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "default": 1
+        },
+        {
+          "type": "header",
+          "content": "布局（PC）"
+        },
+        {
+          "type": "range",
+          "id": "col_span_desktop",
+          "label": "跨列",
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "default": 1
+        },
+        {
+          "type": "range",
+          "id": "row_span_desktop",
+          "label": "跨行",
+          "min": 1,
+          "max": 12,
+          "step": 1,
+          "default": 1
+        },
+        {
+          "type": "header",
+          "content": "媒体（移动端）"
+        },
+        {
+          "type": "select",
+          "id": "media_type_mobile",
+          "label": "媒体类型",
+          "options": [
+            { "value": "image", "label": "图片" },
+            { "value": "video", "label": "视频" }
+          ],
+          "default": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "图片",
+          "visible_if": "{{ block.settings.media_type_mobile == 'image' }}"
+        },
+        {
+          "type": "video",
+          "id": "video_mobile",
+          "label": "视频（Shopify）",
+          "visible_if": "{{ block.settings.media_type_mobile == 'video' }}"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url_mobile",
+          "accept": ["youtube", "vimeo"],
+          "label": "视频链接（YouTube/Vimeo）",
+          "visible_if": "{{ block.settings.media_type_mobile == 'video' }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "video_autoplay_mobile",
+          "label": "自动播放",
+          "default": true,
+          "visible_if": "{{ block.settings.media_type_mobile == 'video' }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "video_muted_mobile",
+          "label": "静音",
+          "default": true,
+          "visible_if": "{{ block.settings.media_type_mobile == 'video' }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "video_loop_mobile",
+          "label": "循环",
+          "default": true,
+          "visible_if": "{{ block.settings.media_type_mobile == 'video' }}"
+        },
+        {
+          "type": "header",
+          "content": "媒体（PC）"
+        },
+        {
+          "type": "select",
+          "id": "media_type_desktop",
+          "label": "媒体类型",
+          "options": [
+            { "value": "image", "label": "图片" },
+            { "value": "video", "label": "视频" }
+          ],
+          "default": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_desktop",
+          "label": "图片",
+          "visible_if": "{{ block.settings.media_type_desktop == 'image' }}"
+        },
+        {
+          "type": "video",
+          "id": "video_desktop",
+          "label": "视频（Shopify）",
+          "visible_if": "{{ block.settings.media_type_desktop == 'video' }}"
+        },
+        {
+          "type": "video_url",
+          "id": "video_url_desktop",
+          "accept": ["youtube", "vimeo"],
+          "label": "视频链接（YouTube/Vimeo）",
+          "visible_if": "{{ block.settings.media_type_desktop == 'video' }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "video_autoplay_desktop",
+          "label": "自动播放",
+          "default": true,
+          "visible_if": "{{ block.settings.media_type_desktop == 'video' }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "video_muted_desktop",
+          "label": "静音",
+          "default": true,
+          "visible_if": "{{ block.settings.media_type_desktop == 'video' }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "video_loop_desktop",
+          "label": "循环",
+          "default": true,
+          "visible_if": "{{ block.settings.media_type_desktop == 'video' }}"
+        },
+        {
+          "type": "header",
+          "content": "文案（移动端）"
+        },
+        {
+          "type": "select",
+          "id": "text_position_mobile",
+          "label": "文案位置",
+          "options": [
+            { "value": "tl", "label": "左上" },
+            { "value": "tc", "label": "中上" },
+            { "value": "tr", "label": "右上" },
+            { "value": "ml", "label": "左中" },
+            { "value": "mc", "label": "正中" },
+            { "value": "mr", "label": "右中" },
+            { "value": "bl", "label": "左下" },
+            { "value": "bc", "label": "中下" },
+            { "value": "br", "label": "右下" }
+          ],
+          "default": "ml"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading_mobile",
+          "label": "标题"
+        },
+        {
+          "type": "richtext",
+          "id": "text_mobile",
+          "label": "正文"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "标题（旧）",
+          "info": "兼容旧数据。建议使用上方移动端/PC 文案字段。"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "正文（旧）",
+          "info": "兼容旧数据。建议使用上方移动端/PC 文案字段。"
+        },
+        {
+          "type": "color",
+          "id": "text_color_mobile",
+          "label": "文字颜色",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "range",
+          "id": "heading_size_mobile",
+          "label": "标题字号",
+          "min": 12,
+          "max": 48,
+          "step": 1,
+          "unit": "px",
+          "default": 24
+        },
+        {
+          "type": "range",
+          "id": "heading_line_height_mobile",
+          "label": "标题行高",
+          "min": 12,
+          "max": 64,
+          "step": 1,
+          "unit": "px",
+          "default": 32
+        },
+        {
+          "type": "range",
+          "id": "text_size_mobile",
+          "label": "正文字号",
+          "min": 10,
+          "max": 28,
+          "step": 1,
+          "unit": "px",
+          "default": 14
+        },
+        {
+          "type": "range",
+          "id": "text_line_height_mobile",
+          "label": "正文行高",
+          "min": 10,
+          "max": 44,
+          "step": 1,
+          "unit": "px",
+          "default": 20
+        },
+        {
+          "type": "header",
+          "content": "文案（PC）"
+        },
+        {
+          "type": "select",
+          "id": "text_position_desktop",
+          "label": "文案位置",
+          "options": [
+            { "value": "tl", "label": "左上" },
+            { "value": "tc", "label": "中上" },
+            { "value": "tr", "label": "右上" },
+            { "value": "ml", "label": "左中" },
+            { "value": "mc", "label": "正中" },
+            { "value": "mr", "label": "右中" },
+            { "value": "bl", "label": "左下" },
+            { "value": "bc", "label": "中下" },
+            { "value": "br", "label": "右下" }
+          ],
+          "default": "ml"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "heading_desktop",
+          "label": "标题"
+        },
+        {
+          "type": "richtext",
+          "id": "text_desktop",
+          "label": "正文"
+        },
+        {
+          "type": "color",
+          "id": "text_color_desktop",
+          "label": "文字颜色",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "range",
+          "id": "heading_size_desktop",
+          "label": "标题字号",
+          "min": 12,
+          "max": 48,
+          "step": 1,
+          "unit": "px",
+          "default": 24
+        },
+        {
+          "type": "range",
+          "id": "heading_line_height_desktop",
+          "label": "标题行高",
+          "min": 12,
+          "max": 64,
+          "step": 1,
+          "unit": "px",
+          "default": 32
+        },
+        {
+          "type": "range",
+          "id": "text_size_desktop",
+          "label": "正文字号",
+          "min": 10,
+          "max": 28,
+          "step": 1,
+          "unit": "px",
+          "default": 14
+        },
+        {
+          "type": "range",
+          "id": "text_line_height_desktop",
+          "label": "正文行高",
+          "min": 10,
+          "max": 44,
+          "step": 1,
+          "unit": "px",
+          "default": 20
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "宫格组件",
+      "blocks": [
+        {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "2",
+            "row_span_mobile": 1,
+            "col_span_desktop": 2,
+            "row_span_desktop": 2,
+            "media_type_mobile": "image",
+            "media_type_desktop": "image",
+            "video_url_mobile": "https://www.youtube.com/watch?v=lK11WsOwuzA",
+            "video_url_desktop": "https://www.youtube.com/watch?v=lK11WsOwuzA",
+            "video_autoplay_mobile": true,
+            "video_autoplay_desktop": true,
+            "video_muted_mobile": true,
+            "video_muted_desktop": true,
+            "video_loop_mobile": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "mc",
+            "text_position_desktop": "mc",
+            "heading_mobile": "1590*980",
+            "heading_desktop": "1590*980",
+            "text_mobile": "<p>无需单独制图</p>",
+            "text_desktop": "<p>无需单独制图</p>",
+            "text_color_mobile": "#fafafa",
+            "text_color_desktop": "#fafafa",
+            "heading_size_mobile": 24,
+            "heading_size_desktop": 24,
+            "heading_line_height_mobile": 32,
+            "heading_line_height_desktop": 32,
+            "text_size_mobile": 14,
+            "text_size_desktop": 14,
+            "text_line_height_mobile": 20,
+            "text_line_height_desktop": 20
+          }
+        },
+        {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "2",
+            "row_span_mobile": 2,
+            "col_span_desktop": 2,
+            "row_span_desktop": 1,
+            "media_type_mobile": "image",
+            "media_type_desktop": "image",
+            "video_url_mobile": "",
+            "video_url_desktop": "",
+            "video_autoplay_mobile": true,
+            "video_autoplay_desktop": true,
+            "video_muted_mobile": true,
+            "video_muted_desktop": true,
+            "video_loop_mobile": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "mc",
+            "text_position_desktop": "mc",
+            "heading_mobile": "1590*480",
+            "heading_desktop": "1590*480",
+            "text_mobile": "<p>无需单独制图</p>",
+            "text_desktop": "<p>无需单独制图</p>",
+            "text_color_mobile": "#1a1a1a",
+            "text_color_desktop": "#1a1a1a",
+            "heading_size_mobile": 24,
+            "heading_size_desktop": 24,
+            "heading_line_height_mobile": 32,
+            "heading_line_height_desktop": 32,
+            "text_size_mobile": 14,
+            "text_size_desktop": 14,
+            "text_line_height_mobile": 20,
+            "text_line_height_desktop": 20
+          }
+        },
+        {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "2",
+            "row_span_mobile": 1,
+            "col_span_desktop": 2,
+            "row_span_desktop": 1,
+            "media_type_mobile": "image",
+            "media_type_desktop": "image",
+            "video_url_mobile": "",
+            "video_url_desktop": "",
+            "video_autoplay_mobile": true,
+            "video_autoplay_desktop": true,
+            "video_muted_mobile": true,
+            "video_muted_desktop": true,
+            "video_loop_mobile": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "tl",
+            "text_position_desktop": "tl",
+            "heading_mobile": "Ride Freely, Ride Actbest.",
+            "heading_desktop": "Ride Freely, Ride Actbest.",
+            "text_mobile": "<p>Experience the perfect blend of performance, style, and eco-friendly innovation in every Actbest e-bike.</p>",
+            "text_desktop": "<p>Experience the perfect blend of performance, style, and eco-friendly innovation in every Actbest e-bike.</p>",
+            "text_color_mobile": "#1a1a1a",
+            "text_color_desktop": "#1a1a1a",
+            "heading_size_mobile": 24,
+            "heading_size_desktop": 24,
+            "heading_line_height_mobile": 32,
+            "heading_line_height_desktop": 32,
+            "text_size_mobile": 14,
+            "text_size_desktop": 14,
+            "text_line_height_mobile": 20,
+            "text_line_height_desktop": 20
+          }
+        },
+        {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "1",
+            "row_span_mobile": 2,
+            "col_span_desktop": 1,
+            "row_span_desktop": 2,
+            "media_type_mobile": "image",
+            "media_type_desktop": "image",
+            "video_url_mobile": "",
+            "video_url_desktop": "",
+            "video_autoplay_mobile": true,
+            "video_autoplay_desktop": true,
+            "video_muted_mobile": true,
+            "video_muted_desktop": true,
+            "video_loop_mobile": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "tl",
+            "text_position_desktop": "tl",
+            "heading_mobile": "Ride Freely. Ride Actbest.",
+            "heading_desktop": "Ride Freely. Ride Actbest.",
+            "text_mobile": "<p>Experience the perfect blend of performance, style, and eco-friendly innovation in every Actbest e-bike.</p>",
+            "text_desktop": "<p>Experience the perfect blend of performance, style, and eco-friendly innovation in every Actbest e-bike.</p>",
+            "text_color_mobile": "#1a1a1a",
+            "text_color_desktop": "#1a1a1a",
+            "heading_size_mobile": 24,
+            "heading_size_desktop": 24,
+            "heading_line_height_mobile": 32,
+            "heading_line_height_desktop": 32,
+            "text_size_mobile": 14,
+            "text_size_desktop": 14,
+            "text_line_height_mobile": 20,
+            "text_line_height_desktop": 20
+          }
+        },
+        {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "1",
+            "row_span_mobile": 2,
+            "col_span_desktop": 1,
+            "row_span_desktop": 1,
+            "media_type_mobile": "image",
+            "media_type_desktop": "image",
+            "video_url_mobile": "",
+            "video_url_desktop": "",
+            "video_autoplay_mobile": true,
+            "video_autoplay_desktop": true,
+            "video_muted_mobile": true,
+            "video_muted_desktop": true,
+            "video_loop_mobile": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "mc",
+            "text_position_desktop": "mc",
+            "heading_mobile": "780*480",
+            "heading_desktop": "780*480",
+            "text_mobile": "<p>无需单独制图</p>",
+            "text_desktop": "<p>无需单独制图</p>",
+            "text_color_mobile": "#1a1a1a",
+            "text_color_desktop": "#1a1a1a",
+            "heading_size_mobile": 24,
+            "heading_size_desktop": 24,
+            "heading_line_height_mobile": 32,
+            "heading_line_height_desktop": 32,
+            "text_size_mobile": 14,
+            "text_size_desktop": 14,
+            "text_line_height_mobile": 20,
+            "text_line_height_desktop": 20
+          }
+        },
+        {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "2",
+            "row_span_mobile": 1,
+            "col_span_desktop": 2,
+            "row_span_desktop": 2,
+            "media_type_mobile": "image",
+            "media_type_desktop": "image",
+            "video_url_mobile": "",
+            "video_url_desktop": "",
+            "video_autoplay_mobile": true,
+            "video_autoplay_desktop": true,
+            "video_muted_mobile": true,
+            "video_muted_desktop": true,
+            "video_loop_mobile": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "tl",
+            "text_position_desktop": "tl",
+            "heading_mobile": "Ride Freely. Ride Actbest.",
+            "heading_desktop": "Ride Freely. Ride Actbest.",
+            "text_mobile": "<p>Experience the perfect blend of performance, style, and eco-friendly innovation in every Actbest e-bike.</p>",
+            "text_desktop": "<p>Experience the perfect blend of performance, style, and eco-friendly innovation in every Actbest e-bike.</p>",
+            "text_color_mobile": "#1a1a1a",
+            "text_color_desktop": "#1a1a1a",
+            "heading_size_mobile": 24,
+            "heading_size_desktop": 24,
+            "heading_line_height_mobile": 32,
+            "heading_line_height_desktop": 32,
+            "text_size_mobile": 14,
+            "text_size_desktop": 14,
+            "text_line_height_mobile": 20,
+            "text_line_height_desktop": 20
+          }
+        },
+        {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "2",
+            "row_span_mobile": 2,
+            "col_span_desktop": 1,
+            "row_span_desktop": 1,
+            "media_type_mobile": "image",
+            "media_type_desktop": "image",
+            "video_url_mobile": "",
+            "video_url_desktop": "",
+            "video_autoplay_mobile": true,
+            "video_autoplay_desktop": true,
+            "video_muted_mobile": true,
+            "video_muted_desktop": true,
+            "video_loop_mobile": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "mc",
+            "text_position_desktop": "mc",
+            "heading_mobile": "Ride Freely. Ride Actbest.",
+            "heading_desktop": "Ride Freely. Ride Actbest.",
+            "text_mobile": "<p>Experience the perfect blend of performance, style, and eco-friendly innovation in every Actbest e-bike.</p>",
+            "text_desktop": "<p>Experience the perfect blend of performance, style, and eco-friendly innovation in every Actbest e-bike.</p>",
+            "text_color_mobile": "#ffffff",
+            "text_color_desktop": "#ffffff",
+            "heading_size_mobile": 21,
+            "heading_size_desktop": 21,
+            "heading_line_height_mobile": 24,
+            "heading_line_height_desktop": 24,
+            "text_size_mobile": 14,
+            "text_size_desktop": 14,
+            "text_line_height_mobile": 20,
+            "text_line_height_desktop": 20
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

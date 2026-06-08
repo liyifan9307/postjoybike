@@ -14968,7 +14968,7 @@ video-media:not([playing]) .deferred-poster .play-button .icon:last-child:not(:o
 
 .product-sticky-form__card {
   border-block-start: 1px solid rgb(var(--color-border));
-  background-color: rgb(var(--color-background));
+  background-color: #fff;
   padding: var(--sp-4) var(--sp-5);
 }
 
