@@ -380,7 +380,7 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/GT_Dirt_Bike_Full_New.jpg",
+        "image": "shopify://shop_images/GT_Dirt_Bike_Full_New_3e3baf58-56e6-47b7-8354-d3fbd003a452.jpg",
         "image_mobile": "shopify://shop_images/GT_Dirt_Bike_Full_New_m.jpg",
         "heading": "Built for Power, Range, and All-Terrain Riding",
         "heading_size": "title-md",
@@ -436,11 +436,11 @@
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
-            "image": "shopify://shop_images/GT50_dirt_bike_60V30ah.jpg",
+            "image": "shopify://shop_images/GT50_dirt_bike_60V30ah_1216062b-0d78-4840-a1fc-3967e3f30eb8.jpg",
             "image_mb": "shopify://shop_images/GT50_dirt_bike_60V30ah_m.jpg",
             "image_pos": "right",
             "title": "<p><strong>60V 30Ah </strong>Long-Lasting Battery</p>",
-            "content": "<p>The 60V 30Ah battery delivers up to 100 miles of max range, making the GT50 ready for long commutes, weekend adventures, and extended outdoor rides. With BMS battery management, fast 6–8 hour charging, and overheating protection, the system is built for safer and more efficient energy use.</p>",
+            "content": "<p>The 60V 30Ah battery delivers up to 80 miles of max range, making the GT50 ready for long commutes, weekend adventures, and extended outdoor rides. With BMS battery management, fast 6–8 hour charging, and overheating protection, the system is built for safer and more efficient energy use.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -590,7 +590,7 @@
             "product_title": "GT50",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>60V 30 Ah</li><li><strong>Peak 5500W</strong></li><li>75Nm</li><li>40Mph</li><li>Hydraulic Disc Brake</li><li>20x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>93 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX5</li></ol>"
+            "header_title_value": "<ol><li>60V 30 Ah</li><li><strong>Peak 5500W</strong></li><li>75Nm</li><li>40Mph</li><li>Hydraulic Disc Brake</li><li>20x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 80 miles</li><li>365 lbs</li><li>93 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX5</li></ol>"
           }
         },
         "product_parameter_L9zBwt": {
@@ -600,7 +600,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>70Nm</li><li>36Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX5</li></ol>"
+            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>70Nm</li><li>36Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 80 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX5</li></ol>"
           }
         },
         "product_parameter_9XNr9Y": {
@@ -667,7 +667,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>60V 30Ah</strong></p><p>Hub Motor<strong>Peak 55000W</strong></p><p>Top Speed<strong> 40MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 20x3.0''</strong></p><p>IP Level<strong>IPX5</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>93 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 100 miles</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>60V 30Ah</strong></p><p>Hub Motor<strong>Peak 55000W</strong></p><p>Top Speed<strong> 40MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 20x3.0''</strong></p><p>IP Level<strong>IPX6</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>93 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 80 miles</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",

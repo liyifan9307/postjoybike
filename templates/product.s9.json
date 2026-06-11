@@ -321,8 +321,8 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/S9_Fat_Tire_Electric_Bike_main.jpg",
-        "image_mobile": "shopify://shop_images/S9_Fat_Tire_Electric_Bike_main_m.jpg",
+        "image": "shopify://shop_images/S9_Fat_Tire_Electric_Bike_main_30668e74-369a-4d03-8660-ed1294d80c15.jpg",
+        "image_mobile": "shopify://shop_images/S9_Fat_Tire_Electric_Bike_main_30668e74-369a-4d03-8660-ed1294d80c15.jpg",
         "heading": "Ride Farther, Climb Stronger, Explore Every Road.",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -424,8 +424,8 @@
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
-            "image": "shopify://shop_images/48V_20Ah_Removable_Battery_S9.jpg",
-            "image_mb": "shopify://shop_images/3._9347c618-eed5-4d4e-ad98-30dc4b2dfd30.jpg",
+            "image": "shopify://shop_images/48V_20Ah_Removable_Battery_S9_c8a46046-0123-4e1d-a07e-8d85bfc5410e.jpg",
+            "image_mb": "shopify://shop_images/48V_20Ah_Removable_Battery_S9_c8a46046-0123-4e1d-a07e-8d85bfc5410e.jpg",
             "image_pos": "right",
             "title": "<p>48V 20Ah Removable Battery</p>",
             "content": "<p>The 960Wh battery delivers up to 100 miles of range, making it ideal for long commutes, weekend adventures, and extended rides.</p>",
@@ -845,7 +845,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>50Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>50Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 55 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
         "product_parameter_9XNr9Y": {
@@ -855,7 +855,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 70 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         }
       },
@@ -898,7 +898,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 20Ah</strong></p><p>Peak Motor<strong>2500W Peak</strong></p><p>Top Speed<strong> Up To 33MPH</strong></p><p>Brake<strong>Dual Disc Brakes</strong></p><p>Charging Time<strong> 6-8H</strong></p><p>MAX Payload Capacity<strong>330 lbs</strong></p><p>Ranger<strong>Up to 100 Miles</strong></p><p>Fat Tires<strong>20\" x 4.0\"</strong></p><p>Max Torque<strong>90Nm</strong></p><p>Unlock<strong>NFC Smart</strong></p><p>Water Resistant<strong>IPX6</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 20Ah</strong></p><p>Peak Motor<strong>2500W Peak</strong></p><p>Top Speed<strong> Up To 33MPH</strong></p><p>Brake<strong>Dual Disc Brakes</strong></p><p>Charging Time<strong> 6-8H</strong></p><p>MAX Payload Capacity<strong>330 lbs</strong></p><p>Ranger<strong>Up to 55 Miles</strong></p><p>Fat Tires<strong>20\" x 4.0\"</strong></p><p>Max Torque<strong>90Nm</strong></p><p>Unlock<strong>NFC Smart</strong></p><p>Water Resistant<strong>IPX6</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",

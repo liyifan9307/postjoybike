@@ -17,9 +17,9 @@
         "announcement-1": {
           "type": "announcement",
           "settings": {
-            "icon": "truck",
-            "text": "Free Fast Shipping On All Ebike！",
-            "link": "",
+            "icon": "none",
+            "text": "Mid Year Sale🌞",
+            "link": "shopify://pages/mid-year-ride-sale",
             "hide_icon_mobile": true,
             "text_mobile": "",
             "highlighted_text": "none",
@@ -44,7 +44,6 @@
         "announcement-1",
         "announcement-2"
       ],
-      "disabled": true,
       "settings": {
         "show_social": false,
         "enable_language_selector": false,
@@ -81,6 +80,7 @@
       "block_order": [
         "text_hyD6ct"
       ],
+      "disabled": true,
       "name": "t:sections.scrolling-text.presets.name",
       "settings": {
         "direction": "left",
@@ -172,7 +172,7 @@
             "promo_color_text_2": "#ffffff",
             "promo_color_overlay_2": "#000000",
             "promo_overlay_opacity_2": 40,
-            "promo_image_3": "shopify://shop_images/14_af260935-906e-4074-974a-d0980b4cccac.jpg",
+            "promo_image_3": "shopify://shop_images/menu_banner.jpg",
             "promo_image_ratio_3": "adapt",
             "promo_heading_3": "Full Suspension Ebikes",
             "promo_subtext_3": "",

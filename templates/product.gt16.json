@@ -613,7 +613,7 @@
             "image": "shopify://shop_images/BATTERY_25AH.png",
             "image_pos": "right",
             "title": "<p><strong>48V 25Ah</strong> Removable Battery<br/>Ride Farther. Charge Easier.</p>",
-            "content": "<p>Go longer between charges with a high-capacity 48V 25Ah battery. Enjoy up to 100 miles of PAS range, then remove the battery for convenient charging at home, in the office, or wherever your next adventure begins.</p>",
+            "content": "<p>Go longer between charges with a high-capacity 48V 25Ah battery. Enjoy up to 80 miles of PAS range, then remove the battery for convenient charging at home, in the office, or wherever your next adventure begins.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -776,7 +776,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>70Nm</li><li>36Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX5</li></ol>"
+            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>70Nm</li><li>36Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 80 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX5</li></ol>"
           }
         },
         "product_parameter_9XNr9Y": {
@@ -786,7 +786,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 70 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
         "product_parameter_ExP4Mg": {
@@ -796,7 +796,7 @@
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX5</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 55 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX5</li></ol>"
           }
         }
       },
@@ -840,7 +840,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 25Ah</strong></p><p>Torque <strong>70Nm</strong></p><p>Hub Motor<strong>Peak 3000W</strong></p><p>Top Speed<strong> 36MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 16x3.0''</strong></p><p>IP Level<strong>IPX5</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 3.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>99.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 100 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 25Ah</strong></p><p>Torque <strong>70Nm</strong></p><p>Hub Motor<strong>Peak 3000W</strong></p><p>Top Speed<strong> 36MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 16x3.0''</strong></p><p>IP Level<strong>IPX5</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 3.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>99.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 80 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",

@@ -321,7 +321,7 @@
       "type": "lookbook",
       "name": "t:sections.lookbook.name",
       "settings": {
-        "image": "shopify://shop_images/G26_page_-_1500W_feature.jpg",
+        "image": "shopify://shop_images/G26_page_-_1500W_feature_0ebef656-31d1-42e2-bccc-d58b7b1d8dd0.jpg",
         "heading": "More Range. Lightweight Control. Everyday Adventure.",
         "heading_size": "title-md",
         "heading_alignment": "text-center md:items-center",
@@ -422,7 +422,7 @@
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
-            "image": "shopify://shop_images/G26_page_-_65miles.jpg",
+            "image": "shopify://shop_images/G26_page_-_65miles_2341791a-bc8d-4820-ab0e-536bec62877f.jpg",
             "image_pos": "right",
             "title": "<p>48V 10Ah Battery</p>",
             "content": "<p>Up to 65 Miles of Riding Range<br/>The G26 features a 48V 10Ah battery designed to deliver up to 65 miles of max range. Whether you are riding to work, exploring local bike paths, or taking longer weekend trips, the G26 helps you go farther with confidence.</p>",

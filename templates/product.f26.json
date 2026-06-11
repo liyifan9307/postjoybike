@@ -608,125 +608,6 @@
         "rounded": false
       }
     },
-    "yg_product_exhibition_ibmNN7": {
-      "type": "yg-product-exhibition",
-      "blocks": {
-        "item_CmJAVL": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/f26_ebike.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_jWYFKn": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/F26_user_manual.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_VXYwPH": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/f26_charger.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_UpgKJH": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/f26_keys.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_HXcNqA": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/f26_handlebar.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_4iNEeU": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/f26_wheel.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_E3DEd6": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/f26_fender.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_daCmpy": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/F26_pedals.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_XxgT3B": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/F26_seat.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_EDXRV3": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/f26_kickstand.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_QfcKPy": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/f26_tool_kit.jpg",
-            "detail_title": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_CmJAVL",
-        "item_jWYFKn",
-        "item_VXYwPH",
-        "item_UpgKJH",
-        "item_HXcNqA",
-        "item_4iNEeU",
-        "item_E3DEd6",
-        "item_daCmpy",
-        "item_XxgT3B",
-        "item_EDXRV3",
-        "item_QfcKPy"
-      ],
-      "name": "YG product exhibition",
-      "settings": {
-        "heading": "What's In The Box",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "recently-viewed": {
       "type": "recently-viewed",
       "disabled": true,
@@ -913,7 +794,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 12Ah</strong></p><p>Torque <strong>28Nm</strong></p><p>Hub Motor<strong>1500W Peak</strong></p><p>Top Speed<strong> 25MPH</strong></p><p>Brake<strong>Precision Disc Brakes</strong></p><p>Suspension<strong> ‎Front Suspension Fork</strong></p><p>Tires<strong> 26\" x 1.95\"</strong></p><p>IP Level<strong>IPX6</strong></p><p>MAX Payload Capacity<strong>350 lbs</strong></p><p>E-Bike Weight<strong>49.6 lbs</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Ranger<strong>Up to 60 Miles</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 12Ah</strong></p><p>Torque <strong>28Nm</strong></p><p>Hub Motor<strong>1500W Peak</strong></p><p>Top Speed<strong> 25MPH</strong></p><p>Brake<strong>Precision Disc Brakes</strong></p><p>Suspension<strong> ‎Front Suspension Fork</strong></p><p>Tires<strong> 26\" x 1.95\"</strong></p><p>IP Level<strong>IPX6</strong></p><p>MAX Payload Capacity<strong>350 lbs</strong></p><p>E-Bike Weight<strong>49.6 lbs</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Ranger<strong>Up to 35 Miles</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -926,6 +807,125 @@
         "color_button_gradient": "",
         "padding_top": 0,
         "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_product_exhibition_ibmNN7": {
+      "type": "yg-product-exhibition",
+      "blocks": {
+        "item_CmJAVL": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_ebike.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_jWYFKn": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/F26_user_manual.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_VXYwPH": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_charger.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_UpgKJH": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_keys.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_HXcNqA": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_handlebar.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_4iNEeU": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_wheel.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_E3DEd6": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_fender.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_daCmpy": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/F26_pedals.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_XxgT3B": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/F26_seat.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_EDXRV3": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_kickstand.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_QfcKPy": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/f26_tool_kit.jpg",
+            "detail_title": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_CmJAVL",
+        "item_jWYFKn",
+        "item_VXYwPH",
+        "item_UpgKJH",
+        "item_HXcNqA",
+        "item_4iNEeU",
+        "item_E3DEd6",
+        "item_daCmpy",
+        "item_XxgT3B",
+        "item_EDXRV3",
+        "item_QfcKPy"
+      ],
+      "name": "YG product exhibition",
+      "settings": {
+        "heading": "What's In The Box",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false
