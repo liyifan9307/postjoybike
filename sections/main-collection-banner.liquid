@@ -147,13 +147,6 @@
                               {%- render 'icon', icon: 'home', size: 'sm' -%}
                             </a>
                           </li>
-                          {%- if block.settings.show_collections_link -%}
-                            <li class="flex items-center gap-4 md:gap-6">
-                              <a class="block" href="{{ routes.collections_url }}" is="magnet-link">
-                                {{- 'general.breadcrumbs.collections' | t -}}
-                              </a>
-                            </li>
-                          {%- endif -%}
                           <li class="flex items-center gap-4 md:gap-6">{{ collection.title }}</li>
                         </ul>
                       </nav>
@@ -164,10 +157,12 @@
                       class="banner__title heading leading-none {{ block.settings.title_size }}{% if block.settings.title_size == 'title-xl' %} tracking-heading{% endif %}{% unless desktop_image %} relative{% endunless %}"
                       {{ block.shopify_attributes }}
                     >
+                       <span class="sr-only">{{ collection.title }}</span>
                       <split-words
                         class="split-words block"
                         data-animate="fade-up-large"
                         data-animate-delay="{{ delay | times: 250 }}"
+                        aria-hidden="true"
                       >
                         {{- collection.title -}}
                       </split-words>
@@ -667,12 +662,7 @@
       "name": "t:sections.global.blocks.breadcrumb.name",
       "limit": 1,
       "settings": [
-        {
-          "type": "checkbox",
-          "id": "show_collections_link",
-          "label": "t:sections.main-collection-banner.blocks.breadcrumb.settings.show_collections_link.label",
-          "default": true
-        }
+        
       ]
     },
     {

@@ -5,11 +5,6 @@
         {%- render 'icon', icon: 'home', size: 'sm' -%}
       </a>
     </li>
-    {%- if block.settings.show_collections_link -%}
-      <li class="flex items-center gap-4 md:gap-6">
-        <a class="reversed-link" href="{{ routes.collections_url }}">{{ 'general.breadcrumbs.collections' | t }}</a>
-      </li>
-    {%- endif -%}
     <li class="flex items-center gap-4 md:gap-6">
       {%- liquid
         if collection == blank

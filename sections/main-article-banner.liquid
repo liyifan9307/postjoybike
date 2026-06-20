@@ -124,7 +124,8 @@
                       {%- endif -%}
 
                       <h1 class="banner__title heading leading-none {{ block.settings.title_size }}{% if block.settings.title_size == 'title-xl' %} tracking-heading{% endif %}{% unless article_image %} relative{% endunless %}" itemprop="headline">
-                        <split-words class="split-words block" data-animate="fade-up-large" data-animate-delay="{{ delay | times: 250 }}">{{ article.title }}</split-words>
+                        <span class="sr-only">{{ article.title }}</span>
+                        <split-words class="split-words block" data-animate="fade-up-large" data-animate-delay="{{ delay | times: 250 }}" aria-hidden="true">{{ article.title }}</split-words>
                       </h1>
 
                       {%- if article_meta -%}

@@ -103,7 +103,7 @@
     "product_color_swatch_type": "file",
     "product_save_amount": true,
     "product_save_type": "percent",
-    "product_disable_collection_portion": false,
+    "product_disable_collection_portion": true,
     "cart_type": "drawer",
     "cart_icon": "cart",
     "enable_search": true,
@@ -193,11 +193,6 @@
         "disabled": false,
         "settings": {}
       },
-      "8764476057892802672": {
-        "type": "shopify://apps/stoq/blocks/main/4bb73be2-b7c2-4870-949f-c528145452a3",
-        "disabled": false,
-        "settings": {}
-      },
       "1602673961235493340": {
         "type": "shopify://apps/impact-com/blocks/consent_mode/adac1a7f-d17f-4936-8a12-45628cdd8add",
         "disabled": false,
@@ -215,6 +210,11 @@
       },
       "17595556821664008138": {
         "type": "shopify://apps/zoorix-cross-sell/blocks/zoorix-head/51fffd07-f9df-4d6a-b901-6d14b243dcad",
+        "disabled": false,
+        "settings": {}
+      },
+      "11349500561483629931": {
+        "type": "shopify://apps/notify-back-in-stock-preorder/blocks/app-embed/b399b727-6c85-44fc-9e21-63114bd72054",
         "disabled": false,
         "settings": {}
       }

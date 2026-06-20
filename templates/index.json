@@ -165,15 +165,6 @@
     "yg_featured_collections_jtUt77": {
       "type": "yg-featured-collections",
       "blocks": {
-        "collection_FRq3Vp": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "electric-dirt-bikes",
-            "products": [],
-            "title": "Electric Dirt Bike"
-          }
-        },
         "collection_pikei4": {
           "type": "collection",
           "settings": {
@@ -188,6 +179,14 @@
             "collection": "electric-mountain-bike",
             "products": [],
             "title": ""
+          }
+        },
+        "collection_hJ8Cx3": {
+          "type": "collection",
+          "settings": {
+            "collection": "folding-fat-tire-electric-bike",
+            "products": [],
+            "title": "Folding Fat Tire"
           }
         },
         "collection_WjKrcA": {
@@ -208,9 +207,9 @@
         }
       },
       "block_order": [
-        "collection_FRq3Vp",
         "collection_pikei4",
         "collection_YWTaWU",
+        "collection_hJ8Cx3",
         "collection_WjKrcA",
         "collection_ktmFnr"
       ],
@@ -270,14 +269,31 @@
           "type": "block",
           "settings": {
             "video_or_youtube": "video",
-            "video_url": "https://www.youtube.com/watch?v=zG1yW1WxRzo&t=114s",
+            "video_url": "https://www.youtube.com/watch?v=biDFrN4Nw2M",
             "rating": 5,
             "yg_rating_color": "#ffaa00",
-            "title": "EV Tech Steven",
-            "content": "<p>Provides a detailed review of the PostJoy GT16 electric bike, with a strong focus on its top speed and acceleration performance. The video tests how the bike performs in real-world riding conditions and gives potential buyers a practical understanding of its power delivery, speed capability, and overall performance.</p>",
+            "title": "Curiosity Cafe",
+            "content": "<p>Reviews the PostJoy F30 electric bike and explores whether it could be one of the best budget fat tire e-bikes of the year. The video focuses on overall value, riding performance, and real-world user experience, giving potential buyers an objective look at what makes the F30 a popular choice.</p>",
             "yg_show_image": false,
             "user": "Family Fun Pack",
             "time": "<p>10.5Million YouTube Followers</p>",
+            "yg_overlay": "#000000",
+            "yg_image_mask": 30,
+            "card_background": "#ffffff"
+          }
+        },
+        "block_6GRC3z": {
+          "type": "block",
+          "settings": {
+            "video_or_youtube": "video",
+            "video_url": "https://www.youtube.com/watch?v=vIOK_2Y7_8U",
+            "rating": 5,
+            "yg_rating_color": "#ffaa00",
+            "title": "Jimmy is Promo",
+            "content": "<p>Reviews the PostJoy F30 electric bike with a focus on its 32 MPH top speed and up to 100-mile range. The video highlights the bike’s real-world performance, power delivery, and riding capability, helping riders better understand what the F30 offers in everyday use.</p>",
+            "yg_show_image": false,
+            "user": "John Doe",
+            "time": "<p>17.1Million YouTube Followers</p>",
             "yg_overlay": "#000000",
             "yg_image_mask": 30,
             "card_background": "#ffffff"
@@ -292,23 +308,6 @@
             "yg_rating_color": "#ffaa00",
             "title": "POV Nelson",
             "content": "<p>Reviews the PostJoy GT16 as a legal electric bike priced around $999. The video praises the bike for its impressive performance and strong value, presenting it as a surprisingly capable and affordable transportation option.</p>",
-            "yg_show_image": false,
-            "user": "John Doe",
-            "time": "<p>17.1Million YouTube Followers</p>",
-            "yg_overlay": "#000000",
-            "yg_image_mask": 30,
-            "card_background": "#ffffff"
-          }
-        },
-        "block_6GRC3z": {
-          "type": "block",
-          "settings": {
-            "video_or_youtube": "video",
-            "video_url": "https://www.youtube.com/watch?v=04GvqMwqeGs&t=53s",
-            "rating": 5,
-            "yg_rating_color": "#ffaa00",
-            "title": "Volted Adventures",
-            "content": "<p>Reviews the PostJoy GT16 and explores whether it deserves the nickname of a “mini stealth bomber.” The video focuses on the bike’s real-world performance, riding feel, and overall capability, helping viewers judge whether the GT16 lives up to its aggressive styling and performance claims.</p>",
             "yg_show_image": false,
             "user": "John Doe",
             "time": "<p>17.1Million YouTube Followers</p>",
@@ -388,8 +387,8 @@
       },
       "block_order": [
         "block_WenmhR",
-        "block_nT9qx8",
         "block_6GRC3z",
+        "block_nT9qx8",
         "block_Mn4GGg",
         "block_yV4P6U",
         "block_W8cpkX",

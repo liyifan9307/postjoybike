@@ -22,9 +22,7 @@
         "breadcrumb": {
           "type": "breadcrumb",
           "disabled": true,
-          "settings": {
-            "show_collections_link": true
-          }
+          "settings": {}
         },
         "title": {
           "type": "title",
@@ -53,11 +51,9 @@
       "settings": {
         "transparent_header": false,
         "show_image": true,
-        "image": "shopify://shop_images/1_a114434a-a624-4cbc-824d-bd870b39f8ea.jpg",
         "image_height": "adapt",
         "content_position": "md:items-end md:justify-start",
         "text_alignment": "left",
-        "image_mobile": "shopify://shop_images/2_80b49253-814e-4269-b264-09157715de81.jpg",
         "image_height_mobile": "adapt",
         "content_position_mobile": "items-end justify-start",
         "text_alignment_mobile": "left",
@@ -79,7 +75,7 @@
         "subcollections": {
           "type": "subcollections",
           "settings": {
-            "menu": "yg-collection-summer-sale",
+            "menu": "",
             "per_row": 5,
             "show_count": true
           }
@@ -89,11 +85,11 @@
           "settings": {
             "position": 3,
             "column_size": "1",
-            "image": "shopify://shop_images/20250513182556.jpg",
-            "heading": "NEW LAUNCH",
-            "content": "<p>Striker 20\"x4.0\" Moped-Style E-Bike</p>",
-            "button_label": "Shop now",
-            "button_link": "shopify://products/striker",
+            "image": "shopify://shop_images/GT16_review5.jpg",
+            "heading": "",
+            "content": "",
+            "button_label": "",
+            "button_link": "shopify://products/postjoy-gt16plus-electric-dirt-bike",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false,

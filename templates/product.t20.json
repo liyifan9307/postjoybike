@@ -15,7 +15,6 @@
         "breadcrumb_fNxmEp": {
           "type": "breadcrumb",
           "settings": {
-            "show_collections_link": true,
             "enable_product_top": true
           }
         },
@@ -496,7 +495,7 @@
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>The <strong>PostJoy T20</strong> is where classic retro aesthetics meet modern urban performance. Inspired by timeless motorcycle design, the T20 is crafted for riders who want to make a statement while enjoying a smooth, powerful ride across city streets and coastal paths alike.</p><p>Powered by a formidable <strong>2500W peak motor</strong>, the T20 offers effortless acceleration and a <strong>30 MPH top speed</strong>, making daily commutes and weekend cruises faster and more exciting. Its high-capacity 48V 20Ah battery ensures you stay on the move, delivering an impressive <strong>80-mile PAS range</strong> that lets you explore without range anxiety.</p><p>Designed for ultimate stability, the <strong>20\"x4.0\" fat tires</strong> and <strong>full suspension system</strong> iron out bumps in the road, providing a \"floating on air\" feel whether you're on pavement or sand. With the cutting-edge <strong>NFC smart unlock</strong> for keyless convenience and a bold retro silhouette, the T20 isn't just a bike—it’s the ultimate fusion of <strong>vintage style and electric freedom</strong>.</p>",
+        "description": "<p>The <strong>PostJoy T20</strong> is where classic retro aesthetics meet modern urban performance. Inspired by timeless motorcycle design, the T20 is crafted for riders who want to make a statement while enjoying a smooth, powerful ride across city streets and coastal paths alike.</p><p>Powered by a formidable <strong>2500W peak motor</strong>, the T20 offers effortless acceleration and a <strong>30 MPH top speed</strong>, making daily commutes and weekend cruises faster and more exciting. Its high-capacity 48V 20Ah battery ensures you stay on the move, delivering an impressive <strong>55-mile PAS range</strong> that lets you explore without range anxiety.</p><p>Designed for ultimate stability, the <strong>20\"x4.0\" fat tires</strong> and <strong>full suspension system</strong> iron out bumps in the road, providing a \"floating on air\" feel whether you're on pavement or sand. With the cutting-edge <strong>NFC smart unlock</strong> for keyless convenience and a bold retro silhouette, the T20 isn't just a bike—it’s the ultimate fusion of <strong>vintage style and electric freedom</strong>.</p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,
@@ -665,7 +664,7 @@
             "image": "shopify://shop_images/393a2c4dab2b6a867a84cfb03689bbc8.jpg",
             "image_pos": "left",
             "title": "<p><strong>48V 20Ah</strong> Removable Battery<br/><br/></p>",
-            "content": "<p>The <strong>48V 20Ah high-capacity battery</strong> delivers a massive 8<strong>0-mile PAS range</strong>, providing the ultimate balance of power and endurance. With its <strong>removable design</strong>, you can easily <strong>charge anywhere</strong> and enjoy the freedom to explore deeper into the wild. Reliable, convenient, and built for <strong>long-distance thrills</strong>.<br/><br/></p>",
+            "content": "<p>The <strong>48V 20Ah high-capacity battery</strong> delivers a massive <strong>55-mile PAS range</strong>, providing the ultimate balance of power and endurance. With its <strong>removable design</strong>, you can easily <strong>charge anywhere</strong> and enjoy the freedom to explore deeper into the wild. Reliable, convenient, and built for <strong>long-distance thrills</strong>.<br/><br/></p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -674,6 +673,7 @@
         },
         "item_6M3dHz": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "item_margin_top": 96,
             "item_margin_bottom": 70,
@@ -802,51 +802,51 @@
         "rounded": false
       }
     },
-    "yg_product_parameter_comparison_wTfEje": {
+    "yg_product_parameter_comparison_RFm6DC": {
       "type": "yg-product-parameter-comparison",
       "blocks": {
-        "parameter_title_TEpbkx": {
+        "parameter_title_G6jMVH": {
           "type": "parameter_title",
           "settings": {
             "header_title": "<ol><li><strong>Battery</strong></li><li><strong>Motor</strong></li><li><strong>Torque</strong></li><li><strong>Top Speed</strong></li><li><strong>Brake</strong></li><li><strong>Tires</strong></li><li><strong>Suspension</strong></li><li><strong>Range</strong></li><li><strong>MAX Payload Capacity</strong></li><li><strong>E-Bike Weight</strong></li><li><strong>E-Bike Class</strong></li><li><strong>Charger</strong></li><li><strong>Charging Time</strong></li><li><strong>IP Level</strong></li></ol>"
           }
         },
-        "product_parameter_gPUhGQ": {
+        "product_parameter_RTypWA": {
           "type": "product_parameter",
           "settings": {
             "product": "postjoy-t20-electric-bike",
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 55 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
-        "product_parameter_8KpCeJ": {
+        "product_parameter_w9ycQy": {
           "type": "product_parameter",
           "settings": {
             "product": "postjoy-f30-electric-bike",
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 70 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
-        "product_parameter_ABm9Ug": {
+        "product_parameter_Fi98tF": {
           "type": "product_parameter",
           "settings": {
             "product": "s9-fat-tire-electric-bike",
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>50Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>50Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 55 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         }
       },
       "block_order": [
-        "parameter_title_TEpbkx",
-        "product_parameter_gPUhGQ",
-        "product_parameter_8KpCeJ",
-        "product_parameter_ABm9Ug"
+        "parameter_title_G6jMVH",
+        "product_parameter_RTypWA",
+        "product_parameter_w9ycQy",
+        "product_parameter_Fi98tF"
       ],
       "name": "YG Parameter Comparison",
       "settings": {
@@ -1117,7 +1117,7 @@
     "yg_image_with_text_list_KQztzz",
     "product-recommendations",
     "recently-viewed",
-    "yg_product_parameter_comparison_wTfEje",
+    "yg_product_parameter_comparison_RFm6DC",
     "yg_specification_BGHDRh",
     "yg_product_exhibition_Nj3GxV",
     "yg_video_slide_QtKRe6"

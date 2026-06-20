@@ -15,7 +15,6 @@
         "breadcrumb_fNxmEp": {
           "type": "breadcrumb",
           "settings": {
-            "show_collections_link": true,
             "enable_product_top": true
           }
         },
@@ -829,16 +828,16 @@
         "rounded": false
       }
     },
-    "yg_product_parameter_comparison_CqGc4d": {
+    "yg_product_parameter_comparison_3dTHDF": {
       "type": "yg-product-parameter-comparison",
       "blocks": {
-        "parameter_title_RARTkc": {
+        "parameter_title_bWMpLB": {
           "type": "parameter_title",
           "settings": {
             "header_title": "<ol><li><strong>Battery</strong></li><li><strong>Motor</strong></li><li><strong>Torque</strong></li><li><strong>Top Speed</strong></li><li><strong>Brake</strong></li><li><strong>Tires</strong></li><li><strong>Suspension</strong></li><li><strong>Range</strong></li><li><strong>MAX Payload Capacity</strong></li><li><strong>E-Bike Weight</strong></li><li><strong>E-Bike Class</strong></li><li><strong>Charger</strong></li><li><strong>Charging Time</strong></li><li><strong>IP Level</strong></li></ol>"
           }
         },
-        "product_parameter_L9zBwt": {
+        "product_parameter_GfcYCh": {
           "type": "product_parameter",
           "settings": {
             "product": "s9-fat-tire-electric-bike",
@@ -848,7 +847,7 @@
             "header_title_value": "<ol><li>48V 20 Ah</li><li><strong>Peak 2500W</strong></li><li>50Nm</li><li>33Mph</li><li>Hydraulic Disc Brake</li><li>20x 4.0\" Off-Road</li><li>Full Suspension</li><li>Up to 55 miles</li><li>330 lbs</li><li>82 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
-        "product_parameter_9XNr9Y": {
+        "product_parameter_aibJVM": {
           "type": "product_parameter",
           "settings": {
             "product": "postjoy-f30-electric-bike",
@@ -857,12 +856,23 @@
             "button_title": "Shop Now",
             "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 70 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
+        },
+        "product_parameter_Q6RNzF": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-t20-electric-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>50Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 55 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+          }
         }
       },
       "block_order": [
-        "parameter_title_RARTkc",
-        "product_parameter_L9zBwt",
-        "product_parameter_9XNr9Y"
+        "parameter_title_bWMpLB",
+        "product_parameter_GfcYCh",
+        "product_parameter_aibJVM",
+        "product_parameter_Q6RNzF"
       ],
       "name": "YG Parameter Comparison",
       "settings": {
@@ -898,7 +908,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 20Ah</strong></p><p>Peak Motor<strong>2500W Peak</strong></p><p>Top Speed<strong> Up To 33MPH</strong></p><p>Brake<strong>Dual Disc Brakes</strong></p><p>Charging Time<strong> 6-8H</strong></p><p>MAX Payload Capacity<strong>330 lbs</strong></p><p>Ranger<strong>Up to 55 Miles</strong></p><p>Fat Tires<strong>20\" x 4.0\"</strong></p><p>Max Torque<strong>90Nm</strong></p><p>Unlock<strong>NFC Smart</strong></p><p>Water Resistant<strong>IPX6</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 20Ah</strong></p><p>Peak Motor<strong>2500W Peak</strong></p><p>Top Speed<strong> Up To 33MPH</strong></p><p>Brake<strong>Dual Disc Brakes</strong></p><p>Charging Time<strong> 6-8H</strong></p><p>MAX Payload Capacity<strong>330 lbs</strong></p><p>Ranger<strong>Up to 55 Miles</strong></p><p>Fat Tires<strong>20\" x 4.0\"</strong></p><p>Max Torque<strong>90Nm</strong></p><p>Unlock<strong>NFC Smart</strong></p><p>Water Resistant<strong>IPX5</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -958,7 +968,7 @@
     "image_with_text_fmrNgF",
     "collage_kwEWbf",
     "yg_product_geometry_cjHakK",
-    "yg_product_parameter_comparison_CqGc4d",
+    "yg_product_parameter_comparison_3dTHDF",
     "yg_specification_BGHDRh",
     "product-recommendations"
   ]

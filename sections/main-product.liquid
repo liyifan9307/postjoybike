@@ -420,7 +420,8 @@
               -%}
               <div class="product__title grid gap-3{% if price_block == blank and block.settings.show_price %} with-price{% endif %}" {{ block.shopify_attributes }}>
                 <h1 class="heading leading-thin {{ block.settings.title_size }} mobile:{{ block.settings.title_size_mobile }} col-span-full">
-                  <split-words class="split-words block" data-animate="fade-up">{{ product.title }}</split-words>
+                  <span class="sr-only">{{ product.title }}</span>
+                  <split-words class="split-words block" data-animate="fade-up" aria-hidden="true">{{ product.title }}</split-words>
                 </h1>
 
                 {%- if price_block == blank and block.settings.show_price -%}
@@ -1514,12 +1515,6 @@
       "name": "t:sections.global.blocks.breadcrumb.name",
       "limit": 1,
       "settings": [
-        {
-          "type": "checkbox",
-          "id": "show_collections_link",
-          "label": "t:sections.main-product.blocks.breadcrumb.settings.show_collections_link.label",
-          "default": true
-        },
         {
           "type": "checkbox",
           "id": "enable_product_top",

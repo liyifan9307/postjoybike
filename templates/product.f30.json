@@ -15,7 +15,6 @@
         "breadcrumb_fNxmEp": {
           "type": "breadcrumb",
           "settings": {
-            "show_collections_link": true,
             "enable_product_top": true
           }
         },
@@ -680,7 +679,7 @@
             "image": "shopify://shop_images/2026-04-17_113813_102.png",
             "image_pos": "left",
             "title": "<p><strong> Full Suspension System</strong><br/>Ride Smooth, Dominate the Wild</p>",
-            "content": "<p>The <strong>PostJoy GT16</strong> is engineered with a professional-grade full suspension system, transforming the roughest trails into your personal playground. At the front, the <strong>high-travel hydraulic fork</strong> is built to soak up heavy hits and high-speed vibrations, while the <strong>rear monoshock</strong> provides exceptional stability, ensuring your rear wheel stays planted for maximum traction during hill attacks.</p><p>Whether you're sticking a landing from a backyard jump, shredding through muddy mountain tracks, or navigating bumpy urban shortcuts, the GT16’s suspension delivers a <strong>perfectly balanced, stable, and plush ride</strong>. Combined with its agile <strong>99 lbs lightweight frame</strong>, you get a machine that doesn't just ride—it conquers any terrain with total control and comfort.</p>",
+            "content": "<p>The <strong>PostJoy F30</strong> is engineered with a professional-grade full suspension system, transforming the roughest trails into your personal playground. At the front, the <strong>high-travel hydraulic fork</strong> is built to soak up heavy hits and high-speed vibrations, while the <strong>rear monoshock</strong> provides exceptional stability, ensuring your rear wheel stays planted for maximum traction during hill attacks.</p><p>Whether you're sticking a landing from a backyard jump, shredding through muddy mountain tracks, or navigating bumpy urban shortcuts, the GT16’s suspension delivers a <strong>perfectly balanced, stable, and plush ride</strong>. Combined with its agile <strong>99 lbs lightweight frame</strong>, you get a machine that doesn't just ride—it conquers any terrain with total control and comfort.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -695,7 +694,7 @@
             "image": "shopify://shop_images/716379a6af28df1e390e9d74573c532a.jpg",
             "image_pos": "right",
             "title": "<p><strong>All-Terrain Monster Fat Tires</strong><br/>Maximum Stability. Dominate Every Surface.</p>",
-            "content": "<p><br/>Featuring <strong>massive 20x4.0-inch fat tires</strong>, the [Model Name] provides a massive contact patch for <strong>unmatched stability</strong>. Whether you're gliding over loose sand, thick snow, or rugged forest trails, these high-volume tires deliver <strong>superior floatation and grip</strong>. Conquer the elements with confidence and style.<br/><br/></p>",
+            "content": "<p><br/>Featuring <strong>massive 20x4.0-inch fat tires</strong>, the  provides a massive contact patch for <strong>unmatched stability</strong>. Whether you're gliding over loose sand, thick snow, or rugged forest trails, these high-volume tires deliver <strong>superior floatation and grip</strong>. Conquer the elements with confidence and style.<br/><br/></p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -900,100 +899,6 @@
         "rounded": false
       }
     },
-    "f30_creator_reviews_EAWjDY": {
-      "type": "f30-creator-reviews",
-      "blocks": {
-        "review_AjNLLF": {
-          "type": "review",
-          "settings": {
-            "creator": "Curiosity Cafe",
-            "product": "F30",
-            "platform": "YouTube",
-            "review_text": "<p>A YouTube review featuring the F30, giving viewers a closer look at its real-world riding experience, everyday practicality, design details, and overall value.</p>",
-            "link": "https://www.youtube.com/watch?v=biDFrN4Nw2M",
-            "button_label": "Watch Review"
-          }
-        },
-        "review_rTNEHW": {
-          "type": "review",
-          "settings": {
-            "creator": "Jimmy is Promo",
-            "product": "F30",
-            "platform": "YouTube",
-            "review_text": "<p>A creator video introducing the F30 and highlighting its key appeal for riders looking for a stylish, capable, and accessible electric ride.</p>",
-            "link": "https://www.youtube.com/watch?v=vIOK_2Y7_8U",
-            "button_label": "Watch Review"
-          }
-        },
-        "review_WFixdh": {
-          "type": "review",
-          "settings": {
-            "creator": "@fraddee",
-            "product": "F30",
-            "platform": "Instagram",
-            "review_text": "<p>A short-form Instagram feature showcasing the F30’s visual style, compact presence, and lifestyle-friendly riding vibe for everyday electric mobility.</p>",
-            "link": "https://www.instagram.com/p/DX0eUL1s8Zw/",
-            "button_label": "View Post"
-          }
-        },
-        "review_iN4Uqt": {
-          "type": "review",
-          "settings": {
-            "creator": "america.timee",
-            "product": "F30",
-            "platform": "Instagram",
-            "review_text": "<p>An Instagram post presenting the F30 in a quick, social-first format, highlighting its modern look and approachable electric bike experience.</p>",
-            "link": "https://www.instagram.com/p/DX_vhU-RT-7/",
-            "button_label": "View Post"
-          }
-        }
-      },
-      "block_order": [
-        "review_AjNLLF",
-        "review_rTNEHW",
-        "review_WFixdh",
-        "review_iN4Uqt"
-      ],
-      "name": "F30 Creator Reviews",
-      "settings": {
-        "eyebrow": "Real Creator Reviews",
-        "heading": "Creators Are Talking About the F30",
-        "description": "<p>From detailed YouTube coverage to short-form Instagram posts, creators are sharing their real-world impressions of the F30’s design, everyday usability, riding experience, and overall value.</p>",
-        "header_alignment": "center",
-        "mobile_header_alignment": "left",
-        "show_mobile_hint": true,
-        "container_width": 1200,
-        "columns_desktop": 4,
-        "columns_tablet": 2,
-        "mobile_card_width": 84,
-        "card_gap": 22,
-        "card_min_height": 260,
-        "mobile_card_min_height": 280,
-        "card_radius": 22,
-        "heading_size": 42,
-        "mobile_heading_size": 28,
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "mobile_padding_top": 52,
-        "mobile_padding_bottom": 52,
-        "background_color": "#ffffff",
-        "background_color_bottom": "#ffffff",
-        "heading_color": "#171717",
-        "text_color": "#171717",
-        "muted_text_color": "#171717",
-        "card_text_color": "#171717",
-        "accent_color": "#f59e0b",
-        "card_background_top": "#ffffff",
-        "card_background_bottom": "#ffffff",
-        "card_border_color": "#171717",
-        "badge_background": "#171717",
-        "badge_text_color": "#ff9900",
-        "button_background": "#ff9900",
-        "button_text_color": "#ffffff",
-        "button_hover_background": "#ff9900",
-        "button_hover_text_color": "#ffffff"
-      }
-    },
     "yg_video_slide_QtKRe6": {
       "type": "yg-video-slide",
       "blocks": {
@@ -1136,6 +1041,100 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "f30_creator_reviews_EAWjDY": {
+      "type": "f30-creator-reviews",
+      "blocks": {
+        "review_AjNLLF": {
+          "type": "review",
+          "settings": {
+            "creator": "Curiosity Cafe",
+            "product": "F30",
+            "platform": "YouTube",
+            "review_text": "<p>A YouTube review featuring the F30, giving viewers a closer look at its real-world riding experience, everyday practicality, design details, and overall value.</p>",
+            "link": "https://www.youtube.com/watch?v=biDFrN4Nw2M",
+            "button_label": "Watch Review"
+          }
+        },
+        "review_rTNEHW": {
+          "type": "review",
+          "settings": {
+            "creator": "Jimmy is Promo",
+            "product": "F30",
+            "platform": "YouTube",
+            "review_text": "<p>A creator video introducing the F30 and highlighting its key appeal for riders looking for a stylish, capable, and accessible electric ride.</p>",
+            "link": "https://www.youtube.com/watch?v=vIOK_2Y7_8U",
+            "button_label": "Watch Review"
+          }
+        },
+        "review_WFixdh": {
+          "type": "review",
+          "settings": {
+            "creator": "@fraddee",
+            "product": "F30",
+            "platform": "Instagram",
+            "review_text": "<p>A short-form Instagram feature showcasing the F30’s visual style, compact presence, and lifestyle-friendly riding vibe for everyday electric mobility.</p>",
+            "link": "https://www.instagram.com/p/DX0eUL1s8Zw/",
+            "button_label": "View Post"
+          }
+        },
+        "review_iN4Uqt": {
+          "type": "review",
+          "settings": {
+            "creator": "america.timee",
+            "product": "F30",
+            "platform": "Instagram",
+            "review_text": "<p>An Instagram post presenting the F30 in a quick, social-first format, highlighting its modern look and approachable electric bike experience.</p>",
+            "link": "https://www.instagram.com/p/DX_vhU-RT-7/",
+            "button_label": "View Post"
+          }
+        }
+      },
+      "block_order": [
+        "review_AjNLLF",
+        "review_rTNEHW",
+        "review_WFixdh",
+        "review_iN4Uqt"
+      ],
+      "name": "F30 Creator Reviews",
+      "settings": {
+        "eyebrow": "Real Creator Reviews",
+        "heading": "Creators Are Talking About the F30",
+        "description": "<p>From detailed YouTube coverage to short-form Instagram posts, creators are sharing their real-world impressions of the F30’s design, everyday usability, riding experience, and overall value.</p>",
+        "header_alignment": "center",
+        "mobile_header_alignment": "left",
+        "show_mobile_hint": true,
+        "container_width": 1200,
+        "columns_desktop": 4,
+        "columns_tablet": 2,
+        "mobile_card_width": 84,
+        "card_gap": 22,
+        "card_min_height": 260,
+        "mobile_card_min_height": 280,
+        "card_radius": 22,
+        "heading_size": 42,
+        "mobile_heading_size": 28,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "mobile_padding_top": 52,
+        "mobile_padding_bottom": 52,
+        "background_color": "#ffffff",
+        "background_color_bottom": "#ffffff",
+        "heading_color": "#171717",
+        "text_color": "#171717",
+        "muted_text_color": "#171717",
+        "card_text_color": "#171717",
+        "accent_color": "#f59e0b",
+        "card_background_top": "#ffffff",
+        "card_background_bottom": "#ffffff",
+        "card_border_color": "#171717",
+        "badge_background": "#171717",
+        "badge_text_color": "#ff9900",
+        "button_background": "#ff9900",
+        "button_text_color": "#ffffff",
+        "button_hover_background": "#ff9900",
+        "button_hover_text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -1150,8 +1149,8 @@
     "recently-viewed",
     "yg_product_parameter_comparison_tydgmi",
     "yg_specification_BGHDRh",
-    "f30_creator_reviews_EAWjDY",
     "yg_video_slide_QtKRe6",
-    "177816345633699054"
+    "177816345633699054",
+    "f30_creator_reviews_EAWjDY"
   ]
 }

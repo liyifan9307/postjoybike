@@ -21,9 +21,7 @@
         },
         "breadcrumb": {
           "type": "breadcrumb",
-          "settings": {
-            "show_collections_link": true
-          }
+          "settings": {}
         },
         "title": {
           "type": "title",
@@ -74,10 +72,10 @@
           "settings": {
             "position": 8,
             "column_size": "1",
-            "image": "shopify://shop_images/b8a2ba33b567cdd887ca2e2efc4dd332.jpg",
-            "heading": "NEW LAUNCH",
-            "content": "<p>Spark 20\"x4.0\" Moped-Style E-Bike</p>",
-            "button_label": "Shop now",
+            "image": "shopify://shop_images/GT16_review5.jpg",
+            "heading": "",
+            "content": "",
+            "button_label": "",
             "button_link": "shopify://products/spark-moped-style-e-bike",
             "button_style": "secondary",
             "button_external": false,

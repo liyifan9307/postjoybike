@@ -59,7 +59,7 @@
             "gradient_background": ""
           }
         },
-        "linkedoption_app_block_jGifxd": {
+        "linkedoption_app_block_wCdqn4": {
           "type": "shopify://apps/linkedoption/blocks/app-block/564f3d71-fe5e-48d7-a0de-284b76666f1e",
           "settings": {}
         },
@@ -198,7 +198,7 @@
         "price_Hxp9Jt",
         "yg_countdown_4cTMTX",
         "yg_icon_list_HW6B9x",
-        "linkedoption_app_block_jGifxd",
+        "linkedoption_app_block_wCdqn4",
         "variant_picker",
         "yg_bundle_c8tLrK",
         "buy_buttons",
@@ -420,14 +420,14 @@
       "blocks": {
         "item_FQddzf": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
-            "image": "shopify://shop_images/3._74a8f890-8d1d-4f56-b25a-62b927f92171.jpg",
-            "image_mb": "shopify://shop_images/3._12bf1a99-93ad-4429-b955-43a4ca34bfda.jpg",
+            "image": "shopify://shop_images/GT16p_dirt_bike_5500w_m.jpg",
             "image_pos": "left",
-            "title": "<p><strong>3000W Peak Motor</strong><br/>Explosive Power for Dirt, Hills, and Daily Rides</p>",
-            "content": "<p>The GT16's 3000W peak motor delivers strong acceleration, responsive throttle feel, and up to 70Nm of torque. Whether you are climbing steep hills, cutting through loose gravel, or cruising open paths, the GT16 gives you the power to ride with confidence.</p>",
+            "title": "<p><strong>5500W Peak Motor</strong><br/>Explosive Power for Dirt, Hills, and Daily Rides</p>",
+            "content": "<p>The GT16's 5500W peak motor delivers strong acceleration, responsive throttle feel, and up to 70Nm of torque. Whether you are climbing steep hills, cutting through loose gravel, or cruising open paths, the GT16P gives you the power to ride with confidence.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -439,10 +439,10 @@
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
-            "image": "shopify://shop_images/BATTERY_25AH.png",
+            "image": "shopify://shop_images/GT16p_dirt_bike_battery_m.jpg",
             "image_pos": "right",
-            "title": "<p><strong>48V 25Ah</strong> Removable Battery<br/>Ride Farther. Charge Easier.</p>",
-            "content": "<p>Go longer between charges with a high-capacity 48V 25Ah battery. Enjoy up to 80 miles of PAS range, then remove the battery for convenient charging at home, in the office, or wherever your next adventure begins.</p>",
+            "title": "<p><strong>60V 30Ah</strong> Removable Battery<br/>Ride Farther. Charge Easier.</p>",
+            "content": "<p>Go longer between charges with a high-capacity 60V 30Ah battery. Enjoy up to 80 miles of PAS range, then remove the battery for convenient charging at home, in the office, or wherever your next adventure begins.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -457,7 +457,7 @@
             "image": "shopify://shop_images/GT16p_dirt_bike_battery_full_suspension.jpg",
             "image_pos": "left",
             "title": "<p><strong>Full Suspension System</strong><br/>Smooth Control on Rough Terrain</p>",
-            "content": "<p>The GT16’s full suspension system is built to absorb bumps, drops, and trail vibration. A high-travel front hydraulic fork and rear monoshock help keep the ride planted and stable, giving you more comfort, more traction, and more control when the terrain gets rough.</p>",
+            "content": "<p>The GT16P’s full suspension system is built to absorb bumps, drops, and trail vibration. A high-travel front hydraulic fork and rear monoshock help keep the ride planted and stable, giving you more comfort, more traction, and more control when the terrain gets rough.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -472,7 +472,7 @@
             "image": "shopify://shop_images/GT16p_dirt_bike_tires.jpg",
             "image_pos": "right",
             "title": "<p><strong>16\" x 3.0\" Off-Road Tires</strong><br/>Confident Grip on Dirt, Gravel, and Pavement</p>",
-            "content": "<p>The GT16 rides on wide 16\" x 3.0\" motorcycle-style tires with aggressive tread for dependable traction. From dirt trails and gravel roads to city pavement, these tires help deliver stability, grip, and off-road confidence.</p>",
+            "content": "<p>The GT16P rides on wide 16\" x 3.0\" motorcycle-style tires with aggressive tread for dependable traction. From dirt trails and gravel roads to city pavement, these tires help deliver stability, grip, and off-road confidence.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -502,7 +502,7 @@
             "image": "shopify://shop_images/F16_Hydraulic_Brake.jpg",
             "image_pos": "right",
             "title": "<p>Efficient<strong> Dual Hydraulic Brakes</strong></p>",
-            "content": "<p>The GT16 features front and rear hydraulic disc brakes for smooth, responsive, and reliable stopping power. Whether you are riding downhill, cornering, or cruising at higher speeds, the dual hydraulic braking system helps you stay in control with greater confidence.</p>",
+            "content": "<p>The GT16P features front and rear hydraulic disc brakes for smooth, responsive, and reliable stopping power. Whether you are riding downhill, cornering, or cruising at higher speeds, the dual hydraulic braking system helps you stay in control with greater confidence.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -601,28 +601,28 @@
         "product_parameter_L9zBwt": {
           "type": "product_parameter",
           "settings": {
-            "product": "postjoy-gt16-electric-dirt-bike",
-            "product_title": "",
-            "prouduct_url": "",
-            "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>70Nm</li><li>36Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 80 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
-          }
-        },
-        "product_parameter_DcNAeA": {
-          "type": "product_parameter",
-          "settings": {
             "product": "postjoy-gt16plus-electric-dirt-bike",
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
             "header_title_value": "<ol><li>60V 30 Ah</li><li><strong>Peak 5500W</strong></li><li>70Nm</li><li>38Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 80 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
+        },
+        "product_parameter_RwkxrT": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "postjoy-gt16-electric-dirt-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>70Nm</li><li>36Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 80 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+          }
         }
       },
       "block_order": [
         "parameter_title_RARTkc",
         "product_parameter_L9zBwt",
-        "product_parameter_DcNAeA"
+        "product_parameter_RwkxrT"
       ],
       "name": "YG Parameter Comparison",
       "settings": {
@@ -658,7 +658,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 25Ah</strong></p><p>Torque <strong>70Nm</strong></p><p>Hub Motor<strong>Peak 3000W</strong></p><p>Top Speed<strong> 36MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 16x3.0''</strong></p><p>IP Level<strong>IPX6</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 3.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>99.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 80 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>60V 30Ah</strong></p><p>Torque <strong>70Nm</strong></p><p>Hub Motor<strong>Peak 5500W</strong></p><p>Top Speed<strong> 38MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 16x3.0''</strong></p><p>IP Level<strong>IPX6</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charger <strong>48V / 3.0A</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>99.2 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 80 miles</strong></p><p>Smart Security <strong>NFC</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",

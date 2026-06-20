@@ -15,7 +15,6 @@
         "breadcrumb_fNxmEp": {
           "type": "breadcrumb",
           "settings": {
-            "show_collections_link": true,
             "enable_product_top": true
           }
         },
@@ -427,8 +426,8 @@
             "image": "shopify://shop_images/20260519162424_186_341.jpg",
             "image_mb": "shopify://shop_images/20260519162424_186_341.jpg",
             "image_pos": "right",
-            "title": "<p>48V 12Ah Battery</p>",
-            "content": "<p>Spend less time charging and more time riding. The F26’s 48V 12Ah battery is designed to support longer daily commutes, weekend rides, and everyday errands. With up to 60 miles of assisted riding range, you can enjoy the freedom to go farther with confidence.</p>",
+            "title": "<p>48V 10Ah Battery</p>",
+            "content": "<p>Spend less time charging and more time riding. The F26’s 48V 10Ah battery is designed to support longer daily commutes, weekend rides, and everyday errands. With up to 60 miles of assisted riding range, you can enjoy the freedom to go farther with confidence.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -468,14 +467,13 @@
         },
         "item_qBUgpX": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
             "image": "shopify://shop_images/PostJoy_F26_26_2.0.jpg",
             "image_pos": "left",
-            "title": "<p>26 × 1.95 Tires</p>",
-            "content": "<p>The F26’s 26 × 1.95 tires are designed for stable handling on paved roads, bike lanes, neighborhood streets, and light paths. Combined with a 7-speed gear system, the bike gives you flexible control for different riding conditions.</p>",
+            "title": "<p>26 × 2.0 Tires</p>",
+            "content": "<p>The F26’s 26 × 2.0 tires are designed for stable handling on paved roads, bike lanes, neighborhood streets, and light paths. Combined with a 7-speed gear system, the bike gives you flexible control for different riding conditions.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -484,7 +482,6 @@
         },
         "item_Y7pTzw": {
           "type": "item",
-          "disabled": true,
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
@@ -672,7 +669,7 @@
           "type": "icon_list",
           "settings": {
             "icon": "shopify://shop_images/lbs.png",
-            "title": "50.7lbs",
+            "title": "49.6lbs",
             "content": "Vehicle Weight"
           }
         }
@@ -719,47 +716,35 @@
         "parameter_title_RARTkc": {
           "type": "parameter_title",
           "settings": {
-            "header_title": "<ol><li><strong>Battery</strong></li><li><strong>Motor</strong></li><li><strong>Torque</strong></li><li><strong>Top Speed</strong></li><li><strong>Brake</strong></li><li><strong>Tires</strong></li><li><strong>Suspension</strong></li><li><strong>Range</strong></li><li><strong>MAX Payload Capacity</strong></li><li><strong>E-Bike Weight</strong></li><li><strong>E-Bike Class</strong></li><li><strong>Charger</strong></li><li><strong>Charging Time</strong></li><li><strong>IP Level</strong></li></ol>"
-          }
-        },
-        "product_parameter_L9zBwt": {
-          "type": "product_parameter",
-          "settings": {
-            "product": "postjoy-gt16-electric-dirt-bike",
-            "product_title": "",
-            "prouduct_url": "",
-            "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 3000W</strong></li><li>200Nm</li><li>40Mph</li><li>Hydraulic Disc Brake</li><li>16x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>99.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
-          }
-        },
-        "product_parameter_9XNr9Y": {
-          "type": "product_parameter",
-          "settings": {
-            "product": "postjoy-f30-electric-bike",
-            "product_title": "",
-            "prouduct_url": "",
-            "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>32Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>385 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title": "<ol><li><strong>Battery</strong></li><li><strong>Motor</strong></li><li><strong>Torque</strong></li><li><strong>Top Speed</strong></li><li><strong>Brake</strong></li><li><strong>Tires</strong></li><li><strong>Suspension</strong></li><li><strong>Range</strong></li><li><strong>MAX Payload Capacity</strong></li><li><strong>E-Bike Weight</strong></li><li><strong>Charger</strong></li><li><strong>Charging Time</strong></li><li><strong>IP Level</strong></li></ol>"
           }
         },
         "product_parameter_ExP4Mg": {
           "type": "product_parameter",
           "settings": {
-            "product": "postjoy-t20-electric-bike",
+            "product": "f26-26-inch-electric-mountain-bike",
             "product_title": "",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>48V 20 Ah</li><li>Peak 2500W</li><li>100Nm</li><li>30Mph</li><li>Precision Disc Brakese</li><li>20x 4.0\" Fat Tire</li><li>Full Suspension</li><li>Up to 100 miles</li><li>365 lbs</li><li>81.2 LBS</li><li>NFC Smart Unlock</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 10Ah</li><li>Peak 1500W</li><li>28Nm</li><li>25Mph</li><li>Precision Disc Brakese</li><li>26x 2.0</li><li>Full Suspension</li><li>Up to 35 miles</li><li>350 lbs</li><li>49.6 LBS</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX5</li></ol>"
+          }
+        },
+        "product_parameter_yeFTjy": {
+          "type": "product_parameter",
+          "settings": {
+            "product": "g26-electric-mountain-bike",
+            "product_title": "",
+            "prouduct_url": "",
+            "button_title": "Shop Now",
+            "header_title_value": "<ol><li>48V 10Ah</li><li>Peak 1500W</li><li>28Nm</li><li>25Mph</li><li>Precision Disc Brakese</li><li>26x 2.0</li><li>Full Suspension</li><li>Up to 35 miles</li><li>350 lbs</li><li>49.6 LBS</li><li>48V / 2A</li><li>6-8Hours</li><li>IPX5</li></ol>"
           }
         }
       },
       "block_order": [
         "parameter_title_RARTkc",
-        "product_parameter_L9zBwt",
-        "product_parameter_9XNr9Y",
-        "product_parameter_ExP4Mg"
+        "product_parameter_ExP4Mg",
+        "product_parameter_yeFTjy"
       ],
-      "disabled": true,
       "name": "YG Parameter Comparison",
       "settings": {
         "heading": "Product compare",
@@ -794,7 +779,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>48V 12Ah</strong></p><p>Torque <strong>28Nm</strong></p><p>Hub Motor<strong>1500W Peak</strong></p><p>Top Speed<strong> 25MPH</strong></p><p>Brake<strong>Precision Disc Brakes</strong></p><p>Suspension<strong> ‎Front Suspension Fork</strong></p><p>Tires<strong> 26\" x 1.95\"</strong></p><p>IP Level<strong>IPX6</strong></p><p>MAX Payload Capacity<strong>350 lbs</strong></p><p>E-Bike Weight<strong>49.6 lbs</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Ranger<strong>Up to 35 Miles</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 10Ah</strong></p><p>Torque <strong>28Nm</strong></p><p>Hub Motor<strong>1500W Peak</strong></p><p>Top Speed<strong> 25MPH</strong></p><p>Brake<strong>Precision Disc Brakes</strong></p><p>Suspension<strong> ‎Front Suspension Fork</strong></p><p>Tires<strong> 26\" x 1.95\"</strong></p><p>IP Level<strong>IPX6</strong></p><p>MAX Payload Capacity<strong>350 lbs</strong></p><p>E-Bike Weight<strong>49.6 lbs</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Ranger<strong>Up to 35 Miles</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
