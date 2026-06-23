@@ -4397,7 +4397,8 @@ input[type=checkbox].switch:is(:disabled, .disabled):not(:checked)::after {
 :checked+.label-swatch::after {
   --tw-shadow-colored: 0 0 0 2px var(--tw-shadow-color);
   --tw-shadow-color: rgb(var(--color-foreground));
-  --tw-shadow: var(--tw-shadow-colored)
+  --tw-shadow: var(--tw-shadow-colored);
+  border: 1px solid #000;
 }
 
 .swatches input:is([type=checkbox], [type=radio]):is(:disabled, .disabled)+.label-swatch {

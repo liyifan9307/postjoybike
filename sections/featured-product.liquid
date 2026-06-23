@@ -233,8 +233,7 @@
                 -%}
                 <div class="product__title grid gap-3{% if price_block == blank and block.settings.show_price %} with-price{% endif %}" {{ block.shopify_attributes }}>
                   <h1 class="heading leading-none {{ block.settings.title_size }} mobile:{{ block.settings.title_size_mobile }} col-span-full">
-                    <span class="sr-only">{{ product.title }}</span>
-                    <split-words class="split-words block" data-animate="fade-up" aria-hidden="true">{{ product.title }}</split-words>
+                    {{ product.title }}
                   </h1>
   
                   {%- if price_block == blank and block.settings.show_price -%}

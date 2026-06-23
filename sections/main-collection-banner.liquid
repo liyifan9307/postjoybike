@@ -157,15 +157,7 @@
                       class="banner__title heading leading-none {{ block.settings.title_size }}{% if block.settings.title_size == 'title-xl' %} tracking-heading{% endif %}{% unless desktop_image %} relative{% endunless %}"
                       {{ block.shopify_attributes }}
                     >
-                       <span class="sr-only">{{ collection.title }}</span>
-                      <split-words
-                        class="split-words block"
-                        data-animate="fade-up-large"
-                        data-animate-delay="{{ delay | times: 250 }}"
-                        aria-hidden="true"
-                      >
-                        {{- collection.title -}}
-                      </split-words>
+                      {{ collection.title }}
                       {%- unless desktop_image -%}
                         {%- if collection.metafields.theme.marquee.value != blank -%}
                           <div class="block absolute bottom-0 w-full pointer-events-none">
