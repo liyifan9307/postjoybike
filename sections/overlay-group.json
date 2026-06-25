@@ -205,7 +205,7 @@
           "settings": {
             "heading": "We use cookies",
             "heading_size": "text-lg-2xl",
-            "heading_tag": "h2",
+            "heading_tag": "div",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }

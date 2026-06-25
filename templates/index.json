@@ -116,6 +116,22 @@
             "button_icon": false
           }
         },
+        "image_X9d4Yq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/GT50_banner.png",
+            "image_mobile": "shopify://shop_images/GT50_banner_m.png",
+            "heading": "",
+            "sub_heading": "",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "",
+            "button_link": "shopify://pages/mid-year-ride-sale",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        },
         "image_rHmEYm": {
           "type": "image",
           "settings": {
@@ -136,6 +152,7 @@
       "block_order": [
         "image_P43iwN",
         "image_9JiNym",
+        "image_X9d4Yq",
         "image_rHmEYm"
       ],
       "settings": {
@@ -176,7 +193,7 @@
         "collection_YWTaWU": {
           "type": "collection",
           "settings": {
-            "collection": "electric-mountain-bike",
+            "collection": "electric-commuter-bike",
             "products": [],
             "title": ""
           }

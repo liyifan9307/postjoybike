@@ -316,192 +316,66 @@
         "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
       }
     },
-    "video-hero": {
-      "type": "video-hero",
+    "yg_anchor_tab_Tr6UAw": {
+      "type": "yg-anchor-tab",
       "blocks": {
-        "slide-1": {
-          "type": "slide",
+        "anchor_Gyn3JX": {
+          "type": "anchor",
           "settings": {
-            "heading": "Video slide 1",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "text": "Overview",
+            "section_number": 3
           }
         },
-        "slide-2": {
-          "type": "slide",
+        "anchor_MbaYiW": {
+          "type": "anchor",
           "settings": {
-            "heading": "Video slide 2",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "text": "Spec",
+            "section_number": 8
           }
         },
-        "slide-3": {
-          "type": "slide",
+        "anchor_76H6CB": {
+          "type": "anchor",
           "settings": {
-            "heading": "Video slide 3",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "text": "Compare",
+            "section_number": 7
           }
         },
-        "slide-4": {
-          "type": "slide",
+        "anchor_hkFF7V": {
+          "type": "anchor",
           "settings": {
-            "heading": "Video slide 4",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "text": "Reviews",
+            "section_number": 11
+          }
+        },
+        "anchor_xkkAyH": {
+          "type": "anchor",
+          "settings": {
+            "text": "FAQs",
+            "section_number": 9
           }
         }
       },
       "block_order": [
-        "slide-1",
-        "slide-2",
-        "slide-3",
-        "slide-4"
+        "anchor_Gyn3JX",
+        "anchor_MbaYiW",
+        "anchor_76H6CB",
+        "anchor_hkFF7V",
+        "anchor_xkkAyH"
       ],
-      "disabled": true,
+      "name": "YG anchor tab",
       "settings": {
-        "transparent_header": false,
-        "video_url": "https://www.youtube.com/watch?v=WRmkJt7iNTc",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "content_width": "medium",
-        "video_url_mobile": "",
-        "color_text": "#ffffff",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_overlay": "#000000",
-        "overlay_opacity": 40,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image": "shopify://shop_images/F30-4.jpg",
-            "image_ratio": "landscape",
-            "content_position": "md:items-end md:justify-center",
-            "text_alignment": "center",
-            "image_ratio_mobile": "landscape",
-            "content_position_mobile": "items-end justify-center",
-            "text_alignment_mobile": "center",
-            "highlighted_text": "text",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "#fde047",
-            "gradient_highlight": "",
-            "color_overlay": "#000000",
-            "overlay_opacity": 40
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image": "shopify://shop_images/F30-3.jpg",
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "image_ratio_mobile": "portrait",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "text",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "#fde047",
-            "gradient_highlight": "",
-            "color_overlay": "#000000",
-            "overlay_opacity": 40
-          }
-        },
-        "image-3": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image": "shopify://shop_images/f30new.jpg",
-            "image_ratio": "portrait",
-            "content_position": "md:items-start md:justify-end",
-            "text_alignment": "right",
-            "image_ratio_mobile": "portrait",
-            "content_position_mobile": "items-start justify-end",
-            "text_alignment_mobile": "right",
-            "highlighted_text": "text",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "#fde047",
-            "gradient_highlight": "",
-            "color_overlay": "#000000",
-            "overlay_opacity": 40
-          }
-        },
-        "image-4": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": true,
-            "image": "shopify://shop_images/F30_9b74fc8c-8fb2-4900-b863-145748cefe9b.jpg",
-            "image_ratio": "landscape",
-            "content_position": "md:items-end md:justify-end",
-            "text_alignment": "right",
-            "image_ratio_mobile": "landscape",
-            "content_position_mobile": "items-end justify-end",
-            "text_alignment_mobile": "right",
-            "highlighted_text": "text",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "#fde047",
-            "gradient_highlight": "",
-            "color_overlay": "#000000",
-            "overlay_opacity": 40
-          }
-        }
-      },
-      "block_order": [
-        "image-1",
-        "image-2",
-        "image-3",
-        "image-4"
-      ],
-      "settings": {
-        "heading": "Why Choose PostJoy F30 Electric Bike?",
+        "heading": "Multimedia collage",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>The <strong>PostJoy F30</strong> is the ultimate heavy-duty explorer, engineered for those who demand maximum utility without compromising on power. Built with a reinforced frame and a high-efficiency powertrain, the F30 is your go-to machine for long-distance hauls and rugged adventures alike.</p><p>Don't let the sleek folding design fool you—under the hood lies a <strong>2500W peak motor</strong> delivering <strong>50Nm of torque</strong>, propelling you to a <strong>top speed of 32 MPH</strong>. What truly sets the F30 apart is its incredible endurance; the 48V 20Ah battery is optimized to deliver an industry-leading <strong>70-mile range</strong>, making it the perfect companion for cross-town commutes or weekend-long trail sessions.</p><p>With a <strong>MAX payload capacity of 385 lbs</strong>, the F30 is the strongest in its class, easily handling extra gear or heavier riders with ease. The <strong>20\"x4.0\" all-terrain fat tires</strong> and <strong>full suspension</strong> ensure a stable, vibration-free ride over gravel, mud, or pavement. Combined with <strong>NFC smart security</strong> for a keyless, modern experience, the PostJoy F30 is the versatile powerhouse built to go further and carry more.</p>",
+        "description": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,
         "button_icon": true,
-        "highlighted_text": "scribble",
-        "highlighted_scribble": "basic-underline",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -511,130 +385,322 @@
         "color_button_background": "",
         "color_button_gradient": "",
         "padding_top": 72,
-        "padding_bottom": 0,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
-        "rounded": false,
-        "enable_parallax": true
+        "rounded": false
       }
     },
-    "slideshow_rqLhMe": {
-      "type": "slideshow",
+    "mosaic_grid_QqppfU": {
+      "type": "mosaic-grid",
       "blocks": {
-        "image_TTcFU9": {
-          "type": "image",
+        "cell_WjdjDe": {
+          "type": "cell",
           "settings": {
-            "image": "shopify://shop_images/f1a4fd523768656f345b0875f5274a6e_e14cd0a5-4cd8-4899-9c09-907c02f2bba8.jpg",
+            "col_span_mobile": "2",
+            "row_span_mobile": 1,
+            "col_span_desktop": 2,
+            "row_span_desktop": 2,
+            "media_type_mobile": "image",
+            "image_mobile": "shopify://shop_images/F30_moped_ebike_main_2500w.jpg",
+            "video_url_mobile": "https://www.youtube.com/watch?v=lK11WsOwuzA",
+            "video_autoplay_mobile": true,
+            "video_muted_mobile": true,
+            "video_loop_mobile": true,
+            "media_type_desktop": "image",
+            "video_url_desktop": "https://www.youtube.com/watch?v=lK11WsOwuzA",
+            "video_autoplay_desktop": true,
+            "video_muted_desktop": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "mc",
+            "heading_mobile": "",
+            "text_mobile": "",
             "heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        }
-      },
-      "block_order": [
-        "image_TTcFU9"
-      ],
-      "disabled": true,
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "autoplay": false,
-        "autoplay_speed": 5,
-        "show_navigation": false,
-        "image_height": "650px",
-        "content_width": "small",
-        "image_height_mobile": "auto",
-        "color_text": "#ffffff",
-        "color_background": "#ffffff",
-        "gradient_background": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 20,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": false,
-        "parallax_direction": "vertical"
-      }
-    },
-    "video_with_text_overlay_TwR6Rr": {
-      "type": "video-with-text-overlay",
-      "blocks": {
-        "subheading_Nk3U8B": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
-        },
-        "heading_wX3eLf": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_UYda9A": {
-          "type": "text",
-          "settings": {
             "text": "",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
+            "text_color_mobile": "#fafafa",
+            "heading_size_mobile": 24,
+            "heading_line_height_mobile": 32,
+            "text_size_mobile": 14,
+            "text_line_height_mobile": 20,
+            "text_position_desktop": "mc",
+            "heading_desktop": "",
+            "text_desktop": "",
+            "text_color_desktop": "#fafafa",
+            "heading_size_desktop": 24,
+            "heading_line_height_desktop": 32,
+            "text_size_desktop": 14,
+            "text_line_height_desktop": 20
+          }
+        },
+        "cell_nQXgCV": {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "2",
+            "row_span_mobile": 1,
+            "col_span_desktop": 2,
+            "row_span_desktop": 1,
+            "media_type_mobile": "image",
+            "video_url_mobile": "",
+            "video_autoplay_mobile": true,
+            "video_muted_mobile": true,
+            "video_loop_mobile": true,
+            "media_type_desktop": "image",
+            "image_desktop": "shopify://shop_images/F30_moped_ebike_main_38mph.jpg",
+            "video_url_desktop": "",
+            "video_autoplay_desktop": true,
+            "video_muted_desktop": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "tl",
+            "heading_mobile": "",
+            "text_mobile": "",
+            "heading": "",
+            "text": "",
+            "text_color_mobile": "#1a1a1a",
+            "heading_size_mobile": 24,
+            "heading_line_height_mobile": 32,
+            "text_size_mobile": 14,
+            "text_line_height_mobile": 20,
+            "text_position_desktop": "tl",
+            "heading_desktop": "",
+            "text_desktop": "",
+            "text_color_desktop": "#1a1a1a",
+            "heading_size_desktop": 24,
+            "heading_line_height_desktop": 32,
+            "text_size_desktop": 14,
+            "text_line_height_desktop": 20
+          }
+        },
+        "cell_EDYRjd": {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "2",
+            "row_span_mobile": 2,
+            "col_span_desktop": 2,
+            "row_span_desktop": 1,
+            "media_type_mobile": "image",
+            "image_mobile": "shopify://shop_images/F30_moped_ebike_main_70_miles.jpg",
+            "video_url_mobile": "",
+            "video_autoplay_mobile": true,
+            "video_muted_mobile": true,
+            "video_loop_mobile": true,
+            "media_type_desktop": "image",
+            "video_url_desktop": "",
+            "video_autoplay_desktop": true,
+            "video_muted_desktop": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "mc",
+            "heading_mobile": "",
+            "text_mobile": "",
+            "heading": "",
+            "text": "",
+            "text_color_mobile": "#1a1a1a",
+            "heading_size_mobile": 24,
+            "heading_line_height_mobile": 32,
+            "text_size_mobile": 14,
+            "text_line_height_mobile": 20,
+            "text_position_desktop": "mc",
+            "heading_desktop": "",
+            "text_desktop": "",
+            "text_color_desktop": "#1a1a1a",
+            "heading_size_desktop": 24,
+            "heading_line_height_desktop": 32,
+            "text_size_desktop": 14,
+            "text_line_height_desktop": 20
+          }
+        },
+        "cell_CrYkdq": {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "1",
+            "row_span_mobile": 2,
+            "col_span_desktop": 1,
+            "row_span_desktop": 2,
+            "media_type_mobile": "image",
+            "video_url_mobile": "",
+            "video_autoplay_mobile": true,
+            "video_muted_mobile": true,
+            "video_loop_mobile": true,
+            "media_type_desktop": "image",
+            "image_desktop": "shopify://shop_images/F30_moped_ebike_main_48v20ah.jpg",
+            "video_url_desktop": "",
+            "video_autoplay_desktop": true,
+            "video_muted_desktop": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "tl",
+            "heading_mobile": "",
+            "text_mobile": "",
+            "heading": "",
+            "text": "",
+            "text_color_mobile": "#1a1a1a",
+            "heading_size_mobile": 24,
+            "heading_line_height_mobile": 32,
+            "text_size_mobile": 14,
+            "text_line_height_mobile": 20,
+            "text_position_desktop": "tl",
+            "heading_desktop": "",
+            "text_desktop": "",
+            "text_color_desktop": "#1a1a1a",
+            "heading_size_desktop": 24,
+            "heading_line_height_desktop": 32,
+            "text_size_desktop": 14,
+            "text_line_height_desktop": 20
+          }
+        },
+        "cell_BBWDzE": {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "1",
+            "row_span_mobile": 2,
+            "col_span_desktop": 1,
+            "row_span_desktop": 1,
+            "media_type_mobile": "image",
+            "video_url_mobile": "",
+            "video_autoplay_mobile": true,
+            "video_muted_mobile": true,
+            "video_loop_mobile": true,
+            "media_type_desktop": "image",
+            "image_desktop": "shopify://shop_images/F30_moped_ebike_main_full_suspension.jpg",
+            "video_url_desktop": "",
+            "video_autoplay_desktop": true,
+            "video_muted_desktop": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "tl",
+            "heading_mobile": "",
+            "text_mobile": "",
+            "heading": "",
+            "text": "",
+            "text_color_mobile": "#ffffff",
+            "heading_size_mobile": 24,
+            "heading_line_height_mobile": 32,
+            "text_size_mobile": 14,
+            "text_line_height_mobile": 20,
+            "text_position_desktop": "tc",
+            "heading_desktop": "",
+            "text_desktop": "",
+            "text_color_desktop": "#ffffff",
+            "heading_size_desktop": 24,
+            "heading_line_height_desktop": 32,
+            "text_size_desktop": 14,
+            "text_line_height_desktop": 20
+          }
+        },
+        "cell_j8ybE6": {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "2",
+            "row_span_mobile": 1,
+            "col_span_desktop": 2,
+            "row_span_desktop": 2,
+            "media_type_mobile": "image",
+            "video_url_mobile": "",
+            "video_autoplay_mobile": true,
+            "video_muted_mobile": true,
+            "video_loop_mobile": true,
+            "media_type_desktop": "image",
+            "image_desktop": "shopify://shop_images/F30_moped_ebike_main_20x4.0.jpg",
+            "video_url_desktop": "",
+            "video_autoplay_desktop": true,
+            "video_muted_desktop": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "tl",
+            "heading_mobile": "",
+            "text_mobile": "",
+            "heading": "",
+            "text": "",
+            "text_color_mobile": "#1a1a1a",
+            "heading_size_mobile": 24,
+            "heading_line_height_mobile": 32,
+            "text_size_mobile": 14,
+            "text_line_height_mobile": 20,
+            "text_position_desktop": "tl",
+            "heading_desktop": "",
+            "text_desktop": "",
+            "text_color_desktop": "#1a1a1a",
+            "heading_size_desktop": 24,
+            "heading_line_height_desktop": 32,
+            "text_size_desktop": 14,
+            "text_line_height_desktop": 20
+          }
+        },
+        "cell_BHx7cT": {
+          "type": "cell",
+          "settings": {
+            "col_span_mobile": "2",
+            "row_span_mobile": 2,
+            "col_span_desktop": 1,
+            "row_span_desktop": 1,
+            "media_type_mobile": "image",
+            "image_mobile": "shopify://shop_images/F30_moped_ebike_main_NFC_unlock.jpg",
+            "video_url_mobile": "",
+            "video_autoplay_mobile": true,
+            "video_muted_mobile": true,
+            "video_loop_mobile": true,
+            "media_type_desktop": "image",
+            "video_url_desktop": "",
+            "video_autoplay_desktop": true,
+            "video_muted_desktop": true,
+            "video_loop_desktop": true,
+            "text_position_mobile": "mc",
+            "heading_mobile": "",
+            "text_mobile": "",
+            "heading": "",
+            "text": "",
+            "text_color_mobile": "#ffffff",
+            "heading_size_mobile": 21,
+            "heading_line_height_mobile": 24,
+            "text_size_mobile": 14,
+            "text_line_height_mobile": 20,
+            "text_position_desktop": "mc",
+            "heading_desktop": "",
+            "text_desktop": "",
+            "text_color_desktop": "#ffffff",
+            "heading_size_desktop": 21,
+            "heading_line_height_desktop": 24,
+            "text_size_desktop": 14,
+            "text_line_height_desktop": 20
           }
         }
       },
       "block_order": [
-        "subheading_Nk3U8B",
-        "heading_wX3eLf",
-        "text_UYda9A"
+        "cell_WjdjDe",
+        "cell_nQXgCV",
+        "cell_EDYRjd",
+        "cell_CrYkdq",
+        "cell_BBWDzE",
+        "cell_j8ybE6",
+        "cell_BHx7cT"
       ],
-      "disabled": true,
-      "name": "t:sections.video-with-text-overlay.presets.name",
+      "name": "宫格组件",
       "settings": {
-        "transparent_header": false,
-        "video": "shopify://files/videos/GT16.mp4",
-        "video_url": "",
-        "video_other_url": "",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
         "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "adapt",
-        "content_width": "small",
-        "content_position": "md:items-center md:justify-center",
-        "text_alignment": "center",
-        "video_url_mobile": "",
-        "video_mobile_other_url": "",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-center justify-center",
-        "text_alignment_mobile": "center",
-        "color_text": "#ffffff",
-        "color_highlight": "#e0a580",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
         "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
+        "color_button_text": "",
+        "color_button_background": "",
         "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
+        "gap": 20,
+        "radius": 16,
+        "content_padding": 24,
+        "columns_mobile": "2",
+        "columns_desktop": "4",
+        "unit_width": 780,
+        "unit_height": 480,
+        "padding_top": 12,
+        "padding_bottom": 12,
         "divider": false,
-        "full_width": true,
+        "full_width": false,
         "rounded": false
       }
     },
@@ -646,10 +712,10 @@
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
-            "image": "shopify://shop_images/c65856e9539bef4c59afa02509c05e7c_855a8afb-de0d-40ff-860b-b8ed1cf8a573.jpg",
+            "image": "shopify://shop_images/F30_moped_ebike_page_2500W.jpg",
             "image_pos": "left",
-            "title": "<p><strong>2500W Peak Mid-Drive Motor</strong></p><p>Explosive Power. Instant Acceleration.</p>",
-            "content": "",
+            "title": "<p><strong>2500W </strong>Peak Mid-Drive Motor</p>",
+            "content": "<p>The F30 delivers serious electric performance with a 2500W peak motor, 50Nm torque, and a 32 MPH top speed — giving you the punch, speed, and control you need for city rides and off-road adventures. From quick starts to uphill climbs, every ride feels more powerful and responsive.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -661,7 +727,7 @@
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
-            "image": "shopify://shop_images/100_70_1.jpg",
+            "image": "shopify://shop_images/F30_moped_ebike_page_48V20Ah.jpg",
             "image_pos": "right",
             "title": "<p><strong>48V 20Ah</strong> Removable Battery<br/><br/></p>",
             "content": "<p>The <strong>48V 20Ah high-capacity battery</strong> delivers a massive <strong>70-mile PAS range</strong>, providing the ultimate balance of power and endurance. With its <strong>removable design</strong>, you can easily <strong>charge anywhere</strong> and enjoy the freedom to explore deeper into the wild. Reliable, convenient, and built for <strong>long-distance thrills</strong>.<br/><br/></p>",
@@ -676,7 +742,7 @@
           "settings": {
             "item_margin_top": 96,
             "item_margin_bottom": 70,
-            "image": "shopify://shop_images/2026-04-17_113813_102.png",
+            "image": "shopify://shop_images/F30_moped_ebike_page_full_suspension.jpg",
             "image_pos": "left",
             "title": "<p><strong> Full Suspension System</strong><br/>Ride Smooth, Dominate the Wild</p>",
             "content": "<p>The <strong>PostJoy F30</strong> is engineered with a professional-grade full suspension system, transforming the roughest trails into your personal playground. At the front, the <strong>high-travel hydraulic fork</strong> is built to soak up heavy hits and high-speed vibrations, while the <strong>rear monoshock</strong> provides exceptional stability, ensuring your rear wheel stays planted for maximum traction during hill attacks.</p><p>Whether you're sticking a landing from a backyard jump, shredding through muddy mountain tracks, or navigating bumpy urban shortcuts, the GT16’s suspension delivers a <strong>perfectly balanced, stable, and plush ride</strong>. Combined with its agile <strong>99 lbs lightweight frame</strong>, you get a machine that doesn't just ride—it conquers any terrain with total control and comfort.</p>",
@@ -691,10 +757,25 @@
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
-            "image": "shopify://shop_images/716379a6af28df1e390e9d74573c532a.jpg",
+            "image": "shopify://shop_images/F30_moped_ebike_page_all_terrain_fat_tires.jpg",
             "image_pos": "right",
             "title": "<p><strong>All-Terrain Monster Fat Tires</strong><br/>Maximum Stability. Dominate Every Surface.</p>",
             "content": "<p><br/>Featuring <strong>massive 20x4.0-inch fat tires</strong>, the  provides a massive contact patch for <strong>unmatched stability</strong>. Whether you're gliding over loose sand, thick snow, or rugged forest trails, these high-volume tires deliver <strong>superior floatation and grip</strong>. Conquer the elements with confidence and style.<br/><br/></p>",
+            "param_title_1": "",
+            "param_content_1": "",
+            "param_title_2": "",
+            "param_content_2": ""
+          }
+        },
+        "item_PPeP6c": {
+          "type": "item",
+          "settings": {
+            "item_margin_top": 60,
+            "item_margin_bottom": 60,
+            "image": "shopify://shop_images/F30_moped_ebike_page_nfc_smart_unlock.jpg",
+            "image_pos": "left",
+            "title": "<p><strong>Tap to Unlock.</strong> Ready to Ride.</p>",
+            "content": "<p>The PostJoy F30 features NFC smart unlock, giving you a faster and more convenient way to activate your e-bike. Simply tap your NFC card near the display area to unlock the bike and get ready to ride in seconds — no complicated steps, no unnecessary delay.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -706,7 +787,8 @@
         "item_FQddzf",
         "item_Y77eFc",
         "item_6M3dHz",
-        "item_VNaYcH"
+        "item_VNaYcH",
+        "item_PPeP6c"
       ],
       "name": "YG image with text list",
       "settings": {
@@ -736,6 +818,48 @@
         "full_width": false,
         "rounded": false
       }
+    },
+    "blocks_dKBkqz": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_42b38e6_grEJXL": {
+          "type": "ai_gen_block_42b38e6",
+          "settings": {
+            "section_title": "",
+            "section_subtitle": "",
+            "desktop_visible_columns": "3",
+            "card_style": "plain",
+            "text_alignment": "left",
+            "background_color": "#ffffff",
+            "image_1": "shopify://shop_images/F30_moped_ebike_slider_lcd.jpg",
+            "title_1": "Ride data made clear.",
+            "subtitle_1": "",
+            "button_label_1": "",
+            "button_url_1": "",
+            "image_2": "shopify://shop_images/F30_moped_ebike_slider_light.jpg",
+            "title_2": "See more. Ride safer.",
+            "subtitle_2": "",
+            "button_label_2": "",
+            "button_url_2": "",
+            "image_3": "shopify://shop_images/F30_moped_ebike_main_disc_brakes.jpg",
+            "title_3": "Reliable Stopping Power.",
+            "subtitle_3": "",
+            "button_label_3": "",
+            "button_url_3": "",
+            "image_4": "shopify://shop_images/F30_moped_ebike_slider_seat.jpg",
+            "title_4": "Built for longer comfort.",
+            "subtitle_4": "",
+            "button_label_4": "",
+            "button_url_4": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_42b38e6_grEJXL"
+      ],
+      "name": "Multi-column slider",
+      "settings": {}
     },
     "product-recommendations": {
       "type": "product-recommendations",
@@ -784,6 +908,80 @@
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "yg_product_geometry_Xr7YP6": {
+      "type": "yg-product-geometry",
+      "blocks": {
+        "commodity_UajVPz": {
+          "type": "commodity",
+          "settings": {
+            "image_car": "shopify://shop_images/F30_moped_ebike_size.jpg",
+            "image_body": "shopify://shop_images/F30_moped_ebike_fit.jpg",
+            "button_l": "Size",
+            "button_r": "Fit"
+          }
+        },
+        "icon_list_UVAhxW": {
+          "type": "icon_list",
+          "settings": {
+            "icon": "shopify://shop_images/Height.svg",
+            "title": "4'9' – 6\"",
+            "content": "Recommended Height"
+          }
+        },
+        "icon_list_EKrRwe": {
+          "type": "icon_list",
+          "settings": {
+            "icon": "shopify://shop_images/lbs.png",
+            "title": "385lbs",
+            "content": "Max Capacity"
+          }
+        },
+        "icon_list_kTUaQD": {
+          "type": "icon_list",
+          "settings": {
+            "icon": "shopify://shop_images/lbs.png",
+            "title": "81.2lbs",
+            "content": "Vehicle Weight"
+          }
+        }
+      },
+      "block_order": [
+        "commodity_UajVPz",
+        "icon_list_UVAhxW",
+        "icon_list_EKrRwe",
+        "icon_list_kTUaQD"
+      ],
+      "disabled": true,
+      "name": "YG product geometry",
+      "settings": {
+        "title": "Find Your Perfect Fit",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
@@ -1010,6 +1208,77 @@
         "rounded": false
       }
     },
+    "yg_faq_BRPNTD": {
+      "type": "yg-faq",
+      "blocks": {
+        "question_8BGrVh": {
+          "type": "question",
+          "settings": {
+            "title": "Q: What is the top speed of the PostJoy F30?",
+            "text": "<p>A: The PostJoy F30 can reach up to 32 MPH.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_y9EikH": {
+          "type": "question",
+          "settings": {
+            "title": "Q: What is the range of the F30?",
+            "text": "<p>A: The F30 offers up to 70 miles of PAS range, depending on rider weight, terrain, riding mode, speed, and weather conditions.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_YCLVxP": {
+          "type": "question",
+          "settings": {
+            "title": "Q: How long does the F30 take to charge?",
+            "text": "<p>A: The F30 takes approximately 6–8 hours to charge.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question_8BGrVh",
+        "question_y9EikH",
+        "question_YCLVxP"
+      ],
+      "name": "YG faq",
+      "settings": {
+        "faq_bg_color": "#ffffff",
+        "form_bg_color": "#E6E5E5",
+        "info_bg_color": "#F5F5F5",
+        "style": "with-border",
+        "heading": "FAQs",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "177816345633699054": {
       "type": "apps",
       "blocks": {
@@ -1140,16 +1409,17 @@
   "order": [
     "main-product",
     "help-drawer",
-    "video-hero",
-    "collage",
-    "slideshow_rqLhMe",
-    "video_with_text_overlay_TwR6Rr",
+    "yg_anchor_tab_Tr6UAw",
+    "mosaic_grid_QqppfU",
     "yg_image_with_text_list_KQztzz",
+    "blocks_dKBkqz",
     "product-recommendations",
     "recently-viewed",
+    "yg_product_geometry_Xr7YP6",
     "yg_product_parameter_comparison_tydgmi",
     "yg_specification_BGHDRh",
     "yg_video_slide_QtKRe6",
+    "yg_faq_BRPNTD",
     "177816345633699054",
     "f30_creator_reviews_EAWjDY"
   ]

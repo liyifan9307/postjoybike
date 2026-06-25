@@ -330,13 +330,21 @@
           "type": "anchor",
           "settings": {
             "text": "Spec",
-            "section_number": 9
+            "section_number": 7
           }
         },
         "anchor_F8aAd6": {
           "type": "anchor",
+          "disabled": true,
           "settings": {
             "text": "Reviews",
+            "section_number": 10
+          }
+        },
+        "anchor_E3EA6Q": {
+          "type": "anchor",
+          "settings": {
+            "text": "FAQs",
             "section_number": 10
           }
         }
@@ -344,7 +352,8 @@
       "block_order": [
         "anchor_9a46TU",
         "anchor_BbFMEE",
-        "anchor_F8aAd6"
+        "anchor_F8aAd6",
+        "anchor_E3EA6Q"
       ],
       "name": "YG anchor tab",
       "settings": {
@@ -614,7 +623,7 @@
             "col_span_desktop": 1,
             "row_span_desktop": 1,
             "media_type_mobile": "image",
-            "image_mobile": "shopify://shop_images/GT50_Dirt_Bike_new_hydraulic_dics_brakes.jpg",
+            "image_mobile": "shopify://shop_images/20260624145916_2029_105.jpg",
             "video_url_mobile": "",
             "video_autoplay_mobile": true,
             "video_muted_mobile": true,
@@ -961,110 +970,6 @@
         "rounded": false
       }
     },
-    "yg_product_exhibition_eWKL8B": {
-      "type": "yg-product-exhibition",
-      "blocks": {
-        "item_bWXMP7": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-bike.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_FGTELU": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-user_manual.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_GXGzXR": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-front_wheel.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_WjmaEQ": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-keys.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_cT3AEY": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-screws.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_mjk6H7": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-pedals.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_HXnWVz": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-tools.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_PgWYaj": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-charger.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_y6f8qc": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-mudguard.jpg",
-            "detail_title": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_bWXMP7",
-        "item_FGTELU",
-        "item_GXGzXR",
-        "item_WjmaEQ",
-        "item_cT3AEY",
-        "item_mjk6H7",
-        "item_HXnWVz",
-        "item_PgWYaj",
-        "item_y6f8qc"
-      ],
-      "disabled": true,
-      "name": "YG product exhibition",
-      "settings": {
-        "heading": "What's In The Box",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
     "yg_product_geometry_Q9ip73": {
       "type": "yg-product-geometry",
       "blocks": {
@@ -1141,82 +1046,105 @@
     "yg_product_exhibition_X48x8Y": {
       "type": "yg-product-exhibition",
       "blocks": {
-        "item_7E38xM": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-bike.jpg",
-            "detail_title": ""
-          }
-        },
         "item_YqRjPt": {
           "type": "item",
           "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-user_manual.jpg",
+            "detail_image": "shopify://shop_images/GT50_Paper_flyer.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_7E38xM": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/GT50_ebike.jpg",
             "detail_title": ""
           }
         },
         "item_tqEmTb": {
           "type": "item",
           "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-front_wheel.jpg",
+            "detail_image": "shopify://shop_images/GT50_handlebar.jpg",
             "detail_title": ""
           }
         },
         "item_De9r7j": {
           "type": "item",
           "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-keys.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_4A8TkH": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-screws.jpg",
-            "detail_title": ""
-          }
-        },
-        "item_jmfQAQ": {
-          "type": "item",
-          "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-pedals.jpg",
+            "detail_image": "shopify://shop_images/GT50_battery_e8b166b4-2391-4ad1-8f47-9004226c4bb9.jpg",
             "detail_title": ""
           }
         },
         "item_qBgRaf": {
           "type": "item",
           "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-tools.jpg",
+            "detail_image": "shopify://shop_images/GT50_front_tire.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_4A8TkH": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/GT50_pedals.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_jmfQAQ": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/GT50_charger.jpg",
             "detail_title": ""
           }
         },
         "item_g9Hnyb": {
           "type": "item",
           "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-charger.jpg",
+            "detail_image": "shopify://shop_images/GT50_NFC.jpg",
             "detail_title": ""
           }
         },
         "item_xkXw9A": {
           "type": "item",
           "settings": {
-            "detail_image": "shopify://shop_images/what_sinthebox-mudguard.jpg",
+            "detail_image": "shopify://shop_images/GT50_fender.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_D64QaR": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/GT50_headlights.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_zxxc7F": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/GT50_battery_key.jpg",
+            "detail_title": ""
+          }
+        },
+        "item_UUrdW3": {
+          "type": "item",
+          "settings": {
+            "detail_image": "shopify://shop_images/GT50_tool.jpg",
             "detail_title": ""
           }
         }
       },
       "block_order": [
-        "item_7E38xM",
         "item_YqRjPt",
+        "item_7E38xM",
         "item_tqEmTb",
         "item_De9r7j",
+        "item_qBgRaf",
         "item_4A8TkH",
         "item_jmfQAQ",
-        "item_qBgRaf",
         "item_g9Hnyb",
-        "item_xkXw9A"
+        "item_xkXw9A",
+        "item_D64QaR",
+        "item_zxxc7F",
+        "item_UUrdW3"
       ],
-      "disabled": true,
       "name": "YG product exhibition",
       "settings": {
         "heading": "What's In The Box",
@@ -1397,88 +1325,99 @@
         "button_hover_text_color": "#ffffff"
       }
     },
-    "yg_video_slide_QtKRe6": {
-      "type": "yg-video-slide",
+    "yg_faq_wXpkm7": {
+      "type": "yg-faq",
       "blocks": {
-        "item_9wDUxH": {
-          "type": "item",
+        "question_m63DGa": {
+          "type": "question",
           "settings": {
-            "external_video_url": "",
-            "video_other_url": ""
+            "title": "Q: Why does the controller say 48V when the GT50 has a 60V battery?",
+            "text": "<p>A: The “48V” marking is a standard label on the controller housing. Internally, the GT50 uses a wide-voltage smart ECU system that supports 48V–60V input, so it is fully compatible with the included 60V 30Ah battery.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "item_NA84AG": {
-          "type": "item",
+        "question_MkHaiq": {
+          "type": "question",
           "settings": {
-            "external_video_url": "",
-            "video_other_url": ""
+            "title": "Q: Why does the tire show 16 instead of 20?",
+            "text": "<p>A: The “16” on the tire sidewall refers to motorcycle-style rim diameter, while the product page lists the tire’s approximate outer size as 20\" x 3.0\". These are two different tire measurement standards.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "item_8FxgW6": {
-          "type": "item",
+        "question_cdPqg7": {
+          "type": "question",
           "settings": {
-            "external_video_url": "",
-            "video_other_url": ""
+            "title": "Q: Are the GT50 tires suitable for off-road riding?",
+            "text": "<p>A: Yes. The GT50 uses wide 20\" x 3.0\" motorcycle-style off-road tires with aggressive tread, suitable for gravel, dirt trails, mountain roads, rural roads, mud, snow, and pavement.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "item_gykkYj": {
-          "type": "item",
+        "question_dhWDg8": {
+          "type": "question",
           "settings": {
-            "external_video_url": "",
-            "video_other_url": ""
+            "title": "Q: What is the top speed of the GT50?",
+            "text": "<p>A: The GT50 can reach up to 40 MPH under suitable conditions. Actual speed may vary depending on rider weight, terrain, battery level, tire pressure, and riding mode.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "item_tt6YCE": {
-          "type": "item",
+        "question_Px9kFn": {
+          "type": "question",
           "settings": {
-            "external_video_url": "",
-            "video_other_url": ""
+            "title": "Q: How far can the GT50 go on one charge?",
+            "text": "<p>A: The GT50 offers up to 80 miles of range. Actual range depends on speed, rider weight, road conditions, throttle usage, assist level, and weather.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "item_TkYqxy": {
-          "type": "item",
+        "question_KmXnGX": {
+          "type": "question",
           "settings": {
-            "external_video_url": "",
-            "video_other_url": ""
+            "title": "Q: How long does it take to charge the GT50?",
+            "text": "<p>A: The GT50 battery usually takes around 6–8 hours to fully charge.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "item_pce4g4": {
-          "type": "item",
+        "question_w7j7p6": {
+          "type": "question",
           "settings": {
-            "external_video_url": "",
-            "video_other_url": ""
+            "title": "Q: What brakes does the GT50 use?",
+            "text": "<p>A: The GT50 comes with hydraulic disc brakes, offering responsive and reliable stopping power for high-speed riding, downhill sections, and emergency braking.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         },
-        "item_AGbJaW": {
-          "type": "item",
+        "question_VnAdR7": {
+          "type": "question",
           "settings": {
-            "external_video_url": "https://www.youtube.com/watch?v=04GvqMwqeGs&t=53s",
-            "video_other_url": ""
-          }
-        },
-        "item_RrptzJ": {
-          "type": "item",
-          "settings": {
-            "external_video_url": "https://www.youtube.com/watch?v=zG1yW1WxRzo&t=114s",
-            "video_other_url": ""
+            "title": "Q: What is the maximum load capacity?",
+            "text": "<p>A: The GT50 supports up to 365 lbs of maximum payload capacity.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
           }
         }
       },
       "block_order": [
-        "item_9wDUxH",
-        "item_NA84AG",
-        "item_8FxgW6",
-        "item_gykkYj",
-        "item_tt6YCE",
-        "item_TkYqxy",
-        "item_pce4g4",
-        "item_AGbJaW",
-        "item_RrptzJ"
+        "question_m63DGa",
+        "question_MkHaiq",
+        "question_cdPqg7",
+        "question_dhWDg8",
+        "question_Px9kFn",
+        "question_KmXnGX",
+        "question_w7j7p6",
+        "question_VnAdR7"
       ],
-      "disabled": true,
-      "name": "YG video slide",
+      "name": "YG faq",
       "settings": {
-        "heading": "Hear From the Community",
+        "faq_bg_color": "#ffffff",
+        "form_bg_color": "#e6e5e5",
+        "info_bg_color": "#f5f5f5",
+        "style": "with-border",
+        "heading": "FAQs",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -1492,19 +1431,18 @@
         "highlighted_scribble": "circle",
         "color_text": "",
         "color_background": "",
-        "bg_card": "#f1f8f8",
         "gradient_background": "",
-        "color_background_2": "",
-        "gradient_background_2": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 24,
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
-        "full_width": false,
+        "narrow": true,
         "rounded": false
       }
     },
@@ -1581,11 +1519,10 @@
     "blocks_BpfnqK",
     "yg_product_parameter_comparison_CqGc4d",
     "yg_specification_BGHDRh",
-    "yg_product_exhibition_eWKL8B",
     "yg_product_geometry_Q9ip73",
     "yg_product_exhibition_X48x8Y",
     "gt16_creator_reviews_HXhaBF",
-    "yg_video_slide_QtKRe6",
+    "yg_faq_wXpkm7",
     "1778163559483f9f55",
     "product-recommendations"
   ]
