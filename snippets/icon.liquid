@@ -398,5 +398,8 @@
     <svg class="{{ class }}" xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M27.1339 17.0551C26.6457 16.5669 25.8543 16.5669 25.3661 17.0551L20 22.4212L14.6339 17.0551C14.1457 16.5669 13.3543 16.5669 12.8661 17.0551C12.378 17.5432 12.378 18.3347 12.8661 18.8228L19.1161 25.0728C19.3505 25.3073 19.6685 25.439 20 25.439C20.3315 25.439 20.6495 25.3073 20.8839 25.0728L27.1339 18.8228C27.622 18.3347 27.622 17.5432 27.1339 17.0551Z" fill="#2E2D2C"/>
     </svg>
-
+  {%- when 'cloud-download' -%}
+    <svg class="{{ class }}" viewBox="0 0 512 512" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 336h76c55 0 100-21.21 100-75.6s-53-73.47-96-75.6C391.11 99.74 329 48 256 48c-69 0-113.44 45.79-128 91.2-60 5.7-112 35.88-112 98.4S70 336 136 336h56M192 400.1l64 63.9 64-63.9M256 224v224.03"></path>
+    </svg>
 {%- endcase -%}

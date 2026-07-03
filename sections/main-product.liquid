@@ -787,6 +787,9 @@
                 </a>
               </div>
 
+            {%- when 'user_manual' -%}
+              {%- render 'product-user-manual', block: block -%}
+
             {%- when 'rating' -%}
               {%- render 'product-rating', product: product, block: block -%}
 
@@ -2571,6 +2574,30 @@
           "type": "page",
           "id": "help_page",
           "label": "t:sections.main-product.blocks.help_desk.settings.help_page.label"
+        }
+      ]
+    },
+    {
+      "type": "user_manual",
+      "name": "User manual",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "manual_label",
+          "label": "Button label",
+          "default": "USER MANUAL"
+        },
+        {
+          "type": "url",
+          "id": "manual_url",
+          "label": "Manual URL"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_in_new_tab",
+          "label": "Open in new tab",
+          "default": true
         }
       ]
     },

@@ -1,0 +1,16 @@
+{%- if block.settings.manual_url != blank -%}
+  <a
+    class="button button--secondary icon-with-text whitespace-nowrap"
+    href="{{ block.settings.manual_url }}"
+    download
+    is="hover-link"
+    {%- if block.settings.open_in_new_tab %} target="_blank" rel="noopener"{% endif -%}
+    {{ block.shopify_attributes }}
+  >
+    <span class="btn-fill" data-fill></span>
+    <span class="btn-text">
+      {%- render 'icon', icon: 'cloud-download', size: 'sm', class: 'shrink-0' -%}
+      {{- block.settings.manual_label | escape -}}
+    </span>
+  </a>
+{%- endif -%}

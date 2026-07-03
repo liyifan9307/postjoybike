@@ -85,26 +85,9 @@
       "blocks": {
         "image_P43iwN": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/banner-new.jpg",
-            "image_mobile": "shopify://shop_images/banner-new-1.jpg",
-            "heading": "",
-            "sub_heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "shopify://products/postjoy-gt16-electric-dirt-bike",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_9JiNym": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2_1c44c7d7-3691-4eb9-a9f2-c0ac0d88ba4b.jpg",
-            "image_mobile": "shopify://shop_images/4_64ed454e-af44-4c01-a100-76ff8fa2c1e4.jpg",
+            "image": "shopify://shop_images/1_0d595fcb-4c57-4d84-8567-e3fce8ae84f2.jpg",
+            "image_mobile": "shopify://shop_images/4_e41606a2-dc21-43a8-9544-fa2ea450d064.jpg",
             "heading": "",
             "sub_heading": "",
             "heading_size": "title-lg tracking-heading",
@@ -116,33 +99,17 @@
             "button_icon": false
           }
         },
-        "image_X9d4Yq": {
+        "image_cqrGwx": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/GT50_banner.png",
-            "image_mobile": "shopify://shop_images/GT50_banner_m.png",
+            "image": "shopify://shop_images/2_bb619cfa-732d-4dc8-b7a9-891406fa890b.jpg",
+            "image_mobile": "shopify://shop_images/3_aee33a9e-60b3-4c71-8aa1-405545289a2e.jpg",
             "heading": "",
             "sub_heading": "",
             "heading_size": "title-lg tracking-heading",
             "heading_tag": "h2",
             "button_label": "",
-            "button_link": "shopify://pages/mid-year-ride-sale",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        },
-        "image_rHmEYm": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_8bcf49b1-f163-403c-94f5-204f57dedd41.jpg",
-            "image_mobile": "shopify://shop_images/3_37a824b2-d8b4-4f22-bf80-0885b57483d4.jpg",
-            "heading": "",
-            "sub_heading": "",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "button_label": "",
-            "button_link": "shopify://pages/mid-year-ride-sale",
+            "button_link": "shopify://products/postjoy-f30-electric-bike",
             "button_style": "primary",
             "button_external": false,
             "button_icon": false
@@ -151,13 +118,11 @@
       },
       "block_order": [
         "image_P43iwN",
-        "image_9JiNym",
-        "image_X9d4Yq",
-        "image_rHmEYm"
+        "image_cqrGwx"
       ],
       "settings": {
         "autoplay": true,
-        "autoplay_speed": 5,
+        "autoplay_speed": 8,
         "show_navigation": true,
         "image_height": "adapt",
         "content_width": "small",
@@ -257,25 +222,6 @@
         "padding_bottom": 72,
         "divider": false,
         "full_width": false,
-        "rounded": false
-      }
-    },
-    "custom_liquid_TfmUPd": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>PostJoy Rider Spotlight — Homepage Section</title>\n<script src=\"https://cdn.tailwindcss.com\"></script>\n<style>\n  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');\n  * { font-family: 'Inter', sans-serif; }\n  \n  .gradient-bg {\n    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);\n  }\n  \n  .accent-gradient {\n    background: linear-gradient(135deg, #f97316 0%, #eab308 100%);\n  }\n  \n  .accent-text {\n    background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);\n    -webkit-background-clip: text;\n    -webkit-text-fill-color: transparent;\n    background-clip: text;\n  }\n  \n  .card-hover {\n    transition: all 0.3s ease;\n  }\n  \n  .card-hover:hover {\n    transform: translateY(-5px);\n    border-color: rgba(249, 115, 22, 0.5);\n  }\n  \n  .grid-pattern {\n    background-image: \n      linear-gradient(rgba(249, 115, 22, 0.05) 1px, transparent 1px),\n      linear-gradient(90deg, rgba(249, 115, 22, 0.05) 1px, transparent 1px);\n    background-size: 50px 50px;\n  }\n  \n  .hashtag-chip {\n    transition: all 0.2s ease;\n    cursor: pointer;\n  }\n  \n  .hashtag-chip:hover {\n    background: rgba(249, 115, 22, 0.2);\n    border-color: #f97316;\n    transform: translateY(-2px);\n  }\n</style>\n</head>\n<body class=\"gradient-bg text-white\">\n\n<!-- ============ POSTJOY RIDER SPOTLIGHT — HOMEPAGE SECTION ============ -->\n<section class=\"relative overflow-hidden\">\n  \n  <!-- Grid Pattern Background -->\n  <div class=\"absolute inset-0 grid-pattern opacity-50\"></div>\n  \n  <!-- Decorative Glow Orbs -->\n  <div class=\"absolute top-20 left-10 w-72 h-72 bg-orange-500 rounded-full blur-3xl opacity-20\"></div>\n  <div class=\"absolute bottom-20 right-10 w-96 h-96 bg-yellow-500 rounded-full blur-3xl opacity-10\"></div>\n  \n  <div class=\"relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24\">\n    \n    <!-- ============ CONNECT WITH US ON SOCIAL ============ -->\n    <div id=\"connect-with-us\" class=\"mb-20\">\n      <div class=\"text-center mb-12\">\n        <div class=\"inline-flex items-center gap-2 bg-orange-500/10 border border-orange-500/30 rounded-full px-4 py-2 mb-5\">\n          <span class=\"text-orange-400 text-xs font-semibold tracking-widest uppercase\">Join the Community</span>\n        </div>\n        <h2 class=\"text-3xl md:text-4xl lg:text-5xl font-black mb-3\">Connect With Us on Social</h2>\n        <p class=\"text-slate-400 text-lg max-w-2xl mx-auto\">Follow, post, and tag — get featured on our channels and rewarded for sharing your ride.</p>\n      </div>\n      \n      <div class=\"grid md:grid-cols-3 gap-6 lg:gap-8\">\n        \n        <!-- Step 1 — Follow -->\n        <div class=\"card-hover bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center\">\n          <div class=\"accent-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black text-black\">\n            1\n          </div>\n          <div class=\"text-4xl mb-4\">👥</div>\n          <h3 class=\"text-xl font-bold mb-3\">Follow PostJoy</h3>\n          <p class=\"text-slate-400 text-sm leading-relaxed mb-5\">\n            Follow <span class=\"text-orange-400 font-semibold\">@PostJoyEbike</span> on Facebook & Instagram to stay in the loop on launches, drops, and rider stories.\n          </p>\n          <div class=\"flex justify-center gap-3\">\n            <a href=\"#\" class=\"bg-white/5 hover:bg-orange-500/20 border border-white/10 hover:border-orange-500/50 w-10 h-10 rounded-full flex items-center justify-center transition-all\" aria-label=\"Facebook\">\n              <svg class=\"w-5 h-5 text-white\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z\"/></svg>\n            </a>\n            <a href=\"#\" class=\"bg-white/5 hover:bg-orange-500/20 border border-white/10 hover:border-orange-500/50 w-10 h-10 rounded-full flex items-center justify-center transition-all\" aria-label=\"Instagram\">\n              <svg class=\"w-5 h-5 text-white\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z\"/></svg>\n            </a>\n          </div>\n        </div>\n        \n        <!-- Step 2 — Post & Tag -->\n        <div class=\"card-hover bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center\">\n          <div class=\"accent-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black text-black\">\n            2\n          </div>\n          <div class=\"text-4xl mb-4\">📲</div>\n          <h3 class=\"text-xl font-bold mb-3\">Post & Tag Us</h3>\n          <p class=\"text-slate-400 text-sm leading-relaxed\">\n            Share your ride moments — unboxings, trail rides, commutes, or reviews. Tag <span class=\"text-orange-400 font-semibold\">@PostJoyEbike</span> and use <span class=\"text-orange-400 font-semibold\">#RideWithPostJoy</span>.\n          </p>\n        </div>\n        \n        <!-- Step 3 — Get Noticed -->\n        <div class=\"card-hover bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center\">\n          <div class=\"accent-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black text-black\">\n            3\n          </div>\n          <div class=\"text-4xl mb-4\">🎁</div>\n          <h3 class=\"text-xl font-bold mb-3\">Get Featured & Rewarded</h3>\n          <p class=\"text-slate-400 text-sm leading-relaxed\">\n            Selected riders get reposted on our official channels and have a chance to receive <span class=\"accent-text font-bold\">$50 in free PostJoy accessories</span>.\n          </p>\n        </div>\n        \n      </div>\n    </div>\n    \n    <!-- ============ HASHTAG CLOUD ============ -->\n    <div>\n      <div class=\"text-center mb-8\">\n        <h2 class=\"text-2xl md:text-3xl lg:text-4xl font-black mb-2\">Tag Us. Get Found.</h2>\n        <p class=\"text-slate-400 text-base md:text-lg\">Use these hashtags to boost your chances.</p>\n      </div>\n      \n      <div class=\"max-w-4xl mx-auto\">\n        <p class=\"text-xs uppercase tracking-wider text-orange-400 font-bold mb-3 text-center\">Primary Tags</p>\n        <div class=\"flex flex-wrap gap-3 justify-center mb-8\">\n          <span class=\"hashtag-chip bg-orange-500/10 border border-orange-500/40 text-orange-300 px-4 py-2 rounded-full text-sm font-semibold\">#RideWithPostJoy</span>\n          <span class=\"hashtag-chip bg-orange-500/10 border border-orange-500/40 text-orange-300 px-4 py-2 rounded-full text-sm font-semibold\">#PostJoyEbike</span>\n          <span class=\"hashtag-chip bg-orange-500/10 border border-orange-500/40 text-orange-300 px-4 py-2 rounded-full text-sm font-semibold\">#PostJoyRiders</span>\n        </div>\n      \n      </div>\n    </div>\n    \n  </div>\n</section>\n\n</body>\n</html>",
-        "color_text": "",
-        "color_background": "#f5f5f5",
-        "gradient_background": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "narrow": false,
         "rounded": false
       }
     },
@@ -1876,7 +1822,6 @@
     "countdown_timer_76a4f3",
     "yg_slideshow_9gbDek",
     "yg_featured_collections_jtUt77",
-    "custom_liquid_TfmUPd",
     "yg_reviews_swiper_6rTeh6",
     "postjoy_home_base_section_Lt4y8k",
     "yg_rich_text_HiEM4F",

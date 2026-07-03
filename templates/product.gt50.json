@@ -514,7 +514,7 @@
             "video_muted_mobile": true,
             "video_loop_mobile": true,
             "media_type_desktop": "image",
-            "image_desktop": "shopify://shop_images/GT50_Dirt_Bike_new_60v_30ah.jpg",
+            "image_desktop": "shopify://shop_images/GT50_20260701151050_1429_354.jpg",
             "video_url_desktop": "",
             "video_autoplay_desktop": true,
             "video_muted_desktop": true,
@@ -721,11 +721,11 @@
           "settings": {
             "item_margin_top": 60,
             "item_margin_bottom": 60,
-            "image": "shopify://shop_images/GT50_dirt_bike_60V30ah_1216062b-0d78-4840-a1fc-3967e3f30eb8.jpg",
-            "image_mb": "shopify://shop_images/GT50_dirt_bike_60V30ah_m.jpg",
+            "image": "shopify://shop_images/GT50_20260701151051_1430_354.jpg",
+            "image_mb": "shopify://shop_images/GT50_20260701151051_1430_354.jpg",
             "image_pos": "right",
-            "title": "<p><strong>60V 30Ah </strong>Long-Lasting Battery</p>",
-            "content": "<p>The 60V 30Ah battery delivers up to 80 miles of max range, making the GT50 ready for long commutes, weekend adventures, and extended outdoor rides. With BMS battery management, fast 6–8 hour charging, and overheating protection, the system is built for safer and more efficient energy use.</p>",
+            "title": "<p><strong>48V 25Ah </strong>Long-Lasting Battery</p>",
+            "content": "<p>The 48V 25Ah battery delivers up to 80 miles of max range, making the GT50 ready for long commutes, weekend adventures, and extended outdoor rides. With BMS battery management, fast 6–8 hour charging, and overheating protection, the system is built for safer and more efficient energy use.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -773,7 +773,7 @@
             "image_mb": "shopify://shop_images/GT50_dirt_bike_braking_m.jpg",
             "image_pos": "left",
             "title": "<p>Instant, Reliable Braking</p>",
-            "content": "<p>The GT50 features dual hydraulic disc brakes that deliver quick, responsive, and reliable stopping power. Compared with ordinary brakes, the hydraulic braking system improves braking safety and precision, helping you stay in control during high-speed riding, downhill sections, turns, and emergency stops.</p>",
+            "content": "<p>The GT50 is equipped with a front disc brake and rear hydraulic brake, offering dependable stopping power and improved control for everyday riding. Whether you're riding at higher speeds, going downhill, turning, or making sudden stops, the braking system helps you ride with greater confidence.</p>",
             "param_title_1": "",
             "param_content_1": "",
             "param_title_2": "",
@@ -875,7 +875,7 @@
             "product_title": "GT50",
             "prouduct_url": "",
             "button_title": "Shop Now",
-            "header_title_value": "<ol><li>60V 30 Ah</li><li><strong>Peak 5500W</strong></li><li>75Nm</li><li>40Mph</li><li>Hydraulic Disc Brake</li><li>20x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 80 miles</li><li>365 lbs</li><li>93 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
+            "header_title_value": "<ol><li>48V 25 Ah</li><li><strong>Peak 5500W</strong></li><li>75Nm</li><li>40Mph</li><li>Hydraulic Disc Brake</li><li>20x 3.0\" Off-Road</li><li>Full Suspension</li><li>Up to 80 miles</li><li>365 lbs</li><li>93 LBS</li><li>NFC Smart Unlock</li><li>48V / 3A</li><li>6-8Hours</li><li>IPX6</li></ol>"
           }
         },
         "product_parameter_L9zBwt": {
@@ -952,7 +952,7 @@
       "name": "YG specification",
       "settings": {
         "title": "Specification",
-        "richtext": "<p>Battery<strong>60V 30Ah</strong></p><p>Hub Motor<strong>Peak 55000W</strong></p><p>Top Speed<strong> 40MPH</strong></p><p>Brake<strong>Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 20x3.0''</strong></p><p>IP Level<strong>IPX6</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>93 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 80 miles</strong></p><p></p>",
+        "richtext": "<p>Battery<strong>48V 25Ah</strong></p><p>Hub Motor<strong>Peak 55000W</strong></p><p>Top Speed<strong> 40MPH</strong></p><p>Brake <strong>Rear Hydraulic brake</strong></p><p>Suspension<strong> ‎Full Suspension</strong></p><p>Tires<strong> 20x3.0''</strong></p><p>IP Level<strong>IPX6</strong></p><p>E-Bike Class<strong>Class 2</strong></p><p>Charging Time<strong>6-8 Hours</strong></p><p>MAX Payload Capacity<strong>365 lbs</strong></p><p>E-Bike Weight<strong>93 LBS</strong></p><p>Speed Transmission <strong>7 speeds</strong></p><p>Range<strong>Up to 80 miles</strong></p><p></p>",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
